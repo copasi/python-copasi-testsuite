@@ -1,5 +1,6 @@
 from ResultComparer import ResultComparer, CompareResult
 
+
 class ResultComparerTssa(ResultComparer):
     def __init__(self):
         from TaskTypes import TaskTypes
@@ -12,7 +13,7 @@ class ResultComparerTssa(ResultComparer):
             result.messages.append('dimensions differ')
             return result
 
-        for i in range(0, len(expected.data_frames),5):
+        for i in range(0, len(expected.data_frames), 5):
 
             diff = self.get_differences(expected.data_frames[i+0], other.data_frames[i+0], **kwargs)
             result.differences.append(diff)
@@ -27,7 +28,6 @@ class ResultComparerTssa(ResultComparer):
 
         return result
 
-
     def compare_modified_ildm(self, expected, other, **kwargs):
         result = CompareResult()
 
@@ -36,7 +36,7 @@ class ResultComparerTssa(ResultComparer):
             result.messages.append('dimensions differ')
             return result
 
-        for i in range(0, len(expected.data_frames),4):
+        for i in range(0, len(expected.data_frames), 4):
 
             diff = self.get_differences(expected.data_frames[i+0], other.data_frames[i+0], **kwargs)
             result.differences.append(diff)
@@ -56,7 +56,7 @@ class ResultComparerTssa(ResultComparer):
             result.messages.append('dimensions differ')
             return result
 
-        for i in range(0, len(expected.data_frames),3):
+        for i in range(0, len(expected.data_frames), 3):
             if i + 3 < len(expected.data_frames):
                 break
             diff = self.get_differences(expected.data_frames[i + 0], other.data_frames[i + 0], **kwargs)
@@ -84,4 +84,3 @@ class ResultComparerTssa(ResultComparer):
             return self.compare_csp(expected, other, **kwargs)
 
         return CompareResult()
-

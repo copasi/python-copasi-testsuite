@@ -8,7 +8,6 @@ except ImportError:
     from io import StringIO
 
 
-
 class TestSuite:
     def __init__(self, directory):
         self.suite_dir = directory
@@ -16,7 +15,7 @@ class TestSuite:
         self.initializeSuite(directory)
 
     def initializeSuite(self, directory):
-        #type: (str) -> None
+        # type: (str) -> None
         self.cases = []
 
         if not os.path.exists(directory):

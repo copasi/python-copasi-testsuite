@@ -1,13 +1,13 @@
 from ReportParser import ReportParser
-import  pandas
+import pandas
+
 
 class ReportParserTSSA(ReportParser):
     def __init__(self):
         ReportParser.__init__(self)
 
-
     def parseLines(self, lines):
-        #type: ([str]) -> None
+        # type: ([str]) -> None
 
         current = self.skip_until(lines, 0, 'OutputStartTime:')
         if current == -1:
@@ -43,7 +43,6 @@ class ReportParserTSSA(ReportParser):
         ts1 = '****************  Time step'
         current = self.skip_until(lines, current, [ts, ts1])
 
-
         while current != -1:
 
             current = self.skip_until(lines, current, 'Number of fast modes:')
@@ -53,7 +52,7 @@ class ReportParserTSSA(ReportParser):
             current = self.skip_until(lines, current, 'Time scales')
             if current == -1:
                 continue
-            current = self.readDataFrameWithDescription(lines, current+1, {'desc':'Time scales'},
+            current = self.readDataFrameWithDescription(lines, current+1, {'desc': 'Time scales'},
                                                         header=None, trim=True,
                                                         replacements=[['   ', '\t']])
             df = self.data_frames[len(self.data_frames) - 1]
@@ -64,22 +63,23 @@ class ReportParserTSSA(ReportParser):
                 continue
 
             if not lines[current + 1].strip() == '':
-                current = self.readDataFrameWithDescription(lines, current+1, {'desc':'Radical Pointer'}, header=None, trim=True,
-                                                   replacements=[['   ', '\t']])
-                df = self.data_frames[len(self.data_frames) -1]
+                current = self.readDataFrameWithDescription(lines, current+1, {'desc': 'Radical Pointer'},
+                                                            header=None, trim=True,
+                                                            replacements=[['   ', '\t']])
+                df = self.data_frames[len(self.data_frames) - 1]
                 df.index = species
             else:
                 self.data_frames.append(pandas.DataFrame())
-                self.data_descriptions.append({'desc':'Radical Pointer'})
+                self.data_descriptions.append({'desc': 'Radical Pointer'})
 
             current = self.skip_until(lines, current, 'Participation Index')
             if current == -1:
                 continue
-            current = self.readDataFrameWithDescription(lines, current+1, {'desc':'Participation Index'}, header=None, trim=True,
-                                               replacements=[['   ', '\t']])
+            current = self.readDataFrameWithDescription(lines, current+1, {'desc': 'Participation Index'},
+                                                        header=None, trim=True,
+                                                        replacements=[['   ', '\t']])
             df = self.data_frames[len(self.data_frames) - 1]
             df.index = reactions
-
 
             current = self.skip_until(lines, current, [ts, ts1])
 

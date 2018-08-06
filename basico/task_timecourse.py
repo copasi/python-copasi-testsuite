@@ -18,12 +18,13 @@ def __build_result_from_ts(time_series):
     concentrations = numpy.empty([row_count, col_count])
     for i in range(row_count):
         for j in range(col_count):
-            concentrations[i,j] = time_series.getConcentrationData(i, j)
+            concentrations[i, j] = time_series.getConcentrationData(i, j)
 
     df = pandas.DataFrame(data=concentrations, columns=column_names)
     df = df.set_index('Time')
 
     return df
+
 
 def run_time_course(*args, **kwargs):
     num_args = len(args)
@@ -66,7 +67,6 @@ def run_time_course(*args, **kwargs):
     if 'stepsize' in kwargs:
         problem.setStepSize(kwargs['stepsize'])
 
-
     if num_args == 3:
         problem.setOutputStartTime(args[0])
         problem.setDuration(args[1])
@@ -76,8 +76,6 @@ def run_time_course(*args, **kwargs):
         problem.setStepNumber(args[1])
     elif num_args > 0:
         problem.setDuration(args[0])
-
-
 
     problem.setTimeSeriesRequested(True)
 

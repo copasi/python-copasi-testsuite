@@ -5,9 +5,6 @@
 from __future__ import print_function
 import sys
 import os
-import logging
-import pandas
-import numpy
 
 try:
     from StringIO import StringIO
@@ -30,5 +27,3 @@ if __name__ == "__main__":
     if result == 0: 
         print("all pass")
     sys.exit(result)
-
-

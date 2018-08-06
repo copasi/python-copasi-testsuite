@@ -15,17 +15,19 @@ __model_list = []
 __temp_files = []
 __temp_dirs = []
 
+
 def set_current_model(model):
     # type: (COPASI.CDataModel) -> COPASI.CDataModel
     global __current_model
     global __model_list
     __current_model = model
-    if not model in __model_list:
+    if model not in __model_list:
         __model_list.append(model)
 
     if __current_model is not None:
         logging.info(model_info(__current_model))
     return __current_model
+
 
 def get_current_model():
     # type: () -> COPASI.CDataModel
@@ -35,8 +37,9 @@ def get_current_model():
         new_model()
     return __current_model
 
+
 def create_datamodel():
-    #type: () -> COPASI.CDataModel
+    # type: () -> COPASI.CDataModel
     try:
         data_model = COPASI.CRootContainer.addDatamodel()
     except:
@@ -44,8 +47,9 @@ def create_datamodel():
         data_model = COPASI.CCopasiRootContainer.addDatamodel()
     return data_model
 
+
 def remove_datamodel(model):
-    #type: (COPASI.CDataModel) -> None
+    # type: (COPASI.CDataModel) -> None
     global __model_list
     global __current_model
     if model in __model_list:
@@ -55,16 +59,18 @@ def remove_datamodel(model):
     COPASI.CRootContainer.removeDatamodel(model)
     return None
 
+
 def new_model():
-    #type: () -> COPASI.CDataModel
+    # type: () -> COPASI.CDataModel
     model = create_datamodel()
     model.newModel()
     return set_current_model(model)
 
+
 def load_model_from_string(content):
     # type: (str) -> COPASI.CDataModel
     model = create_datamodel()
-    if  '<COPASI ' in content:
+    if '<COPASI ' in content:
         if model.loadModelFromString(content, os.getcwd()):
             return set_current_model(model)
 
@@ -74,13 +80,15 @@ def load_model_from_string(content):
 
     return remove_datamodel(model)
 
+
 def load_model_from_url(url):
     # type: (str) -> COPASI.CDataModel
     content = urllib2.urlopen(url).read()
     return load_model_from_string(content)
 
+
 def load_model(location):
-    #type: (str) -> COPASI.CDataModel
+    # type: (str) -> COPASI.CDataModel
     model = create_datamodel()
 
     if os.path.isfile(location):
@@ -102,23 +110,25 @@ def load_model(location):
 
 
 def load_biomodel_from_caltech(model_id):
-    #type: (Union[int, str, unicode]) -> COPASI.CDataModel
+    # type: (Union[int, str, unicode]) -> COPASI.CDataModel
     if type(model_id) is int:
         url = 'http://biomodels.caltech.edu/download?mid=BIOMD{0:010d}'.format(model_id)
     else:
         url = 'http://biomodels.caltech.edu/download?mid={0}'.format(model_id)
     return load_model_from_url(url)
 
+
 def load_biomodel(model_id):
-    #type: (Union[int, str, unicode]) -> COPASI.CDataModel
+    # type: (Union[int, str, unicode]) -> COPASI.CDataModel
     if type(model_id) is int:
         url = 'http://www.ebi.ac.uk/biomodels-main/download?mid=BIOMD{0:010d}'.format(model_id)
     else:
         url = 'http://www.ebi.ac.uk/biomodels-main/download?mid={0}'.format(model_id)
     return load_model_from_url(url)
 
+
 def get_examples(selector = ''):
-    #type: (str) -> [str]
+    # type: (str) -> [str]
     dir_name = os.path.dirname(__file__)
     types = ('*.xml', '*.cps')
     files = []
@@ -129,7 +139,7 @@ def get_examples(selector = ''):
 
 
 def load_example(selector):
-    #type: (str) -> COPASI.CDataModel
+    # type: (str) -> COPASI.CDataModel
     files = get_examples(selector)
 
     if not files:
@@ -138,7 +148,7 @@ def load_example(selector):
     return load_model(files[0])
 
 
-def model_info(model = None):
+def model_info(model=None):
     # type: (COPASI.CDataModel) -> Str
     if model is None:
         model = get_current_model()
@@ -160,14 +170,16 @@ def model_info(model = None):
 
     return result
 
-def print_model(model = None):
-    #type: (COPASI.CDataModel) -> None
+
+def print_model(model=None):
+    # type: (COPASI.CDataModel) -> None
     if model is None:
         model = get_current_model()
     print (model_info(model))
 
+
 def save_model(filename, **kwargs):
-    #type: (str, **kwargs) -> None
+    # type: (str, **kwargs) -> None
     model = kwargs.get('model', get_current_model())
     assert (isinstance(model, COPASI.CDataModel))
     file_type = kwargs.get('type', 'copasi').lower()
@@ -236,7 +248,6 @@ def save_model_and_data(filename, **kwargs):
             if delete_data_on_exit:
                 __temp_files.append(new_name)
 
-
         # rename experiments
         for i in range(problem.getExperimentSet().size()):
             experiment = problem.getExperimentSet().getExperiment(i)
@@ -251,7 +262,7 @@ def save_model_and_data(filename, **kwargs):
         # export model to string
         model_string = model.saveModelToString()
 
-        #rename experiments
+        # rename experiments
         for i in range(problem.getExperimentSet().size()):
             experiment = problem.getExperimentSet().getExperiment(i)
             assert (isinstance(experiment, COPASI.CExperiment))
@@ -266,6 +277,7 @@ def save_model_and_data(filename, **kwargs):
             f.write(model_string)
     else:
         model.saveModel(filename, True)
+
 
 def open_copasi(**kwargs):
     model = kwargs.get('model', get_current_model())
@@ -285,6 +297,7 @@ def open_copasi(**kwargs):
         save_model_and_data(name, delete_data_on_exit=True, **kwargs)
 
     subprocess.call(name, shell=True)
+
 
 @atexit.register
 def __cleanup():

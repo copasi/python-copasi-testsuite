@@ -3,19 +3,21 @@ import pandas
 import COPASI
 import collections
 
+
 def __status_to_int(status):
-    #type: (str)->int
+    # type: (str)->int
     codes = {
         "fixed": COPASI.CModelEntity.Status_FIXED,
         "assignment": COPASI.CModelEntity.Status_ASSIGNMENT,
         "ode": COPASI.CModelEntity.Status_ODE,
-        "reactions":COPASI.CModelEntity.Status_REACTIONS,
-        "time":COPASI.CModelEntity.Status_TIME,
+        "reactions": COPASI.CModelEntity.Status_REACTIONS,
+        "time": COPASI.CModelEntity.Status_TIME,
     }
     return codes.get(status, COPASI.CModelEntity.Status_FIXED)
 
+
 def __status_to_string(status):
-    #type: (int)->str
+    # type: (int)->str
     strings = {
         COPASI.CModelEntity.Status_FIXED: "fixed",
         COPASI.CModelEntity.Status_ASSIGNMENT: "assignment",
@@ -25,8 +27,9 @@ def __status_to_string(status):
     }
     return strings.get(status, 'fixed')
 
-def get_species(name = None, **kwargs):
-    #type: () -> pandas.DataFrame
+
+def get_species(name=None, **kwargs):
+    # type: () -> pandas.DataFrame
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
 
@@ -65,25 +68,25 @@ def get_species(name = None, **kwargs):
         if 'name' in kwargs and not kwargs['name'] in metab_data['name']:
             continue
 
-        if name and not name in metab_data['name']:
+        if name and name not in metab_data['name']:
             continue
 
         if 'compartment' in kwargs and not kwargs['compartment'] in metab_data['compartment']:
             continue
 
-        if 'type' in kwargs and not kwargs['type'] in metab_data['type']:
+        if 'type' in kwargs and kwargs['type'] not in metab_data['type']:
             continue
 
         data.append(metab_data)
 
-
     if not data:
         return None
 
-    return pandas.DataFrame(data = data).set_index('name')
+    return pandas.DataFrame(data=data).set_index('name')
 
-def get_compartments(name = None, **kwargs):
-    #type: () -> pandas.DataFrame
+
+def get_compartments(name=None, **kwargs):
+    # type: () -> pandas.DataFrame
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
 
@@ -116,25 +119,25 @@ def get_compartments(name = None, **kwargs):
             'key': compartment.getKey(),
         }
 
-        if 'name' in kwargs and not kwargs['name'] in comp_data['name']:
+        if 'name' in kwargs and kwargs['name'] not in comp_data['name']:
             continue
 
-        if name and not name in comp_data['name']:
+        if name and name not in comp_data['name']:
             continue
 
-        if 'type' in kwargs and not kwargs['type'] in comp_data['type']:
+        if 'type' in kwargs and kwargs['type'] not in comp_data['type']:
             continue
 
         data.append(comp_data)
 
-
     if not data:
         return None
 
-    return pandas.DataFrame(data = data).set_index('name')
+    return pandas.DataFrame(data=data).set_index('name')
 
-def get_parameters(name = None, **kwargs):
-    #type: () -> pandas.DataFrame
+
+def get_parameters(name=None, **kwargs):
+    # type: () -> pandas.DataFrame
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
 
@@ -167,25 +170,24 @@ def get_parameters(name = None, **kwargs):
             'key': param.getKey(),
         }
 
-        if 'name' in kwargs and not kwargs['name'] in param_data['name']:
+        if 'name' in kwargs and kwargs['name'] not in param_data['name']:
             continue
 
-        if name and not name in param_data['name']:
+        if name and name not in param_data['name']:
             continue
 
-        if 'type' in kwargs and not kwargs['type'] in param_data['type']:
+        if 'type' in kwargs and kwargs['type'] not in param_data['type']:
             continue
 
         data.append(param_data)
 
-
     if not data:
         return None
 
-    return pandas.DataFrame(data = data).set_index('name')
+    return pandas.DataFrame(data=data).set_index('name')
 
 
-def set_parameters(name = None, **kwargs):
+def set_parameters(name=None, **kwargs):
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
 
@@ -202,13 +204,13 @@ def set_parameters(name = None, **kwargs):
         assert (isinstance(param, COPASI.CModelValue))
         current_name = param.getObjectName()
 
-        if 'name' in kwargs and not kwargs['name'] in current_name:
+        if 'name' in kwargs and kwargs['name'] not in current_name:
             continue
 
-        if name and type(name) is str and not name in current_name:
+        if name and type(name) is str and name not in current_name:
             continue
 
-        if name and isinstance(name, collections.Iterable) and not current_name in name:
+        if name and isinstance(name, collections.Iterable) and current_name not in name:
             continue
 
         if 'unit' in kwargs:

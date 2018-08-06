@@ -4,8 +4,10 @@ import subprocess
 import time
 
 from RunResult import RunResult
+from TestCase import TestCase
 
 isDebug = False
+
 
 class TestRunner:
     def __init__(self, copasi_se, output_dir):
@@ -119,12 +121,11 @@ class TestRunner:
             return self.version
         return 'CopasiSE'
 
-    def runTests(self, tests, cancellation_token = None):
+    def runTests(self, tests, cancellation_token=None):
         # type: ([TestCase]) -> int
         result = 0
         for case in tests:
-            if not cancellation_token is None and cancellation_token(case):
+            if cancellation_token is not None and cancellation_token(case):
                 break
             result += self.runTest(case, write_result=False)
-        return  result
-
+        return result

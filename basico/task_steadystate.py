@@ -1,9 +1,8 @@
 import COPASI
 import model_io
-import pandas
-import numpy
 
-def run_steadystate(*args, **kwargs):
+
+def run_steadystate(**kwargs):
     model = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(model, COPASI.CDataModel))
 
@@ -16,7 +15,6 @@ def run_steadystate(*args, **kwargs):
     if 'update_model' in kwargs:
         task.setUpdateModel(kwargs['update_model'])
 
-
     problem = task.getProblem()
     assert (isinstance(problem, COPASI.CSteadyStateProblem))
 
@@ -25,4 +23,3 @@ def run_steadystate(*args, **kwargs):
     task.initializeRaw(COPASI.CCopasiTask.OUTPUT_UI)
 
     task.processRaw(use_initial_values)
-

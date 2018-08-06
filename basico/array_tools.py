@@ -5,8 +5,9 @@ import re
 import pandas
 import numpy as np
 
+
 def compartment_names(**kwargs):
-    #type: (**kwargs) -> [str]
+    # type: (**kwargs) -> [str]
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
 
@@ -74,7 +75,7 @@ def remove_arrays(**kwargs):
 
 
 def plot_arrays_1d(df, species, **kwargs):
-    #type:(pandas.DataFrame, str, **kwargs) -> pandas.DataFrame
+    # type:(pandas.DataFrame, str, **kwargs) -> pandas.DataFrame
     dm = kwargs.get('model', model_io.get_current_model())
     assert (isinstance(dm, COPASI.CDataModel))
     names = compartment_names(**kwargs)
@@ -86,21 +87,19 @@ def plot_arrays_1d(df, species, **kwargs):
             continue
         name = name[0:index]
 
-        if not species in name:
+        if species not in name:
             continue
 
-        if not name in candidates:
+        if name not in candidates:
             candidates.append(name)
 
     cols = []
     for compartment in names:
         for species in candidates:
             index = species + '{' + compartment + '}'
-            if not index in df:
+            if index not in df:
                 continue
             cols.append(index)
-
-
 
     rows = []
     row_index = kwargs.get('index', df.index)
@@ -116,10 +115,3 @@ def plot_arrays_1d(df, species, **kwargs):
             data[row, col] = df[col_name][row_index[row]]
 
     return pandas.DataFrame(data, index=rows, columns=cols)
-
-
-
-
-
-
-

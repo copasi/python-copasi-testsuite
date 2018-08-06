@@ -3,6 +3,7 @@ import re
 import sys
 import logging
 
+
 def open_url(url):
     import subprocess
     if sys.platform == 'win32':
@@ -23,10 +24,11 @@ except ImportError:
     from io import StringIO
 
 
-from TaskTypes  import TaskTypes
-from RunResult  import RunResult
+from TaskTypes import TaskTypes
+from RunResult import RunResult
 from TestReport import TestReport
 from TestRunner import TestRunner
+
 
 class TestCase:
     def __init__(self, case_dir):
@@ -158,14 +160,6 @@ class TestCase:
                     assert(isinstance(task, COPASI.CCopasiTask))
                     task.setScheduled(False)
 
-
-        #cmod = model.getModel()
-        #assert (isinstance(cmod, COPASI.CModel))
-        #num_elements = cmod.getNumCompartments() + cmod.getNumMetabs() + cmod.getNumModelValues() + cmod.getNumReactions() + cmod.getNumEvents()
-        #if num_elements == 0:
-        #    model = basico.load_model(model_file)
-        #    return None
-
         task = None
         need_report = False
 
@@ -280,7 +274,6 @@ class TestCase:
             if 'Duration' in self.settings:
                 problem.getParameter('Duration').setDblValue(float(self.settings['StepNumber']))
 
-
         elif self.settings['task'] == TaskTypes.sensitivities:
             need_report = True
             task = dm.getTask('Sensitivities')
@@ -350,7 +343,7 @@ class TestCase:
         return run_result
 
     def compare_result(self, model_file, runner):
-        #type: (str, TestRunner) -> RunResult
+        # type: (str, TestRunner) -> RunResult
         output_dir = runner.output_dir
         base_name = os.path.splitext(os.path.basename(model_file))[0]
         report_file = os.path.join(output_dir, 'report-{0}-{1}.txt'.format(self.id, base_name))

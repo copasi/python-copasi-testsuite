@@ -1,8 +1,9 @@
-from TestReport import  TestReport
+from TestReport import TestReport
 from RunResult import RunResult
 import numpy as np
 import pandas
 import logging
+
 
 class CompareResult:
     def __init__(self):
@@ -13,7 +14,7 @@ class CompareResult:
         self.changes = []
 
     def get_run_result(self):
-        #type: () -> RunResult
+        # type: () -> RunResult
 
         for msg in self.messages:
             print(msg)
@@ -28,19 +29,17 @@ class CompareResult:
                 self.changes.append(df.any())
                 return RunResult.FAIL
 
-
         return RunResult.PASS
 
+
 class ResultComparer:
-    def __init__(self, task_type = None):
+    def __init__(self, task_type=None):
         self.task_type = task_type
         self.expected = None
         self.other = None
-        pass
-
 
     @staticmethod
-    def get_differences(df1, df2, expected = None, **kwargs):
+    def get_differences(df1, df2, expected=None, **kwargs):
         # type: (pandas.DataFrame, pandas.DataFrame) -> pandas.DataFrame
         if expected is None:
             expected = df1
@@ -55,7 +54,7 @@ class ResultComparer:
         return df[cols]
 
     @staticmethod
-    def compare_df_testsuite(df1, df2, expected = None, **kwargs):
+    def compare_df_testsuite(df1, df2, expected=None, **kwargs):
         if expected is None:
             expected = df1
 
@@ -67,7 +66,6 @@ class ResultComparer:
         if have_error.any().any():
             return None
         return expected[have_error]
-
 
     @staticmethod
     def compare_df_unsorted(df1, df2, **kwargs):
@@ -89,31 +87,29 @@ class ResultComparer:
 
         for col in df1.columns:
             col1 = df1[col]
-            if not col in df2.columns:
+            if col not in df2.columns:
                 continue
             col2 = df2[col]
 
             for index in df1.index:
                 val1 = col1[index]
-                if not index in col2.index:
+                if index not in col2.index:
                     continue
                 val2 = col2[index]
 
                 error = abs(val1-val2)
 
                 if error > (atol + rtol*abs(val1)):
-                    msg = "mismatch comparing {4} col: {0} row: {1} here {2} != {3}".format(col, index, val1, val2, desc)
+                    msg = "mismatch comparing {4} col: {0} row: {1} here {2} != {3}"\
+                        .format(col, index, val1, val2, desc)
                     print(msg)
-                    if not messages is None:
+                    if messages is not None:
                         messages.append(msg)
                     logging.debug(msg)
                     return True
 
         return False
 
-
-
     def compare(self, expected, other, **kwargs):
         # type: (TestReport, TestReport) -> CompareResult
         raise NotImplementedError()
-

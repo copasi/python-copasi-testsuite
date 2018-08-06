@@ -1,20 +1,20 @@
 import pandas
 from ReportParser import ReportParser
 
+
 class ReportParserOptimization(ReportParser):
     def __init__(self):
         ReportParser.__init__(self)
 
-
     def parseLines(self, lines):
-        #type: ([str]) -> None
+        # type: ([str]) -> None
         current = self.skip_until(lines, 0, 'Objective Function Value')
         self.status = lines[current].strip()
         current = self.skip_until(lines, current, 'Evaluations/Second')
         if current == -1:
-            return self
+            return
 
-        block_lines =  ['OptItem: Value'] +  self.get_next_block(lines, current+2)
+        block_lines = ['OptItem: Value'] + self.get_next_block(lines, current+2)
         for i in range(len(block_lines)):
             block_lines[i] = block_lines[i] + '\n'
         block = self.get_block_as_buffer(block_lines, 0, len(block_lines))

@@ -1,16 +1,16 @@
 import pandas
 from ReportParser import ReportParser
 
+
 class ReportParserLyap(ReportParser):
     def __init__(self):
         ReportParser.__init__(self)
 
-
     def parseLines(self, lines):
-        #type: ([str]) -> None
+        # type: ([str]) -> None
         current = self.skip_until(lines, 0, 'Lyapunov Exponents:')
         if current == -1:
-            return self
+            return
         exponents_string = lines[current + 1].strip().split(' ')
         exponents = [float(x) for x in exponents_string]
         df = pandas.DataFrame(exponents, columns=['Exponents'])
@@ -19,7 +19,7 @@ class ReportParserLyap(ReportParser):
 
         current = self.skip_until(lines, current + 1, 'Average divergence:')
         if current == -1:
-            return self
+            return
         divergence = float(lines[current].split(':')[1].strip())
         df = pandas.DataFrame([divergence], columns=['Average divergence'])
         self.data_frames.append(df)

@@ -6,7 +6,8 @@ try:
 except ImportError:
     from io import StringIO
 
-from TestReport import  TestReport
+from TestReport import TestReport
+
 
 class ReportParser:
 
@@ -24,21 +25,20 @@ class ReportParser:
         self.task = None
 
     def appendResults(self, parser):
-        #type: (ReportParser) -> None
+        # type: (ReportParser) -> None
         self.data_descriptions += parser.data_descriptions
         self.data_frames += parser.data_frames
 
     def applyToReport(self, report):
-        #type: (TestReport) -> None
+        # type: (TestReport) -> None
 
         report.content = self.content
         report.data_frames = self.data_frames
         report.data_descriptions = self.data_descriptions
-        report.description =  self.description
+        report.description = self.description
         report.status = self.status
         report.stability = self.stability
         report.method = self.method
-
 
     def parserFile(self, file_name):
         self.filename = file_name
@@ -46,15 +46,14 @@ class ReportParser:
             lines = report_file.readlines()
         self.parseLines(lines)
 
-
     def parseLines(self, lines):
-        #type: ([str]) -> None
+        # type: ([str]) -> None
         raise NotImplementedError()
 
     @staticmethod
     def find_empty(lines, current):
         # type: ([str], int) -> int
-        for i in range (current, len(lines)):
+        for i in range(current, len(lines)):
             if lines[i].strip() == '':
                 return i
         return -1
@@ -62,7 +61,7 @@ class ReportParser:
     @staticmethod
     def skip_until(lines, current, marker):
         # type: ([str], int, str|[str]) -> int
-        for i in range (current, len(lines)):
+        for i in range(current, len(lines)):
             if type(marker) is list:
                 for mark in marker:
                     if lines[i].strip().startswith(mark):
@@ -74,25 +73,25 @@ class ReportParser:
 
     @staticmethod
     def get_block_as_buffer(lines, start, end, trim=False, replacements=None):
-        #type: ([str], int, int) -> StringIO
+        # type: ([str], int, int) -> StringIO
         result = StringIO()
         for line in lines[start:end]:
             line = line.replace('1.#INF', 'inf')
             line = line.replace('1.#QNAN', 'nan')
             line = line.replace('1.#SNAN', 'nan')
             line = line.replace('1.#IND', 'nan')
-            if not replacements is None:
+            if replacements is not None:
                 for rep in replacements:
                     line = line.replace(rep[0], rep[1])
             if trim:
-                line =line.strip() + '\n'
+                line = line.strip() + '\n'
             result.write(line)
         result.seek(0)
         return result
 
     @staticmethod
     def get_next_block(lines, start):
-        #type: ([str], int) -> [str]
+        # type: ([str], int) -> [str]
         result = []
         for i in range(start, len(lines)):
             current = lines[i].strip()
@@ -102,12 +101,12 @@ class ReportParser:
 
         return result
 
-    def readAnnotatedMatrix(self, lines, current, **kwargs ):
-        #type: ([str], int) -> int
-        sep=kwargs.get('sep','\t')
-        header = kwargs.get('header','infer')
-        trim=kwargs.get('trim',False)
-        replacements = kwargs.get('replacements',None)
+    def readAnnotatedMatrix(self, lines, current, **kwargs):
+        # type: ([str], int) -> int
+        sep = kwargs.get('sep', '\t')
+        header = kwargs.get('header', 'infer')
+        trim = kwargs.get('trim', False)
+        replacements = kwargs.get('replacements', None)
         name = lines[current].strip()
         current = current + 1
         description = lines[current].strip()
@@ -120,7 +119,7 @@ class ReportParser:
         rows = lines[current]
         rows = rows[rows.find(':') + 1:].strip()
         cols = lines[current + 1]
-        cols = cols [cols.find(':') + 1:].strip()
+        cols = cols[cols.find(':') + 1:].strip()
         end = self.find_empty(lines, current)
         block = self.get_block_as_buffer(lines, current + 2, end, trim=trim, replacements=replacements)
         df = pandas.read_csv(block, sep=sep,  header=header)
@@ -141,11 +140,11 @@ class ReportParser:
 
     def readDataFrameWithDescription(self, lines, current, desc, **kwargs):
         # type: ([str], int, {}) -> int
-        sep=kwargs.get('sep','\t')
-        header = kwargs.get('header','infer')
-        trim=kwargs.get('trim',False)
-        replacements = kwargs.get('replacements',None)
-        index_col = kwargs.get('index_col',-1)
+        sep = kwargs.get('sep', '\t')
+        header = kwargs.get('header', 'infer')
+        trim = kwargs.get('trim', False)
+        replacements = kwargs.get('replacements', None)
+        index_col = kwargs.get('index_col', -1)
         end = self.find_empty(lines, current)
         block = self.get_block_as_buffer(lines, current, end, trim=trim, replacements=replacements)
         df = pandas.read_csv(block, sep=sep, header=header)

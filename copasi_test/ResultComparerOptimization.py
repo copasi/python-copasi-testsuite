@@ -1,5 +1,6 @@
 from ResultComparer import ResultComparer, CompareResult
 
+
 class ResultComparerOptimization(ResultComparer):
     def __init__(self):
         from TaskTypes import TaskTypes
@@ -11,4 +12,3 @@ class ResultComparerOptimization(ResultComparer):
         diff = self.get_differences(expected.data_frames[0], other.data_frames[0], **kwargs)
         result.differences.append(diff)
         return result
-

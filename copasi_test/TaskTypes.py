@@ -26,14 +26,15 @@ from ResultComparerPE import ResultComparerPE
 from ResultComparerLyap import ResultComparerLyap
 from ResultComparerTssa import ResultComparerTssa
 
+
 class TaskTypes:
     def __init__(self):
         pass
 
     steadystate = 'Steady-State'
-    timecourse =  'Time-Course'
-    scan =  'Scan'
-    efm =  'Elementary Flux Modes'
+    timecourse = 'Time-Course'
+    scan = 'Scan'
+    efm = 'Elementary Flux Modes'
     optimization = 'Optimization'
     parameterEstimation = 'Parameter Estimation'
     mca = 'Metabolic Control Analysis'
@@ -46,10 +47,9 @@ class TaskTypes:
     asIs = 'as-is'
     exportSBML = 'sbml export'
 
-
     @staticmethod
     def getParser(task_type):
-        #type: (str) -> ReportParser
+        # type: (str) -> ReportParser
         parser = {
             TaskTypes.steadystate: ReportParserSteadyState(),
             TaskTypes.timecourse: ReportParserTimeCourse(),
@@ -68,14 +68,14 @@ class TaskTypes:
             TaskTypes.asIs: ReportParserAsIs()
         }.get(task_type, ReportParserAsIs())
 
-        if not parser is None:
+        if parser is not None:
             parser.task_type = task_type
 
         return parser
 
     @staticmethod
     def getComparer(task_type):
-        #type: (str) -> ResultComparer
+        # type: (str) -> ResultComparer
         parser = {
             TaskTypes.steadystate: ResultComparerSteadyState(),
             TaskTypes.timecourse: ResultComparerTimeCourse(),
@@ -94,7 +94,7 @@ class TaskTypes:
             TaskTypes.asIs: ResultComparer()
         }.get(task_type, None)
 
-        if not parser is None:
+        if parser is not None:
             parser.task_type = task_type
 
         return parser

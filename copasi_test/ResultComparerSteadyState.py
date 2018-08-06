@@ -1,5 +1,6 @@
 from ResultComparer import ResultComparer, CompareResult
 
+
 class ResultComparerSteadyState(ResultComparer):
     def __init__(self):
         from TaskTypes import TaskTypes
@@ -21,15 +22,15 @@ class ResultComparerSteadyState(ResultComparer):
         result.differences.append(diff)
 
         # compare full jacobian
-        result.explicit_fail = result.explicit_fail  or self.compare_df_unsorted(expected.data_frames[2],
-                                                                                 other.data_frames[2],
-                                                                                 desc="Full Jacobian",
-                                                                                 messages=result.messages, **kwargs)
+        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[2],
+                                                                                other.data_frames[2],
+                                                                                desc="Full Jacobian",
+                                                                                messages=result.messages, **kwargs)
 
         # compare full eigenvalues
         result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[3],
                                                                                 other.data_frames[3],
-                                                                                 desc="Full Eigenvalues",
+                                                                                desc="Full Eigenvalues",
                                                                                 messages=result.messages, **kwargs)
 
         # compare status
@@ -38,4 +39,3 @@ class ResultComparerSteadyState(ResultComparer):
             result.messages.append('Status different: {0} != {1}'.format(expected.status, other.status))
 
         return result
-

@@ -5,9 +5,10 @@ try:
 except ImportError:
     from io import StringIO
 
+
 class TestReport:
 
-    def __init__(self, filename, task = 'as-is'):
+    def __init__(self, filename, task='as-is'):
         self.content = ''
         self.data_frames = []
         self.data_descriptions = []
@@ -70,21 +71,19 @@ class TestReport:
         import subprocess
         subprocess.call(self.filename, shell=True)
 
-
     def __repr__(self):
         builder = StringIO()
         builder.write('FileName:   {0}\n'.format(os.path.basename(self.filename)))
         builder.write('TaskType:   {0}\n'.format(self.task))
-        if not self.method is None:
+        if self.method is not None:
             builder.write('Method:     {0}\n'.format(self.method))
         builder.write('isValid:    {0}\n'.format(self.is_valid()))
         builder.write('NumReports: {0}\n'.format(len(self.data_descriptions)))
 
-        if (not self.status is None) and len(self.status.strip()) > 0:
+        if (self.status is not None) and len(self.status.strip()) > 0:
             builder.write('Status:     {0}\n'.format(self.status))
 
         for desc in self.data_descriptions:
             builder.write('  {0}\n'.format(desc['desc']))
         builder.seek(0)
         return builder.read()
-

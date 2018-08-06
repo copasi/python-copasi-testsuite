@@ -1,4 +1,6 @@
 from ResultComparer import ResultComparer, CompareResult
+import pandas
+
 
 class ResultComparerEFM(ResultComparer):
     def __init__(self):
@@ -9,10 +11,8 @@ class ResultComparerEFM(ResultComparer):
     def compare_rows(row1, row2):
         for i in range(len(row1)):
             if row1[i] != row2[i]:
-                #print('{0} != {1}'.format(self.row_to_str(row1), self.row_to_str(row2)))
                 return False
 
-        #print('{0} == {1}'.format(self.row_to_str(row1),self.row_to_str(row2)))
         return True
 
     def find_row_in_df(self, row1, df, columns):
@@ -57,6 +57,4 @@ class ResultComparerEFM(ResultComparer):
             if not row_in_other:
                 result.messages.append('Missing row: {0}'.format(self.row_to_str(row_data)))
 
-
         return result
-

@@ -1,6 +1,7 @@
 from ResultComparer import CompareResult
 from ResultComparerSteadyState import ResultComparerSteadyState
 
+
 class ResultComparerMCA(ResultComparerSteadyState):
     def __init__(self):
         from TaskTypes import TaskTypes
@@ -13,25 +14,25 @@ class ResultComparerMCA(ResultComparerSteadyState):
 
         df1 = expected.get_data('Unscaled elasticity matrix')
         df2 = other.get_data('Unscaled elasticity matrix')
-        if (not df1 is None) and (not df2 is None):
+        if (df1 is not None) and (df2 is not None):
             result.explicit_fail = result.explicit_fail or \
-                                   self.compare_df_unsorted(df1, df2,desc="Unscaled elasticity matrix",
-                                                                     messages=result.messages)
+                                   self.compare_df_unsorted(df1, df2, desc="Unscaled elasticity matrix",
+                                                            messages=result.messages)
 
         df1 = expected.get_data('Unscaled concentration control coefficients')
         df2 = other.get_data('Unscaled concentration control coefficients')
-        if (not df1 is None) and (not df2 is None):
+        if (df1 is not None) and (df2 is not None):
             result.explicit_fail = result.explicit_fail or \
-                                   self.compare_df_unsorted(df1, df2,desc="Unscaled concentration control coefficients",
-                                                                     messages=result.messages)
+                                   self.compare_df_unsorted(df1, df2,
+                                                            desc="Unscaled concentration control coefficients",
+                                                            messages=result.messages)
 
         df1 = expected.get_data('Unscaled flux control coefficients')
         df2 = other.get_data('Unscaled flux control coefficients')
-        if (not df1 is None) and (not df2 is None):
+        if (df1 is not None) and (df2 is not None):
             result.explicit_fail = result.explicit_fail or \
-                                   self.compare_df_unsorted(df1, df2,desc="Unscaled flux control coefficients",
-                                                                     messages=result.messages)
-
+                                   self.compare_df_unsorted(df1, df2,
+                                                            desc="Unscaled flux control coefficients",
+                                                            messages=result.messages)
 
         return result
-

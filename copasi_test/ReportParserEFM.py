@@ -1,23 +1,23 @@
 import pandas
+from typing import List, Any
 
 from ReportParser import ReportParser
+
 
 class ReportParserEFM(ReportParser):
     def __init__(self):
         ReportParser.__init__(self)
 
-
     def parseLines(self, lines):
-        #type: ([str]) -> None
+        # type: ([str]) -> None
         current = 2
         self.status = lines[current].strip()
-
 
         # read list of modes
         current = self.skip_until(lines, current, '#\t\tReactions\tEquations')
         current = current + 1
         end = self.find_empty(lines, current)
-        modes = []
+        modes = []  # type: List[Any]
         reversibility = []
         reactions = []
         equations = []
@@ -33,13 +33,14 @@ class ReportParserEFM(ReportParser):
             col3 = parts[2].strip()
             col4 = parts[3].strip()
             if col1 != '':
-                last = int(col1) -1
+                last = int(col1) - 1
                 modes.append(col1)
                 reversibility.append(col2)
                 reactions.append(col3)
                 equations.append(col4)
 
-        df = pandas.DataFrame({'Mode': modes, 'Reversibility': reversibility, 'Reactions': reactions, 'Equations': equations})
+        df = pandas.DataFrame(
+            {'Mode': modes, 'Reversibility': reversibility, 'Reactions': reactions, 'Equations': equations})
         df = df.set_index('Mode')
         self.data_frames.append(df)
         self.data_descriptions.append({'desc': "Flux modes"})
@@ -58,12 +59,11 @@ class ReportParserEFM(ReportParser):
             modes.append(parts[0])
             species.append(parts[2])
 
-        df = pandas.DataFrame({'Mode':modes, 'Internal Species': species})
+        df = pandas.DataFrame({'Mode': modes, 'Internal Species': species})
         df = df.set_index('Mode')
         self.data_frames.append(df)
         self.data_descriptions.append({'desc': "Net Reactions"})
         current = end + 1
-
 
         # read efm vs reactions
         current = self.skip_until(lines, current, '#\t')
