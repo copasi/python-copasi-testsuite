@@ -1,0 +1,3424 @@
+Time Scale Separation Analysis Task
+
+Problem Description:
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+
+Method: ILDM (LSODA,Modified)
+    Deuflhard Tolerance: 0.0001
+
+
+
+Time Scale Separation Analysis Result:
+
+Problem Description:
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+
+**************** Time step 1: 0.01 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (14.9588): 0 0 0 
+  Slow (0.0900153): 0 0 0 
+  Slow (0.0299992): 0 0 0 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (14.9588)  Slow (0.0900153)  Slow (0.0299992)
+  Cyclin  0  0  0
+  Active CDC-2 Kinase  0  0  0
+  Active Cyclin Protease  0  0  0
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+
+**************** Time step 2: 0.02 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (20.792): 0 0 0 
+  Slow (0.0569143): 0 0 0 
+  Slow (0.00791436): 0 0 0 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (20.792)  Slow (0.0569143)  Slow (0.00791436)
+  Cyclin  0  0  0
+  Active CDC-2 Kinase  0  0  0
+  Active Cyclin Protease  0  0  0
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+
+**************** Time step 3: 0.03 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (30.0385): 0 0 0 
+  Slow (0.0347205): 0 0 0 
+  Slow (0.00396617): 0 0 0 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (30.0385)  Slow (0.0347205)  Slow (0.00396617)
+  Cyclin  0  0  0
+  Active CDC-2 Kinase  0  0  0
+  Active Cyclin Protease  0  0  0
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  3 slow; 0 fast
+  Cyclin  0
+  Active CDC-2 Kinase  0
+  Active Cyclin Protease  0
+
+
+**************** Time step 4: 0.04 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (44.4349): 97.9107 2.04526 0.0440528 
+  Slow (0.0216364): 0.0449696 0.000138888 99.9549 
+  Fast (0.00365043): 2.04614 97.9531 0.000784451 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (44.4349)  Slow (0.0216364)  Fast (0.00365043)
+  Cyclin  97.9107  0.0440596  2.04526
+  Active CDC-2 Kinase  2.04615  0.000136137  97.9537
+  Active Cyclin Protease  0.0449624  99.9542  0.000800302
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  2 slow; 1 fast
+  Cyclin  49.478
+  Active CDC-2 Kinase  1.03315
+  Active Cyclin Protease  49.4888
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  2 slow; 1 fast
+  Cyclin  2.04614
+  Active CDC-2 Kinase  97.9531
+  Active Cyclin Protease  0.000784451
+
+
+**************** Time step 5: 0.05 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (63.197): 97.9337 2.03597 0.0302839 
+  Slow (0.0149453): 0.0309182 0.000242237 99.9688 
+  Fast (0.00363661): 2.03657 97.9626 0.000867244 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (63.197)  Slow (0.0149453)  Fast (0.00363661)
+  Cyclin  97.9337  0.0302954  2.03597
+  Active CDC-2 Kinase  2.03658  0.000237428  97.9632
+  Active Cyclin Protease  0.0309063  99.9682  0.000884809
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  2 slow; 1 fast
+  Cyclin  49.4804
+  Active CDC-2 Kinase  1.02846
+  Active Cyclin Protease  49.4911
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  2 slow; 1 fast
+  Cyclin  2.03657
+  Active CDC-2 Kinase  97.9626
+  Active Cyclin Protease  0.000867244
+
+
+**************** Time step 6: 0.06 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (80.5252): 97.9384 2.03734 0.0242423 
+  Slow (0.0119568): 0.024756 0.000464233 99.9748 
+  Fast (0.00364246): 2.03781 97.9612 0.000959491 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (80.5252)  Slow (0.0119568)  Fast (0.00364246)
+  Cyclin  97.9384  0.024257  2.03734
+  Active CDC-2 Kinase  2.03782  0.000454984  97.9617
+  Active Cyclin Protease  0.0247409  99.9743  0.000978996
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  2 slow; 1 fast
+  Cyclin  49.48
+  Active CDC-2 Kinase  1.02927
+  Active Cyclin Protease  49.4907
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  2 slow; 1 fast
+  Cyclin  2.03781
+  Active CDC-2 Kinase  97.9612
+  Active Cyclin Protease  0.000959491
+
+
+**************** Time step 7: 0.07 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (91.3536): 97.9389 2.03933 0.0218114 
+  Slow (0.0107476): 0.0222775 0.000584735 99.9771 
+  Fast (0.00364958): 2.03976 97.9592 0.00102744 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (91.3536)  Slow (0.0107476)  Fast (0.00364958)
+  Cyclin  97.9388  0.0218281  2.03933
+  Active CDC-2 Kinase  2.03977  0.000573059  97.9597
+  Active Cyclin Protease  0.0222604  99.9767  0.00104838
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  2 slow; 1 fast
+  Cyclin  49.4795
+  Active CDC-2 Kinase  1.03035
+  Active Cyclin Protease  49.4902
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  2 slow; 1 fast
+  Cyclin  2.03976
+  Active CDC-2 Kinase  97.9592
+  Active Cyclin Protease  0.00102744
+
+
+**************** Time step 8: 0.08 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (96.4289): 97.9378 2.04136 0.0208917 
+  Slow (0.0102843): 0.0213404 0.000647778 99.978 
+  Fast (0.0036568): 2.04176 97.9572 0.0010705 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (96.4289)  Slow (0.0102843)  Fast (0.0036568)
+  Cyclin  97.9377  0.0209095  2.04136
+  Active CDC-2 Kinase  2.04177  0.000634825  97.9576
+  Active Cyclin Protease  0.0213222  99.9776  0.00109234
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  2 slow; 1 fast
+  Cyclin  49.4789
+  Active CDC-2 Kinase  1.03141
+  Active Cyclin Protease  49.4897
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  2 slow; 1 fast
+  Cyclin  2.04176
+  Active CDC-2 Kinase  97.9572
+  Active Cyclin Protease  0.0010705
+
+
+**************** Time step 9: 0.09 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (98.4717): 97.9361 2.04338 0.0205602 
+  Fast (0.0101112): 0.0210033 0.00068403 99.9783 
+  Fast (0.00366405): 2.04377 97.9551 0.00109954 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (98.4717)  Fast (0.0101112)  Fast (0.00366405)
+  Cyclin  97.936  0.0205787  2.04338
+  Active CDC-2 Kinase  2.04378  0.000670336  97.9555
+  Active Cyclin Protease  0.0209843  99.9779  0.001122
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9361
+  Active CDC-2 Kinase  2.04338
+  Active Cyclin Protease  0.0205602
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04262
+  Active CDC-2 Kinase  49.4732
+  Active Cyclin Protease  49.4842
+
+
+**************** Time step 10: 0.1 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.2406): 97.9342 2.0454 0.0204503 
+  Fast (0.0100472): 0.020892 0.000709232 99.9784 
+  Fast (0.00367131): 2.04579 97.9531 0.00112236 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.2406)  Fast (0.0100472)  Fast (0.00367131)
+  Cyclin  97.9341  0.0204692  2.0454
+  Active CDC-2 Kinase  2.0458  0.00069502  97.9535
+  Active Cyclin Protease  0.0208725  99.978  0.00114532
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9342
+  Active CDC-2 Kinase  2.0454
+  Active Cyclin Protease  0.0204503
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04359
+  Active CDC-2 Kinase  49.4727
+  Active Cyclin Protease  49.4837
+
+
+**************** Time step 11: 0.11 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5215): 97.9322 2.04742 0.0204226 
+  Fast (0.0100237): 0.0208646 0.000730103 99.9784 
+  Fast (0.00367858): 2.04781 97.951 0.00114266 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5215)  Fast (0.0100237)  Fast (0.00367858)
+  Cyclin  97.9321  0.020442  2.04742
+  Active CDC-2 Kinase  2.04782  0.000715458  97.9515
+  Active Cyclin Protease  0.0208447  99.978  0.00116605
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9322
+  Active CDC-2 Kinase  2.04742
+  Active Cyclin Protease  0.0204226
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04461
+  Active CDC-2 Kinase  49.4722
+  Active Cyclin Protease  49.4832
+
+
+**************** Time step 12: 0.12 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6219): 97.9301 2.04944 0.0204254 
+  Fast (0.0100152): 0.0208683 0.000749284 99.9784 
+  Fast (0.00368587): 2.04984 97.949 0.00116193 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6219)  Fast (0.0100152)  Fast (0.00368587)
+  Cyclin  97.9301  0.0204453  2.04944
+  Active CDC-2 Kinase  2.04985  0.000734239  97.9494
+  Active Cyclin Protease  0.020848  99.978  0.00118574
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9301
+  Active CDC-2 Kinase  2.04944
+  Active Cyclin Protease  0.0204254
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04564
+  Active CDC-2 Kinase  49.4717
+  Active Cyclin Protease  49.4827
+
+
+**************** Time step 13: 0.13 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6563): 97.9281 2.05147 0.0204395 
+  Fast (0.0100121): 0.0208835 0.000767779 99.9783 
+  Fast (0.00369317): 2.05187 97.947 0.00118077 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6563)  Fast (0.0100121)  Fast (0.00369317)
+  Cyclin  97.9281  0.0204597  2.05147
+  Active CDC-2 Kinase  2.05187  0.000752347  97.9474
+  Active Cyclin Protease  0.0208627  99.9779  0.00120499
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9281
+  Active CDC-2 Kinase  2.05147
+  Active Cyclin Protease  0.0204395
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04669
+  Active CDC-2 Kinase  49.4711
+  Active Cyclin Protease  49.4822
+
+
+**************** Time step 14: 0.14 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6668): 97.926 2.0535 0.0204577 
+  Fast (0.0100112): 0.0209029 0.000785988 99.9783 
+  Fast (0.00370049): 2.05389 97.9449 0.00119942 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6668)  Fast (0.0100112)  Fast (0.00370049)
+  Cyclin  97.926  0.0204783  2.0535
+  Active CDC-2 Kinase  2.0539  0.000770175  97.9453
+  Active Cyclin Protease  0.0208818  99.9779  0.00122405
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.926
+  Active CDC-2 Kinase  2.0535
+  Active Cyclin Protease  0.0204577
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04773
+  Active CDC-2 Kinase  49.4706
+  Active Cyclin Protease  49.4817
+
+
+**************** Time step 15: 0.15 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6687): 97.924 2.05553 0.0204775 
+  Fast (0.0100109): 0.0209239 0.00080403 99.9783 
+  Fast (0.00370782): 2.05593 97.9429 0.00121794 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6687)  Fast (0.0100109)  Fast (0.00370782)
+  Cyclin  97.924  0.0204985  2.05553
+  Active CDC-2 Kinase  2.05594  0.000787838  97.9433
+  Active Cyclin Protease  0.0209024  99.9779  0.00124297
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.924
+  Active CDC-2 Kinase  2.05553
+  Active Cyclin Protease  0.0204775
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04878
+  Active CDC-2 Kinase  49.4701
+  Active Cyclin Protease  49.4812
+
+
+**************** Time step 16: 0.16 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6675): 97.9219 2.05757 0.0204978 
+  Fast (0.010011): 0.0209456 0.000821979 99.9782 
+  Fast (0.00371516): 2.05796 97.9408 0.00123637 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6675)  Fast (0.010011)  Fast (0.00371516)
+  Cyclin  97.9219  0.0205193  2.05757
+  Active CDC-2 Kinase  2.05797  0.000805409  97.9412
+  Active Cyclin Protease  0.0209236  99.9778  0.00126181
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9219
+  Active CDC-2 Kinase  2.05757
+  Active Cyclin Protease  0.0204978
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.04983
+  Active CDC-2 Kinase  49.4695
+  Active Cyclin Protease  49.4807
+
+
+**************** Time step 17: 0.17 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6651): 97.9199 2.0596 0.0205185 
+  Fast (0.0100111): 0.0209674 0.00083985 99.9782 
+  Fast (0.00372252): 2.06 97.9387 0.00125474 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6651)  Fast (0.0100111)  Fast (0.00372252)
+  Cyclin  97.9199  0.0205403  2.0596
+  Active CDC-2 Kinase  2.06001  0.000822904  97.9392
+  Active Cyclin Protease  0.020945  99.9778  0.00128058
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9199
+  Active CDC-2 Kinase  2.0596
+  Active Cyclin Protease  0.0205185
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05088
+  Active CDC-2 Kinase  49.469
+  Active Cyclin Protease  49.4801
+
+
+**************** Time step 18: 0.18 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6625): 97.9178 2.06165 0.0205392 
+  Fast (0.0100113): 0.0209894 0.000857658 99.9782 
+  Fast (0.00372989): 2.06204 97.9367 0.00127305 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6625)  Fast (0.0100113)  Fast (0.00372989)
+  Cyclin  97.9178  0.0205614  2.06164
+  Active CDC-2 Kinase  2.06205  0.000840335  97.9371
+  Active Cyclin Protease  0.0209666  99.9777  0.00129929
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9178
+  Active CDC-2 Kinase  2.06165
+  Active Cyclin Protease  0.0205392
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05193
+  Active CDC-2 Kinase  49.4684
+  Active Cyclin Protease  49.4796
+
+
+**************** Time step 19: 0.19 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6597): 97.9158 2.06369 0.0205599 
+  Fast (0.0100115): 0.0210114 0.000875407 99.9781 
+  Fast (0.00373728): 2.06409 97.9346 0.0012913 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6597)  Fast (0.0100115)  Fast (0.00373728)
+  Cyclin  97.9157  0.0205826  2.06369
+  Active CDC-2 Kinase  2.0641  0.000857708  97.935
+  Active Cyclin Protease  0.0209882  99.9777  0.00131795
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9158
+  Active CDC-2 Kinase  2.06369
+  Active Cyclin Protease  0.0205599
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05298
+  Active CDC-2 Kinase  49.4679
+  Active Cyclin Protease  49.4791
+
+
+**************** Time step 20: 0.2 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6569): 97.9137 2.06573 0.0205807 
+  Fast (0.0100117): 0.0210335 0.000893091 99.9781 
+  Fast (0.00374468): 2.06613 97.9326 0.00130949 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6569)  Fast (0.0100117)  Fast (0.00374468)
+  Cyclin  97.9137  0.0206038  2.06573
+  Active CDC-2 Kinase  2.06614  0.000875017  97.933
+  Active Cyclin Protease  0.0210099  99.9777  0.00133654
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9137
+  Active CDC-2 Kinase  2.06573
+  Active Cyclin Protease  0.0205807
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05404
+  Active CDC-2 Kinase  49.4674
+  Active Cyclin Protease  49.4786
+
+
+**************** Time step 21: 0.21 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6541): 97.9116 2.06778 0.0206016 
+  Fast (0.0100119): 0.0210556 0.000910724 99.978 
+  Fast (0.00375209): 2.06818 97.9305 0.00132764 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6541)  Fast (0.0100119)  Fast (0.00375209)
+  Cyclin  97.9116  0.020625  2.06778
+  Active CDC-2 Kinase  2.06819  0.000892275  97.9309
+  Active Cyclin Protease  0.0210316  99.9776  0.00135509
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9116
+  Active CDC-2 Kinase  2.06778
+  Active Cyclin Protease  0.0206016
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05509
+  Active CDC-2 Kinase  49.4668
+  Active Cyclin Protease  49.4781
+
+
+**************** Time step 22: 0.22 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6514): 97.9095 2.06984 0.0206225 
+  Fast (0.0100121): 0.0210778 0.000928304 99.978 
+  Fast (0.00375952): 2.07023 97.9284 0.00134573 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6514)  Fast (0.0100121)  Fast (0.00375952)
+  Cyclin  97.9095  0.0206463  2.06983
+  Active CDC-2 Kinase  2.07024  0.000909481  97.9288
+  Active Cyclin Protease  0.0210533  99.9776  0.00137358
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9095
+  Active CDC-2 Kinase  2.06984
+  Active Cyclin Protease  0.0206225
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05615
+  Active CDC-2 Kinase  49.4663
+  Active Cyclin Protease  49.4776
+
+
+**************** Time step 23: 0.23 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6487): 97.9075 2.07189 0.0206434 
+  Fast (0.0100124): 0.0210999 0.000945849 99.978 
+  Fast (0.00376696): 2.07229 97.9263 0.00136379 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6487)  Fast (0.0100124)  Fast (0.00376696)
+  Cyclin  97.9074  0.0206676  2.07189
+  Active CDC-2 Kinase  2.0723  0.000926651  97.9268
+  Active Cyclin Protease  0.0210751  99.9775  0.00139204
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9075
+  Active CDC-2 Kinase  2.07189
+  Active Cyclin Protease  0.0206434
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05721
+  Active CDC-2 Kinase  49.4657
+  Active Cyclin Protease  49.477
+
+
+**************** Time step 24: 0.24 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6461): 97.9054 2.07395 0.0206643 
+  Fast (0.0100126): 0.0211221 0.000963333 99.9779 
+  Fast (0.00377442): 2.07435 97.9243 0.00138179 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6461)  Fast (0.0100126)  Fast (0.00377442)
+  Cyclin  97.9054  0.0206889  2.07395
+  Active CDC-2 Kinase  2.07436  0.000943761  97.9247
+  Active Cyclin Protease  0.0210969  99.9775  0.00141044
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9054
+  Active CDC-2 Kinase  2.07395
+  Active Cyclin Protease  0.0206643
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05827
+  Active CDC-2 Kinase  49.4652
+  Active Cyclin Protease  49.4765
+
+
+**************** Time step 25: 0.25 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6435): 97.9033 2.07601 0.0206853 
+  Fast (0.0100128): 0.0211444 0.000980777 99.9779 
+  Fast (0.00378189): 2.07641 97.9222 0.00139975 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6435)  Fast (0.0100128)  Fast (0.00378189)
+  Cyclin  97.9033  0.0207103  2.07601
+  Active CDC-2 Kinase  2.07642  0.000960831  97.9226
+  Active Cyclin Protease  0.0211187  99.9775  0.00142881
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9033
+  Active CDC-2 Kinase  2.07601
+  Active Cyclin Protease  0.0206853
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.05934
+  Active CDC-2 Kinase  49.4647
+  Active Cyclin Protease  49.476
+
+
+**************** Time step 26: 0.26 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6409): 97.9012 2.07807 0.0207062 
+  Fast (0.010013): 0.0211666 0.000998183 99.9778 
+  Fast (0.00378937): 2.07847 97.9201 0.00141768 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6409)  Fast (0.010013)  Fast (0.00378937)
+  Cyclin  97.9012  0.0207317  2.07807
+  Active CDC-2 Kinase  2.07848  0.000977863  97.9205
+  Active Cyclin Protease  0.0211406  99.9774  0.00144714
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.9012
+  Active CDC-2 Kinase  2.07807
+  Active Cyclin Protease  0.0207062
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0604
+  Active CDC-2 Kinase  49.4641
+  Active Cyclin Protease  49.4755
+
+
+**************** Time step 27: 0.27 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6384): 97.8991 2.08014 0.0207273 
+  Fast (0.0100132): 0.0211889 0.00101555 99.9778 
+  Fast (0.00379687): 2.08054 97.918 0.00143557 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6384)  Fast (0.0100132)  Fast (0.00379687)
+  Cyclin  97.8991  0.0207531  2.08014
+  Active CDC-2 Kinase  2.08055  0.000994857  97.9185
+  Active Cyclin Protease  0.0211625  99.9774  0.00146543
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8991
+  Active CDC-2 Kinase  2.08014
+  Active Cyclin Protease  0.0207273
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06146
+  Active CDC-2 Kinase  49.4636
+  Active Cyclin Protease  49.475
+
+
+**************** Time step 28: 0.28 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6359): 97.897 2.08221 0.0207483 
+  Fast (0.0100134): 0.0212113 0.00103288 99.9778 
+  Fast (0.00380438): 2.08261 97.9159 0.00145343 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6359)  Fast (0.0100134)  Fast (0.00380438)
+  Cyclin  97.897  0.0207745  2.08221
+  Active CDC-2 Kinase  2.08262  0.00101181  97.9164
+  Active Cyclin Protease  0.0211844  99.9773  0.00148369
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.897
+  Active CDC-2 Kinase  2.08221
+  Active Cyclin Protease  0.0207483
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06253
+  Active CDC-2 Kinase  49.463
+  Active Cyclin Protease  49.4744
+
+
+**************** Time step 29: 0.29 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6335): 97.895 2.08428 0.0207694 
+  Fast (0.0100136): 0.0212336 0.00105018 99.9777 
+  Fast (0.00381191): 2.08468 97.9138 0.00147125 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6335)  Fast (0.0100136)  Fast (0.00381191)
+  Cyclin  97.8949  0.020796  2.08428
+  Active CDC-2 Kinase  2.08469  0.00102874  97.9143
+  Active Cyclin Protease  0.0212064  99.9773  0.00150192
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.895
+  Active CDC-2 Kinase  2.08428
+  Active Cyclin Protease  0.0207694
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0636
+  Active CDC-2 Kinase  49.4625
+  Active Cyclin Protease  49.4739
+
+
+**************** Time step 30: 0.3 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6311): 97.8929 2.08635 0.0207905 
+  Fast (0.0100138): 0.021256 0.00106745 99.9777 
+  Fast (0.00381945): 2.08675 97.9118 0.00148905 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6311)  Fast (0.0100138)  Fast (0.00381945)
+  Cyclin  97.8928  0.0208175  2.08635
+  Active CDC-2 Kinase  2.08676  0.00104563  97.9122
+  Active Cyclin Protease  0.0212284  99.9773  0.00152012
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8929
+  Active CDC-2 Kinase  2.08635
+  Active Cyclin Protease  0.0207905
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06467
+  Active CDC-2 Kinase  49.4619
+  Active Cyclin Protease  49.4734
+
+
+**************** Time step 31: 0.31 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6287): 97.8908 2.08843 0.0208116 
+  Fast (0.010014): 0.0212785 0.00108469 99.9776 
+  Fast (0.00382701): 2.08883 97.9097 0.00150682 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6287)  Fast (0.010014)  Fast (0.00382701)
+  Cyclin  97.8907  0.020839  2.08843
+  Active CDC-2 Kinase  2.08884  0.0010625  97.9101
+  Active Cyclin Protease  0.0212504  99.9772  0.00153829
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8908
+  Active CDC-2 Kinase  2.08843
+  Active Cyclin Protease  0.0208116
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06574
+  Active CDC-2 Kinase  49.4614
+  Active Cyclin Protease  49.4729
+
+
+**************** Time step 32: 0.32 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6264): 97.8887 2.09051 0.0208328 
+  Fast (0.0100142): 0.0213009 0.0011019 99.9776 
+  Fast (0.00383458): 2.09091 97.9076 0.00152457 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6264)  Fast (0.0100142)  Fast (0.00383458)
+  Cyclin  97.8886  0.0208606  2.09051
+  Active CDC-2 Kinase  2.09092  0.00107933  97.908
+  Active Cyclin Protease  0.0212724  99.9772  0.00155644
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8887
+  Active CDC-2 Kinase  2.09051
+  Active Cyclin Protease  0.0208328
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06681
+  Active CDC-2 Kinase  49.4608
+  Active Cyclin Protease  49.4723
+
+
+**************** Time step 33: 0.33 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6241): 97.8866 2.09259 0.020854 
+  Fast (0.0100145): 0.0213234 0.00111908 99.9776 
+  Fast (0.00384217): 2.093 97.9055 0.00154228 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6241)  Fast (0.0100145)  Fast (0.00384217)
+  Cyclin  97.8865  0.0208822  2.09259
+  Active CDC-2 Kinase  2.09301  0.00109614  97.9059
+  Active Cyclin Protease  0.0212945  99.9771  0.00157456
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8866
+  Active CDC-2 Kinase  2.09259
+  Active Cyclin Protease  0.020854
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06789
+  Active CDC-2 Kinase  49.4603
+  Active Cyclin Protease  49.4718
+
+
+**************** Time step 34: 0.34 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6218): 97.8844 2.09468 0.0208752 
+  Fast (0.0100147): 0.0213459 0.00113624 99.9775 
+  Fast (0.00384977): 2.09508 97.9034 0.00155999 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6218)  Fast (0.0100147)  Fast (0.00384977)
+  Cyclin  97.8844  0.0209038  2.09468
+  Active CDC-2 Kinase  2.09509  0.00111293  97.9038
+  Active Cyclin Protease  0.0213166  99.9771  0.00159266
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8844
+  Active CDC-2 Kinase  2.09468
+  Active Cyclin Protease  0.0208752
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.06896
+  Active CDC-2 Kinase  49.4597
+  Active Cyclin Protease  49.4713
+
+
+**************** Time step 35: 0.35 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6196): 97.8823 2.09677 0.0208965 
+  Fast (0.0100149): 0.0213685 0.00115338 99.9775 
+  Fast (0.00385738): 2.09717 97.9012 0.00157767 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6196)  Fast (0.0100149)  Fast (0.00385738)
+  Cyclin  97.8823  0.0209255  2.09677
+  Active CDC-2 Kinase  2.09718  0.0011297  97.9017
+  Active Cyclin Protease  0.0213388  99.9771  0.00161075
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8823
+  Active CDC-2 Kinase  2.09677
+  Active Cyclin Protease  0.0208965
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07004
+  Active CDC-2 Kinase  49.4592
+  Active Cyclin Protease  49.4708
+
+
+**************** Time step 36: 0.36 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6174): 97.8802 2.09886 0.0209178 
+  Fast (0.0100151): 0.0213911 0.00117051 99.9774 
+  Fast (0.00386501): 2.09927 97.8991 0.00159533 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6174)  Fast (0.0100151)  Fast (0.00386501)
+  Cyclin  97.8802  0.0209472  2.09886
+  Active CDC-2 Kinase  2.09927  0.00114644  97.8996
+  Active Cyclin Protease  0.021361  99.977  0.00162882
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8802
+  Active CDC-2 Kinase  2.09886
+  Active Cyclin Protease  0.0209178
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07112
+  Active CDC-2 Kinase  49.4586
+  Active Cyclin Protease  49.4702
+
+
+**************** Time step 37: 0.37 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6153): 97.8781 2.10095 0.0209391 
+  Fast (0.0100153): 0.0214137 0.00118762 99.9774 
+  Fast (0.00387265): 2.10136 97.897 0.00161298 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6153)  Fast (0.0100153)  Fast (0.00387265)
+  Cyclin  97.8781  0.0209689  2.10095
+  Active CDC-2 Kinase  2.10137  0.00116318  97.8975
+  Active Cyclin Protease  0.0213832  99.977  0.00164687
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8781
+  Active CDC-2 Kinase  2.10095
+  Active Cyclin Protease  0.0209391
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0722
+  Active CDC-2 Kinase  49.4581
+  Active Cyclin Protease  49.4697
+
+
+**************** Time step 38: 0.38 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6131): 97.876 2.10305 0.0209605 
+  Fast (0.0100155): 0.0214364 0.00120471 99.9774 
+  Fast (0.00388031): 2.10346 97.8949 0.00163062 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6131)  Fast (0.0100155)  Fast (0.00388031)
+  Cyclin  97.876  0.0209906  2.10305
+  Active CDC-2 Kinase  2.10347  0.00117989  97.8954
+  Active Cyclin Protease  0.0214054  99.9769  0.00166492
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.876
+  Active CDC-2 Kinase  2.10305
+  Active Cyclin Protease  0.0209605
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07328
+  Active CDC-2 Kinase  49.4575
+  Active Cyclin Protease  49.4692
+
+
+**************** Time step 39: 0.39 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.611): 97.8739 2.10515 0.0209818 
+  Fast (0.0100157): 0.0214591 0.00122179 99.9773 
+  Fast (0.00388798): 2.10556 97.8928 0.00164825 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.611)  Fast (0.0100157)  Fast (0.00388798)
+  Cyclin  97.8738  0.0210124  2.10515
+  Active CDC-2 Kinase  2.10557  0.0011966  97.8932
+  Active Cyclin Protease  0.0214277  99.9769  0.00168295
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8739
+  Active CDC-2 Kinase  2.10515
+  Active Cyclin Protease  0.0209818
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07437
+  Active CDC-2 Kinase  49.457
+  Active Cyclin Protease  49.4686
+
+
+**************** Time step 40: 0.4 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.609): 97.8717 2.10726 0.0210033 
+  Fast (0.0100159): 0.0214818 0.00123885 99.9773 
+  Fast (0.00389567): 2.10766 97.8907 0.00166587 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.609)  Fast (0.0100159)  Fast (0.00389567)
+  Cyclin  97.8717  0.0210342  2.10726
+  Active CDC-2 Kinase  2.10767  0.00121329  97.8911
+  Active Cyclin Protease  0.02145  99.9768  0.00170097
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8717
+  Active CDC-2 Kinase  2.10726
+  Active Cyclin Protease  0.0210033
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07545
+  Active CDC-2 Kinase  49.4564
+  Active Cyclin Protease  49.4681
+
+
+**************** Time step 41: 0.41 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6069): 97.8696 2.10936 0.0210247 
+  Fast (0.0100162): 0.0215045 0.00125591 99.9772 
+  Fast (0.00390337): 2.10977 97.8885 0.00168347 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6069)  Fast (0.0100162)  Fast (0.00390337)
+  Cyclin  97.8696  0.0210561  2.10936
+  Active CDC-2 Kinase  2.10978  0.00122997  97.889
+  Active Cyclin Protease  0.0214724  99.9768  0.00171899
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8696
+  Active CDC-2 Kinase  2.10936
+  Active Cyclin Protease  0.0210247
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07654
+  Active CDC-2 Kinase  49.4559
+  Active Cyclin Protease  49.4676
+
+
+**************** Time step 42: 0.42 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6049): 97.8675 2.11147 0.0210462 
+  Fast (0.0100164): 0.0215273 0.00127297 99.9772 
+  Fast (0.00391109): 2.11188 97.8864 0.00170108 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6049)  Fast (0.0100164)  Fast (0.00391109)
+  Cyclin  97.8675  0.0210779  2.11147
+  Active CDC-2 Kinase  2.11189  0.00124664  97.8869
+  Active Cyclin Protease  0.0214948  99.9768  0.001737
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8675
+  Active CDC-2 Kinase  2.11147
+  Active Cyclin Protease  0.0210462
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07763
+  Active CDC-2 Kinase  49.4553
+  Active Cyclin Protease  49.4671
+
+
+**************** Time step 43: 0.43 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6029): 97.8653 2.11358 0.0210677 
+  Fast (0.0100166): 0.0215501 0.00129001 99.9772 
+  Fast (0.00391882): 2.11399 97.8843 0.00171867 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6029)  Fast (0.0100166)  Fast (0.00391882)
+  Cyclin  97.8653  0.0210999  2.11358
+  Active CDC-2 Kinase  2.114  0.0012633  97.8847
+  Active Cyclin Protease  0.0215172  99.9767  0.001755
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8653
+  Active CDC-2 Kinase  2.11358
+  Active Cyclin Protease  0.0210677
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07872
+  Active CDC-2 Kinase  49.4548
+  Active Cyclin Protease  49.4665
+
+
+**************** Time step 44: 0.44 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.6009): 97.8632 2.1157 0.0210892 
+  Fast (0.0100168): 0.021573 0.00130704 99.9771 
+  Fast (0.00392656): 2.11611 97.8822 0.00173627 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6009)  Fast (0.0100168)  Fast (0.00392656)
+  Cyclin  97.8632  0.0211218  2.1157
+  Active CDC-2 Kinase  2.11612  0.00127996  97.8826
+  Active Cyclin Protease  0.0215396  99.9767  0.00177301
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8632
+  Active CDC-2 Kinase  2.1157
+  Active Cyclin Protease  0.0210892
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.07981
+  Active CDC-2 Kinase  49.4542
+  Active Cyclin Protease  49.466
+
+
+**************** Time step 45: 0.45 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.599): 97.8611 2.11782 0.0211108 
+  Fast (0.010017): 0.0215959 0.00132408 99.9771 
+  Fast (0.00393432): 2.11823 97.88 0.00175387 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.599)  Fast (0.010017)  Fast (0.00393432)
+  Cyclin  97.861  0.0211438  2.11782
+  Active CDC-2 Kinase  2.11824  0.00129662  97.8805
+  Active Cyclin Protease  0.0215621  99.9766  0.00179101
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8611
+  Active CDC-2 Kinase  2.11782
+  Active Cyclin Protease  0.0211108
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0809
+  Active CDC-2 Kinase  49.4536
+  Active Cyclin Protease  49.4655
+
+
+**************** Time step 46: 0.46 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5971): 97.8589 2.11994 0.0211324 
+  Fast (0.0100172): 0.0216188 0.00134112 99.977 
+  Fast (0.0039421): 2.12035 97.8779 0.00177146 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5971)  Fast (0.0100172)  Fast (0.0039421)
+  Cyclin  97.8589  0.0211658  2.11994
+  Active CDC-2 Kinase  2.12036  0.00131328  97.8783
+  Active Cyclin Protease  0.0215846  99.9766  0.00180902
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8589
+  Active CDC-2 Kinase  2.11994
+  Active Cyclin Protease  0.0211324
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08199
+  Active CDC-2 Kinase  49.4531
+  Active Cyclin Protease  49.4649
+
+
+**************** Time step 47: 0.47 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5952): 97.8568 2.12206 0.021154 
+  Fast (0.0100174): 0.0216418 0.00135816 99.977 
+  Fast (0.00394989): 2.12247 97.8757 0.00178906 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5952)  Fast (0.0100174)  Fast (0.00394989)
+  Cyclin  97.8568  0.0211878  2.12206
+  Active CDC-2 Kinase  2.12248  0.00132993  97.8762
+  Active Cyclin Protease  0.0216071  99.9766  0.00182703
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8568
+  Active CDC-2 Kinase  2.12206
+  Active Cyclin Protease  0.021154
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08309
+  Active CDC-2 Kinase  49.4525
+  Active Cyclin Protease  49.4644
+
+
+**************** Time step 48: 0.48 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5933): 97.8546 2.12419 0.0211756 
+  Fast (0.0100177): 0.0216648 0.0013752 99.977 
+  Fast (0.00395769): 2.1246 97.8736 0.00180666 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5933)  Fast (0.0100177)  Fast (0.00395769)
+  Cyclin  97.8546  0.0212098  2.12419
+  Active CDC-2 Kinase  2.12461  0.00134659  97.874
+  Active Cyclin Protease  0.0216297  99.9765  0.00184505
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8546
+  Active CDC-2 Kinase  2.12419
+  Active Cyclin Protease  0.0211756
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08419
+  Active CDC-2 Kinase  49.452
+  Active Cyclin Protease  49.4638
+
+
+**************** Time step 49: 0.49 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5915): 97.8525 2.12632 0.0211973 
+  Fast (0.0100179): 0.0216878 0.00139225 99.9769 
+  Fast (0.00396551): 2.12673 97.8714 0.00182428 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5915)  Fast (0.0100179)  Fast (0.00396551)
+  Cyclin  97.8525  0.0212319  2.12632
+  Active CDC-2 Kinase  2.12674  0.00136326  97.8719
+  Active Cyclin Protease  0.0216523  99.9765  0.00186307
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8525
+  Active CDC-2 Kinase  2.12632
+  Active Cyclin Protease  0.0211973
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08529
+  Active CDC-2 Kinase  49.4514
+  Active Cyclin Protease  49.4633
+
+
+**************** Time step 50: 0.5 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5897): 97.8503 2.12845 0.021219 
+  Fast (0.0100181): 0.0217108 0.0014093 99.9769 
+  Fast (0.00397335): 2.12886 97.8693 0.00184189 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5897)  Fast (0.0100181)  Fast (0.00397335)
+  Cyclin  97.8503  0.0212541  2.12845
+  Active CDC-2 Kinase  2.12887  0.00137992  97.8697
+  Active Cyclin Protease  0.021675  99.9764  0.0018811
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8503
+  Active CDC-2 Kinase  2.12845
+  Active Cyclin Protease  0.021219
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08639
+  Active CDC-2 Kinase  49.4508
+  Active Cyclin Protease  49.4628
+
+
+**************** Time step 51: 0.51 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5879): 97.8482 2.13059 0.0212408 
+  Fast (0.0100183): 0.0217339 0.00142636 99.9768 
+  Fast (0.0039812): 2.131 97.8671 0.00185952 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5879)  Fast (0.0100183)  Fast (0.0039812)
+  Cyclin  97.8481  0.0212762  2.13059
+  Active CDC-2 Kinase  2.13101  0.0013966  97.8676
+  Active Cyclin Protease  0.0216976  99.9764  0.00189914
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8482
+  Active CDC-2 Kinase  2.13059
+  Active Cyclin Protease  0.0212408
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08749
+  Active CDC-2 Kinase  49.4503
+  Active Cyclin Protease  49.4622
+
+
+**************** Time step 52: 0.52 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5861): 97.846 2.13273 0.0212626 
+  Fast (0.0100185): 0.0217571 0.00144342 99.9768 
+  Fast (0.00398907): 2.13314 97.865 0.00187715 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5861)  Fast (0.0100185)  Fast (0.00398907)
+  Cyclin  97.846  0.0212984  2.13273
+  Active CDC-2 Kinase  2.13315  0.00141328  97.8654
+  Active Cyclin Protease  0.0217203  99.9764  0.00191719
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.846
+  Active CDC-2 Kinase  2.13273
+  Active Cyclin Protease  0.0212626
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.08859
+  Active CDC-2 Kinase  49.4497
+  Active Cyclin Protease  49.4617
+
+
+**************** Time step 53: 0.53 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5843): 97.8438 2.13487 0.0212844 
+  Fast (0.0100187): 0.0217802 0.0014605 99.9768 
+  Fast (0.00399695): 2.13528 97.8628 0.0018948 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5843)  Fast (0.0100187)  Fast (0.00399695)
+  Cyclin  97.8438  0.0213206  2.13487
+  Active CDC-2 Kinase  2.13529  0.00142997  97.8633
+  Active Cyclin Protease  0.0217431  99.9763  0.00193526
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8438
+  Active CDC-2 Kinase  2.13487
+  Active Cyclin Protease  0.0212844
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0897
+  Active CDC-2 Kinase  49.4492
+  Active Cyclin Protease  49.4612
+
+
+**************** Time step 54: 0.54 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5826): 97.8417 2.13701 0.0213062 
+  Fast (0.0100189): 0.0218034 0.00147759 99.9767 
+  Fast (0.00400484): 2.13743 97.8607 0.00191246 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5826)  Fast (0.0100189)  Fast (0.00400484)
+  Cyclin  97.8416  0.0213429  2.13701
+  Active CDC-2 Kinase  2.13744  0.00144667  97.8611
+  Active Cyclin Protease  0.0217659  99.9763  0.00195334
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8417
+  Active CDC-2 Kinase  2.13701
+  Active Cyclin Protease  0.0213062
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.0908
+  Active CDC-2 Kinase  49.4486
+  Active Cyclin Protease  49.4606
+
+
+**************** Time step 55: 0.55 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5809): 97.8395 2.13916 0.0213281 
+  Fast (0.0100192): 0.0218267 0.00149469 99.9767 
+  Fast (0.00401275): 2.13957 97.8585 0.00193013 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5809)  Fast (0.0100192)  Fast (0.00401275)
+  Cyclin  97.8395  0.0213652  2.13916
+  Active CDC-2 Kinase  2.13959  0.00146338  97.859
+  Active Cyclin Protease  0.0217887  99.9762  0.00197143
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8395
+  Active CDC-2 Kinase  2.13916
+  Active Cyclin Protease  0.0213281
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09191
+  Active CDC-2 Kinase  49.448
+  Active Cyclin Protease  49.4601
+
+
+**************** Time step 56: 0.56 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5792): 97.8373 2.14131 0.02135 
+  Fast (0.0100194): 0.0218499 0.00151181 99.9766 
+  Fast (0.00402068): 2.14173 97.8563 0.00194782 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5792)  Fast (0.0100194)  Fast (0.00402068)
+  Cyclin  97.8373  0.0213875  2.14131
+  Active CDC-2 Kinase  2.14174  0.00148011  97.8568
+  Active Cyclin Protease  0.0218115  99.9762  0.00198954
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8373
+  Active CDC-2 Kinase  2.14131
+  Active Cyclin Protease  0.02135
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09302
+  Active CDC-2 Kinase  49.4475
+  Active Cyclin Protease  49.4595
+
+
+**************** Time step 57: 0.57 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5775): 97.8352 2.14346 0.0213719 
+  Fast (0.0100196): 0.0218732 0.00152895 99.9766 
+  Fast (0.00402862): 2.14388 97.8542 0.00196553 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5775)  Fast (0.0100196)  Fast (0.00402862)
+  Cyclin  97.8351  0.0214098  2.14346
+  Active CDC-2 Kinase  2.14389  0.00149686  97.8546
+  Active Cyclin Protease  0.0218344  99.9762  0.00200768
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8352
+  Active CDC-2 Kinase  2.14346
+  Active Cyclin Protease  0.0213719
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09413
+  Active CDC-2 Kinase  49.4469
+  Active Cyclin Protease  49.459
+
+
+**************** Time step 58: 0.58 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5758): 97.833 2.14562 0.0213939 
+  Fast (0.0100198): 0.0218966 0.0015461 99.9766 
+  Fast (0.00403657): 2.14604 97.852 0.00198326 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5758)  Fast (0.0100198)  Fast (0.00403657)
+  Cyclin  97.8329  0.0214322  2.14562
+  Active CDC-2 Kinase  2.14605  0.00151361  97.8524
+  Active Cyclin Protease  0.0218573  99.9761  0.00202583
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.833
+  Active CDC-2 Kinase  2.14562
+  Active Cyclin Protease  0.0213939
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09525
+  Active CDC-2 Kinase  49.4463
+  Active Cyclin Protease  49.4584
+
+
+**************** Time step 59: 0.59 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5742): 97.8308 2.14778 0.0214159 
+  Fast (0.01002): 0.0219199 0.00156327 99.9765 
+  Fast (0.00404454): 2.1482 97.8498 0.00200101 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5742)  Fast (0.01002)  Fast (0.00404454)
+  Cyclin  97.8308  0.0214546  2.14778
+  Active CDC-2 Kinase  2.14821  0.00153039  97.8503
+  Active Cyclin Protease  0.0218802  99.9761  0.002044
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8308
+  Active CDC-2 Kinase  2.14778
+  Active Cyclin Protease  0.0214159
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09636
+  Active CDC-2 Kinase  49.4457
+  Active Cyclin Protease  49.4579
+
+
+**************** Time step 60: 0.6 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5726): 97.8286 2.14994 0.0214379 
+  Fast (0.0100202): 0.0219433 0.00158046 99.9765 
+  Fast (0.00405253): 2.15036 97.8476 0.00201878 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5726)  Fast (0.0100202)  Fast (0.00405253)
+  Cyclin  97.8286  0.0214771  2.14994
+  Active CDC-2 Kinase  2.15037  0.00154718  97.8481
+  Active Cyclin Protease  0.0219032  99.976  0.00206219
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8286
+  Active CDC-2 Kinase  2.14994
+  Active Cyclin Protease  0.0214379
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09748
+  Active CDC-2 Kinase  49.4452
+  Active Cyclin Protease  49.4573
+
+
+**************** Time step 61: 0.61 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.571): 97.8264 2.15211 0.02146 
+  Fast (0.0100205): 0.0219668 0.00159767 99.9764 
+  Fast (0.00406053): 2.15253 97.8454 0.00203657 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.571)  Fast (0.0100205)  Fast (0.00406053)
+  Cyclin  97.8264  0.0214996  2.15211
+  Active CDC-2 Kinase  2.15254  0.001564  97.8459
+  Active Cyclin Protease  0.0219262  99.976  0.00208041
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8264
+  Active CDC-2 Kinase  2.15211
+  Active Cyclin Protease  0.02146
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09859
+  Active CDC-2 Kinase  49.4446
+  Active Cyclin Protease  49.4568
+
+
+**************** Time step 62: 0.62 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5694): 97.8242 2.15428 0.0214821 
+  Fast (0.0100207): 0.0219902 0.00161491 99.9764 
+  Fast (0.00406855): 2.1547 97.8432 0.00205439 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5694)  Fast (0.0100207)  Fast (0.00406855)
+  Cyclin  97.8242  0.0215221  2.15428
+  Active CDC-2 Kinase  2.15471  0.00158084  97.8437
+  Active Cyclin Protease  0.0219493  99.976  0.00209866
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8242
+  Active CDC-2 Kinase  2.15428
+  Active Cyclin Protease  0.0214821
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.09971
+  Active CDC-2 Kinase  49.444
+  Active Cyclin Protease  49.4563
+
+
+**************** Time step 63: 0.63 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5678): 97.822 2.15645 0.0215042 
+  Fast (0.0100209): 0.0220138 0.00163217 99.9764 
+  Fast (0.00407658): 2.15687 97.8411 0.00207223 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5678)  Fast (0.0100209)  Fast (0.00407658)
+  Cyclin  97.822  0.0215446  2.15645
+  Active CDC-2 Kinase  2.15688  0.0015977  97.8415
+  Active Cyclin Protease  0.0219723  99.9759  0.00211693
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.822
+  Active CDC-2 Kinase  2.15645
+  Active Cyclin Protease  0.0215042
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10083
+  Active CDC-2 Kinase  49.4435
+  Active Cyclin Protease  49.4557
+
+
+**************** Time step 64: 0.64 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5662): 97.8198 2.15863 0.0215264 
+  Fast (0.0100211): 0.0220373 0.00164946 99.9763 
+  Fast (0.00408463): 2.15904 97.8389 0.0020901 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5662)  Fast (0.0100211)  Fast (0.00408463)
+  Cyclin  97.8198  0.0215672  2.15862
+  Active CDC-2 Kinase  2.15906  0.00161459  97.8393
+  Active Cyclin Protease  0.0219955  99.9759  0.00213523
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8198
+  Active CDC-2 Kinase  2.15863
+  Active Cyclin Protease  0.0215264
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10196
+  Active CDC-2 Kinase  49.4429
+  Active Cyclin Protease  49.4552
+
+
+**************** Time step 65: 0.65 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5647): 97.8176 2.1608 0.0215485 
+  Fast (0.0100213): 0.0220609 0.00166677 99.9763 
+  Fast (0.00409269): 2.16122 97.8367 0.002108 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5647)  Fast (0.0100213)  Fast (0.00409269)
+  Cyclin  97.8176  0.0215898  2.1608
+  Active CDC-2 Kinase  2.16123  0.00163151  97.8371
+  Active Cyclin Protease  0.0220186  99.9758  0.00215356
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8176
+  Active CDC-2 Kinase  2.1608
+  Active Cyclin Protease  0.0215485
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10308
+  Active CDC-2 Kinase  49.4423
+  Active Cyclin Protease  49.4546
+
+
+**************** Time step 66: 0.66 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5632): 97.8154 2.16298 0.0215708 
+  Fast (0.0100215): 0.0220845 0.00168411 99.9762 
+  Fast (0.00410077): 2.1634 97.8345 0.00212592 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5632)  Fast (0.0100215)  Fast (0.00410077)
+  Cyclin  97.8154  0.0216125  2.16298
+  Active CDC-2 Kinase  2.16342  0.00164844  97.8349
+  Active Cyclin Protease  0.0220418  99.9758  0.00217192
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8154
+  Active CDC-2 Kinase  2.16298
+  Active Cyclin Protease  0.0215708
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10421
+  Active CDC-2 Kinase  49.4417
+  Active Cyclin Protease  49.4541
+
+
+**************** Time step 67: 0.67 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5616): 97.8132 2.16517 0.021593 
+  Fast (0.0100218): 0.0221082 0.00170149 99.9762 
+  Fast (0.00410886): 2.16559 97.8323 0.00214388 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5616)  Fast (0.0100218)  Fast (0.00410886)
+  Cyclin  97.8132  0.0216351  2.16517
+  Active CDC-2 Kinase  2.1656  0.00166541  97.8327
+  Active Cyclin Protease  0.022065  99.9757  0.00219032
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8132
+  Active CDC-2 Kinase  2.16517
+  Active Cyclin Protease  0.021593
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10533
+  Active CDC-2 Kinase  49.4412
+  Active Cyclin Protease  49.4535
+
+
+**************** Time step 68: 0.68 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5602): 97.811 2.16736 0.0216153 
+  Fast (0.010022): 0.0221319 0.00171889 99.9761 
+  Fast (0.00411697): 2.16778 97.8301 0.00216187 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5602)  Fast (0.010022)  Fast (0.00411697)
+  Cyclin  97.811  0.0216579  2.16735
+  Active CDC-2 Kinase  2.16779  0.00168241  97.8305
+  Active Cyclin Protease  0.0220882  99.9757  0.00220875
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.811
+  Active CDC-2 Kinase  2.16736
+  Active Cyclin Protease  0.0216153
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10646
+  Active CDC-2 Kinase  49.4406
+  Active Cyclin Protease  49.453
+
+
+**************** Time step 69: 0.69 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5587): 97.8088 2.16955 0.0216376 
+  Fast (0.0100222): 0.0221556 0.00173633 99.9761 
+  Fast (0.0041251): 2.16997 97.8279 0.0021799 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5587)  Fast (0.0100222)  Fast (0.0041251)
+  Cyclin  97.8088  0.0216806  2.16954
+  Active CDC-2 Kinase  2.16998  0.00169944  97.8283
+  Active Cyclin Protease  0.0221115  99.9757  0.00222721
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8088
+  Active CDC-2 Kinase  2.16955
+  Active Cyclin Protease  0.0216376
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10759
+  Active CDC-2 Kinase  49.44
+  Active Cyclin Protease  49.4524
+
+
+**************** Time step 70: 0.7 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5572): 97.8066 2.17174 0.02166 
+  Fast (0.0100224): 0.0221793 0.00175379 99.9761 
+  Fast (0.00413324): 2.17216 97.8256 0.00219796 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5572)  Fast (0.0100224)  Fast (0.00413324)
+  Cyclin  97.8066  0.0217034  2.17174
+  Active CDC-2 Kinase  2.17217  0.0017165  97.8261
+  Active Cyclin Protease  0.0221348  99.9756  0.00224571
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8066
+  Active CDC-2 Kinase  2.17174
+  Active Cyclin Protease  0.02166
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10872
+  Active CDC-2 Kinase  49.4394
+  Active Cyclin Protease  49.4519
+
+
+**************** Time step 71: 0.71 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5557): 97.8044 2.17393 0.0216823 
+  Fast (0.0100226): 0.0222031 0.0017713 99.976 
+  Fast (0.0041414): 2.17436 97.8234 0.00221605 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5557)  Fast (0.0100226)  Fast (0.0041414)
+  Cyclin  97.8043  0.0217262  2.17393
+  Active CDC-2 Kinase  2.17437  0.00173359  97.8239
+  Active Cyclin Protease  0.0221582  99.9756  0.00226424
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8044
+  Active CDC-2 Kinase  2.17393
+  Active Cyclin Protease  0.0216823
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.10986
+  Active CDC-2 Kinase  49.4388
+  Active Cyclin Protease  49.4513
+
+
+**************** Time step 72: 0.72 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5543): 97.8022 2.17613 0.0217047 
+  Fast (0.0100229): 0.022227 0.00178884 99.976 
+  Fast (0.00414957): 2.17656 97.8212 0.00223419 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5543)  Fast (0.0100229)  Fast (0.00414957)
+  Cyclin  97.8021  0.0217491  2.17613
+  Active CDC-2 Kinase  2.17657  0.00175073  97.8217
+  Active Cyclin Protease  0.0221816  99.9755  0.00228282
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.8022
+  Active CDC-2 Kinase  2.17613
+  Active Cyclin Protease  0.0217047
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11099
+  Active CDC-2 Kinase  49.4383
+  Active Cyclin Protease  49.4507
+
+
+**************** Time step 73: 0.73 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5529): 97.7999 2.17834 0.0217272 
+  Fast (0.0100231): 0.0222508 0.00180641 99.9759 
+  Fast (0.00415776): 2.17876 97.819 0.00225235 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5529)  Fast (0.0100231)  Fast (0.00415776)
+  Cyclin  97.7999  0.0217719  2.17834
+  Active CDC-2 Kinase  2.17877  0.00176789  97.8195
+  Active Cyclin Protease  0.022205  99.9755  0.00230143
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7999
+  Active CDC-2 Kinase  2.17834
+  Active Cyclin Protease  0.0217272
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11213
+  Active CDC-2 Kinase  49.4377
+  Active Cyclin Protease  49.4502
+
+
+**************** Time step 74: 0.74 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5514): 97.7977 2.18054 0.0217497 
+  Fast (0.0100233): 0.0222748 0.00182403 99.9759 
+  Fast (0.00416596): 2.18097 97.8168 0.00227056 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5514)  Fast (0.0100233)  Fast (0.00416596)
+  Cyclin  97.7977  0.0217949  2.18054
+  Active CDC-2 Kinase  2.18098  0.00178509  97.8172
+  Active Cyclin Protease  0.0222285  99.9755  0.00232009
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7977
+  Active CDC-2 Kinase  2.18054
+  Active Cyclin Protease  0.0217497
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11327
+  Active CDC-2 Kinase  49.4371
+  Active Cyclin Protease  49.4496
+
+
+**************** Time step 75: 0.75 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.55): 97.7955 2.18275 0.0217722 
+  Fast (0.0100235): 0.0222987 0.00184169 99.9759 
+  Fast (0.00417418): 2.18318 97.8145 0.00228881 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.55)  Fast (0.0100235)  Fast (0.00417418)
+  Cyclin  97.7954  0.0218178  2.18275
+  Active CDC-2 Kinase  2.18319  0.00180233  97.815
+  Active Cyclin Protease  0.0222519  99.9754  0.00233879
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7955
+  Active CDC-2 Kinase  2.18275
+  Active Cyclin Protease  0.0217722
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11441
+  Active CDC-2 Kinase  49.4365
+  Active Cyclin Protease  49.4491
+
+
+**************** Time step 76: 0.76 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5486): 97.7932 2.18496 0.0217947 
+  Fast (0.0100237): 0.0223227 0.00185938 99.9758 
+  Fast (0.00418241): 2.18539 97.8123 0.0023071 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5486)  Fast (0.0100237)  Fast (0.00418241)
+  Cyclin  97.7932  0.0218408  2.18496
+  Active CDC-2 Kinase  2.1854  0.00181961  97.8128
+  Active Cyclin Protease  0.0222755  99.9754  0.00235753
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7932
+  Active CDC-2 Kinase  2.18496
+  Active Cyclin Protease  0.0217947
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11555
+  Active CDC-2 Kinase  49.4359
+  Active Cyclin Protease  49.4485
+
+
+**************** Time step 77: 0.77 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5473): 97.791 2.18718 0.0218173 
+  Fast (0.010024): 0.0223467 0.00187712 99.9758 
+  Fast (0.00419066): 2.1876 97.8101 0.00232544 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5473)  Fast (0.010024)  Fast (0.00419066)
+  Cyclin  97.791  0.0218638  2.18718
+  Active CDC-2 Kinase  2.18761  0.00183693  97.8105
+  Active Cyclin Protease  0.022299  99.9753  0.00237632
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.791
+  Active CDC-2 Kinase  2.18718
+  Active Cyclin Protease  0.0218173
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11669
+  Active CDC-2 Kinase  49.4353
+  Active Cyclin Protease  49.448
+
+
+**************** Time step 78: 0.78 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5459): 97.7888 2.1894 0.0218399 
+  Fast (0.0100242): 0.0223707 0.00189491 99.9757 
+  Fast (0.00419893): 2.18982 97.8078 0.00234382 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5459)  Fast (0.0100242)  Fast (0.00419893)
+  Cyclin  97.7887  0.0218869  2.18939
+  Active CDC-2 Kinase  2.18983  0.00185429  97.8083
+  Active Cyclin Protease  0.0223226  99.9753  0.00239516
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7888
+  Active CDC-2 Kinase  2.1894
+  Active Cyclin Protease  0.0218399
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11784
+  Active CDC-2 Kinase  49.4348
+  Active Cyclin Protease  49.4474
+
+
+**************** Time step 79: 0.79 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5445): 97.7865 2.19162 0.0218625 
+  Fast (0.0100244): 0.0223948 0.00191274 99.9757 
+  Fast (0.00420721): 2.19204 97.8056 0.00236224 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5445)  Fast (0.0100244)  Fast (0.00420721)
+  Cyclin  97.7865  0.0219099  2.19162
+  Active CDC-2 Kinase  2.19205  0.0018717  97.8061
+  Active Cyclin Protease  0.0223463  99.9752  0.00241404
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7865
+  Active CDC-2 Kinase  2.19162
+  Active Cyclin Protease  0.0218625
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.11899
+  Active CDC-2 Kinase  49.4342
+  Active Cyclin Protease  49.4468
+
+
+**************** Time step 80: 0.8 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5432): 97.7843 2.19384 0.0218852 
+  Fast (0.0100246): 0.022419 0.00193061 99.9757 
+  Fast (0.00421551): 2.19427 97.8034 0.00238071 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5432)  Fast (0.0100246)  Fast (0.00421551)
+  Cyclin  97.7842  0.0219331  2.19384
+  Active CDC-2 Kinase  2.19428  0.00188914  97.8038
+  Active Cyclin Protease  0.0223699  99.9752  0.00243297
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7843
+  Active CDC-2 Kinase  2.19384
+  Active Cyclin Protease  0.0218852
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12013
+  Active CDC-2 Kinase  49.4336
+  Active Cyclin Protease  49.4463
+
+
+**************** Time step 81: 0.81 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5418): 97.782 2.19607 0.0219079 
+  Fast (0.0100248): 0.0224431 0.00194853 99.9756 
+  Fast (0.00422383): 2.1965 97.8011 0.00239923 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5418)  Fast (0.0100248)  Fast (0.00422383)
+  Cyclin  97.782  0.0219562  2.19607
+  Active CDC-2 Kinase  2.19651  0.00190664  97.8016
+  Active Cyclin Protease  0.0223936  99.9752  0.00245194
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.782
+  Active CDC-2 Kinase  2.19607
+  Active Cyclin Protease  0.0219079
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12128
+  Active CDC-2 Kinase  49.433
+  Active Cyclin Protease  49.4457
+
+
+**************** Time step 82: 0.82 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5405): 97.7798 2.1983 0.0219306 
+  Fast (0.0100251): 0.0224673 0.00196649 99.9756 
+  Fast (0.00423216): 2.19873 97.7989 0.0024178 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5405)  Fast (0.0100251)  Fast (0.00423216)
+  Cyclin  97.7797  0.0219794  2.1983
+  Active CDC-2 Kinase  2.19874  0.00192417  97.7993
+  Active Cyclin Protease  0.0224174  99.9751  0.00247097
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7798
+  Active CDC-2 Kinase  2.1983
+  Active Cyclin Protease  0.0219306
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12244
+  Active CDC-2 Kinase  49.4324
+  Active Cyclin Protease  49.4452
+
+
+**************** Time step 83: 0.83 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5392): 97.7775 2.20053 0.0219534 
+  Fast (0.0100253): 0.0224916 0.00198451 99.9755 
+  Fast (0.0042405): 2.20096 97.7966 0.00243642 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5392)  Fast (0.0100253)  Fast (0.0042405)
+  Cyclin  97.7775  0.0220026  2.20053
+  Active CDC-2 Kinase  2.20097  0.00194176  97.7971
+  Active Cyclin Protease  0.0224411  99.9751  0.00249006
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7775
+  Active CDC-2 Kinase  2.20053
+  Active Cyclin Protease  0.0219534
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12359
+  Active CDC-2 Kinase  49.4318
+  Active Cyclin Protease  49.4446
+
+
+**************** Time step 84: 0.84 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5379): 97.7753 2.20277 0.0219762 
+  Fast (0.0100255): 0.0225159 0.00200258 99.9755 
+  Fast (0.00424887): 2.2032 97.7943 0.00245509 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5379)  Fast (0.0100255)  Fast (0.00424887)
+  Cyclin  97.7752  0.0220259  2.20277
+  Active CDC-2 Kinase  2.20321  0.0019594  97.7948
+  Active Cyclin Protease  0.0224649  99.975  0.00250919
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7753
+  Active CDC-2 Kinase  2.20277
+  Active Cyclin Protease  0.0219762
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12474
+  Active CDC-2 Kinase  49.4312
+  Active Cyclin Protease  49.444
+
+
+**************** Time step 85: 0.85 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5366): 97.773 2.20501 0.021999 
+  Fast (0.0100257): 0.0225402 0.00202071 99.9754 
+  Fast (0.00425725): 2.20544 97.7921 0.00247381 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5366)  Fast (0.0100257)  Fast (0.00425725)
+  Cyclin  97.7729  0.0220492  2.20501
+  Active CDC-2 Kinase  2.20545  0.00197709  97.7926
+  Active Cyclin Protease  0.0224888  99.975  0.00252839
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.773
+  Active CDC-2 Kinase  2.20501
+  Active Cyclin Protease  0.021999
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.1259
+  Active CDC-2 Kinase  49.4306
+  Active Cyclin Protease  49.4435
+
+
+**************** Time step 86: 0.86 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5353): 97.7707 2.20725 0.0220219 
+  Fast (0.010026): 0.0225645 0.00203888 99.9754 
+  Fast (0.00426564): 2.20768 97.7898 0.00249258 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5353)  Fast (0.010026)  Fast (0.00426564)
+  Cyclin  97.7707  0.0220725  2.20725
+  Active CDC-2 Kinase  2.20769  0.00199482  97.7903
+  Active Cyclin Protease  0.0225127  99.9749  0.00254763
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7707
+  Active CDC-2 Kinase  2.20725
+  Active Cyclin Protease  0.0220219
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12706
+  Active CDC-2 Kinase  49.43
+  Active Cyclin Protease  49.4429
+
+
+**************** Time step 87: 0.87 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.534): 97.7685 2.2095 0.0220448 
+  Fast (0.0100262): 0.0225889 0.0020571 99.9754 
+  Fast (0.00427405): 2.20993 97.7876 0.00251141 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.534)  Fast (0.0100262)  Fast (0.00427405)
+  Cyclin  97.7684  0.0220959  2.2095
+  Active CDC-2 Kinase  2.20994  0.00201261  97.788
+  Active Cyclin Protease  0.0225366  99.9749  0.00256693
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7685
+  Active CDC-2 Kinase  2.2095
+  Active Cyclin Protease  0.0220448
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12822
+  Active CDC-2 Kinase  49.4295
+  Active Cyclin Protease  49.4423
+
+
+**************** Time step 88: 0.88 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5328): 97.7662 2.21175 0.0220677 
+  Fast (0.0100264): 0.0226133 0.00207538 99.9753 
+  Fast (0.00428248): 2.21218 97.7853 0.00253029 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5328)  Fast (0.0100264)  Fast (0.00428248)
+  Cyclin  97.7661  0.0221193  2.21175
+  Active CDC-2 Kinase  2.21219  0.00203045  97.7858
+  Active Cyclin Protease  0.0225605  99.9749  0.00258629
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7662
+  Active CDC-2 Kinase  2.21175
+  Active Cyclin Protease  0.0220677
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.12938
+  Active CDC-2 Kinase  49.4289
+  Active Cyclin Protease  49.4418
+
+
+**************** Time step 89: 0.89 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5315): 97.7639 2.214 0.0220907 
+  Fast (0.0100266): 0.0226378 0.00209372 99.9753 
+  Fast (0.00429092): 2.21443 97.783 0.00254924 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5315)  Fast (0.0100266)  Fast (0.00429092)
+  Cyclin  97.7639  0.0221427  2.214
+  Active CDC-2 Kinase  2.21444  0.00204835  97.7835
+  Active Cyclin Protease  0.0225845  99.9748  0.00260571
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7639
+  Active CDC-2 Kinase  2.214
+  Active Cyclin Protease  0.0220907
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13054
+  Active CDC-2 Kinase  49.4283
+  Active Cyclin Protease  49.4412
+
+
+**************** Time step 90: 0.9 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5303): 97.7616 2.21626 0.0221137 
+  Fast (0.0100268): 0.0226623 0.00211212 99.9752 
+  Fast (0.00429938): 2.21669 97.7807 0.00256824 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5303)  Fast (0.0100268)  Fast (0.00429938)
+  Cyclin  97.7616  0.0221662  2.21626
+  Active CDC-2 Kinase  2.2167  0.0020663  97.7812
+  Active Cyclin Protease  0.0226085  99.9748  0.00262519
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7616
+  Active CDC-2 Kinase  2.21626
+  Active Cyclin Protease  0.0221137
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13171
+  Active CDC-2 Kinase  49.4277
+  Active Cyclin Protease  49.4406
+
+
+**************** Time step 91: 0.91 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.529): 97.7593 2.21852 0.0221367 
+  Fast (0.0100271): 0.0226869 0.00213057 99.9752 
+  Fast (0.00430786): 2.21895 97.7785 0.00258729 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.529)  Fast (0.0100271)  Fast (0.00430786)
+  Cyclin  97.7593  0.0221897  2.21851
+  Active CDC-2 Kinase  2.21896  0.00208431  97.779
+  Active Cyclin Protease  0.0226326  99.9747  0.00264473
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7593
+  Active CDC-2 Kinase  2.21852
+  Active Cyclin Protease  0.0221367
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13288
+  Active CDC-2 Kinase  49.4271
+  Active Cyclin Protease  49.4401
+
+
+**************** Time step 92: 0.92 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5278): 97.7571 2.22078 0.0221598 
+  Fast (0.0100273): 0.0227114 0.00214909 99.9751 
+  Fast (0.00431635): 2.22121 97.7762 0.00260642 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5278)  Fast (0.0100273)  Fast (0.00431635)
+  Cyclin  97.757  0.0222133  2.22078
+  Active CDC-2 Kinase  2.22122  0.00210237  97.7767
+  Active Cyclin Protease  0.0226567  99.9747  0.00266433
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7571
+  Active CDC-2 Kinase  2.22078
+  Active Cyclin Protease  0.0221598
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13404
+  Active CDC-2 Kinase  49.4265
+  Active Cyclin Protease  49.4395
+
+
+**************** Time step 93: 0.93 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5266): 97.7548 2.22304 0.0221829 
+  Fast (0.0100275): 0.0227361 0.00216766 99.9751 
+  Fast (0.00432486): 2.22348 97.7739 0.00262559 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5266)  Fast (0.0100275)  Fast (0.00432486)
+  Cyclin  97.7547  0.0222369  2.22304
+  Active CDC-2 Kinase  2.22349  0.00212049  97.7744
+  Active Cyclin Protease  0.0226808  99.9746  0.002684
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7548
+  Active CDC-2 Kinase  2.22304
+  Active Cyclin Protease  0.0221829
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13521
+  Active CDC-2 Kinase  49.4259
+  Active Cyclin Protease  49.4389
+
+
+**************** Time step 94: 0.94 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5254): 97.7525 2.22531 0.022206 
+  Fast (0.0100277): 0.0227607 0.00218629 99.9751 
+  Fast (0.00433338): 2.22575 97.7716 0.00264483 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5254)  Fast (0.0100277)  Fast (0.00433338)
+  Cyclin  97.7524  0.0222605  2.22531
+  Active CDC-2 Kinase  2.22576  0.00213867  97.7721
+  Active Cyclin Protease  0.022705  99.9746  0.00270372
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7525
+  Active CDC-2 Kinase  2.22531
+  Active Cyclin Protease  0.022206
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13638
+  Active CDC-2 Kinase  49.4253
+  Active Cyclin Protease  49.4383
+
+
+**************** Time step 95: 0.95 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5242): 97.7502 2.22758 0.0222292 
+  Fast (0.010028): 0.0227854 0.002205 99.975 
+  Fast (0.00434192): 2.22802 97.7693 0.00266414 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5242)  Fast (0.010028)  Fast (0.00434192)
+  Cyclin  97.7501  0.0222841  2.22758
+  Active CDC-2 Kinase  2.22803  0.00215692  97.7698
+  Active Cyclin Protease  0.0227292  99.9745  0.00272352
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7502
+  Active CDC-2 Kinase  2.22758
+  Active Cyclin Protease  0.0222292
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13756
+  Active CDC-2 Kinase  49.4247
+  Active Cyclin Protease  49.4378
+
+
+**************** Time step 96: 0.96 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.523): 97.7479 2.22986 0.0222524 
+  Fast (0.0100282): 0.0228101 0.00222376 99.975 
+  Fast (0.00435048): 2.23029 97.767 0.00268351 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.523)  Fast (0.0100282)  Fast (0.00435048)
+  Cyclin  97.7478  0.0223078  2.22986
+  Active CDC-2 Kinase  2.23031  0.00217523  97.7675
+  Active Cyclin Protease  0.0227534  99.9745  0.00274339
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7479
+  Active CDC-2 Kinase  2.22986
+  Active Cyclin Protease  0.0222524
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13873
+  Active CDC-2 Kinase  49.4241
+  Active Cyclin Protease  49.4372
+
+
+**************** Time step 97: 0.97 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5218): 97.7456 2.23214 0.0222757 
+  Fast (0.0100284): 0.0228349 0.00224259 99.9749 
+  Fast (0.00435906): 2.23257 97.7647 0.00270294 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5218)  Fast (0.0100284)  Fast (0.00435906)
+  Cyclin  97.7455  0.0223315  2.23214
+  Active CDC-2 Kinase  2.23259  0.00219359  97.7652
+  Active Cyclin Protease  0.0227777  99.9745  0.00276332
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7456
+  Active CDC-2 Kinase  2.23214
+  Active Cyclin Protease  0.0222757
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.13991
+  Active CDC-2 Kinase  49.4235
+  Active Cyclin Protease  49.4366
+
+
+**************** Time step 98: 0.98 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5206): 97.7433 2.23442 0.0222989 
+  Fast (0.0100286): 0.0228597 0.00226149 99.9749 
+  Fast (0.00436765): 2.23486 97.7624 0.00272245 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5206)  Fast (0.0100286)  Fast (0.00436765)
+  Cyclin  97.7432  0.0223553  2.23442
+  Active CDC-2 Kinase  2.23487  0.00221203  97.7629
+  Active Cyclin Protease  0.022802  99.9744  0.00278332
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7433
+  Active CDC-2 Kinase  2.23442
+  Active Cyclin Protease  0.0222989
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.14109
+  Active CDC-2 Kinase  49.4229
+  Active Cyclin Protease  49.436
+
+
+**************** Time step 99: 0.99 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5194): 97.741 2.2367 0.0223222 
+  Fast (0.0100289): 0.0228846 0.00228045 99.9748 
+  Fast (0.00437626): 2.23714 97.7601 0.00274202 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5194)  Fast (0.0100289)  Fast (0.00437626)
+  Cyclin  97.7409  0.0223791  2.2367
+  Active CDC-2 Kinase  2.23715  0.00223053  97.7606
+  Active Cyclin Protease  0.0228263  99.9744  0.00280339
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.741
+  Active CDC-2 Kinase  2.2367
+  Active Cyclin Protease  0.0223222
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.14227
+  Active CDC-2 Kinase  49.4223
+  Active Cyclin Protease  49.4355
+
+
+**************** Time step 100: 1 s **************************  
+
+Contribution of species to modes
+Rows: contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   Active CDC-2 Kinase   Active Cyclin Protease
+  Slow (99.5182): 97.7387 2.23899 0.0223456 
+  Fast (0.0100291): 0.0229095 0.00229949 99.9748 
+  Fast (0.00438488): 2.23943 97.7578 0.00276166 
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5182)  Fast (0.0100291)  Fast (0.00438488)
+  Cyclin  97.7386  0.0224029  2.23899
+  Active CDC-2 Kinase  2.23944  0.00224909  97.7583
+  Active Cyclin Protease  0.0228507  99.9743  0.00282354
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  97.7387
+  Active CDC-2 Kinase  2.23899
+  Active Cyclin Protease  0.0223456
+
+Fast space
+Rows: Species
+Column: Contribution to fast space 
+  1 slow; 2 fast
+  Cyclin  1.14345
+  Active CDC-2 Kinase  49.4217
+  Active Cyclin Protease  49.4349
+
+
+

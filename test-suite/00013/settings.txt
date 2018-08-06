@@ -1,0 +1,5 @@
+task: Optimization
+location: .
+format: copasi
+#result: run-only
+

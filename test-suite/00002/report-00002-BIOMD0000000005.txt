@@ -1,0 +1,86 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+EmptySet	0	0	0	0	nan
+cdc2k	0.000727877	0	4.38338e+20	0	1e-06
+cdc2k-P	0.727862	5.44596e-14	4.38329e+23	3.27963e+10	0.000999979
+p-cyclin_cdc2	0.015	-4.06066e-14	9.03321e+21	-2.44538e+10	1
+p-cyclin_cdc2-p	0.25641	-2.57698e-16	1.54414e+23	-1.55189e+08	17.094
+cyclin	0.000103042	0	6.20531e+19	0	0.00686944
+p-cyclin	0.025	1.89791e-16	1.50554e+22	1.14295e+08	1.66667
+total_cyclin	0.296513	nan	1.78564e+23	nan	nan
+total_cdc2	1	nan	6.02214e+23	nan	nan
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+cyclin_cdc2k dissociation	0.015	9.03321e+21
+cdc2k phosphorylation	727.877	4.38338e+26
+cdc2k dephosphorylation	727.862	4.38329e+26
+cyclin cdc2k-p association	0.015	9.03321e+21
+deactivation of cdc2 kinase	0	0
+cyclin biosynthesis	0.015	9.03321e+21
+default degradation of cyclin	0	0
+cdc2 kinase triggered degration of cyclin	0.015	9.03321e+21
+activation of cdc2 kinase	0.015	9.03321e+21
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	cdc2k	p-cyclin_cdc2-p	cyclin	p-cyclin	cdc2k-P	p-cyclin_cdc2
+cdc2k	-1e+06	-0	-0	-0	1000	1.00038
+p-cyclin_cdc2-p	0.02077	-0.0377308	145.572	-0	0.0413775	-1.36385
+cyclin	-0	-0	-145.572	-0	-0.0206083	-0
+p-cyclin	-0	-0	-0	-0.6	-0	1
+cdc2k-P	1e+06	-0	-145.572	-0	-1000.02	-0
+p-cyclin_cdc2	-0.02077	0.0377308	-0	-0	-0.0207692	0.363846
+
+Eigenvalues	real	imaginary
+	0.163058	-0.178639
+	0.163058	0.178639
+	0	0
+	-0.6	0
+	-145.593	0
+	-1.001e+06	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	cdc2k	p-cyclin_cdc2-p	cyclin	p-cyclin	cdc2k-P
+cdc2k	-1e+06	-0.999992	-0	-0	999
+p-cyclin_cdc2-p	1.38467	1.32612	145.572	-0	1.40522
+cyclin	-0	-0	-145.572	-0	-0.0206083
+p-cyclin	-1.00004	-1	-0	-0.6	-1
+cdc2k-P	1e+06	-0	-145.572	-0	-1000.02
+
+Eigenvalues	real	imaginary
+	0.163089	-0.178791
+	0.163089	0.178791
+	-0.6	0
+	-145.593	0
+	-1.001e+06	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.163089
+ Largest absolute imaginary part:  0.178791
+ The complex eigenvalues with the largest real part are:  0.163089 +|- 0.178791i
+ 3 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 3 have negative real part
+ stiffness = 6.13775e+06
+ time hierarchy = 0.535586
+
+

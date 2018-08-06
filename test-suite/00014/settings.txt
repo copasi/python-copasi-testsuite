@@ -1,0 +1,5 @@
+task: Parameter Estimation
+location: .
+format: copasi
+result: run-only
+

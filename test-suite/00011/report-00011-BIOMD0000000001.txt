@@ -1,0 +1,13 @@
+
+Linear Noise Approximation Result:
+
+No steady state calculation was requested.
+
+Covariance matrix
+Covariance matrix
+Rows:    Species (full system)
+Columns: Species (full system)
+
+
+
+

@@ -1,0 +1,63 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Weierstrass function].InitialValue
+
+List of Optimization Items:
+    -0.5 <= Values[x1].InitialValue <= 0.5; Start Value = 0.268358
+    -0.5 <= Values[x2].InitialValue <= 0.5; Start Value = -0.888068
+
+List of Constraint Items:
+
+Method: Levenberg - Marquardt
+    Log Verbosity: 0
+    Iteration Limit: 2000
+    Tolerance: 1e-06
+    Modulation: 1e-06
+    Stop after # Stalled Iterations: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	10.1589	(	0.268358	-0.5	)
+16	10.0033	(	0.314294	0.5	)
+27	6.62822	(	0.331866	-0.110473	)
+43	6.6204	(	0.331658	-0.110748	)
+60	6.62039	(	0.331658	-0.110748	)
+88	6.62033	(	0.331658	-0.110748	)
+100	6.62032	(	0.331658	-0.110748	)
+116	5.88877	(	0.129675	-0.000728625	)
+126	5.88876	(	0.129675	-0.000728625	)
+
+Optimization Result:
+
+    Objective Function Value:	5.88876
+    Function Evaluations:	127
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: 0.129675
+    Values[x2].InitialValue: -0.000728625
+
+

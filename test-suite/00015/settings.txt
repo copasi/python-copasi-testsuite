@@ -1,0 +1,6 @@
+task: Time Scale Separation Analysis
+location: ./../biomodels
+method: ILDM (LSODA,Modified)
+filter: BIOMD000000000[2-4]
+format: sbml
+#result: run-only

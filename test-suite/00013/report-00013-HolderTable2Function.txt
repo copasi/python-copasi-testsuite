@@ -1,0 +1,85 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Holder table 2 function].InitialValue
+
+List of Optimization Items:
+    -10 <= Values[x1].InitialValue <= 10; Start Value = 0.268358
+    -10 <= Values[x2].InitialValue <= 10; Start Value = -0.888068
+
+List of Constraint Items:
+
+Method: Nelder - Mead
+    Log Verbosity: 0
+    Iteration Limit: 200
+    Tolerance: 1e-05
+    Scale: 10
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	-0.338457	(	0.268358	-0.888068	)
+2	-0.605301	(	2.26836	-0.888068	)
+9	-1.24251	(	1.64336	-0.638068	)
+10	-1.51405	(	1.01836	-0.388068	)
+18	-1.61667	(	1.05058	-0.257209	)
+19	-1.62799	(	0.942186	0.0299005	)
+32	-1.64351	(	0.974313	-0.0722626	)
+33	-1.64521	(	0.975013	-0.0635792	)
+35	-1.64651	(	0.969868	0.00543601	)
+37	-1.65341	(	0.98412	-0.0374561	)
+38	-1.66191	(	1.00164	-0.0500328	)
+39	-1.66363	(	1.00723	0.0602632	)
+41	-1.69755	(	1.07358	0.00447352	)
+42	-1.72589	(	1.17729	0.00351103	)
+48	-1.72887	(	1.22261	-0.0484197	)
+58	-1.73077	(	1.23471	-0.0365476	)
+62	-1.73118	(	1.2374	-0.032972	)
+63	-1.73169	(	1.24671	-0.0309774	)
+69	-1.73191	(	1.24773	-0.0279588	)
+70	-1.73216	(	1.24422	-0.0212233	)
+76	-1.73229	(	1.24573	-0.0194838	)
+77	-1.73246	(	1.25213	-0.0193422	)
+83	-1.73253	(	1.25252	-0.0177409	)
+84	-1.7326	(	1.24927	-0.0135545	)
+87	-1.7327	(	1.24815	-0.00829728	)
+93	-1.73275	(	1.2484	-0.0050472	)
+94	-1.73281	(	1.2499	-0.00258891	)
+100	-1.73284	(	1.2513	-0.00295681	)
+101	-1.73287	(	1.25402	-0.00558618	)
+104	-1.73289	(	1.25808	-0.00773203	)
+137	-1.73294	(	1.25838	-0.00316327	)
+141	-1.73297	(	1.26022	0.000462026	)
+
+Optimization Result:
+
+    Objective Function Value:	-1.73297
+    Function Evaluations:	449
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: 1.26022
+    Values[x2].InitialValue: 0.000462026
+
+

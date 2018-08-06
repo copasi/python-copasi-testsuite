@@ -1,0 +1,42 @@
+Sensitivities Task
+
+Function(s) to be derived:
+Non-Constant Concentrations of Species
+
+Calculation to perform: Steady State
+
+Variable(s) for 1. derivation:
+All Parameter Values
+
+Variable(s) for 2. derivation:
+Not Set
+
+
+Method: Sensitivities Method
+    Delta factor: 0.001
+    Delta minimum: 1e-12
+
+
+
+Sensitivities Result:
+
+Sensitivities array
+
+Rows:    Target functions, Non-Constant Concentrations of Species
+Columns: Variables 1, All Parameter Values
+	Values[VM1].InitialValue	Values[VM3].InitialValue	Values[Kc].InitialValue	(creation of cyclin).v	(default degradation of cyclin).k1	(cdc2 kinase triggered degration of cyclin).Kd	(cdc2 kinase triggered degration of cyclin).vd	(activation of cdc2 kinase).K1	(deactivation of cdc2 kinase).K2	(deactivation of cdc2 kinase).V2	(activation of cyclin protease).K3	(deactivation of cyclin protease).K4	(deactivation of cyclin protease).V4
+[Cyclin]	-0.331445	-0.0188443	0.997336	0.0538048	-0.0268853	0.00207691	-0.00431138	1.87718	-2.0789	0.664875	0.020462	-0.213713	0.0377175
+[CDC-2 Kinase]	0.00518206	-0.473475	-0.0155979	1.35205	-0.675588	0.0521898	-0.108338	-0.0293553	0.0325096	-0.0103994	0.514183	-5.37027	0.947897
+[Cyclin Protease]	0.0159255	0.00090515	-0.0478968	4.15774	-2.07462	0.16031	-0.332457	-0.0901661	0.0998555	-0.0319251	-0.000982849	0.0102652	-0.00181166
+
+Scaled sensitivities array
+
+Rows:    Target functions, Non-Constant Concentrations of Species
+Columns: Variables 1, All Parameter Values
+	Values[VM1].InitialValue	Values[VM3].InitialValue	Values[Kc].InitialValue	(creation of cyclin).v	(default degradation of cyclin).k1	(cdc2 kinase triggered degration of cyclin).Kd	(cdc2 kinase triggered degration of cyclin).vd	(activation of cdc2 kinase).K1	(deactivation of cdc2 kinase).K2	(deactivation of cdc2 kinase).V2	(activation of cyclin protease).K3	(deactivation of cyclin protease).K4	(deactivation of cyclin protease).V4
+[Cyclin]	-1.99274	-0.0377657	0.999377	0.00269575	-0.000538806	8.32463e-05	-0.0021601	0.0188103	-0.0208315	1.99871	0.000205039	-0.0021415	0.0377946
+[CDC-2 Kinase]	0.032781	-0.99838	-0.016445	0.0712741	-0.0142456	0.00220097	-0.0571111	-0.000309497	0.000342752	-0.0328925	0.00542108	-0.0566194	0.999378
+[Cyclin Protease]	0.573899	0.0108728	-0.287672	1.24859	-0.249207	0.0385132	-0.99838	-0.00541544	0.0059974	-0.575234	-5.90307e-05	0.000616538	-0.010881
+
+
+

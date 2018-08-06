@@ -1,0 +1,72 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 1
+    StepSize: 1
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Himmelblau function].InitialValue
+
+List of Optimization Items:
+    -6 <= Values[x1].InitialValue <= 6; Start Value = -1.86597
+    -6 <= Values[x2].InitialValue <= 6; Start Value = -0.930461
+
+List of Constraint Items:
+
+Method: Levenberg - Marquardt
+    Log Verbosity: 0
+    Iteration Limit: 2000
+    Tolerance: 1e-06
+    Modulation: 1e-06
+    Stop after # Stalled Iterations: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	135.383	(	-1.86597	-0.930461	)
+14	98.0159	(	-2.60127	-1.13168	)
+24	50.8099	(	-3.82574	-1.9734	)
+34	17.3621	(	-3.81414	-2.59936	)
+44	11.985	(	-3.79644	-2.72109	)
+54	6.30305	(	-3.77451	-2.87941	)
+64	2.22434	(	-3.75712	-3.04424	)
+74	0.468291	(	-3.75484	-3.17406	)
+84	0.0534074	(	-3.76532	-3.2473	)
+94	0.00283861	(	-3.77501	-3.27533	)
+104	5.67025e-05	(	-3.77861	-3.28213	)
+114	3.7294e-07	(	-3.77925	-3.2831	)
+124	2.06502e-09	(	-3.77931	-3.28318	)
+134	4.71003e-10	(	-3.77931	-3.28318	)
+144	4.49266e-10	(	-3.77931	-3.28318	)
+154	4.49034e-10	(	-3.77931	-3.28318	)
+164	4.49033e-10	(	-3.77931	-3.28318	)
+174	4.49033e-10	(	-3.77931	-3.28318	)
+
+Optimization Result:
+
+    Objective Function Value:	4.49033e-10
+    Function Evaluations:	318
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: -3.77931
+    Values[x2].InitialValue: -3.28318
+
+

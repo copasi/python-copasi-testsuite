@@ -1,0 +1,69 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 1
+    StepSize: 1
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Eggholder function].InitialValue
+
+List of Optimization Items:
+    -512 <= Values[x1].InitialValue <= 512; Start Value = 372.017
+    -512 <= Values[x2].InitialValue <= 512; Start Value = 137.867
+
+List of Constraint Items:
+
+Method: Nelder - Mead
+    Log Verbosity: 0
+    Iteration Limit: 200
+    Tolerance: 1e-05
+    Scale: 10
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	-407.306	(	372.017	137.867	)
+4	-418.935	(	167.217	291.467	)
+5	-487.179	(	-139.983	445.067	)
+27	-564.029	(	-104.071	425.983	)
+49	-564.049	(	-103.497	425.684	)
+77	-565.419	(	-103.566	421.123	)
+81	-565.54	(	-105.822	421.453	)
+89	-565.601	(	-104.007	421.464	)
+91	-565.647	(	-104.896	421.51	)
+92	-565.65	(	-105.695	421.637	)
+93	-565.788	(	-105.109	421.88	)
+94	-565.918	(	-105.496	422.375	)
+104	-565.963	(	-105.32	422.651	)
+105	-565.98	(	-105.535	422.783	)
+106	-565.993	(	-105.58	423.054	)
+114	-565.998	(	-105.882	423.181	)
+
+Optimization Result:
+
+    Objective Function Value:	-565.998
+    Function Evaluations:	135
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: -105.882
+    Values[x2].InitialValue: 423.181
+
+

@@ -1,0 +1,64 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 1
+    StepSize: 1
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Cross-in-tray function].InitialValue
+
+List of Optimization Items:
+    -10 <= Values[x1].InitialValue <= 10; Start Value = -1.86597
+    -10 <= Values[x2].InitialValue <= 10; Start Value = -0.930461
+
+List of Constraint Items:
+
+Method: Levenberg - Marquardt
+    Log Verbosity: 0
+    Iteration Limit: 2000
+    Tolerance: 1e-06
+    Modulation: 1e-06
+    Stop after # Stalled Iterations: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	-2.0073	(	-1.86597	-0.930461	)
+11	-2.04784	(	-1.59835	-1.11391	)
+21	-2.06099	(	-1.42097	-1.26125	)
+31	-2.06255	(	-1.36163	-1.33063	)
+41	-2.06261	(	-1.35056	-1.3473	)
+51	-2.06261	(	-1.34947	-1.34928	)
+61	-2.06261	(	-1.34941	-1.3494	)
+71	-2.06261	(	-1.34941	-1.34941	)
+81	-2.06261	(	-1.34941	-1.34941	)
+96	-2.06261	(	-1.34941	-1.34941	)
+
+Optimization Result:
+
+    Objective Function Value:	-2.06261
+    Function Evaluations:	240
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: -1.34941
+    Values[x2].InitialValue: -1.34941
+
+

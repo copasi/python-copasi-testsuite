@@ -1,0 +1,59 @@
+Optimization Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 1
+    StepSize: 1
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+    Continue on Simultaneous Events: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+Objective Function:
+    Values[Schaffer F2 function].InitialValue
+
+List of Optimization Items:
+    -100 <= Values[x1].InitialValue <= 100; Start Value = -12.4157
+    -100 <= Values[x2].InitialValue <= 100; Start Value = -11.823
+
+List of Constraint Items:
+
+Method: Nelder - Mead
+    Log Verbosity: 0
+    Iteration Limit: 200
+    Tolerance: 1e-05
+    Scale: 10
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	0.76756	(	-12.4157	-11.823	)
+2	0.360259	(	7.5843	-11.823	)
+10	0.0868807	(	2.5843	3.17704	)
+23	0.0822527	(	1.06086	8.37236	)
+28	0.0673487	(	-0.179372	8.49931	)
+38	0.0478867	(	0.821605	7.137	)
+
+Optimization Result:
+
+    Objective Function Value:	0.0478867
+    Function Evaluations:	972
+    CPU Time [s]:	0.000
+    Evaluations/Second [1/s]:	inf
+
+    Values[x1].InitialValue: 0.821605
+    Values[x2].InitialValue: 7.137
+
+

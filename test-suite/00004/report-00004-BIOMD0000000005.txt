@@ -1,0 +1,37 @@
+Elementary Flux Modes Result:
+
+	Number of Modes:	4
+#		Reactions	Equations
+1	Irreversible	1 * activation of cdc2 kinase	p-cyclin_cdc2-p -> p-cyclin_cdc2;  total_cdc2
+		1 * deactivation of cdc2 kinase	p-cyclin_cdc2 -> p-cyclin_cdc2-p
+2	Irreversible	1 * cdc2k dephosphorylation	cdc2k-P -> cdc2k
+		1 * cdc2k phosphorylation	cdc2k -> cdc2k-P
+3	Irreversible	1 * default degradation of cyclin	cyclin -> EmptySet
+		1 * cyclin biosynthesis	EmptySet -> cyclin
+4	Irreversible	1 * activation of cdc2 kinase	p-cyclin_cdc2-p -> p-cyclin_cdc2;  total_cdc2
+		1 * cdc2 kinase triggered degration of cyclin	p-cyclin -> EmptySet
+		1 * cyclin biosynthesis	EmptySet -> cyclin
+		1 * cyclin cdc2k-p association	cdc2k-P + cyclin -> p-cyclin_cdc2-p
+		1 * cdc2k phosphorylation	cdc2k -> cdc2k-P
+		1 * cyclin_cdc2k dissociation	p-cyclin_cdc2 -> cdc2k + p-cyclin
+
+#	Net Reaction	Internal Species
+1	 -> 	p-cyclin_cdc2-p, p-cyclin_cdc2
+2	 -> 	cdc2k-P, cdc2k
+3	 -> 	cyclin, EmptySet
+4	 -> 	p-cyclin_cdc2-p, cyclin, p-cyclin, cdc2k-P, p-cyclin_cdc2, EmptySet, cdc2k
+
+#	activation of cdc2 kinase	cdc2 kinase triggered degration of cyclin	default degradation of cyclin	cyclin biosynthesis	deactivation of cdc2 kinase	cyclin cdc2k-p association	cdc2k dephosphorylation	cdc2k phosphorylation	cyclin_cdc2k dissociation
+1	1	0	0	0	1	0	0	0	0
+2	0	0	0	0	0	0	1	1	0
+3	0	0	1	1	0	0	0	0	0
+4	1	1	0	1	0	1	0	1	1
+
+#	EmptySet	cdc2k	cdc2k-P	p-cyclin_cdc2	p-cyclin_cdc2-p	cyclin	p-cyclin	total_cyclin	total_cdc2
+1				-1 | +1	-1 | +1				
+2		-1 | +1	-1 | +1						
+3	-1 | +1					-1 | +1			
+4	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		
+
+
+

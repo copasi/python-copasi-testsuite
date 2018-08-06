@@ -1,0 +1,449 @@
+Elementary Flux Modes Result:
+
+	Number of Modes:	40
+#		Reactions	Equations
+1	Reversible	-1 * React7	Intermediate = IntermediateACh
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React14	Intermediate = Desensitised
+		-1 * React15	IntermediateACh = DesensitisedACh
+2	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React4	ActiveACh = ActiveACh2
+		-1 * React6	BasalACh = ActiveACh
+3	Reversible	-1 * React0	Basal = BasalACh
+		1 * React3	Active = ActiveACh
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+4	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React3	Active = ActiveACh
+		-1 * React4	ActiveACh = ActiveACh2
+		-1 * React5	Basal = Active
+5	Reversible	1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+6	Reversible	-1 * React7	Intermediate = IntermediateACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React14	Intermediate = Desensitised
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+7	Reversible	1 * React4	ActiveACh = ActiveACh2
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+8	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+9	Reversible	1 * React4	ActiveACh = ActiveACh2
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+10	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+11	Reversible	1 * React4	ActiveACh = ActiveACh2
+		1 * React7	Intermediate = IntermediateACh
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+12	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React6	BasalACh = ActiveACh
+		1 * React7	Intermediate = IntermediateACh
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+13	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+14	Reversible	1 * React3	Active = ActiveACh
+		1 * React4	ActiveACh = ActiveACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+15	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		1 * React3	Active = ActiveACh
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+16	Reversible	-1 * React0	Basal = BasalACh
+		-1 * React4	ActiveACh = ActiveACh2
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React9	Active = Intermediate
+		-1 * React11	ActiveACh2 = IntermediateACh2
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React14	Intermediate = Desensitised
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+17	Reversible	1 * React3	Active = ActiveACh
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React9	Active = Intermediate
+		1 * React10	ActiveACh = IntermediateACh
+18	Reversible	-1 * React0	Basal = BasalACh
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React7	Intermediate = IntermediateACh
+		1 * React9	Active = Intermediate
+		-1 * React10	ActiveACh = IntermediateACh
+19	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React4	ActiveACh = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React9	Active = Intermediate
+		1 * React10	ActiveACh = IntermediateACh
+20	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+21	Reversible	1 * React3	Active = ActiveACh
+		1 * React4	ActiveACh = ActiveACh2
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+22	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		1 * React3	Active = ActiveACh
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+23	Reversible	-1 * React0	Basal = BasalACh
+		-1 * React4	ActiveACh = ActiveACh2
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React7	Intermediate = IntermediateACh
+		1 * React8	IntermediateACh = IntermediateACh2
+		1 * React9	Active = Intermediate
+		-1 * React11	ActiveACh2 = IntermediateACh2
+24	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+25	Reversible	1 * React3	Active = ActiveACh
+		1 * React4	ActiveACh = ActiveACh2
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+26	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		1 * React3	Active = ActiveACh
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React7	Intermediate = IntermediateACh
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+27	Reversible	-1 * React0	Basal = BasalACh
+		-1 * React4	ActiveACh = ActiveACh2
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React7	Intermediate = IntermediateACh
+		1 * React9	Active = Intermediate
+		-1 * React11	ActiveACh2 = IntermediateACh2
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React15	IntermediateACh = DesensitisedACh
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+28	Reversible	1 * React3	Active = ActiveACh
+		-1 * React9	Active = Intermediate
+		1 * React10	ActiveACh = IntermediateACh
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React14	Intermediate = Desensitised
+		1 * React15	IntermediateACh = DesensitisedACh
+29	Reversible	-1 * React0	Basal = BasalACh
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React9	Active = Intermediate
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React14	Intermediate = Desensitised
+		-1 * React15	IntermediateACh = DesensitisedACh
+30	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React4	ActiveACh = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React9	Active = Intermediate
+		1 * React10	ActiveACh = IntermediateACh
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React14	Intermediate = Desensitised
+		1 * React15	IntermediateACh = DesensitisedACh
+31	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React5	Basal = Active
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React14	Intermediate = Desensitised
+		1 * React15	IntermediateACh = DesensitisedACh
+32	Reversible	1 * React3	Active = ActiveACh
+		1 * React4	ActiveACh = ActiveACh2
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React14	Intermediate = Desensitised
+		1 * React15	IntermediateACh = DesensitisedACh
+33	Reversible	1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		1 * React3	Active = ActiveACh
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React9	Active = Intermediate
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React14	Intermediate = Desensitised
+		1 * React15	IntermediateACh = DesensitisedACh
+34	Reversible	-1 * React0	Basal = BasalACh
+		-1 * React4	ActiveACh = ActiveACh2
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		1 * React8	IntermediateACh = IntermediateACh2
+		1 * React9	Active = Intermediate
+		-1 * React11	ActiveACh2 = IntermediateACh2
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React14	Intermediate = Desensitised
+		-1 * React15	IntermediateACh = DesensitisedACh
+35	Reversible	-1 * React3	Active = ActiveACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		1 * React9	Active = Intermediate
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React14	Intermediate = Desensitised
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+36	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React3	Active = ActiveACh
+		-1 * React5	Basal = Active
+		-1 * React8	IntermediateACh = IntermediateACh2
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+37	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React3	Active = ActiveACh
+		-1 * React5	Basal = Active
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React15	IntermediateACh = DesensitisedACh
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+38	Reversible	1 * React0	Basal = BasalACh
+		1 * React1	BasalACh = BasalACh2
+		1 * React2	BasalACh2 = ActiveACh2
+		-1 * React3	Active = ActiveACh
+		-1 * React5	Basal = Active
+		1 * React7	Intermediate = IntermediateACh
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React11	ActiveACh2 = IntermediateACh2
+		-1 * React12	Desensitised = DesensitisedACh
+		-1 * React13	DesensitisedACh = DesensitisedACh2
+		-1 * React14	Intermediate = Desensitised
+		1 * React16	IntermediateACh2 = DesensitisedACh2
+39	Reversible	-1 * React0	Basal = BasalACh
+		1 * React5	Basal = Active
+		-1 * React6	BasalACh = ActiveACh
+		-1 * React8	IntermediateACh = IntermediateACh2
+		1 * React9	Active = Intermediate
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React14	Intermediate = Desensitised
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+40	Reversible	-1 * React0	Basal = BasalACh
+		-1 * React1	BasalACh = BasalACh2
+		-1 * React2	BasalACh2 = ActiveACh2
+		1 * React4	ActiveACh = ActiveACh2
+		1 * React5	Basal = Active
+		-1 * React8	IntermediateACh = IntermediateACh2
+		1 * React9	Active = Intermediate
+		-1 * React10	ActiveACh = IntermediateACh
+		1 * React12	Desensitised = DesensitisedACh
+		1 * React13	DesensitisedACh = DesensitisedACh2
+		1 * React14	Intermediate = Desensitised
+		-1 * React16	IntermediateACh2 = DesensitisedACh2
+
+#	Net Reaction	Internal Species
+1	 = 	Intermediate, Desensitised, DesensitisedACh, IntermediateACh
+2	 = 	ActiveACh2, ActiveACh, BasalACh, BasalACh2
+3	 = 	ActiveACh, Active, BasalACh, Basal
+4	 = 	ActiveACh2, ActiveACh, Active, BasalACh, Basal, BasalACh2
+5	 = 	IntermediateACh2, DesensitisedACh, IntermediateACh, DesensitisedACh2
+6	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, IntermediateACh, DesensitisedACh2
+7	 = 	IntermediateACh2, ActiveACh2, ActiveACh, IntermediateACh
+8	 = 	IntermediateACh2, ActiveACh2, ActiveACh, BasalACh, IntermediateACh, BasalACh2
+9	 = 	IntermediateACh2, DesensitisedACh, ActiveACh2, ActiveACh, IntermediateACh, DesensitisedACh2
+10	 = 	IntermediateACh2, DesensitisedACh, ActiveACh2, ActiveACh, BasalACh, IntermediateACh, DesensitisedACh2, BasalACh2
+11	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, IntermediateACh, DesensitisedACh2
+12	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, BasalACh, IntermediateACh, DesensitisedACh2, BasalACh2
+13	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, Active, BasalACh, Basal, DesensitisedACh2, BasalACh2
+14	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, DesensitisedACh2
+15	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, DesensitisedACh2, BasalACh2
+16	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, DesensitisedACh2
+17	 = 	Intermediate, ActiveACh, Active, IntermediateACh
+18	 = 	Intermediate, ActiveACh, Active, BasalACh, Basal, IntermediateACh
+19	 = 	Intermediate, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, BasalACh2
+20	 = 	IntermediateACh2, Intermediate, ActiveACh2, Active, BasalACh, Basal, IntermediateACh, BasalACh2
+21	 = 	IntermediateACh2, Intermediate, ActiveACh2, ActiveACh, Active, IntermediateACh
+22	 = 	IntermediateACh2, Intermediate, ActiveACh2, ActiveACh, Active, BasalACh, IntermediateACh, BasalACh2
+23	 = 	IntermediateACh2, Intermediate, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh
+24	 = 	IntermediateACh2, Intermediate, DesensitisedACh, ActiveACh2, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2, BasalACh2
+25	 = 	IntermediateACh2, Intermediate, DesensitisedACh, ActiveACh2, ActiveACh, Active, IntermediateACh, DesensitisedACh2
+26	 = 	IntermediateACh2, Intermediate, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, IntermediateACh, DesensitisedACh2, BasalACh2
+27	 = 	IntermediateACh2, Intermediate, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2
+28	 = 	Intermediate, Desensitised, DesensitisedACh, ActiveACh, Active, IntermediateACh
+29	 = 	Intermediate, Desensitised, DesensitisedACh, ActiveACh, Active, BasalACh, Basal, IntermediateACh
+30	 = 	Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, BasalACh2
+31	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, Active, BasalACh, Basal, IntermediateACh, BasalACh2
+32	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, IntermediateACh
+33	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, IntermediateACh, BasalACh2
+34	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh
+35	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh, Active, IntermediateACh, DesensitisedACh2
+36	 = 	IntermediateACh2, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, BasalACh2
+37	 = 	IntermediateACh2, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2, BasalACh2
+38	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2, BasalACh2
+39	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2
+40	 = 	IntermediateACh2, Intermediate, Desensitised, DesensitisedACh, ActiveACh2, ActiveACh, Active, BasalACh, Basal, IntermediateACh, DesensitisedACh2, BasalACh2
+
+#	React0	React1	React2	React3	React4	React5	React6	React7	React8	React9	React10	React11	React12	React13	React14	React15	React16
+1	0	0	0	0	0	0	0	-1	0	0	0	0	1	0	1	-1	0
+2	0	1	1	0	-1	0	-1	0	0	0	0	0	0	0	0	0	0
+3	-1	0	0	1	0	1	-1	0	0	0	0	0	0	0	0	0	0
+4	1	1	1	-1	-1	-1	0	0	0	0	0	0	0	0	0	0	0
+5	0	0	0	0	0	0	0	0	1	0	0	0	0	-1	0	-1	1
+6	0	0	0	0	0	0	0	-1	-1	0	0	0	1	1	1	0	-1
+7	0	0	0	0	1	0	0	0	-1	0	-1	1	0	0	0	0	0
+8	0	1	1	0	0	0	-1	0	-1	0	-1	1	0	0	0	0	0
+9	0	0	0	0	1	0	0	0	0	0	-1	1	0	-1	0	-1	1
+10	0	1	1	0	0	0	-1	0	0	0	-1	1	0	-1	0	-1	1
+11	0	0	0	0	1	0	0	1	0	0	-1	1	-1	-1	-1	0	1
+12	0	1	1	0	0	0	-1	1	0	0	-1	1	-1	-1	-1	0	1
+13	1	1	1	0	0	-1	0	0	0	-1	0	1	-1	-1	-1	0	1
+14	0	0	0	1	1	0	0	0	0	-1	0	1	-1	-1	-1	0	1
+15	0	1	1	1	0	0	-1	0	0	-1	0	1	-1	-1	-1	0	1
+16	-1	0	0	0	-1	1	-1	0	0	1	0	-1	1	1	1	0	-1
+17	0	0	0	1	0	0	0	-1	0	-1	1	0	0	0	0	0	0
+18	-1	0	0	0	0	1	-1	1	0	1	-1	0	0	0	0	0	0
+19	1	1	1	0	-1	-1	0	-1	0	-1	1	0	0	0	0	0	0
+20	1	1	1	0	0	-1	0	-1	-1	-1	0	1	0	0	0	0	0
+21	0	0	0	1	1	0	0	-1	-1	-1	0	1	0	0	0	0	0
+22	0	1	1	1	0	0	-1	-1	-1	-1	0	1	0	0	0	0	0
+23	-1	0	0	0	-1	1	-1	1	1	1	0	-1	0	0	0	0	0
+24	1	1	1	0	0	-1	0	-1	0	-1	0	1	0	-1	0	-1	1
+25	0	0	0	1	1	0	0	-1	0	-1	0	1	0	-1	0	-1	1
+26	0	1	1	1	0	0	-1	-1	0	-1	0	1	0	-1	0	-1	1
+27	-1	0	0	0	-1	1	-1	1	0	1	0	-1	0	1	0	1	-1
+28	0	0	0	1	0	0	0	0	0	-1	1	0	-1	0	-1	1	0
+29	-1	0	0	0	0	1	-1	0	0	1	-1	0	1	0	1	-1	0
+30	1	1	1	0	-1	-1	0	0	0	-1	1	0	-1	0	-1	1	0
+31	1	1	1	0	0	-1	0	0	-1	-1	0	1	-1	0	-1	1	0
+32	0	0	0	1	1	0	0	0	-1	-1	0	1	-1	0	-1	1	0
+33	0	1	1	1	0	0	-1	0	-1	-1	0	1	-1	0	-1	1	0
+34	-1	0	0	0	-1	1	-1	0	1	1	0	-1	1	0	1	-1	0
+35	0	0	0	-1	0	0	0	0	-1	1	-1	0	1	1	1	0	-1
+36	1	1	1	-1	0	-1	0	0	-1	0	-1	1	0	0	0	0	0
+37	1	1	1	-1	0	-1	0	0	0	0	-1	1	0	-1	0	-1	1
+38	1	1	1	-1	0	-1	0	1	0	0	-1	1	-1	-1	-1	0	1
+39	-1	0	0	0	0	1	-1	0	-1	1	-1	0	1	1	1	0	-1
+40	-1	-1	-1	0	1	1	0	0	-1	1	-1	0	1	1	1	0	-1
+
+#	BasalACh2	IntermediateACh	ActiveACh	Active	BasalACh	Basal	DesensitisedACh2	Desensitised	IntermediateACh2	DesensitisedACh	Intermediate	ActiveACh2
+1		-1 | +1						-1 | +1		-1 | +1	-1 | +1	
+2	-1 | +1		-1 | +1		-1 | +1							-1 | +1
+3			-1 | +1	-1 | +1	-1 | +1	-1 | +1						
+4	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1						-1 | +1
+5		-1 | +1					-1 | +1		-1 | +1	-1 | +1		
+6		-1 | +1					-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	
+7		-1 | +1	-1 | +1						-1 | +1			-1 | +1
+8	-1 | +1	-1 | +1	-1 | +1		-1 | +1				-1 | +1			-1 | +1
+9		-1 | +1	-1 | +1				-1 | +1		-1 | +1	-1 | +1		-1 | +1
+10	-1 | +1	-1 | +1	-1 | +1		-1 | +1		-1 | +1		-1 | +1	-1 | +1		-1 | +1
+11		-1 | +1	-1 | +1				-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+12	-1 | +1	-1 | +1	-1 | +1		-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+13	-1 | +1			-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+14			-1 | +1	-1 | +1			-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+15	-1 | +1		-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+16			-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+17		-1 | +1	-1 | +1	-1 | +1							-1 | +1	
+18		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1					-1 | +1	
+19	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1					-1 | +1	-1 | +1
+20	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1			-1 | +1		-1 | +1	-1 | +1
+21		-1 | +1	-1 | +1	-1 | +1					-1 | +1		-1 | +1	-1 | +1
+22	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1				-1 | +1		-1 | +1	-1 | +1
+23		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1			-1 | +1		-1 | +1	-1 | +1
+24	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1
+25		-1 | +1	-1 | +1	-1 | +1			-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1
+26	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1
+27		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1
+28		-1 | +1	-1 | +1	-1 | +1				-1 | +1		-1 | +1	-1 | +1	
+29		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1		-1 | +1	-1 | +1	
+30	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1		-1 | +1	-1 | +1	-1 | +1
+31	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+32		-1 | +1	-1 | +1	-1 | +1				-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+33	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1			-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+34		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+35		-1 | +1	-1 | +1	-1 | +1			-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	
+36	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1			-1 | +1			-1 | +1
+37	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1		-1 | +1	-1 | +1		-1 | +1
+38	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+39		-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	
+40	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1	-1 | +1
+
+
+

@@ -1,0 +1,33 @@
+Elementary Flux Modes Result:
+
+	Number of Modes:	4
+#		Reactions	Equations
+1	Irreversible	1 * deactivation of cyclin protease	"Cyclin Protease" -> 
+		1 * activation of cyclin protease	 -> "Cyclin Protease"
+2	Irreversible	1 * deactivation of cdc2 kinase	"CDC-2 Kinase" -> 
+		1 * activation of cdc2 kinase	 -> "CDC-2 Kinase"
+3	Irreversible	1 * cdc2 kinase triggered degration of cyclin	Cyclin -> ;  "Cyclin Protease"
+		1 * creation of cyclin	 -> Cyclin
+4	Irreversible	1 * default degradation of cyclin	Cyclin -> 
+		1 * creation of cyclin	 -> Cyclin
+
+#	Net Reaction	Internal Species
+1	 -> 	"Cyclin Protease"
+2	 -> 	"CDC-2 Kinase"
+3	 -> 	Cyclin
+4	 -> 	Cyclin
+
+#	deactivation of cyclin protease	activation of cyclin protease	deactivation of cdc2 kinase	activation of cdc2 kinase	cdc2 kinase triggered degration of cyclin	default degradation of cyclin	creation of cyclin
+1	1	1	0	0	0	0	0
+2	0	0	1	1	0	0	0
+3	0	0	0	0	1	0	1
+4	0	0	0	0	0	1	1
+
+#	Cyclin	CDC-2 Kinase	Cyclin Protease
+1			-1 | +1
+2		-1 | +1	
+3	-1 | +1		
+4	-1 | +1		
+
+
+

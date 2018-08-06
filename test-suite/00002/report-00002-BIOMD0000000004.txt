@@ -1,0 +1,73 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+Cyclin	-0.00507782	0.0252822	-3.05793e+21	1.52253e+22	0.200846
+Active CDC-2 Kinase	0.936163	-1.52057	5.6377e+23	-9.15712e+23	0.615664
+Active Cyclin Protease	0.00272035	0.755312	1.63823e+21	4.5486e+23	0.00292042
+Inactive CDC-2 Kinase	0.0638373	1.52057	3.84437e+22	9.15712e+23	0.0419824
+Inactive Cyclin Protease	0.99728	-0.755312	6.00576e+23	-4.5486e+23	1.07063
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+creation of cyclin	0.025	1.50554e+22
+default degradation of cyclin	-5.07782e-05	-3.05793e+19
+cdc2 kinase triggered degration of cyclin	-0.000231425	-1.39367e+20
+activation of cdc2 kinase	-0.0285438	-1.71895e+22
+deactivation of cdc2 kinase	1.49203	8.98522e+23
+activation of cyclin protease	0.931493	5.60958e+23
+deactivation of cyclin protease	0.176181	1.06098e+23
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Cyclin	Active CDC-2 Kinase	Active Cyclin Protease	Inactive CDC-2 Kinase	Inactive Cyclin Protease
+Cyclin	-0.0710842	-0	0.0850716	-0	-0
+Active CDC-2 Kinase	5.67894	-0.00846714	-0	-0.0324776	-0
+Active Cyclin Protease	0	0.995011	-41.9436	-0	0.00465959
+Inactive CDC-2 Kinase	-5.67894	0.00846714	-0	0.0324776	-0
+Inactive Cyclin Protease	0	-0.995011	41.9436	-0	-0.00465959
+
+Eigenvalues	real	imaginary
+	0.0934878	0
+	0	0
+	0	0
+	-0.140835	0
+	-41.948	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Cyclin	Active CDC-2 Kinase	Active Cyclin Protease
+Cyclin	-0.0710842	-0	0.0850716
+Active CDC-2 Kinase	5.67894	0.0240105	-0
+Active Cyclin Protease	0	0.995011	-41.9483
+
+Eigenvalues	real	imaginary
+	0.0934878	0
+	-0.140835	0
+	-41.948	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable.
+
+Eigenvalue statistics:
+ Largest real part: 0.0934878
+ Largest absolute imaginary part:  0
+ 3 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 1 have positive real part
+ 2 have negative real part
+ stiffness = 448.700
+ time hierarchy = 0.400339
+
+

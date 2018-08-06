@@ -1,0 +1,10 @@
+# this test runs the biomodels 0-19 as a time course for a duration of 10 
+# time units with 50 output steps
+task: Time-Course
+location: ./../biomodels
+filter: BIOMD00000000[0-1]\d
+format: sbml
+#result: run-only
+start: 0
+duration: 10.0
+steps: 50

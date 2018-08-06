@@ -1,0 +1,4524 @@
+Time Scale Separation Analysis Task
+
+Problem Description:
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+
+Method: ILDM (LSODA,Deuflhard)
+    Deuflhard Tolerance: 0.0001
+
+
+
+Time Scale Separation Analysis Result:
+
+Problem Description:
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+
+**************** Time step 1: 0.01 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (14.9588):  99.2289 0.0223934 0.748718
+  Fast (0.0900153):  1.49419 0.194127 98.3117
+  Fast (0.0299992):  14.7022 85.2426 0.0551312
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (14.9588)  Fast (0.0900153)  Fast (0.0299992)
+  Cyclin  99.2154  0.759984  0.0245854
+  CDC-2 Kinase  14.3215  0.164208  85.5143
+  Cyclin Protease  1.5047  98.298  0.197293
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.2289
+  CDC-2 Kinase  0.0223934
+  Cyclin Protease  0.748718
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  8.52064
+  CDC-2 Kinase  45.4384
+  Cyclin Protease  46.041
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.1615
+  default degradation of cyclin  -33.1615
+  cdc2 kinase triggered degration of cyclin  -33.1615
+  activation of cdc2 kinase  0.00748369
+  deactivation of cdc2 kinase  -0.00748369
+  activation of cyclin protease  0.250216
+  deactivation of cyclin protease  -0.250216
+
+
+**************** Time step 2: 0.02 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (20.792):  99.5154 0.00378798 0.480848
+  Fast (0.0569143):  0.256683 0.00812721 99.7352
+  Fast (0.00791436):  4.34165 95.655 0.00337917
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (20.792)  Fast (0.0569143)  Fast (0.00791436)
+  Cyclin  99.5148  0.48135  0.00383509
+  CDC-2 Kinase  4.33219  0.02433  95.6435
+  Cyclin Protease  0.256783  99.7351  0.00814534
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.5154
+  CDC-2 Kinase  0.00378798
+  Cyclin Protease  0.480848
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  2.34077
+  CDC-2 Kinase  48.8057
+  Cyclin Protease  48.8535
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2255
+  default degradation of cyclin  -33.2255
+  cdc2 kinase triggered degration of cyclin  -33.2255
+  activation of cdc2 kinase  0.0012647
+  deactivation of cdc2 kinase  -0.0012647
+  activation of cyclin protease  0.160542
+  deactivation of cyclin protease  -0.160542
+
+
+**************** Time step 3: 0.03 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (30.0385):  99.7008 0.00117623 0.298015
+  Fast (0.0347205):  0.0784941 0.000909225 99.9206
+  Fast (0.00396617):  2.22139 97.7778 0.000855318
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (30.0385)  Fast (0.0347205)  Fast (0.00396617)
+  Cyclin  99.7007  0.298093  0.00117955
+  CDC-2 Kinase  2.22012  0.00749293  97.7724
+  Cyclin Protease  0.0784943  99.9206  0.000910386
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.7008
+  CDC-2 Kinase  0.00117623
+  Cyclin Protease  0.298015
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.16142
+  CDC-2 Kinase  49.4129
+  Cyclin Protease  49.4257
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2668
+  default degradation of cyclin  -33.2668
+  cdc2 kinase triggered degration of cyclin  -33.2668
+  activation of cdc2 kinase  0.000392467
+  deactivation of cdc2 kinase  -0.000392467
+  activation of cyclin protease  0.0994376
+  deactivation of cyclin protease  -0.0994376
+
+
+**************** Time step 4: 0.04 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (44.4349):  99.8107 0.000685201 0.18863
+  Fast (0.0216364):  0.0449696 0.000138888 99.9549
+  Fast (0.00365043):  2.04614 97.9531 0.000784451
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (44.4349)  Fast (0.0216364)  Fast (0.00365043)
+  Cyclin  99.8106  0.188671  0.000685762
+  CDC-2 Kinase  2.04519  0.00465025  97.9502
+  Cyclin Protease  0.0449627  99.9549  0.000139227
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8107
+  CDC-2 Kinase  0.000685201
+  Cyclin Protease  0.18863
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05557
+  CDC-2 Kinase  49.4667
+  Cyclin Protease  49.4778
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2912
+  default degradation of cyclin  -33.2912
+  cdc2 kinase triggered degration of cyclin  -33.2912
+  activation of cdc2 kinase  0.000228544
+  deactivation of cdc2 kinase  -0.000228544
+  activation of cyclin protease  0.0629162
+  deactivation of cyclin protease  -0.0629162
+
+
+**************** Time step 5: 0.05 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (63.197):  99.8672 0.000478671 0.132277
+  Fast (0.0149453):  0.0309182 0.000242237 99.9688
+  Fast (0.00363661):  2.03657 97.9626 0.000867244
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (63.197)  Fast (0.0149453)  Fast (0.00363661)
+  Cyclin  99.8672  0.132305  0.000478557
+  CDC-2 Kinase  2.03566  0.0035639  97.9608
+  Cyclin Protease  0.0309065  99.9689  0.000242141
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8672
+  CDC-2 Kinase  0.000478671
+  Cyclin Protease  0.132277
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0438
+  CDC-2 Kinase  49.4726
+  Cyclin Protease  49.4836
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3038
+  default degradation of cyclin  -33.3038
+  cdc2 kinase triggered degration of cyclin  -33.3038
+  activation of cdc2 kinase  0.000159628
+  deactivation of cdc2 kinase  -0.000159628
+  activation of cyclin protease  0.0441118
+  deactivation of cyclin protease  -0.0441118
+
+
+**************** Time step 6: 0.06 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (80.5252):  99.8922 0.000389181 0.107375
+  Fast (0.0119568):  0.024756 0.000464233 99.9748
+  Fast (0.00364246):  2.03781 97.9612 0.000959491
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (80.5252)  Fast (0.0119568)  Fast (0.00364246)
+  Cyclin  99.8922  0.107399  0.000388851
+  CDC-2 Kinase  2.0369  0.00314924  97.9599
+  Cyclin Protease  0.024741  99.9748  0.000464237
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8922
+  CDC-2 Kinase  0.000389181
+  Cyclin Protease  0.107375
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04141
+  CDC-2 Kinase  49.4738
+  Cyclin Protease  49.4848
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3094
+  default degradation of cyclin  -33.3094
+  cdc2 kinase triggered degration of cyclin  -33.3094
+  activation of cdc2 kinase  0.000129774
+  deactivation of cdc2 kinase  -0.000129774
+  activation of cyclin protease  0.0358047
+  deactivation of cyclin protease  -0.0358047
+
+
+**************** Time step 7: 0.07 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (91.3536):  99.9018 0.00035546 0.0978807
+  Fast (0.0107476):  0.0222775 0.000584735 99.9771
+  Fast (0.00364958):  2.03976 97.9592 0.00102744
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (91.3536)  Fast (0.0107476)  Fast (0.00364958)
+  Cyclin  99.9017  0.097902  0.000355041
+  CDC-2 Kinase  2.03885  0.00302525  97.9581
+  Cyclin Protease  0.0222605  99.9772  0.000584782
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9018
+  CDC-2 Kinase  0.00035546
+  Cyclin Protease  0.0978807
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04119
+  CDC-2 Kinase  49.4739
+  Cyclin Protease  49.4849
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3115
+  default degradation of cyclin  -33.3115
+  cdc2 kinase triggered degration of cyclin  -33.3115
+  activation of cdc2 kinase  0.000118525
+  deactivation of cdc2 kinase  -0.000118525
+  activation of cyclin protease  0.0326376
+  deactivation of cyclin protease  -0.0326376
+
+
+**************** Time step 8: 0.08 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (96.4289):  99.9047 0.000345474 0.0949431
+  Fast (0.0102843):  0.0213404 0.000647778 99.978
+  Fast (0.0036568):  2.04176 97.9572 0.0010705
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (96.4289)  Fast (0.0102843)  Fast (0.0036568)
+  Cyclin  99.9047  0.0949637  0.000345008
+  CDC-2 Kinase  2.04085  0.00301018  97.9561
+  Cyclin Protease  0.0213223  99.978  0.000647845
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9047
+  CDC-2 Kinase  0.000345474
+  Cyclin Protease  0.0949431
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04176
+  CDC-2 Kinase  49.4736
+  Cyclin Protease  49.4846
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3122
+  default degradation of cyclin  -33.3122
+  cdc2 kinase triggered degration of cyclin  -33.3122
+  activation of cdc2 kinase  0.000115194
+  deactivation of cdc2 kinase  -0.000115194
+  activation of cyclin protease  0.0316577
+  deactivation of cyclin protease  -0.0316577
+
+
+**************** Time step 9: 0.09 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (98.4717):  99.9051 0.000344847 0.0945834
+  Fast (0.0101112):  0.0210033 0.00068403 99.9783
+  Fast (0.00366405):  2.04377 97.9551 0.00109954
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (98.4717)  Fast (0.0101112)  Fast (0.00366405)
+  Cyclin  99.9051  0.094604  0.000344349
+  CDC-2 Kinase  2.04286  0.00303376  97.9541
+  Cyclin Protease  0.0209844  99.9783  0.000684106
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9051
+  CDC-2 Kinase  0.000344847
+  Cyclin Protease  0.0945834
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04262
+  CDC-2 Kinase  49.4732
+  Cyclin Protease  49.4842
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3122
+  default degradation of cyclin  -33.3122
+  cdc2 kinase triggered degration of cyclin  -33.3122
+  activation of cdc2 kinase  0.000114985
+  deactivation of cdc2 kinase  -0.000114985
+  activation of cyclin protease  0.0315378
+  deactivation of cyclin protease  -0.0315378
+
+
+**************** Time step 10: 0.1 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.2406):  99.9045 0.000347768 0.0951961
+  Fast (0.0100472):  0.020892 0.000709232 99.9784
+  Fast (0.00367131):  2.04579 97.9531 0.00112236
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.2406)  Fast (0.0100472)  Fast (0.00367131)
+  Cyclin  99.9044  0.0952168  0.000347244
+  CDC-2 Kinase  2.04488  0.00307104  97.952
+  Cyclin Protease  0.0208726  99.9784  0.000709314
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9045
+  CDC-2 Kinase  0.000347768
+  Cyclin Protease  0.0951961
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04359
+  CDC-2 Kinase  49.4727
+  Cyclin Protease  49.4837
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3121
+  default degradation of cyclin  -33.3121
+  cdc2 kinase triggered degration of cyclin  -33.3121
+  activation of cdc2 kinase  0.00011596
+  deactivation of cdc2 kinase  -0.00011596
+  activation of cyclin protease  0.0317421
+  deactivation of cyclin protease  -0.0317421
+
+
+**************** Time step 11: 0.11 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5215):  99.9035 0.000351997 0.0961631
+  Fast (0.0100237):  0.0208646 0.000730103 99.9784
+  Fast (0.00367858):  2.04781 97.951 0.00114266
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5215)  Fast (0.0100237)  Fast (0.00367858)
+  Cyclin  99.9035  0.0961842  0.000351448
+  CDC-2 Kinase  2.0469  0.00311309  97.95
+  Cyclin Protease  0.0208448  99.9784  0.000730189
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9035
+  CDC-2 Kinase  0.000351997
+  Cyclin Protease  0.0961631
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04461
+  CDC-2 Kinase  49.4722
+  Cyclin Protease  49.4832
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3119
+  default degradation of cyclin  -33.3119
+  cdc2 kinase triggered degration of cyclin  -33.3119
+  activation of cdc2 kinase  0.00011737
+  deactivation of cdc2 kinase  -0.00011737
+  activation of cyclin protease  0.0320647
+  deactivation of cyclin protease  -0.0320647
+
+
+**************** Time step 12: 0.12 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6219):  99.9024 0.000356686 0.0972515
+  Fast (0.0100152):  0.0208683 0.000749284 99.9784
+  Fast (0.00368587):  2.04984 97.949 0.00116193
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6219)  Fast (0.0100152)  Fast (0.00368587)
+  Cyclin  99.9024  0.0972728  0.000356113
+  CDC-2 Kinase  2.04892  0.00315665  97.9479
+  Cyclin Protease  0.0208481  99.9784  0.000749374
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9024
+  CDC-2 Kinase  0.000356686
+  Cyclin Protease  0.0972515
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04564
+  CDC-2 Kinase  49.4717
+  Cyclin Protease  49.4827
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3116
+  default degradation of cyclin  -33.3116
+  cdc2 kinase triggered degration of cyclin  -33.3116
+  activation of cdc2 kinase  0.000118934
+  deactivation of cdc2 kinase  -0.000118934
+  activation of cyclin protease  0.0324277
+  deactivation of cyclin protease  -0.0324277
+
+
+**************** Time step 13: 0.13 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6563):  99.9013 0.000361517 0.0983738
+  Fast (0.0100121):  0.0208835 0.000767779 99.9783
+  Fast (0.00369317):  2.05187 97.947 0.00118077
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6563)  Fast (0.0100121)  Fast (0.00369317)
+  Cyclin  99.9012  0.0983954  0.00036092
+  CDC-2 Kinase  2.05094  0.00320053  97.9459
+  Cyclin Protease  0.0208628  99.9784  0.000767872
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9013
+  CDC-2 Kinase  0.000361517
+  Cyclin Protease  0.0983738
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04669
+  CDC-2 Kinase  49.4711
+  Cyclin Protease  49.4822
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3114
+  default degradation of cyclin  -33.3114
+  cdc2 kinase triggered degration of cyclin  -33.3114
+  activation of cdc2 kinase  0.000120545
+  deactivation of cdc2 kinase  -0.000120545
+  activation of cyclin protease  0.032802
+  deactivation of cyclin protease  -0.032802
+
+
+**************** Time step 14: 0.14 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6668):  99.9001 0.000366377 0.0994993
+  Fast (0.0100112):  0.0209029 0.000785988 99.9783
+  Fast (0.00370049):  2.05389 97.9449 0.00119942
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6668)  Fast (0.0100112)  Fast (0.00370049)
+  Cyclin  99.9001  0.0995211  0.000365756
+  CDC-2 Kinase  2.05297  0.00324432  97.9438
+  Cyclin Protease  0.0208818  99.9783  0.000786084
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.9001
+  CDC-2 Kinase  0.000366377
+  Cyclin Protease  0.0994993
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04773
+  CDC-2 Kinase  49.4706
+  Cyclin Protease  49.4817
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3111
+  default degradation of cyclin  -33.3111
+  cdc2 kinase triggered degration of cyclin  -33.3111
+  activation of cdc2 kinase  0.000122166
+  deactivation of cdc2 kinase  -0.000122166
+  activation of cyclin protease  0.0331775
+  deactivation of cyclin protease  -0.0331775
+
+
+**************** Time step 15: 0.15 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6687):  99.899 0.000371216 0.100614
+  Fast (0.0100109):  0.0209239 0.00080403 99.9783
+  Fast (0.00370782):  2.05593 97.9429 0.00121794
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6687)  Fast (0.0100109)  Fast (0.00370782)
+  Cyclin  99.899  0.100636  0.00037057
+  CDC-2 Kinase  2.055  0.00328782  97.9417
+  Cyclin Protease  0.0209025  99.9783  0.000804129
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.899
+  CDC-2 Kinase  0.000371216
+  Cyclin Protease  0.100614
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04878
+  CDC-2 Kinase  49.4701
+  Cyclin Protease  49.4812
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3109
+  default degradation of cyclin  -33.3109
+  cdc2 kinase triggered degration of cyclin  -33.3109
+  activation of cdc2 kinase  0.00012378
+  deactivation of cdc2 kinase  -0.00012378
+  activation of cyclin protease  0.0335493
+  deactivation of cyclin protease  -0.0335493
+
+
+**************** Time step 16: 0.16 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6675):  99.8979 0.000376023 0.101716
+  Fast (0.010011):  0.0209456 0.000821979 99.9782
+  Fast (0.00371516):  2.05796 97.9408 0.00123637
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6675)  Fast (0.010011)  Fast (0.00371516)
+  Cyclin  99.8979  0.101738  0.000375353
+  CDC-2 Kinase  2.05703  0.00333101  97.9396
+  Cyclin Protease  0.0209237  99.9783  0.000822082
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8979
+  CDC-2 Kinase  0.000376023
+  Cyclin Protease  0.101716
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.04983
+  CDC-2 Kinase  49.4695
+  Cyclin Protease  49.4807
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3106
+  default degradation of cyclin  -33.3106
+  cdc2 kinase triggered degration of cyclin  -33.3106
+  activation of cdc2 kinase  0.000125384
+  deactivation of cdc2 kinase  -0.000125384
+  activation of cyclin protease  0.0339167
+  deactivation of cyclin protease  -0.0339167
+
+
+**************** Time step 17: 0.17 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6651):  99.8968 0.000380791 0.102802
+  Fast (0.0100111):  0.0209674 0.00083985 99.9782
+  Fast (0.00372252):  2.06 97.9387 0.00125474
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6651)  Fast (0.0100111)  Fast (0.00372252)
+  Cyclin  99.8968  0.102824  0.000380096
+  CDC-2 Kinase  2.05907  0.00337386  97.9376
+  Cyclin Protease  0.0209451  99.9782  0.000839956
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8968
+  CDC-2 Kinase  0.000380791
+  Cyclin Protease  0.102802
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05088
+  CDC-2 Kinase  49.469
+  Cyclin Protease  49.4801
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3104
+  default degradation of cyclin  -33.3104
+  cdc2 kinase triggered degration of cyclin  -33.3104
+  activation of cdc2 kinase  0.000126974
+  deactivation of cdc2 kinase  -0.000126974
+  activation of cyclin protease  0.034279
+  deactivation of cyclin protease  -0.034279
+
+
+**************** Time step 18: 0.18 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6625):  99.8957 0.00038552 0.103873
+  Fast (0.0100113):  0.0209894 0.000857658 99.9782
+  Fast (0.00372989):  2.06204 97.9367 0.00127305
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6625)  Fast (0.0100113)  Fast (0.00372989)
+  Cyclin  99.8957  0.103896  0.0003848
+  CDC-2 Kinase  2.0611  0.00341638  97.9355
+  Cyclin Protease  0.0209667  99.9782  0.000857767
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8957
+  CDC-2 Kinase  0.00038552
+  Cyclin Protease  0.103873
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05193
+  CDC-2 Kinase  49.4684
+  Cyclin Protease  49.4796
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3102
+  default degradation of cyclin  -33.3102
+  cdc2 kinase triggered degration of cyclin  -33.3102
+  activation of cdc2 kinase  0.000128551
+  deactivation of cdc2 kinase  -0.000128551
+  activation of cyclin protease  0.0346362
+  deactivation of cyclin protease  -0.0346362
+
+
+**************** Time step 19: 0.19 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6597):  99.8947 0.00039021 0.104928
+  Fast (0.0100115):  0.0210114 0.000875407 99.9781
+  Fast (0.00373728):  2.06409 97.9346 0.0012913
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6597)  Fast (0.0100115)  Fast (0.00373728)
+  Cyclin  99.8947  0.104952  0.000389464
+  CDC-2 Kinase  2.06314  0.00345859  97.9334
+  Cyclin Protease  0.0209883  99.9781  0.000875519
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8947
+  CDC-2 Kinase  0.00039021
+  Cyclin Protease  0.104928
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05298
+  CDC-2 Kinase  49.4679
+  Cyclin Protease  49.4791
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3099
+  default degradation of cyclin  -33.3099
+  cdc2 kinase triggered degration of cyclin  -33.3099
+  activation of cdc2 kinase  0.000130116
+  deactivation of cdc2 kinase  -0.000130116
+  activation of cyclin protease  0.0349884
+  deactivation of cyclin protease  -0.0349884
+
+
+**************** Time step 20: 0.2 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6569):  99.8936 0.000394857 0.105968
+  Fast (0.0100117):  0.0210335 0.000893091 99.9781
+  Fast (0.00374468):  2.06613 97.9326 0.00130949
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6569)  Fast (0.0100117)  Fast (0.00374468)
+  Cyclin  99.8936  0.105992  0.000394086
+  CDC-2 Kinase  2.06519  0.00350045  97.9313
+  Cyclin Protease  0.02101  99.9781  0.000893206
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8936
+  CDC-2 Kinase  0.000394857
+  Cyclin Protease  0.105968
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05404
+  CDC-2 Kinase  49.4674
+  Cyclin Protease  49.4786
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3097
+  default degradation of cyclin  -33.3097
+  cdc2 kinase triggered degration of cyclin  -33.3097
+  activation of cdc2 kinase  0.000131666
+  deactivation of cdc2 kinase  -0.000131666
+  activation of cyclin protease  0.0353353
+  deactivation of cyclin protease  -0.0353353
+
+
+**************** Time step 21: 0.21 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6541):  99.8926 0.000399467 0.106994
+  Fast (0.0100119):  0.0210556 0.000910724 99.978
+  Fast (0.00375209):  2.06818 97.9305 0.00132764
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6541)  Fast (0.0100119)  Fast (0.00375209)
+  Cyclin  99.8926  0.107017  0.00039867
+  CDC-2 Kinase  2.06723  0.003542  97.9292
+  Cyclin Protease  0.0210317  99.9781  0.000910843
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8926
+  CDC-2 Kinase  0.000399467
+  Cyclin Protease  0.106994
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05509
+  CDC-2 Kinase  49.4668
+  Cyclin Protease  49.4781
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3095
+  default degradation of cyclin  -33.3095
+  cdc2 kinase triggered degration of cyclin  -33.3095
+  activation of cdc2 kinase  0.000133203
+  deactivation of cdc2 kinase  -0.000133203
+  activation of cyclin protease  0.0356773
+  deactivation of cyclin protease  -0.0356773
+
+
+**************** Time step 22: 0.22 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6514):  99.8916 0.000404039 0.108004
+  Fast (0.0100121):  0.0210778 0.000928304 99.978
+  Fast (0.00375952):  2.07023 97.9284 0.00134573
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6514)  Fast (0.0100121)  Fast (0.00375952)
+  Cyclin  99.8916  0.108028  0.000403216
+  CDC-2 Kinase  2.06928  0.00358325  97.9271
+  Cyclin Protease  0.0210534  99.978  0.000928427
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8916
+  CDC-2 Kinase  0.000404039
+  Cyclin Protease  0.108004
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05615
+  CDC-2 Kinase  49.4663
+  Cyclin Protease  49.4776
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3092
+  default degradation of cyclin  -33.3092
+  cdc2 kinase triggered degration of cyclin  -33.3092
+  activation of cdc2 kinase  0.000134728
+  deactivation of cdc2 kinase  -0.000134728
+  activation of cyclin protease  0.0360144
+  deactivation of cyclin protease  -0.0360144
+
+
+**************** Time step 23: 0.23 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6487):  99.8906 0.000408578 0.109002
+  Fast (0.0100124):  0.0210999 0.000945849 99.978
+  Fast (0.00376696):  2.07229 97.9263 0.00136379
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6487)  Fast (0.0100124)  Fast (0.00376696)
+  Cyclin  99.8906  0.109026  0.000407729
+  CDC-2 Kinase  2.07133  0.00362423  97.925
+  Cyclin Protease  0.0210752  99.978  0.000945975
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8906
+  CDC-2 Kinase  0.000408578
+  Cyclin Protease  0.109002
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05721
+  CDC-2 Kinase  49.4657
+  Cyclin Protease  49.477
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.309
+  default degradation of cyclin  -33.309
+  cdc2 kinase triggered degration of cyclin  -33.309
+  activation of cdc2 kinase  0.000136242
+  deactivation of cdc2 kinase  -0.000136242
+  activation of cyclin protease  0.0363472
+  deactivation of cyclin protease  -0.0363472
+
+
+**************** Time step 24: 0.24 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6461):  99.8896 0.000413076 0.109984
+  Fast (0.0100126):  0.0211221 0.000963333 99.9779
+  Fast (0.00377442):  2.07435 97.9243 0.00138179
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6461)  Fast (0.0100126)  Fast (0.00377442)
+  Cyclin  99.8896  0.110009  0.000412201
+  CDC-2 Kinase  2.07339  0.00366489  97.9229
+  Cyclin Protease  0.021097  99.9779  0.000963462
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8896
+  CDC-2 Kinase  0.000413076
+  Cyclin Protease  0.109984
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05827
+  CDC-2 Kinase  49.4652
+  Cyclin Protease  49.4765
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3088
+  default degradation of cyclin  -33.3088
+  cdc2 kinase triggered degration of cyclin  -33.3088
+  activation of cdc2 kinase  0.000137743
+  deactivation of cdc2 kinase  -0.000137743
+  activation of cyclin protease  0.0366748
+  deactivation of cyclin protease  -0.0366748
+
+
+**************** Time step 25: 0.25 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6435):  99.8886 0.00041754 0.110953
+  Fast (0.0100128):  0.0211444 0.000980777 99.9779
+  Fast (0.00378189):  2.07641 97.9222 0.00139975
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6435)  Fast (0.0100128)  Fast (0.00378189)
+  Cyclin  99.8886  0.110978  0.000416639
+  CDC-2 Kinase  2.07545  0.00370527  97.9208
+  Cyclin Protease  0.0211188  99.9779  0.00098091
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8886
+  CDC-2 Kinase  0.00041754
+  Cyclin Protease  0.110953
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.05934
+  CDC-2 Kinase  49.4647
+  Cyclin Protease  49.476
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3086
+  default degradation of cyclin  -33.3086
+  cdc2 kinase triggered degration of cyclin  -33.3086
+  activation of cdc2 kinase  0.000139232
+  deactivation of cdc2 kinase  -0.000139232
+  activation of cyclin protease  0.0369981
+  deactivation of cyclin protease  -0.0369981
+
+
+**************** Time step 26: 0.26 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6409):  99.8877 0.00042197 0.111909
+  Fast (0.010013):  0.0211666 0.000998183 99.9778
+  Fast (0.00378937):  2.07847 97.9201 0.00141768
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6409)  Fast (0.010013)  Fast (0.00378937)
+  Cyclin  99.8876  0.111934  0.000421043
+  CDC-2 Kinase  2.07751  0.00374539  97.9187
+  Cyclin Protease  0.0211407  99.9779  0.000998319
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8877
+  CDC-2 Kinase  0.00042197
+  Cyclin Protease  0.111909
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0604
+  CDC-2 Kinase  49.4641
+  Cyclin Protease  49.4755
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3084
+  default degradation of cyclin  -33.3084
+  cdc2 kinase triggered degration of cyclin  -33.3084
+  activation of cdc2 kinase  0.000140709
+  deactivation of cdc2 kinase  -0.000140709
+  activation of cyclin protease  0.0373169
+  deactivation of cyclin protease  -0.0373169
+
+
+**************** Time step 27: 0.27 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6384):  99.8867 0.000426367 0.112852
+  Fast (0.0100132):  0.0211889 0.00101555 99.9778
+  Fast (0.00379687):  2.08054 97.918 0.00143557
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6384)  Fast (0.0100132)  Fast (0.00379687)
+  Cyclin  99.8867  0.112877  0.000425413
+  CDC-2 Kinase  2.07957  0.00378525  97.9166
+  Cyclin Protease  0.0211626  99.9778  0.00101569
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8867
+  CDC-2 Kinase  0.000426367
+  Cyclin Protease  0.112852
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06146
+  CDC-2 Kinase  49.4636
+  Cyclin Protease  49.475
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3082
+  default degradation of cyclin  -33.3082
+  cdc2 kinase triggered degration of cyclin  -33.3082
+  activation of cdc2 kinase  0.000142176
+  deactivation of cdc2 kinase  -0.000142176
+  activation of cyclin protease  0.0376314
+  deactivation of cyclin protease  -0.0376314
+
+
+**************** Time step 28: 0.28 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6359):  99.8858 0.000430731 0.113781
+  Fast (0.0100134):  0.0212113 0.00103288 99.9778
+  Fast (0.00380438):  2.08261 97.9159 0.00145343
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6359)  Fast (0.0100134)  Fast (0.00380438)
+  Cyclin  99.8858  0.113807  0.00042975
+  CDC-2 Kinase  2.08164  0.00382484  97.9145
+  Cyclin Protease  0.0211845  99.9778  0.00103302
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8858
+  CDC-2 Kinase  0.000430731
+  Cyclin Protease  0.113781
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06253
+  CDC-2 Kinase  49.463
+  Cyclin Protease  49.4744
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3079
+  default degradation of cyclin  -33.3079
+  cdc2 kinase triggered degration of cyclin  -33.3079
+  activation of cdc2 kinase  0.000143632
+  deactivation of cdc2 kinase  -0.000143632
+  activation of cyclin protease  0.0379416
+  deactivation of cyclin protease  -0.0379416
+
+
+**************** Time step 29: 0.29 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6335):  99.8849 0.000435063 0.114699
+  Fast (0.0100136):  0.0212336 0.00105018 99.9777
+  Fast (0.00381191):  2.08468 97.9138 0.00147125
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6335)  Fast (0.0100136)  Fast (0.00381191)
+  Cyclin  99.8848  0.114725  0.000434055
+  CDC-2 Kinase  2.0837  0.00386418  97.9124
+  Cyclin Protease  0.0212065  99.9777  0.00105033
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8849
+  CDC-2 Kinase  0.000435063
+  Cyclin Protease  0.114699
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0636
+  CDC-2 Kinase  49.4625
+  Cyclin Protease  49.4739
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3077
+  default degradation of cyclin  -33.3077
+  cdc2 kinase triggered degration of cyclin  -33.3077
+  activation of cdc2 kinase  0.000145077
+  deactivation of cdc2 kinase  -0.000145077
+  activation of cyclin protease  0.0382476
+  deactivation of cyclin protease  -0.0382476
+
+
+**************** Time step 30: 0.3 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6311):  99.884 0.000439364 0.115604
+  Fast (0.0100138):  0.021256 0.00106745 99.9777
+  Fast (0.00381945):  2.08675 97.9118 0.00148905
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6311)  Fast (0.0100138)  Fast (0.00381945)
+  Cyclin  99.8839  0.11563  0.000438329
+  CDC-2 Kinase  2.08578  0.00390328  97.9103
+  Cyclin Protease  0.0212285  99.9777  0.0010676
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.884
+  CDC-2 Kinase  0.000439364
+  Cyclin Protease  0.115604
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06467
+  CDC-2 Kinase  49.4619
+  Cyclin Protease  49.4734
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3075
+  default degradation of cyclin  -33.3075
+  cdc2 kinase triggered degration of cyclin  -33.3075
+  activation of cdc2 kinase  0.000146511
+  deactivation of cdc2 kinase  -0.000146511
+  activation of cyclin protease  0.0385496
+  deactivation of cyclin protease  -0.0385496
+
+
+**************** Time step 31: 0.31 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6287):  99.8831 0.000443635 0.116497
+  Fast (0.010014):  0.0212785 0.00108469 99.9776
+  Fast (0.00382701):  2.08883 97.9097 0.00150682
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6287)  Fast (0.010014)  Fast (0.00382701)
+  Cyclin  99.883  0.116524  0.000442572
+  CDC-2 Kinase  2.08785  0.00394215  97.9082
+  Cyclin Protease  0.0212505  99.9777  0.00108484
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8831
+  CDC-2 Kinase  0.000443635
+  Cyclin Protease  0.116497
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06574
+  CDC-2 Kinase  49.4614
+  Cyclin Protease  49.4729
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3073
+  default degradation of cyclin  -33.3073
+  cdc2 kinase triggered degration of cyclin  -33.3073
+  activation of cdc2 kinase  0.000147936
+  deactivation of cdc2 kinase  -0.000147936
+  activation of cyclin protease  0.0388475
+  deactivation of cyclin protease  -0.0388475
+
+
+**************** Time step 32: 0.32 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6264):  99.8822 0.000447876 0.117379
+  Fast (0.0100142):  0.0213009 0.0011019 99.9776
+  Fast (0.00383458):  2.09091 97.9076 0.00152457
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6264)  Fast (0.0100142)  Fast (0.00383458)
+  Cyclin  99.8821  0.117405  0.000446786
+  CDC-2 Kinase  2.08993  0.00398078  97.9061
+  Cyclin Protease  0.0212725  99.9776  0.00110205
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8822
+  CDC-2 Kinase  0.000447876
+  Cyclin Protease  0.117379
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06681
+  CDC-2 Kinase  49.4608
+  Cyclin Protease  49.4723
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3071
+  default degradation of cyclin  -33.3071
+  cdc2 kinase triggered degration of cyclin  -33.3071
+  activation of cdc2 kinase  0.000149351
+  deactivation of cdc2 kinase  -0.000149351
+  activation of cyclin protease  0.0391416
+  deactivation of cyclin protease  -0.0391416
+
+
+**************** Time step 33: 0.33 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6241):  99.8813 0.000452084 0.118248
+  Fast (0.0100145):  0.0213234 0.00111908 99.9776
+  Fast (0.00384217):  2.093 97.9055 0.00154228
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6241)  Fast (0.0100145)  Fast (0.00384217)
+  Cyclin  99.8813  0.118275  0.000450967
+  CDC-2 Kinase  2.09201  0.00401916  97.904
+  Cyclin Protease  0.0212946  99.9776  0.00111924
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8813
+  CDC-2 Kinase  0.000452084
+  Cyclin Protease  0.118248
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06789
+  CDC-2 Kinase  49.4603
+  Cyclin Protease  49.4718
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3069
+  default degradation of cyclin  -33.3069
+  cdc2 kinase triggered degration of cyclin  -33.3069
+  activation of cdc2 kinase  0.000150754
+  deactivation of cdc2 kinase  -0.000150754
+  activation of cyclin protease  0.0394315
+  deactivation of cyclin protease  -0.0394315
+
+
+**************** Time step 34: 0.34 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6218):  99.8804 0.000456268 0.119106
+  Fast (0.0100147):  0.0213459 0.00113624 99.9775
+  Fast (0.00384977):  2.09508 97.9034 0.00155999
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6218)  Fast (0.0100147)  Fast (0.00384977)
+  Cyclin  99.8804  0.119134  0.000455123
+  CDC-2 Kinase  2.09409  0.00405736  97.9019
+  Cyclin Protease  0.0213167  99.9775  0.00113641
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8804
+  CDC-2 Kinase  0.000456268
+  Cyclin Protease  0.119106
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.06896
+  CDC-2 Kinase  49.4597
+  Cyclin Protease  49.4713
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3068
+  default degradation of cyclin  -33.3068
+  cdc2 kinase triggered degration of cyclin  -33.3068
+  activation of cdc2 kinase  0.00015215
+  deactivation of cdc2 kinase  -0.00015215
+  activation of cyclin protease  0.039718
+  deactivation of cyclin protease  -0.039718
+
+
+**************** Time step 35: 0.35 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6196):  99.8796 0.000460423 0.119954
+  Fast (0.0100149):  0.0213685 0.00115338 99.9775
+  Fast (0.00385738):  2.09717 97.9012 0.00157767
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6196)  Fast (0.0100149)  Fast (0.00385738)
+  Cyclin  99.8796  0.119981  0.00045925
+  CDC-2 Kinase  2.09618  0.00409533  97.8997
+  Cyclin Protease  0.0213389  99.9775  0.00115355
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8796
+  CDC-2 Kinase  0.000460423
+  Cyclin Protease  0.119954
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07004
+  CDC-2 Kinase  49.4592
+  Cyclin Protease  49.4708
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3066
+  default degradation of cyclin  -33.3066
+  cdc2 kinase triggered degration of cyclin  -33.3066
+  activation of cdc2 kinase  0.000153536
+  deactivation of cdc2 kinase  -0.000153536
+  activation of cyclin protease  0.0400006
+  deactivation of cyclin protease  -0.0400006
+
+
+**************** Time step 36: 0.36 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6174):  99.8787 0.00046455 0.12079
+  Fast (0.0100151):  0.0213911 0.00117051 99.9774
+  Fast (0.00386501):  2.09927 97.8991 0.00159533
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6174)  Fast (0.0100151)  Fast (0.00386501)
+  Cyclin  99.8787  0.120818  0.000463349
+  CDC-2 Kinase  2.09827  0.0041331  97.8976
+  Cyclin Protease  0.0213611  99.9775  0.00117068
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8787
+  CDC-2 Kinase  0.00046455
+  Cyclin Protease  0.12079
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07112
+  CDC-2 Kinase  49.4586
+  Cyclin Protease  49.4702
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3064
+  default degradation of cyclin  -33.3064
+  cdc2 kinase triggered degration of cyclin  -33.3064
+  activation of cdc2 kinase  0.000154913
+  deactivation of cdc2 kinase  -0.000154913
+  activation of cyclin protease  0.0402796
+  deactivation of cyclin protease  -0.0402796
+
+
+**************** Time step 37: 0.37 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6153):  99.8779 0.000468651 0.121616
+  Fast (0.0100153):  0.0214137 0.00118762 99.9774
+  Fast (0.00387265):  2.10136 97.897 0.00161298
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6153)  Fast (0.0100153)  Fast (0.00387265)
+  Cyclin  99.8779  0.121644  0.000467421
+  CDC-2 Kinase  2.10036  0.00417067  97.8955
+  Cyclin Protease  0.0213833  99.9774  0.00118779
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8779
+  CDC-2 Kinase  0.000468651
+  Cyclin Protease  0.121616
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0722
+  CDC-2 Kinase  49.4581
+  Cyclin Protease  49.4697
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3062
+  default degradation of cyclin  -33.3062
+  cdc2 kinase triggered degration of cyclin  -33.3062
+  activation of cdc2 kinase  0.000156281
+  deactivation of cdc2 kinase  -0.000156281
+  activation of cyclin protease  0.0405551
+  deactivation of cyclin protease  -0.0405551
+
+
+**************** Time step 38: 0.38 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6131):  99.8771 0.000472725 0.122431
+  Fast (0.0100155):  0.0214364 0.00120471 99.9774
+  Fast (0.00388031):  2.10346 97.8949 0.00163062
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6131)  Fast (0.0100155)  Fast (0.00388031)
+  Cyclin  99.8771  0.122459  0.000471468
+  CDC-2 Kinase  2.10245  0.00420804  97.8933
+  Cyclin Protease  0.0214055  99.9774  0.00120488
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8771
+  CDC-2 Kinase  0.000472725
+  Cyclin Protease  0.122431
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07328
+  CDC-2 Kinase  49.4575
+  Cyclin Protease  49.4692
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.306
+  default degradation of cyclin  -33.306
+  cdc2 kinase triggered degration of cyclin  -33.306
+  activation of cdc2 kinase  0.00015764
+  deactivation of cdc2 kinase  -0.00015764
+  activation of cyclin protease  0.0408271
+  deactivation of cyclin protease  -0.0408271
+
+
+**************** Time step 39: 0.39 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.611):  99.8763 0.000476775 0.123236
+  Fast (0.0100157):  0.0214591 0.00122179 99.9773
+  Fast (0.00388798):  2.10556 97.8928 0.00164825
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.611)  Fast (0.0100157)  Fast (0.00388798)
+  Cyclin  99.8763  0.123265  0.000475488
+  CDC-2 Kinase  2.10455  0.00424522  97.8912
+  Cyclin Protease  0.0214278  99.9774  0.00122197
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8763
+  CDC-2 Kinase  0.000476775
+  Cyclin Protease  0.123236
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07437
+  CDC-2 Kinase  49.457
+  Cyclin Protease  49.4686
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3058
+  default degradation of cyclin  -33.3058
+  cdc2 kinase triggered degration of cyclin  -33.3058
+  activation of cdc2 kinase  0.00015899
+  deactivation of cdc2 kinase  -0.00015899
+  activation of cyclin protease  0.0410957
+  deactivation of cyclin protease  -0.0410957
+
+
+**************** Time step 40: 0.4 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.609):  99.8755 0.000480798 0.124031
+  Fast (0.0100159):  0.0214818 0.00123885 99.9773
+  Fast (0.00389567):  2.10766 97.8907 0.00166587
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.609)  Fast (0.0100159)  Fast (0.00389567)
+  Cyclin  99.8755  0.12406  0.000479484
+  CDC-2 Kinase  2.10665  0.00428222  97.8891
+  Cyclin Protease  0.0214501  99.9773  0.00123904
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8755
+  CDC-2 Kinase  0.000480798
+  Cyclin Protease  0.124031
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07545
+  CDC-2 Kinase  49.4564
+  Cyclin Protease  49.4681
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3057
+  default degradation of cyclin  -33.3057
+  cdc2 kinase triggered degration of cyclin  -33.3057
+  activation of cdc2 kinase  0.000160333
+  deactivation of cdc2 kinase  -0.000160333
+  activation of cyclin protease  0.0413608
+  deactivation of cyclin protease  -0.0413608
+
+
+**************** Time step 41: 0.41 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6069):  99.8747 0.000484798 0.124816
+  Fast (0.0100162):  0.0215045 0.00125591 99.9772
+  Fast (0.00390337):  2.10977 97.8885 0.00168347
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6069)  Fast (0.0100162)  Fast (0.00390337)
+  Cyclin  99.8747  0.124845  0.000483454
+  CDC-2 Kinase  2.10876  0.00431903  97.8869
+  Cyclin Protease  0.0214725  99.9773  0.0012561
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8747
+  CDC-2 Kinase  0.000484798
+  Cyclin Protease  0.124816
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07654
+  CDC-2 Kinase  49.4559
+  Cyclin Protease  49.4676
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3055
+  default degradation of cyclin  -33.3055
+  cdc2 kinase triggered degration of cyclin  -33.3055
+  activation of cdc2 kinase  0.000161667
+  deactivation of cdc2 kinase  -0.000161667
+  activation of cyclin protease  0.0416227
+  deactivation of cyclin protease  -0.0416227
+
+
+**************** Time step 42: 0.42 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6049):  99.8739 0.000488774 0.125591
+  Fast (0.0100164):  0.0215273 0.00127297 99.9772
+  Fast (0.00391109):  2.11188 97.8864 0.00170108
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6049)  Fast (0.0100164)  Fast (0.00391109)
+  Cyclin  99.8739  0.12562  0.000487401
+  CDC-2 Kinase  2.11086  0.00435568  97.8848
+  Cyclin Protease  0.0214949  99.9772  0.00127316
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8739
+  CDC-2 Kinase  0.000488774
+  Cyclin Protease  0.125591
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07763
+  CDC-2 Kinase  49.4553
+  Cyclin Protease  49.4671
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3053
+  default degradation of cyclin  -33.3053
+  cdc2 kinase triggered degration of cyclin  -33.3053
+  activation of cdc2 kinase  0.000162993
+  deactivation of cdc2 kinase  -0.000162993
+  activation of cyclin protease  0.0418813
+  deactivation of cyclin protease  -0.0418813
+
+
+**************** Time step 43: 0.43 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6029):  99.8732 0.000492724 0.126357
+  Fast (0.0100166):  0.0215501 0.00129001 99.9772
+  Fast (0.00391882):  2.11399 97.8843 0.00171867
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6029)  Fast (0.0100166)  Fast (0.00391882)
+  Cyclin  99.8731  0.126386  0.000491323
+  CDC-2 Kinase  2.11297  0.00439214  97.8826
+  Cyclin Protease  0.0215173  99.9772  0.0012902
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8732
+  CDC-2 Kinase  0.000492724
+  Cyclin Protease  0.126357
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07872
+  CDC-2 Kinase  49.4548
+  Cyclin Protease  49.4665
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3051
+  default degradation of cyclin  -33.3051
+  cdc2 kinase triggered degration of cyclin  -33.3051
+  activation of cdc2 kinase  0.000164311
+  deactivation of cdc2 kinase  -0.000164311
+  activation of cyclin protease  0.0421367
+  deactivation of cyclin protease  -0.0421367
+
+
+**************** Time step 44: 0.44 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.6009):  99.8724 0.000496653 0.127113
+  Fast (0.0100168):  0.021573 0.00130704 99.9771
+  Fast (0.00392656):  2.11611 97.8822 0.00173627
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.6009)  Fast (0.0100168)  Fast (0.00392656)
+  Cyclin  99.8724  0.127142  0.000495222
+  CDC-2 Kinase  2.11508  0.00442844  97.8805
+  Cyclin Protease  0.0215397  99.9772  0.00130724
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8724
+  CDC-2 Kinase  0.000496653
+  Cyclin Protease  0.127113
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.07981
+  CDC-2 Kinase  49.4542
+  Cyclin Protease  49.466
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.305
+  default degradation of cyclin  -33.305
+  cdc2 kinase triggered degration of cyclin  -33.305
+  activation of cdc2 kinase  0.000165621
+  deactivation of cdc2 kinase  -0.000165621
+  activation of cyclin protease  0.0423889
+  deactivation of cyclin protease  -0.0423889
+
+
+**************** Time step 45: 0.45 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.599):  99.8716 0.00050056 0.12786
+  Fast (0.010017):  0.0215959 0.00132408 99.9771
+  Fast (0.00393432):  2.11823 97.88 0.00175387
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.599)  Fast (0.010017)  Fast (0.00393432)
+  Cyclin  99.8716  0.12789  0.0004991
+  CDC-2 Kinase  2.1172  0.00446459  97.8783
+  Cyclin Protease  0.0215622  99.9771  0.00132429
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8716
+  CDC-2 Kinase  0.00050056
+  Cyclin Protease  0.12786
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0809
+  CDC-2 Kinase  49.4536
+  Cyclin Protease  49.4655
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3048
+  default degradation of cyclin  -33.3048
+  cdc2 kinase triggered degration of cyclin  -33.3048
+  activation of cdc2 kinase  0.000166925
+  deactivation of cdc2 kinase  -0.000166925
+  activation of cyclin protease  0.0426382
+  deactivation of cyclin protease  -0.0426382
+
+
+**************** Time step 46: 0.46 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5971):  99.8709 0.000504445 0.128598
+  Fast (0.0100172):  0.0216188 0.00134112 99.977
+  Fast (0.0039421):  2.12035 97.8779 0.00177146
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5971)  Fast (0.0100172)  Fast (0.0039421)
+  Cyclin  99.8709  0.128628  0.000502955
+  CDC-2 Kinase  2.11932  0.00450058  97.8762
+  Cyclin Protease  0.0215847  99.9771  0.00134133
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8709
+  CDC-2 Kinase  0.000504445
+  Cyclin Protease  0.128598
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08199
+  CDC-2 Kinase  49.4531
+  Cyclin Protease  49.4649
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3046
+  default degradation of cyclin  -33.3046
+  cdc2 kinase triggered degration of cyclin  -33.3046
+  activation of cdc2 kinase  0.000168221
+  deactivation of cdc2 kinase  -0.000168221
+  activation of cyclin protease  0.0428845
+  deactivation of cyclin protease  -0.0428845
+
+
+**************** Time step 47: 0.47 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5952):  99.8702 0.000508307 0.129327
+  Fast (0.0100174):  0.0216418 0.00135816 99.977
+  Fast (0.00394989):  2.12247 97.8757 0.00178906
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5952)  Fast (0.0100174)  Fast (0.00394989)
+  Cyclin  99.8701  0.129358  0.000506788
+  CDC-2 Kinase  2.12144  0.00453642  97.874
+  Cyclin Protease  0.0216072  99.977  0.00135837
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8702
+  CDC-2 Kinase  0.000508307
+  Cyclin Protease  0.129327
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08309
+  CDC-2 Kinase  49.4525
+  Cyclin Protease  49.4644
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3045
+  default degradation of cyclin  -33.3045
+  cdc2 kinase triggered degration of cyclin  -33.3045
+  activation of cdc2 kinase  0.000169509
+  deactivation of cdc2 kinase  -0.000169509
+  activation of cyclin protease  0.0431277
+  deactivation of cyclin protease  -0.0431277
+
+
+**************** Time step 48: 0.48 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5933):  99.8694 0.000512149 0.130048
+  Fast (0.0100177):  0.0216648 0.0013752 99.977
+  Fast (0.00395769):  2.1246 97.8736 0.00180666
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5933)  Fast (0.0100177)  Fast (0.00395769)
+  Cyclin  99.8694  0.130078  0.000510601
+  CDC-2 Kinase  2.12356  0.00457211  97.8719
+  Cyclin Protease  0.0216298  99.977  0.00137541
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8694
+  CDC-2 Kinase  0.000512149
+  Cyclin Protease  0.130048
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08419
+  CDC-2 Kinase  49.452
+  Cyclin Protease  49.4638
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3043
+  default degradation of cyclin  -33.3043
+  cdc2 kinase triggered degration of cyclin  -33.3043
+  activation of cdc2 kinase  0.000170791
+  deactivation of cdc2 kinase  -0.000170791
+  activation of cyclin protease  0.0433681
+  deactivation of cyclin protease  -0.0433681
+
+
+**************** Time step 49: 0.49 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5915):  99.8687 0.000515973 0.13076
+  Fast (0.0100179):  0.0216878 0.00139225 99.9769
+  Fast (0.00396551):  2.12673 97.8714 0.00182428
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5915)  Fast (0.0100179)  Fast (0.00396551)
+  Cyclin  99.8687  0.130791  0.000514395
+  CDC-2 Kinase  2.12569  0.00460768  97.8697
+  Cyclin Protease  0.0216524  99.977  0.00139247
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8687
+  CDC-2 Kinase  0.000515973
+  Cyclin Protease  0.13076
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08529
+  CDC-2 Kinase  49.4514
+  Cyclin Protease  49.4633
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3041
+  default degradation of cyclin  -33.3041
+  cdc2 kinase triggered degration of cyclin  -33.3041
+  activation of cdc2 kinase  0.000172066
+  deactivation of cdc2 kinase  -0.000172066
+  activation of cyclin protease  0.0436058
+  deactivation of cyclin protease  -0.0436058
+
+
+**************** Time step 50: 0.5 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5897):  99.868 0.000519773 0.131464
+  Fast (0.0100181):  0.0217108 0.0014093 99.9769
+  Fast (0.00397335):  2.12886 97.8693 0.00184189
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5897)  Fast (0.0100181)  Fast (0.00397335)
+  Cyclin  99.868  0.131495  0.000518165
+  CDC-2 Kinase  2.12782  0.00464309  97.8675
+  Cyclin Protease  0.0216751  99.9769  0.00140952
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.868
+  CDC-2 Kinase  0.000519773
+  Cyclin Protease  0.131464
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08639
+  CDC-2 Kinase  49.4508
+  Cyclin Protease  49.4628
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.304
+  default degradation of cyclin  -33.304
+  cdc2 kinase triggered degration of cyclin  -33.304
+  activation of cdc2 kinase  0.000173334
+  deactivation of cdc2 kinase  -0.000173334
+  activation of cyclin protease  0.0438405
+  deactivation of cyclin protease  -0.0438405
+
+
+**************** Time step 51: 0.51 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5879):  99.8673 0.000523555 0.132159
+  Fast (0.0100183):  0.0217339 0.00142636 99.9768
+  Fast (0.0039812):  2.131 97.8671 0.00185952
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5879)  Fast (0.0100183)  Fast (0.0039812)
+  Cyclin  99.8673  0.132191  0.000521917
+  CDC-2 Kinase  2.12995  0.00467838  97.8654
+  Cyclin Protease  0.0216977  99.9769  0.00142658
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8673
+  CDC-2 Kinase  0.000523555
+  Cyclin Protease  0.132159
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08749
+  CDC-2 Kinase  49.4503
+  Cyclin Protease  49.4622
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3038
+  default degradation of cyclin  -33.3038
+  cdc2 kinase triggered degration of cyclin  -33.3038
+  activation of cdc2 kinase  0.000174596
+  deactivation of cdc2 kinase  -0.000174596
+  activation of cyclin protease  0.0440725
+  deactivation of cyclin protease  -0.0440725
+
+
+**************** Time step 52: 0.52 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5861):  99.8666 0.000527318 0.132847
+  Fast (0.0100185):  0.0217571 0.00144342 99.9768
+  Fast (0.00398907):  2.13314 97.865 0.00187715
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5861)  Fast (0.0100185)  Fast (0.00398907)
+  Cyclin  99.8666  0.132878  0.00052565
+  CDC-2 Kinase  2.13209  0.00471353  97.8632
+  Cyclin Protease  0.0217204  99.9768  0.00144365
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8666
+  CDC-2 Kinase  0.000527318
+  Cyclin Protease  0.132847
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.08859
+  CDC-2 Kinase  49.4497
+  Cyclin Protease  49.4617
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3037
+  default degradation of cyclin  -33.3037
+  cdc2 kinase triggered degration of cyclin  -33.3037
+  activation of cdc2 kinase  0.000175851
+  deactivation of cdc2 kinase  -0.000175851
+  activation of cyclin protease  0.0443019
+  deactivation of cyclin protease  -0.0443019
+
+
+**************** Time step 53: 0.53 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5843):  99.8659 0.000531062 0.133526
+  Fast (0.0100187):  0.0217802 0.0014605 99.9768
+  Fast (0.00399695):  2.13528 97.8628 0.0018948
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5843)  Fast (0.0100187)  Fast (0.00399695)
+  Cyclin  99.8659  0.133558  0.000529364
+  CDC-2 Kinase  2.13423  0.00474857  97.861
+  Cyclin Protease  0.0217432  99.9768  0.00146074
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8659
+  CDC-2 Kinase  0.000531062
+  Cyclin Protease  0.133526
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0897
+  CDC-2 Kinase  49.4492
+  Cyclin Protease  49.4612
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3035
+  default degradation of cyclin  -33.3035
+  cdc2 kinase triggered degration of cyclin  -33.3035
+  activation of cdc2 kinase  0.0001771
+  deactivation of cdc2 kinase  -0.0001771
+  activation of cyclin protease  0.0445286
+  deactivation of cyclin protease  -0.0445286
+
+
+**************** Time step 54: 0.54 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5826):  99.8653 0.000534787 0.134198
+  Fast (0.0100189):  0.0218034 0.00147759 99.9767
+  Fast (0.00400484):  2.13743 97.8607 0.00191246
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5826)  Fast (0.0100189)  Fast (0.00400484)
+  Cyclin  99.8652  0.13423  0.000533058
+  CDC-2 Kinase  2.13637  0.00478348  97.8588
+  Cyclin Protease  0.021766  99.9768  0.00147783
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8653
+  CDC-2 Kinase  0.000534787
+  Cyclin Protease  0.134198
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.0908
+  CDC-2 Kinase  49.4486
+  Cyclin Protease  49.4606
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3034
+  default degradation of cyclin  -33.3034
+  cdc2 kinase triggered degration of cyclin  -33.3034
+  activation of cdc2 kinase  0.000178343
+  deactivation of cdc2 kinase  -0.000178343
+  activation of cyclin protease  0.0447526
+  deactivation of cyclin protease  -0.0447526
+
+
+**************** Time step 55: 0.55 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5809):  99.8646 0.000538494 0.134861
+  Fast (0.0100192):  0.0218267 0.00149469 99.9767
+  Fast (0.00401275):  2.13957 97.8585 0.00193013
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5809)  Fast (0.0100192)  Fast (0.00401275)
+  Cyclin  99.8646  0.134894  0.000536735
+  CDC-2 Kinase  2.13851  0.00481827  97.8567
+  Cyclin Protease  0.0217888  99.9767  0.00149494
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8646
+  CDC-2 Kinase  0.000538494
+  Cyclin Protease  0.134861
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09191
+  CDC-2 Kinase  49.448
+  Cyclin Protease  49.4601
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3032
+  default degradation of cyclin  -33.3032
+  cdc2 kinase triggered degration of cyclin  -33.3032
+  activation of cdc2 kinase  0.000179579
+  deactivation of cdc2 kinase  -0.000179579
+  activation of cyclin protease  0.0449741
+  deactivation of cyclin protease  -0.0449741
+
+
+**************** Time step 56: 0.56 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5792):  99.8639 0.000542184 0.135518
+  Fast (0.0100194):  0.0218499 0.00151181 99.9766
+  Fast (0.00402068):  2.14173 97.8563 0.00194782
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5792)  Fast (0.0100194)  Fast (0.00402068)
+  Cyclin  99.8639  0.13555  0.000540393
+  CDC-2 Kinase  2.14066  0.00485294  97.8545
+  Cyclin Protease  0.0218116  99.9767  0.00151206
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8639
+  CDC-2 Kinase  0.000542184
+  Cyclin Protease  0.135518
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09302
+  CDC-2 Kinase  49.4475
+  Cyclin Protease  49.4595
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3031
+  default degradation of cyclin  -33.3031
+  cdc2 kinase triggered degration of cyclin  -33.3031
+  activation of cdc2 kinase  0.00018081
+  deactivation of cdc2 kinase  -0.00018081
+  activation of cyclin protease  0.045193
+  deactivation of cyclin protease  -0.045193
+
+
+**************** Time step 57: 0.57 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5775):  99.8633 0.000545856 0.136167
+  Fast (0.0100196):  0.0218732 0.00152895 99.9766
+  Fast (0.00402862):  2.14388 97.8542 0.00196553
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5775)  Fast (0.0100196)  Fast (0.00402862)
+  Cyclin  99.8633  0.136199  0.000544035
+  CDC-2 Kinase  2.14281  0.00488752  97.8523
+  Cyclin Protease  0.0218345  99.9766  0.0015292
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8633
+  CDC-2 Kinase  0.000545856
+  Cyclin Protease  0.136167
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09413
+  CDC-2 Kinase  49.4469
+  Cyclin Protease  49.459
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3029
+  default degradation of cyclin  -33.3029
+  cdc2 kinase triggered degration of cyclin  -33.3029
+  activation of cdc2 kinase  0.000182035
+  deactivation of cdc2 kinase  -0.000182035
+  activation of cyclin protease  0.0454096
+  deactivation of cyclin protease  -0.0454096
+
+
+**************** Time step 58: 0.58 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5758):  99.8626 0.000549511 0.136808
+  Fast (0.0100198):  0.0218966 0.0015461 99.9766
+  Fast (0.00403657):  2.14604 97.852 0.00198326
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5758)  Fast (0.0100198)  Fast (0.00403657)
+  Cyclin  99.8626  0.136841  0.000547659
+  CDC-2 Kinase  2.14497  0.00492198  97.8501
+  Cyclin Protease  0.0218574  99.9766  0.00154635
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8626
+  CDC-2 Kinase  0.000549511
+  Cyclin Protease  0.136808
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09525
+  CDC-2 Kinase  49.4463
+  Cyclin Protease  49.4584
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3028
+  default degradation of cyclin  -33.3028
+  cdc2 kinase triggered degration of cyclin  -33.3028
+  activation of cdc2 kinase  0.000183254
+  deactivation of cdc2 kinase  -0.000183254
+  activation of cyclin protease  0.0456237
+  deactivation of cyclin protease  -0.0456237
+
+
+**************** Time step 59: 0.59 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5742):  99.862 0.00055315 0.137443
+  Fast (0.01002):  0.0219199 0.00156327 99.9765
+  Fast (0.00404454):  2.1482 97.8498 0.00200101
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5742)  Fast (0.01002)  Fast (0.00404454)
+  Cyclin  99.862  0.137476  0.000551267
+  CDC-2 Kinase  2.14712  0.00495634  97.8479
+  Cyclin Protease  0.0218803  99.9766  0.00156353
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.862
+  CDC-2 Kinase  0.00055315
+  Cyclin Protease  0.137443
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09636
+  CDC-2 Kinase  49.4457
+  Cyclin Protease  49.4579
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3027
+  default degradation of cyclin  -33.3027
+  cdc2 kinase triggered degration of cyclin  -33.3027
+  activation of cdc2 kinase  0.000184468
+  deactivation of cdc2 kinase  -0.000184468
+  activation of cyclin protease  0.0458353
+  deactivation of cyclin protease  -0.0458353
+
+
+**************** Time step 60: 0.6 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5726):  99.8614 0.000556771 0.13807
+  Fast (0.0100202):  0.0219433 0.00158046 99.9765
+  Fast (0.00405253):  2.15036 97.8476 0.00201878
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5726)  Fast (0.0100202)  Fast (0.00405253)
+  Cyclin  99.8613  0.138103  0.000554857
+  CDC-2 Kinase  2.14928  0.0049906  97.8457
+  Cyclin Protease  0.0219033  99.9765  0.00158072
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8614
+  CDC-2 Kinase  0.000556771
+  Cyclin Protease  0.13807
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09748
+  CDC-2 Kinase  49.4452
+  Cyclin Protease  49.4573
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3025
+  default degradation of cyclin  -33.3025
+  cdc2 kinase triggered degration of cyclin  -33.3025
+  activation of cdc2 kinase  0.000185676
+  deactivation of cdc2 kinase  -0.000185676
+  activation of cyclin protease  0.0460446
+  deactivation of cyclin protease  -0.0460446
+
+
+**************** Time step 61: 0.61 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.571):  99.8607 0.000560379 0.138691
+  Fast (0.0100205):  0.0219668 0.00159767 99.9764
+  Fast (0.00406053):  2.15253 97.8454 0.00203657
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.571)  Fast (0.0100205)  Fast (0.00406053)
+  Cyclin  99.8607  0.138724  0.000558433
+  CDC-2 Kinase  2.15144  0.00502478  97.8435
+  Cyclin Protease  0.0219263  99.9765  0.00159794
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8607
+  CDC-2 Kinase  0.000560379
+  Cyclin Protease  0.138691
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09859
+  CDC-2 Kinase  49.4446
+  Cyclin Protease  49.4568
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3024
+  default degradation of cyclin  -33.3024
+  cdc2 kinase triggered degration of cyclin  -33.3024
+  activation of cdc2 kinase  0.00018688
+  deactivation of cdc2 kinase  -0.00018688
+  activation of cyclin protease  0.0462517
+  deactivation of cyclin protease  -0.0462517
+
+
+**************** Time step 62: 0.62 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5694):  99.8601 0.000563969 0.139304
+  Fast (0.0100207):  0.0219902 0.00161491 99.9764
+  Fast (0.00406855):  2.1547 97.8432 0.00205439
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5694)  Fast (0.0100207)  Fast (0.00406855)
+  Cyclin  99.8601  0.139338  0.000561991
+  CDC-2 Kinase  2.15361  0.00505885  97.8413
+  Cyclin Protease  0.0219494  99.9764  0.00161517
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8601
+  CDC-2 Kinase  0.000563969
+  Cyclin Protease  0.139304
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.09971
+  CDC-2 Kinase  49.444
+  Cyclin Protease  49.4563
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3022
+  default degradation of cyclin  -33.3022
+  cdc2 kinase triggered degration of cyclin  -33.3022
+  activation of cdc2 kinase  0.000188077
+  deactivation of cdc2 kinase  -0.000188077
+  activation of cyclin protease  0.0464563
+  deactivation of cyclin protease  -0.0464563
+
+
+**************** Time step 63: 0.63 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5678):  99.8595 0.000567545 0.139911
+  Fast (0.0100209):  0.0220138 0.00163217 99.9764
+  Fast (0.00407658):  2.15687 97.8411 0.00207223
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5678)  Fast (0.0100209)  Fast (0.00407658)
+  Cyclin  99.8595  0.139945  0.000565535
+  CDC-2 Kinase  2.15578  0.00509284  97.8391
+  Cyclin Protease  0.0219724  99.9764  0.00163244
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8595
+  CDC-2 Kinase  0.000567545
+  Cyclin Protease  0.139911
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10083
+  CDC-2 Kinase  49.4435
+  Cyclin Protease  49.4557
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3021
+  default degradation of cyclin  -33.3021
+  cdc2 kinase triggered degration of cyclin  -33.3021
+  activation of cdc2 kinase  0.00018927
+  deactivation of cdc2 kinase  -0.00018927
+  activation of cyclin protease  0.0466589
+  deactivation of cyclin protease  -0.0466589
+
+
+**************** Time step 64: 0.64 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5662):  99.8589 0.000571106 0.140512
+  Fast (0.0100211):  0.0220373 0.00164946 99.9763
+  Fast (0.00408463):  2.15904 97.8389 0.0020901
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5662)  Fast (0.0100211)  Fast (0.00408463)
+  Cyclin  99.8589  0.140546  0.000569065
+  CDC-2 Kinase  2.15795  0.00512675  97.8369
+  Cyclin Protease  0.0219956  99.9764  0.00164973
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8589
+  CDC-2 Kinase  0.000571106
+  Cyclin Protease  0.140512
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10196
+  CDC-2 Kinase  49.4429
+  Cyclin Protease  49.4552
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.302
+  default degradation of cyclin  -33.302
+  cdc2 kinase triggered degration of cyclin  -33.302
+  activation of cdc2 kinase  0.000190458
+  deactivation of cdc2 kinase  -0.000190458
+  activation of cyclin protease  0.0468593
+  deactivation of cyclin protease  -0.0468593
+
+
+**************** Time step 65: 0.65 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5647):  99.8583 0.000574652 0.141106
+  Fast (0.0100213):  0.0220609 0.00166677 99.9763
+  Fast (0.00409269):  2.16122 97.8367 0.002108
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5647)  Fast (0.0100213)  Fast (0.00409269)
+  Cyclin  99.8583  0.14114  0.000572579
+  CDC-2 Kinase  2.16013  0.00516057  97.8347
+  Cyclin Protease  0.0220187  99.9763  0.00166705
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8583
+  CDC-2 Kinase  0.000574652
+  Cyclin Protease  0.141106
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10308
+  CDC-2 Kinase  49.4423
+  Cyclin Protease  49.4546
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3018
+  default degradation of cyclin  -33.3018
+  cdc2 kinase triggered degration of cyclin  -33.3018
+  activation of cdc2 kinase  0.000191641
+  deactivation of cdc2 kinase  -0.000191641
+  activation of cyclin protease  0.0470574
+  deactivation of cyclin protease  -0.0470574
+
+
+**************** Time step 66: 0.66 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5632):  99.8577 0.000578183 0.141693
+  Fast (0.0100215):  0.0220845 0.00168411 99.9762
+  Fast (0.00410077):  2.1634 97.8345 0.00212592
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5632)  Fast (0.0100215)  Fast (0.00410077)
+  Cyclin  99.8577  0.141728  0.000576078
+  CDC-2 Kinase  2.1623  0.00519431  97.8325
+  Cyclin Protease  0.0220419  99.9763  0.0016844
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8577
+  CDC-2 Kinase  0.000578183
+  Cyclin Protease  0.141693
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10421
+  CDC-2 Kinase  49.4417
+  Cyclin Protease  49.4541
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3017
+  default degradation of cyclin  -33.3017
+  cdc2 kinase triggered degration of cyclin  -33.3017
+  activation of cdc2 kinase  0.000192819
+  deactivation of cdc2 kinase  -0.000192819
+  activation of cyclin protease  0.0472534
+  deactivation of cyclin protease  -0.0472534
+
+
+**************** Time step 67: 0.67 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5616):  99.8571 0.000581702 0.142274
+  Fast (0.0100218):  0.0221082 0.00170149 99.9762
+  Fast (0.00410886):  2.16559 97.8323 0.00214388
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5616)  Fast (0.0100218)  Fast (0.00410886)
+  Cyclin  99.8571  0.142309  0.000579564
+  CDC-2 Kinase  2.16448  0.00522798  97.8303
+  Cyclin Protease  0.0220651  99.9762  0.00170177
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8571
+  CDC-2 Kinase  0.000581702
+  Cyclin Protease  0.142274
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10533
+  CDC-2 Kinase  49.4412
+  Cyclin Protease  49.4535
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3016
+  default degradation of cyclin  -33.3016
+  cdc2 kinase triggered degration of cyclin  -33.3016
+  activation of cdc2 kinase  0.000193993
+  deactivation of cdc2 kinase  -0.000193993
+  activation of cyclin protease  0.0474474
+  deactivation of cyclin protease  -0.0474474
+
+
+**************** Time step 68: 0.68 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5602):  99.8566 0.000585205 0.142849
+  Fast (0.010022):  0.0221319 0.00171889 99.9761
+  Fast (0.00411697):  2.16778 97.8301 0.00216187
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5602)  Fast (0.010022)  Fast (0.00411697)
+  Cyclin  99.8565  0.142884  0.000583035
+  CDC-2 Kinase  2.16667  0.00526158  97.8281
+  Cyclin Protease  0.0220883  99.9762  0.00171918
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8566
+  CDC-2 Kinase  0.000585205
+  Cyclin Protease  0.142849
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10646
+  CDC-2 Kinase  49.4406
+  Cyclin Protease  49.453
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3014
+  default degradation of cyclin  -33.3014
+  cdc2 kinase triggered degration of cyclin  -33.3014
+  activation of cdc2 kinase  0.000195162
+  deactivation of cdc2 kinase  -0.000195162
+  activation of cyclin protease  0.0476392
+  deactivation of cyclin protease  -0.0476392
+
+
+**************** Time step 69: 0.69 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5587):  99.856 0.000588697 0.143418
+  Fast (0.0100222):  0.0221556 0.00173633 99.9761
+  Fast (0.0041251):  2.16997 97.8279 0.0021799
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5587)  Fast (0.0100222)  Fast (0.0041251)
+  Cyclin  99.856  0.143454  0.000586494
+  CDC-2 Kinase  2.16886  0.00529511  97.8258
+  Cyclin Protease  0.0221116  99.9762  0.00173662
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.856
+  CDC-2 Kinase  0.000588697
+  Cyclin Protease  0.143418
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10759
+  CDC-2 Kinase  49.44
+  Cyclin Protease  49.4524
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3013
+  default degradation of cyclin  -33.3013
+  cdc2 kinase triggered degration of cyclin  -33.3013
+  activation of cdc2 kinase  0.000196326
+  deactivation of cdc2 kinase  -0.000196326
+  activation of cyclin protease  0.0478291
+  deactivation of cyclin protease  -0.0478291
+
+
+**************** Time step 70: 0.7 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5572):  99.8554 0.000592173 0.143981
+  Fast (0.0100224):  0.0221793 0.00175379 99.9761
+  Fast (0.00413324):  2.17216 97.8256 0.00219796
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5572)  Fast (0.0100224)  Fast (0.00413324)
+  Cyclin  99.8554  0.144017  0.000589938
+  CDC-2 Kinase  2.17105  0.00532857  97.8236
+  Cyclin Protease  0.0221349  99.9761  0.00175409
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8554
+  CDC-2 Kinase  0.000592173
+  Cyclin Protease  0.143981
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10872
+  CDC-2 Kinase  49.4394
+  Cyclin Protease  49.4519
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3012
+  default degradation of cyclin  -33.3012
+  cdc2 kinase triggered degration of cyclin  -33.3012
+  activation of cdc2 kinase  0.000197486
+  deactivation of cdc2 kinase  -0.000197486
+  activation of cyclin protease  0.0480169
+  deactivation of cyclin protease  -0.0480169
+
+
+**************** Time step 71: 0.71 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5557):  99.8549 0.000595638 0.144538
+  Fast (0.0100226):  0.0222031 0.0017713 99.976
+  Fast (0.0041414):  2.17436 97.8234 0.00221605
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5557)  Fast (0.0100226)  Fast (0.0041414)
+  Cyclin  99.8548  0.144574  0.00059337
+  CDC-2 Kinase  2.17324  0.00536197  97.8214
+  Cyclin Protease  0.0221583  99.9761  0.0017716
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8549
+  CDC-2 Kinase  0.000595638
+  Cyclin Protease  0.144538
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.10986
+  CDC-2 Kinase  49.4388
+  Cyclin Protease  49.4513
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3011
+  default degradation of cyclin  -33.3011
+  cdc2 kinase triggered degration of cyclin  -33.3011
+  activation of cdc2 kinase  0.000198642
+  deactivation of cdc2 kinase  -0.000198642
+  activation of cyclin protease  0.0482028
+  deactivation of cyclin protease  -0.0482028
+
+
+**************** Time step 72: 0.72 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5543):  99.8543 0.000599091 0.14509
+  Fast (0.0100229):  0.022227 0.00178884 99.976
+  Fast (0.00414957):  2.17656 97.8212 0.00223419
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5543)  Fast (0.0100229)  Fast (0.00414957)
+  Cyclin  99.8543  0.145126  0.00059679
+  CDC-2 Kinase  2.17544  0.00539531  97.8192
+  Cyclin Protease  0.0221817  99.976  0.00178915
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8543
+  CDC-2 Kinase  0.000599091
+  Cyclin Protease  0.14509
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11099
+  CDC-2 Kinase  49.4383
+  Cyclin Protease  49.4507
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3009
+  default degradation of cyclin  -33.3009
+  cdc2 kinase triggered degration of cyclin  -33.3009
+  activation of cdc2 kinase  0.000199794
+  deactivation of cdc2 kinase  -0.000199794
+  activation of cyclin protease  0.0483868
+  deactivation of cyclin protease  -0.0483868
+
+
+**************** Time step 73: 0.73 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5529):  99.8538 0.000602529 0.145635
+  Fast (0.0100231):  0.0222508 0.00180641 99.9759
+  Fast (0.00415776):  2.17876 97.819 0.00225235
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5529)  Fast (0.0100231)  Fast (0.00415776)
+  Cyclin  99.8537  0.145672  0.000600195
+  CDC-2 Kinase  2.17763  0.00542858  97.8169
+  Cyclin Protease  0.0222051  99.976  0.00180673
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8538
+  CDC-2 Kinase  0.000602529
+  Cyclin Protease  0.145635
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11213
+  CDC-2 Kinase  49.4377
+  Cyclin Protease  49.4502
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3008
+  default degradation of cyclin  -33.3008
+  cdc2 kinase triggered degration of cyclin  -33.3008
+  activation of cdc2 kinase  0.000200941
+  deactivation of cdc2 kinase  -0.000200941
+  activation of cyclin protease  0.0485688
+  deactivation of cyclin protease  -0.0485688
+
+
+**************** Time step 74: 0.74 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5514):  99.8532 0.000605957 0.146175
+  Fast (0.0100233):  0.0222748 0.00182403 99.9759
+  Fast (0.00416596):  2.18097 97.8168 0.00227056
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5514)  Fast (0.0100233)  Fast (0.00416596)
+  Cyclin  99.8532  0.146212  0.00060359
+  CDC-2 Kinase  2.17984  0.00546181  97.8147
+  Cyclin Protease  0.0222286  99.9759  0.00182435
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8532
+  CDC-2 Kinase  0.000605957
+  Cyclin Protease  0.146175
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11327
+  CDC-2 Kinase  49.4371
+  Cyclin Protease  49.4496
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3007
+  default degradation of cyclin  -33.3007
+  cdc2 kinase triggered degration of cyclin  -33.3007
+  activation of cdc2 kinase  0.000202085
+  deactivation of cdc2 kinase  -0.000202085
+  activation of cyclin protease  0.048749
+  deactivation of cyclin protease  -0.048749
+
+
+**************** Time step 75: 0.75 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.55):  99.8527 0.000609372 0.14671
+  Fast (0.0100235):  0.0222987 0.00184169 99.9759
+  Fast (0.00417418):  2.18318 97.8145 0.00228881
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.55)  Fast (0.0100235)  Fast (0.00417418)
+  Cyclin  99.8526  0.146746  0.000606972
+  CDC-2 Kinase  2.18204  0.00549499  97.8125
+  Cyclin Protease  0.022252  99.9759  0.00184201
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8527
+  CDC-2 Kinase  0.000609372
+  Cyclin Protease  0.14671
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11441
+  CDC-2 Kinase  49.4365
+  Cyclin Protease  49.4491
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3006
+  default degradation of cyclin  -33.3006
+  cdc2 kinase triggered degration of cyclin  -33.3006
+  activation of cdc2 kinase  0.000203224
+  deactivation of cdc2 kinase  -0.000203224
+  activation of cyclin protease  0.0489273
+  deactivation of cyclin protease  -0.0489273
+
+
+**************** Time step 76: 0.76 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5486):  99.8521 0.000612777 0.147239
+  Fast (0.0100237):  0.0223227 0.00185938 99.9758
+  Fast (0.00418241):  2.18539 97.8123 0.0023071
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5486)  Fast (0.0100237)  Fast (0.00418241)
+  Cyclin  99.8521  0.147276  0.000610343
+  CDC-2 Kinase  2.18425  0.00552812  97.8102
+  Cyclin Protease  0.0222756  99.9759  0.00185971
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8521
+  CDC-2 Kinase  0.000612777
+  Cyclin Protease  0.147239
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11555
+  CDC-2 Kinase  49.4359
+  Cyclin Protease  49.4485
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3005
+  default degradation of cyclin  -33.3005
+  cdc2 kinase triggered degration of cyclin  -33.3005
+  activation of cdc2 kinase  0.00020436
+  deactivation of cdc2 kinase  -0.00020436
+  activation of cyclin protease  0.0491039
+  deactivation of cyclin protease  -0.0491039
+
+
+**************** Time step 77: 0.77 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5473):  99.8516 0.00061617 0.147763
+  Fast (0.010024):  0.0223467 0.00187712 99.9758
+  Fast (0.00419066):  2.1876 97.8101 0.00232544
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5473)  Fast (0.010024)  Fast (0.00419066)
+  Cyclin  99.8516  0.1478  0.000613702
+  CDC-2 Kinase  2.18646  0.0055612  97.808
+  Cyclin Protease  0.0222991  99.9758  0.00187746
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8516
+  CDC-2 Kinase  0.00061617
+  Cyclin Protease  0.147763
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11669
+  CDC-2 Kinase  49.4353
+  Cyclin Protease  49.448
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3003
+  default degradation of cyclin  -33.3003
+  cdc2 kinase triggered degration of cyclin  -33.3003
+  activation of cdc2 kinase  0.000205492
+  deactivation of cdc2 kinase  -0.000205492
+  activation of cyclin protease  0.0492786
+  deactivation of cyclin protease  -0.0492786
+
+
+**************** Time step 78: 0.78 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5459):  99.8511 0.000619552 0.148281
+  Fast (0.0100242):  0.0223707 0.00189491 99.9757
+  Fast (0.00419893):  2.18982 97.8078 0.00234382
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5459)  Fast (0.0100242)  Fast (0.00419893)
+  Cyclin  99.8511  0.148319  0.00061705
+  CDC-2 Kinase  2.18868  0.00559423  97.8057
+  Cyclin Protease  0.0223227  99.9758  0.00189524
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8511
+  CDC-2 Kinase  0.000619552
+  Cyclin Protease  0.148281
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11784
+  CDC-2 Kinase  49.4348
+  Cyclin Protease  49.4474
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3002
+  default degradation of cyclin  -33.3002
+  cdc2 kinase triggered degration of cyclin  -33.3002
+  activation of cdc2 kinase  0.00020662
+  deactivation of cdc2 kinase  -0.00020662
+  activation of cyclin protease  0.0494516
+  deactivation of cyclin protease  -0.0494516
+
+
+**************** Time step 79: 0.79 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5445):  99.8506 0.000622922 0.148794
+  Fast (0.0100244):  0.0223948 0.00191273 99.9757
+  Fast (0.00420721):  2.19204 97.8056 0.00236224
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5445)  Fast (0.0100244)  Fast (0.00420721)
+  Cyclin  99.8505  0.148832  0.000620386
+  CDC-2 Kinase  2.1909  0.00562722  97.8035
+  Cyclin Protease  0.0223464  99.9757  0.00191307
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8506
+  CDC-2 Kinase  0.000622922
+  Cyclin Protease  0.148794
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.11899
+  CDC-2 Kinase  49.4342
+  Cyclin Protease  49.4468
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3001
+  default degradation of cyclin  -33.3001
+  cdc2 kinase triggered degration of cyclin  -33.3001
+  activation of cdc2 kinase  0.000207744
+  deactivation of cdc2 kinase  -0.000207744
+  activation of cyclin protease  0.0496228
+  deactivation of cyclin protease  -0.0496228
+
+
+**************** Time step 80: 0.8 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5432):  99.8501 0.000626283 0.149303
+  Fast (0.0100246):  0.022419 0.00193061 99.9757
+  Fast (0.00421551):  2.19427 97.8034 0.00238071
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5432)  Fast (0.0100246)  Fast (0.00421551)
+  Cyclin  99.85  0.14934  0.000623713
+  CDC-2 Kinase  2.19312  0.00566019  97.8012
+  Cyclin Protease  0.02237  99.9757  0.00193095
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8501
+  CDC-2 Kinase  0.000626283
+  Cyclin Protease  0.149303
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12013
+  CDC-2 Kinase  49.4336
+  Cyclin Protease  49.4463
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.3
+  default degradation of cyclin  -33.3
+  cdc2 kinase triggered degration of cyclin  -33.3
+  activation of cdc2 kinase  0.000208865
+  deactivation of cdc2 kinase  -0.000208865
+  activation of cyclin protease  0.0497924
+  deactivation of cyclin protease  -0.0497924
+
+
+**************** Time step 81: 0.81 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5418):  99.8496 0.000629632 0.149806
+  Fast (0.0100248):  0.0224431 0.00194853 99.9756
+  Fast (0.00422383):  2.1965 97.8011 0.00239923
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5418)  Fast (0.0100248)  Fast (0.00422383)
+  Cyclin  99.8495  0.149844  0.000627029
+  CDC-2 Kinase  2.19534  0.00569311  97.799
+  Cyclin Protease  0.0223937  99.9757  0.00194888
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8496
+  CDC-2 Kinase  0.000629632
+  Cyclin Protease  0.149806
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12128
+  CDC-2 Kinase  49.433
+  Cyclin Protease  49.4457
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2999
+  default degradation of cyclin  -33.2999
+  cdc2 kinase triggered degration of cyclin  -33.2999
+  activation of cdc2 kinase  0.000209983
+  deactivation of cdc2 kinase  -0.000209983
+  activation of cyclin protease  0.0499603
+  deactivation of cyclin protease  -0.0499603
+
+
+**************** Time step 82: 0.82 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5405):  99.8491 0.000632972 0.150304
+  Fast (0.0100251):  0.0224673 0.00196649 99.9756
+  Fast (0.00423216):  2.19873 97.7989 0.0024178
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5405)  Fast (0.0100251)  Fast (0.00423216)
+  Cyclin  99.849  0.150342  0.000630334
+  CDC-2 Kinase  2.19757  0.00572599  97.7967
+  Cyclin Protease  0.0224175  99.9756  0.00196685
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8491
+  CDC-2 Kinase  0.000632972
+  Cyclin Protease  0.150304
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12244
+  CDC-2 Kinase  49.4324
+  Cyclin Protease  49.4452
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2998
+  default degradation of cyclin  -33.2998
+  cdc2 kinase triggered degration of cyclin  -33.2998
+  activation of cdc2 kinase  0.000211097
+  deactivation of cdc2 kinase  -0.000211097
+  activation of cyclin protease  0.0501265
+  deactivation of cyclin protease  -0.0501265
+
+
+**************** Time step 83: 0.83 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5392):  99.8486 0.000636302 0.150797
+  Fast (0.0100253):  0.0224916 0.00198451 99.9755
+  Fast (0.0042405):  2.20096 97.7966 0.00243642
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5392)  Fast (0.0100253)  Fast (0.0042405)
+  Cyclin  99.8485  0.150835  0.00063363
+  CDC-2 Kinase  2.1998  0.00575885  97.7944
+  Cyclin Protease  0.0224412  99.9756  0.00198487
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8486
+  CDC-2 Kinase  0.000636302
+  Cyclin Protease  0.150797
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12359
+  CDC-2 Kinase  49.4318
+  Cyclin Protease  49.4446
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2997
+  default degradation of cyclin  -33.2997
+  cdc2 kinase triggered degration of cyclin  -33.2997
+  activation of cdc2 kinase  0.000212208
+  deactivation of cdc2 kinase  -0.000212208
+  activation of cyclin protease  0.0502911
+  deactivation of cyclin protease  -0.0502911
+
+
+**************** Time step 84: 0.84 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5379):  99.8481 0.000639622 0.151286
+  Fast (0.0100255):  0.0225159 0.00200258 99.9755
+  Fast (0.00424887):  2.2032 97.7943 0.00245509
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5379)  Fast (0.0100255)  Fast (0.00424887)
+  Cyclin  99.848  0.151324  0.000636915
+  CDC-2 Kinase  2.20203  0.00579169  97.7922
+  Cyclin Protease  0.022465  99.9755  0.00200295
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8481
+  CDC-2 Kinase  0.000639622
+  Cyclin Protease  0.151286
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12474
+  CDC-2 Kinase  49.4312
+  Cyclin Protease  49.444
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2996
+  default degradation of cyclin  -33.2996
+  cdc2 kinase triggered degration of cyclin  -33.2996
+  activation of cdc2 kinase  0.000213315
+  deactivation of cdc2 kinase  -0.000213315
+  activation of cyclin protease  0.0504541
+  deactivation of cyclin protease  -0.0504541
+
+
+**************** Time step 85: 0.85 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5366):  99.8476 0.000642933 0.15177
+  Fast (0.0100257):  0.0225402 0.00202071 99.9754
+  Fast (0.00425725):  2.20544 97.7921 0.00247381
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5366)  Fast (0.0100257)  Fast (0.00425725)
+  Cyclin  99.8476  0.151808  0.000640191
+  CDC-2 Kinase  2.20427  0.0058245  97.7899
+  Cyclin Protease  0.0224889  99.9755  0.00202108
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8476
+  CDC-2 Kinase  0.000642933
+  Cyclin Protease  0.15177
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.1259
+  CDC-2 Kinase  49.4306
+  Cyclin Protease  49.4435
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2994
+  default degradation of cyclin  -33.2994
+  cdc2 kinase triggered degration of cyclin  -33.2994
+  activation of cdc2 kinase  0.00021442
+  deactivation of cdc2 kinase  -0.00021442
+  activation of cyclin protease  0.0506156
+  deactivation of cyclin protease  -0.0506156
+
+
+**************** Time step 86: 0.86 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5353):  99.8471 0.000646234 0.152249
+  Fast (0.010026):  0.0225645 0.00203888 99.9754
+  Fast (0.00426564):  2.20768 97.7898 0.00249258
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5353)  Fast (0.010026)  Fast (0.00426564)
+  Cyclin  99.8471  0.152287  0.000643457
+  CDC-2 Kinase  2.20651  0.00585727  97.7876
+  Cyclin Protease  0.0225128  99.9754  0.00203925
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8471
+  CDC-2 Kinase  0.000646234
+  Cyclin Protease  0.152249
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12706
+  CDC-2 Kinase  49.43
+  Cyclin Protease  49.4429
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2993
+  default degradation of cyclin  -33.2993
+  cdc2 kinase triggered degration of cyclin  -33.2993
+  activation of cdc2 kinase  0.000215521
+  deactivation of cdc2 kinase  -0.000215521
+  activation of cyclin protease  0.0507754
+  deactivation of cyclin protease  -0.0507754
+
+
+**************** Time step 87: 0.87 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.534):  99.8466 0.000649526 0.152723
+  Fast (0.0100262):  0.0225889 0.0020571 99.9754
+  Fast (0.00427405):  2.20993 97.7876 0.00251141
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.534)  Fast (0.0100262)  Fast (0.00427405)
+  Cyclin  99.8466  0.152762  0.000646714
+  CDC-2 Kinase  2.20875  0.00589003  97.7854
+  Cyclin Protease  0.0225367  99.9754  0.00205748
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8466
+  CDC-2 Kinase  0.000649526
+  Cyclin Protease  0.152723
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12822
+  CDC-2 Kinase  49.4295
+  Cyclin Protease  49.4423
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2992
+  default degradation of cyclin  -33.2992
+  cdc2 kinase triggered degration of cyclin  -33.2992
+  activation of cdc2 kinase  0.000216619
+  deactivation of cdc2 kinase  -0.000216619
+  activation of cyclin protease  0.0509337
+  deactivation of cyclin protease  -0.0509337
+
+
+**************** Time step 88: 0.88 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5328):  99.8462 0.000652809 0.153193
+  Fast (0.0100264):  0.0226133 0.00207538 99.9753
+  Fast (0.00428248):  2.21218 97.7853 0.00253029
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5328)  Fast (0.0100264)  Fast (0.00428248)
+  Cyclin  99.8461  0.153232  0.000649961
+  CDC-2 Kinase  2.211  0.00592277  97.7831
+  Cyclin Protease  0.0225606  99.9754  0.00207577
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8462
+  CDC-2 Kinase  0.000652809
+  Cyclin Protease  0.153193
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.12938
+  CDC-2 Kinase  49.4289
+  Cyclin Protease  49.4418
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2991
+  default degradation of cyclin  -33.2991
+  cdc2 kinase triggered degration of cyclin  -33.2991
+  activation of cdc2 kinase  0.000217715
+  deactivation of cdc2 kinase  -0.000217715
+  activation of cyclin protease  0.0510904
+  deactivation of cyclin protease  -0.0510904
+
+
+**************** Time step 89: 0.89 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5315):  99.8457 0.000656083 0.153658
+  Fast (0.0100266):  0.0226378 0.00209372 99.9753
+  Fast (0.00429092):  2.21443 97.783 0.00254924
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5315)  Fast (0.0100266)  Fast (0.00429092)
+  Cyclin  99.8456  0.153698  0.0006532
+  CDC-2 Kinase  2.21325  0.00595549  97.7808
+  Cyclin Protease  0.0225846  99.9753  0.00209411
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8457
+  CDC-2 Kinase  0.000656083
+  Cyclin Protease  0.153658
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13054
+  CDC-2 Kinase  49.4283
+  Cyclin Protease  49.4412
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.299
+  default degradation of cyclin  -33.299
+  cdc2 kinase triggered degration of cyclin  -33.299
+  activation of cdc2 kinase  0.000218807
+  deactivation of cdc2 kinase  -0.000218807
+  activation of cyclin protease  0.0512458
+  deactivation of cyclin protease  -0.0512458
+
+
+**************** Time step 90: 0.9 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5303):  99.8452 0.000659349 0.154119
+  Fast (0.0100268):  0.0226623 0.00211212 99.9752
+  Fast (0.00429938):  2.21669 97.7807 0.00256824
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5303)  Fast (0.0100268)  Fast (0.00429938)
+  Cyclin  99.8452  0.154159  0.00065643
+  CDC-2 Kinase  2.2155  0.0059882  97.7785
+  Cyclin Protease  0.0226086  99.9753  0.00211251
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8452
+  CDC-2 Kinase  0.000659349
+  Cyclin Protease  0.154119
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13171
+  CDC-2 Kinase  49.4277
+  Cyclin Protease  49.4406
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2989
+  default degradation of cyclin  -33.2989
+  cdc2 kinase triggered degration of cyclin  -33.2989
+  activation of cdc2 kinase  0.000219896
+  deactivation of cdc2 kinase  -0.000219896
+  activation of cyclin protease  0.0513996
+  deactivation of cyclin protease  -0.0513996
+
+
+**************** Time step 91: 0.91 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.529):  99.8448 0.000662606 0.154576
+  Fast (0.0100271):  0.0226869 0.00213057 99.9752
+  Fast (0.00430786):  2.21895 97.7785 0.00258729
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.529)  Fast (0.0100271)  Fast (0.00430786)
+  Cyclin  99.8447  0.154616  0.000659652
+  CDC-2 Kinase  2.21776  0.0060209  97.7762
+  Cyclin Protease  0.0226327  99.9752  0.00213097
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8448
+  CDC-2 Kinase  0.000662606
+  Cyclin Protease  0.154576
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13288
+  CDC-2 Kinase  49.4271
+  Cyclin Protease  49.4401
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2988
+  default degradation of cyclin  -33.2988
+  cdc2 kinase triggered degration of cyclin  -33.2988
+  activation of cdc2 kinase  0.000220983
+  deactivation of cdc2 kinase  -0.000220983
+  activation of cyclin protease  0.0515519
+  deactivation of cyclin protease  -0.0515519
+
+
+**************** Time step 92: 0.92 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5278):  99.8443 0.000665857 0.155028
+  Fast (0.0100273):  0.0227114 0.00214909 99.9751
+  Fast (0.00431635):  2.22121 97.7762 0.00260642
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5278)  Fast (0.0100273)  Fast (0.00431635)
+  Cyclin  99.8443  0.155068  0.000662866
+  CDC-2 Kinase  2.22002  0.0060536  97.7739
+  Cyclin Protease  0.0226568  99.9752  0.0021495
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8443
+  CDC-2 Kinase  0.000665857
+  Cyclin Protease  0.155028
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13404
+  CDC-2 Kinase  49.4265
+  Cyclin Protease  49.4395
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2987
+  default degradation of cyclin  -33.2987
+  cdc2 kinase triggered degration of cyclin  -33.2987
+  activation of cdc2 kinase  0.000222067
+  deactivation of cdc2 kinase  -0.000222067
+  activation of cyclin protease  0.051703
+  deactivation of cyclin protease  -0.051703
+
+
+**************** Time step 93: 0.93 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5266):  99.8439 0.000669097 0.155476
+  Fast (0.0100275):  0.0227361 0.00216766 99.9751
+  Fast (0.00432486):  2.22348 97.7739 0.00262559
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5266)  Fast (0.0100275)  Fast (0.00432486)
+  Cyclin  99.8438  0.155517  0.00066607
+  CDC-2 Kinase  2.22228  0.00608627  97.7716
+  Cyclin Protease  0.0226809  99.9752  0.00216807
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8439
+  CDC-2 Kinase  0.000669097
+  Cyclin Protease  0.155476
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13521
+  CDC-2 Kinase  49.4259
+  Cyclin Protease  49.4389
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2986
+  default degradation of cyclin  -33.2986
+  cdc2 kinase triggered degration of cyclin  -33.2986
+  activation of cdc2 kinase  0.000223148
+  deactivation of cdc2 kinase  -0.000223148
+  activation of cyclin protease  0.0518524
+  deactivation of cyclin protease  -0.0518524
+
+
+**************** Time step 94: 0.94 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5254):  99.8434 0.00067233 0.15592
+  Fast (0.0100277):  0.0227607 0.00218629 99.9751
+  Fast (0.00433338):  2.22575 97.7716 0.00264483
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5254)  Fast (0.0100277)  Fast (0.00433338)
+  Cyclin  99.8434  0.155961  0.000669267
+  CDC-2 Kinase  2.22454  0.00611894  97.7693
+  Cyclin Protease  0.0227051  99.9751  0.00218671
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8434
+  CDC-2 Kinase  0.00067233
+  Cyclin Protease  0.15592
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13638
+  CDC-2 Kinase  49.4253
+  Cyclin Protease  49.4383
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2985
+  default degradation of cyclin  -33.2985
+  cdc2 kinase triggered degration of cyclin  -33.2985
+  activation of cdc2 kinase  0.000224227
+  deactivation of cdc2 kinase  -0.000224227
+  activation of cyclin protease  0.0520005
+  deactivation of cyclin protease  -0.0520005
+
+
+**************** Time step 95: 0.95 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5242):  99.843 0.000675556 0.15636
+  Fast (0.010028):  0.0227854 0.002205 99.975
+  Fast (0.00434192):  2.22802 97.7693 0.00266414
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5242)  Fast (0.010028)  Fast (0.00434192)
+  Cyclin  99.8429  0.156401  0.000672457
+  CDC-2 Kinase  2.22681  0.00615162  97.767
+  Cyclin Protease  0.0227293  99.9751  0.00220542
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.843
+  CDC-2 Kinase  0.000675556
+  Cyclin Protease  0.15636
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13756
+  CDC-2 Kinase  49.4247
+  Cyclin Protease  49.4378
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2984
+  default degradation of cyclin  -33.2984
+  cdc2 kinase triggered degration of cyclin  -33.2984
+  activation of cdc2 kinase  0.000225303
+  deactivation of cdc2 kinase  -0.000225303
+  activation of cyclin protease  0.0521474
+  deactivation of cyclin protease  -0.0521474
+
+
+**************** Time step 96: 0.96 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.523):  99.8425 0.000678775 0.156796
+  Fast (0.0100282):  0.0228101 0.00222376 99.975
+  Fast (0.00435048):  2.23029 97.767 0.00268351
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.523)  Fast (0.0100282)  Fast (0.00435048)
+  Cyclin  99.8425  0.156837  0.000675639
+  CDC-2 Kinase  2.22908  0.00618429  97.7647
+  Cyclin Protease  0.0227535  99.975  0.00222419
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8425
+  CDC-2 Kinase  0.000678775
+  Cyclin Protease  0.156796
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13873
+  CDC-2 Kinase  49.4241
+  Cyclin Protease  49.4372
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2983
+  default degradation of cyclin  -33.2983
+  cdc2 kinase triggered degration of cyclin  -33.2983
+  activation of cdc2 kinase  0.000226377
+  deactivation of cdc2 kinase  -0.000226377
+  activation of cyclin protease  0.0522928
+  deactivation of cyclin protease  -0.0522928
+
+
+**************** Time step 97: 0.97 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5218):  99.8421 0.000681985 0.157228
+  Fast (0.0100284):  0.0228349 0.00224259 99.9749
+  Fast (0.00435906):  2.23257 97.7647 0.00270294
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5218)  Fast (0.0100284)  Fast (0.00435906)
+  Cyclin  99.8421  0.157269  0.000678812
+  CDC-2 Kinase  2.23136  0.00621696  97.7624
+  Cyclin Protease  0.0227778  99.975  0.00224302
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8421
+  CDC-2 Kinase  0.000681985
+  Cyclin Protease  0.157228
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.13991
+  CDC-2 Kinase  49.4235
+  Cyclin Protease  49.4366
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2982
+  default degradation of cyclin  -33.2982
+  cdc2 kinase triggered degration of cyclin  -33.2982
+  activation of cdc2 kinase  0.000227448
+  deactivation of cdc2 kinase  -0.000227448
+  activation of cyclin protease  0.0524368
+  deactivation of cyclin protease  -0.0524368
+
+
+**************** Time step 98: 0.98 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5206):  99.8417 0.000685189 0.157656
+  Fast (0.0100286):  0.0228597 0.00226149 99.9749
+  Fast (0.00436765):  2.23486 97.7624 0.00272245
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5206)  Fast (0.0100286)  Fast (0.00436765)
+  Cyclin  99.8416  0.157697  0.000681979
+  CDC-2 Kinase  2.23364  0.00624964  97.7601
+  Cyclin Protease  0.0228021  99.9749  0.00226192
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8417
+  CDC-2 Kinase  0.000685189
+  Cyclin Protease  0.157656
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.14109
+  CDC-2 Kinase  49.4229
+  Cyclin Protease  49.436
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2981
+  default degradation of cyclin  -33.2981
+  cdc2 kinase triggered degration of cyclin  -33.2981
+  activation of cdc2 kinase  0.000228517
+  deactivation of cdc2 kinase  -0.000228517
+  activation of cyclin protease  0.0525797
+  deactivation of cyclin protease  -0.0525797
+
+
+**************** Time step 99: 0.99 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5194):  99.8412 0.000688387 0.15808
+  Fast (0.0100289):  0.0228846 0.00228045 99.9748
+  Fast (0.00437626):  2.23714 97.7601 0.00274202
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5194)  Fast (0.0100289)  Fast (0.00437626)
+  Cyclin  99.8412  0.158121  0.00068514
+  CDC-2 Kinase  2.23592  0.00628233  97.7578
+  Cyclin Protease  0.0228264  99.9749  0.00228089
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8412
+  CDC-2 Kinase  0.000688387
+  Cyclin Protease  0.15808
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.14227
+  CDC-2 Kinase  49.4223
+  Cyclin Protease  49.4355
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.298
+  default degradation of cyclin  -33.298
+  cdc2 kinase triggered degration of cyclin  -33.298
+  activation of cdc2 kinase  0.000229584
+  deactivation of cdc2 kinase  -0.000229584
+  activation of cyclin protease  0.0527212
+  deactivation of cyclin protease  -0.0527212
+
+
+**************** Time step 100: 1 s **************************  
+
+Contribution of species to modes
+Rows : contribution to  mode (TS - corresponding timescale)
+Columns: species     Cyclin   CDC-2 Kinase   Cyclin Protease
+  Slow (99.5182):  99.8408 0.000691577 0.1585
+  Fast (0.0100291):  0.0229095 0.00229949 99.9748
+  Fast (0.00438488):  2.23943 97.7578 0.00276166
+
+Modes distribution for species
+Rows: Mode distribution for each species
+Columns: Modes (TS - corresponding  timescale)
+  Slow (99.5182)  Fast (0.0100291)  Fast (0.00438488)
+  Cyclin  99.8408  0.158542  0.000688293
+  CDC-2 Kinase  2.2382  0.00631502  97.7555
+  Cyclin Protease  0.0228508  99.9748  0.00229993
+
+Slow space
+Rows: Species
+Column: Contribution to slow space
+  1 slow; 2 fast
+  Cyclin  99.8408
+  CDC-2 Kinase  0.000691577
+  Cyclin Protease  0.1585
+
+Fast space
+Rows: Species
+Column: Contribution to fast space
+  1 slow; 2 fast
+  Cyclin  1.14345
+  CDC-2 Kinase  49.4217
+  Cyclin Protease  49.4349
+
+Reactions slow space
+Rows: Reactions
+Column: Contribution to slow space 
+  creation of cyclin  33.2979
+  default degradation of cyclin  -33.2979
+  cdc2 kinase triggered degration of cyclin  -33.2979
+  activation of cdc2 kinase  0.000230648
+  deactivation of cdc2 kinase  -0.000230648
+  activation of cyclin protease  0.0528615
+  deactivation of cyclin protease  -0.0528615
+
+
+

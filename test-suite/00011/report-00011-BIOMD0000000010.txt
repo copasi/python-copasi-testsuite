@@ -1,0 +1,138 @@
+Linear Noise Approximation Task
+
+Problem Description:
+Calculation of a steady state is requested before the LNA.
+
+Steady-State Task
+
+Problem Description:
+    JacobianRequested: 1
+    StabilityAnalysisRequested: 1
+
+Method: Enhanced Newton
+    Resolution: 1e-09
+    Derivation Factor: 0.001
+    Use Newton: 1
+    Use Integration: 1
+    Use Back Integration: 1
+    Accept Negative Concentrations: 0
+    Iteration Limit: 50
+    Maximum duration for forward integration: 1e+09
+    Maximum duration for backward integration: 1e+06
+
+
+
+Method: Linear Noise Approximation
+
+
+
+Linear Noise Approximation Result:
+
+A steady state was found. All coefficients are shown.
+
+Covariance matrix
+Covariance matrix
+Rows:    Species (full system)
+Columns: Species (full system)
+	Mek1-P	Erk2-P	Mos	Mek1	Erk2	Mek1-PP	Mos-P	Erk2-PP
+Mek1-P	nan	nan	nan	nan	nan	nan	nan	nan
+Erk2-P	nan	nan	nan	nan	nan	nan	nan	nan
+Mos	nan	nan	nan	nan	nan	nan	nan	nan
+Mek1	nan	nan	nan	nan	nan	nan	nan	nan
+Erk2	nan	nan	nan	nan	nan	nan	nan	nan
+Mek1-PP	nan	nan	nan	nan	nan	nan	nan	nan
+Mos-P	nan	nan	nan	nan	nan	nan	nan	nan
+Erk2-PP	nan	nan	nan	nan	nan	nan	nan	nan
+
+Results of the steady state subtask (the state for which the LNA was performed):
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+Mos	76.6351	2.59459e-17	4.61507e+16	0.015625	411.498
+Mos-P	23.3649	-2.59459e-17	1.40707e+16	-0.015625	125.46
+Mek1	238.914	0	1.43877e+17	0	434.692
+Mek1-P	41.1421	-3.11351e-16	2.47764e+16	-0.1875	42.0817
+Mek1-PP	19.9441	3.11351e-16	1.20106e+16	0.1875	46.5922
+Erk2	102.159	5.18918e-16	6.15213e+16	0.3125	234.973
+Erk2-P	99.9714	0	6.02042e+16	0	115.132
+Erk2-PP	97.8701	-5.18918e-16	5.89388e+16	-0.3125	225.74
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+MAPKKK activation	0.186234	1.12153e+14
+MAPKKK inactivation	0.186234	1.12153e+14
+phosphorylation of MAPKK	0.549616	3.30986e+14
+phosphorylation of MAPKK-P	0.428058	2.57782e+14
+dephosphorylation of MAPKK-PP	0.428058	2.57782e+14
+dephosphorylation of MAPKK-P	0.549616	3.30986e+14
+phosphorylation of MAPK	0.434766	2.61822e+14
+phosphorylation of MAPK-P	0.433552	2.61091e+14
+dephosphorylation of MAPK-PP	0.433552	2.61091e+14
+dephosphorylation of MAPK-P	0.434766	2.61822e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Mek1-P	Erk2-P	Mos	Mek1	Erk2	Mek1-PP	Mos-P	Erk2-PP
+Mek1-P	-0.00634906	-0	-0	0.000135901	-0	0.00921306	0.00520259	-0
+Erk2-P	-0	-0.0011332	-0	-0	0.000544877	6.08887e-05	-0	0.000588713
+Mos	-0	-0	-0.000280504	-0	-0	-0	0.00203302	0.00174262
+Mek1	0.00356923	-0	-0	-0.000135901	-0	-0	-0.0235231	-0
+Erk2	-0	0.00056739	-0	-0	-0.000544877	-0.0217992	-0	-0
+Mek1-PP	0.00277983	-0	-0	-0	-0	-0.00921306	0.0183205	-0
+Mos-P	-0	-0	0.000280504	-0	-0	-0	-0.00203302	-0.00174262
+Erk2-PP	-0	0.000565806	-0	-0	-0	0.0217383	-0	-0.000588713
+
+Eigenvalues	real	imaginary
+	0.00158089	-0.00701846
+	0.00158089	0.00701846
+	0	0
+	0	0
+	0	0
+	-0.00167962	0
+	-0.00641346	0
+	-0.015347	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Mek1-P	Erk2-P	Mos	Mek1	Erk2
+Mek1-P	-0.0155621	-0	-0.0052026	-0.00907716	-0
+Erk2-P	-6.08903e-05	-0.00172191	-0	-6.08913e-05	-4.38357e-05
+Mos	-0	-0.00174262	-0.00231352	-0	-0.00174262
+Mek1	0.00356923	-0	0.0235231	-0.000135901	-0
+Erk2	0.0217992	0.00056739	-0	0.0217992	-0.000544877
+
+Eigenvalues	real	imaginary
+	0.00158089	-0.00701846
+	0.00158089	0.00701846
+	-0.00167962	0
+	-0.00641346	0
+	-0.015347	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.00158089
+ Largest absolute imaginary part:  0.00701846
+ The complex eigenvalues with the largest real part are:  0.00158089 +|- 0.00701846i
+ 3 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 3 have negative real part
+ stiffness = 9.70786
+ time hierarchy = 0.186543
+
+
+
