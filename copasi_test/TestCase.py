@@ -31,7 +31,7 @@ from TestRunner import TestRunner
 class TestCase:
     def __init__(self, case_dir):
         self.case_dir = case_dir
-        self.id = os.path.basename(case_dir)
+        self.id = os.path.basename(os.path.abspath(case_dir))
         self.settings = {}
         self.task_type = TaskTypes.asIs
         self.initializeCase(case_dir)
@@ -60,12 +60,15 @@ class TestCase:
         open_url(self.case_dir)
 
     def isValid(self):
-        #type: () -> bool
+        # type: () -> bool
         if not os.path.exists(self.case_dir):
             return False
 
         if not 'task' in self.settings:
-            return  False
+            return False
+
+        if self.id == '':
+            return False
 
         return True
 
