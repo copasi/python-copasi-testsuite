@@ -1,0 +1,96 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 3
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Truncated Newton
+    Log Verbosity: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+4	22.4998	(	2.99999	)
+6	2.5	(	0.9995	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	2.5
+Standard Deviation:	0.79057
+Function Evaluations:	15
+CPU Time [s]:	0.002
+Evaluations/Second [1/s]:	7500
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	0.9995	-2.2583e-08	0.25
+
+File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data2.txt
+Experiment:	Experiment
+Mean:	-0.000499752
+Objective Value:	2.5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	0.9995	-1.0005	1.001	1.0005
+2.	10	1	0.9995	-0.000499752	2.49752e-07	0.000499752
+3.	20	0.5	0.9995	0.4995	0.2495	0.4995
+4.	30	1.5	0.9995	-0.5005	0.2505	0.5005
+5.	40	0	0.9995	0.9995	0.999001	0.9995
+Objective Value				2.5
+Root Mean Square				0.707107
+Weight				1
+
+Fisher Information Matrix:
+  Matrix(1x1)
+	10
+
+FIM Eigenvalues:
+  Matrix(1x1)
+	10
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Fisher Information Matrix (scaled):
+  Matrix(1x1)
+	9.99001
+
+FIM Eigenvalues (scaled):
+  Matrix(1x1)
+	9.99001
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Correlation Matrix:
+  Matrix(1x1)
+	1
+
+
+
