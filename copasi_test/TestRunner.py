@@ -2,11 +2,11 @@ import os
 import logging
 import subprocess
 import time
+import threading
 
 from RunResult import RunResult
-from TestCase import TestCase
 
-isDebug = False
+isDebug = True
 
 
 class TestRunner:
@@ -61,7 +61,7 @@ class TestRunner:
                 os.remove(result_file)
 
     def runTest(self, case, **kwargs):
-        # type: (TestCase) -> int
+        # type: (TestCase.TestCase,**kwargs) -> int
         if not case.isValid():
             return RunResult.TEST_INVALID
 
@@ -102,19 +102,52 @@ class TestRunner:
 
                 if not (os.path.isfile(report_file) and use_existing):
                     print ("  model {0}: execute {1}".format(model_name, repr(self)))
-                    invoke_result = subprocess.check_call([self.executable] + extra_args)
+                    #invoke_result = subprocess.check_call([self.executable] + extra_args)
+                    self.call_copasi(case,[self.executable] + extra_args)
+
+
                 print ("  model {0}: compare result".format(model_name))
                 result += case.compare_result(model_file, self)
             except:
+                if 'ignore_exception' in case.settings and case.settings['ignore_exception'].lower() == 'true':
+                    continue
+
                 if isDebug:
                     import traceback
                     traceback.print_exc()
+
                 logging.error('Failed to run model {0} of case {1}'.format(model_name, case.id))
                 return RunResult.EXCEPTION
 
         logging.info("Test took {0} seconds".format(time.clock() - t0))
 
         return result
+
+    def call_copasi(self, case, *popenargs, **kwargs):
+        t0 = time.clock()
+        p = subprocess.Popen(*popenargs, **kwargs)
+
+        if 'timeout' in case.settings:
+            timeout_sec = int(case.settings['timeout'])
+            timer = threading.Timer(timeout_sec, p.kill)
+            try:
+                timer.start()
+                stdout, stderr = p.communicate()
+            finally:
+                timer.cancel()
+        else:
+            stdout, stderr = p.communicate()
+
+        print('\tran for {0} seconds'.format(time.clock() - t0))
+
+        retcode = p.returncode
+        if retcode:
+            cmd = kwargs.get("args")
+            if cmd is None:
+                cmd = popenargs[0]
+            raise subprocess.CalledProcessError(retcode, cmd)
+
+        return 0
 
     def __repr__(self):
         if self.version != 'unknown':

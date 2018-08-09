@@ -1,5 +1,9 @@
 import pandas
-from typing import List, Any
+try:
+    from typing import List, Any
+except:
+    pass
+
 
 from ReportParser import ReportParser
 

@@ -1,0 +1,5 @@
+task: Parameter Estimation
+method: Differential Evolution
+location: .
+format: copasi
+result: run-only

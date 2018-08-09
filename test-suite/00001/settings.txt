@@ -4,7 +4,8 @@ task: Time-Course
 location: ./../biomodels
 filter: BIOMD00000000[0-1]\d
 format: sbml
-#result: run-only
 start: 0
 duration: 10.0
 steps: 50
+atol: 1e-5
+rtol: 1e-5

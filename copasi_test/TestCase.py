@@ -3,6 +3,16 @@ import re
 import sys
 import logging
 
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+
+from TaskTypes import TaskTypes
+from RunResult import RunResult
+from TestReport import TestReport
+from TestRunner import TestRunner
+
 
 def open_url(url):
     import subprocess
@@ -14,20 +24,7 @@ def open_url(url):
         try:
             subprocess.Popen(['xdg-open', url])
         except OSError:
-            print
-            'Please open: ' + url
-
-
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
-
-
-from TaskTypes import TaskTypes
-from RunResult import RunResult
-from TestReport import TestReport
-from TestRunner import TestRunner
+            print('Please open: ' + url)
 
 
 class TestCase:
@@ -54,6 +51,16 @@ class TestCase:
 
         self.task_type = self.settings.get('task', TaskTypes.asIs)
 
+        if 'atol' not in self.settings:
+            self.settings['atol'] = 0.001
+        else:
+            self.settings['atol'] = float(self.settings['atol'])
+
+        if 'rtol' not in self.settings:
+            self.settings['rtol'] = 0.001
+        else:
+            self.settings['rtol'] = float(self.settings['rtol'])
+
     def open_settings(self):
         import subprocess
         subprocess.call(os.path.join(self.case_dir, 'settings.txt'), shell=True)
@@ -66,7 +73,7 @@ class TestCase:
         if not os.path.exists(self.case_dir):
             return False
 
-        if not 'task' in self.settings:
+        if 'task' not in self.settings:
             return False
 
         if self.id == '':
@@ -75,18 +82,18 @@ class TestCase:
         return True
 
     def format_is_sbml(self):
-        if not 'format' in self.settings:
+        if 'format' not in self.settings:
             return False
 
         return self.settings['format'] == 'sbml'
 
     def format_is_copasi(self):
-        if not 'format' in self.settings:
+        if 'format' not in self.settings:
             return True
 
         return self.settings['format'] == 'copasi'
 
-    def print_overview(self, stream = None):
+    def print_overview(self, stream=None):
         if stream is None:
             stream = sys.stdout
 
@@ -111,13 +118,13 @@ class TestCase:
     def get_models(self):
         models = []
 
-        if not 'location' in self.settings:
+        if 'location' not in self.settings:
             return models
 
         location = self.settings['location']
 
         if location == '.':
-            location =  os.path.abspath(self.case_dir)
+            location = os.path.abspath(self.case_dir)
         elif location.startswith('./'):
             location = location.replace('./', os.path.abspath(self.case_dir) + '/', 1)
 
@@ -147,8 +154,10 @@ class TestCase:
     def generate_model(self, model_file, output_dir):
         import basico
         import COPASI
-        file_name = os.path.join(output_dir, 'model-{0}-{1}.cps'.format(self.id, os.path.splitext(os.path.basename(model_file))[0]))
-        report_name = os.path.join(output_dir, 'report-{0}-{1}.txt'.format(self.id, os.path.splitext(os.path.basename(model_file))[0]))
+        file_name = os.path.join(output_dir, 'model-{0}-{1}.cps'.
+                                 format(self.id, os.path.splitext(os.path.basename(model_file))[0]))
+        report_name = os.path.join(output_dir, 'report-{0}-{1}.txt'.
+                                   format(self.id, os.path.splitext(os.path.basename(model_file))[0]))
         dm = basico.load_model(model_file)
         if dm is None:
             return None
@@ -156,7 +165,7 @@ class TestCase:
         if 'format' in self.settings and self.settings['format'] == 'copasi':
             # disable all other scheduled tasks
             if self.settings['task'] != 'as-is':
-                for task in  dm.getTaskList():
+                for task in dm.getTaskList():
                     assert(isinstance(task, COPASI.CCopasiTask))
                     task.setScheduled(False)
 
@@ -190,10 +199,22 @@ class TestCase:
             task.setUpdateModel(True)
             problem = task.getProblem()
             assert (isinstance(problem, COPASI.CTrajectoryProblem))
+
+            if 'method' in self.settings:
+                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+
             if 'duration' in self.settings:
                 problem.setDuration(float(self.settings['duration']))
             if 'steps' in self.settings:
                 problem.setStepNumber(int(self.settings['steps']))
+
+            problem = task.getProblem()
+            if 'StepNumber' in self.settings:
+                problem.getParameter('StepNumber').setUIntValue(int(self.settings['StepNumber']))
+            if 'StepSize' in self.settings:
+                problem.getParameter('StepSize').setDblValue(float(self.settings['StepNumber']))
+            if 'Duration' in self.settings:
+                problem.getParameter('Duration').setDblValue(float(self.settings['StepNumber']))
 
             COPASI.COutputAssistant.getListOfDefaultOutputDescriptions()
             COPASI.COutputAssistant.createDefaultOutput(1000, task, dm)
@@ -216,26 +237,32 @@ class TestCase:
             assert (isinstance(task, COPASI.CCopasiTask))
             task.setScheduled(True)
 
+            if 'method' in self.settings:
+                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+
         elif self.settings['task'] == TaskTypes.parameterEstimation:
             need_report = True
             task = dm.getTask('Parameter Estimation')
             assert (isinstance(task, COPASI.CFitTask))
             task.setScheduled(True)
 
+            if 'method' in self.settings:
+                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+
             problem = task.getProblem()
             assert (isinstance(problem, COPASI.CFitProblem))
 
             # need to copy data files
-            set = problem.getExperimentSet()
-            assert (isinstance(set, COPASI.CExperimentSet))
+            exp_set = problem.getExperimentSet()
+            assert (isinstance(exp_set, COPASI.CExperimentSet))
 
-            for i in range(set.getExperimentCount()):
-                exp = set.getExperiment(i)
+            for i in range(exp_set.getExperimentCount()):
+                exp = exp_set.getExperiment(i)
                 assert (isinstance(exp, COPASI.CExperiment))
                 filename = exp.getFileNameOnly()
 
                 if os.path.isfile(filename):
-                    with open(filename,'r') as data_file:
+                    with open(filename, 'r') as data_file:
                         data = data_file.read()
                         new_file = os.path.join(output_dir, os.path.basename(filename))
 
@@ -299,7 +326,7 @@ class TestCase:
             problem = task.getProblem()
             problem.getParameter('Steady-State').setStringValue(dm.getTask(TaskTypes.steadystate).getKey())
 
-        if not task is None and need_report:
+        if task is not None and need_report:
             report = task.getReport()
             assert (isinstance(report, COPASI.CReport))
             report.setConfirmOverwrite(False)
@@ -329,14 +356,14 @@ class TestCase:
 
         other = TestReport(report_file, self.task_type)
         if not other.is_valid():
-            return  RunResult.RESULT_FILE_INVALID
+            return RunResult.RESULT_FILE_INVALID
 
         # do actual comparison here
         comp = TaskTypes.getComparer(self.task_type)
         if comp is None:
             return RunResult.COMPARE_NOT_IMPLEMENTED
 
-        compare_result = comp.compare(expected, other)
+        compare_result = comp.compare(expected, other, atol=self.settings['atol'], rtol=self.settings['rtol'])
         run_result = compare_result.get_run_result()
 
         # or return failure
@@ -349,7 +376,7 @@ class TestCase:
         report_file = os.path.join(output_dir, 'report-{0}-{1}.txt'.format(self.id, base_name))
         expected_result = os.path.join(self.case_dir, 'report-{0}-{1}.txt'.format(self.id, base_name))
 
-        if ('result' in self.settings) and (self.settings['result'] ==  'run-only'):
+        if ('result' in self.settings) and (self.settings['result'] == 'run-only'):
             return RunResult.PASS
 
         return self.compare_files(expected_result, report_file)
