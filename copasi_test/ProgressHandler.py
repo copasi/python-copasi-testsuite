@@ -2,6 +2,8 @@ from __future__ import print_function
 
 import logging
 import os
+import sys
+
 
 class ProgressHandler(logging.Handler):
     def __init__(self):
@@ -28,10 +30,12 @@ class ProgressHandler(logging.Handler):
         if record.levelno == logging.DEBUG:
             print('D', end="")
             self.debug.append(pos)
-        pass
+
+        sys.stdout.flush()
 
     def handleError(self, record):
         print('X', end="")
+        sys.stdout.flush()
 
     def close(self):
         num_errors = len(self.errors)
@@ -45,6 +49,8 @@ class ProgressHandler(logging.Handler):
 
         for err in self.errors:
             print (self.messages[err].getMessage())
+
+        sys.stdout.flush()
 
 
 def setup_logging(progress_only=True, level=logging.INFO):
