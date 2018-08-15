@@ -1,0 +1,24 @@
+Lyapunov Exponents Task
+
+Problem Description:
+    ExponentNumber: 3
+    DivergenceRequested: 1
+    TransientTime: 70
+
+Method: Wolf Method
+    Orthonormalization Interval: 5
+    Overall time: 150
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+
+
+
+Lyapunov Exponents Result:
+
+Lyapunov Exponents:
+-0.0999885 -0.200012 -0.3 
+
+Average divergence: -0.6
+
+
