@@ -30,36 +30,55 @@ List of Fitting Items:
 
 List of Constraint Items:
 
-Method: Truncated Newton
+Method: Simulated Annealing
     Log Verbosity: 0
+    Start Temperature: 1
+    Cooling Factor: 0.85
+    Tolerance: 0.0001
+    Random Number Generator: 1
+    Seed: 0
 
 [Function Evaluations]	[Best Value]	[Best Parameters]
-4	22.4998	(	2.99999	)
-6	2.5	(	0.9995	)
+1	22.5	(	3	)
+2	8.0977	(	2.05808	)
+3	3.09523	(	0.654969	)
+7	2.70719	(	0.796438	)
+24	2.53417	(	0.917336	)
+25	2.5018	(	1.01896	)
+45	2.50059	(	0.989173	)
+49	2.50039	(	1.00889	)
+74	2.5001	(	0.995504	)
+153	2.50003	(	0.997433	)
+690	2.5	(	0.99955	)
+2498	2.5	(	0.999949	)
+17844	2.5	(	1.00005	)
+20159	2.5	(	0.999975	)
+28698	2.5	(	0.999996	)
+30695	2.5	(	1	)
 
 Parameter Estimation Result:
 
 Objective Function Value:	2.5
-Standard Deviation:	0.79057
-Function Evaluations:	15
-CPU Time [s]:	0.002
-Evaluations/Second [1/s]:	7500
+Standard Deviation:	0.790569
+Function Evaluations:	56786
+CPU Time [s]:	3.805
+Evaluations/Second [1/s]:	14924
 
 	Parameter	Value	Gradient	Standard Deviation
-	Values[X].InitialValue:	0.9995	-2.2583e-08	0.25
+	Values[X].InitialValue:	1	0.00499599	0.25
 
 File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data2.txt
 Experiment:	Experiment
-Mean:	-0.000499752
+Mean:	-4.00608e-07
 Objective Value:	2.5
 Root Mean Square:	0.707107
 Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Objective Value	Root Mean Square
 
-1.	0	2	0.9995	-1.0005	1.001	1.0005
-2.	10	1	0.9995	-0.000499752	2.49752e-07	0.000499752
-3.	20	0.5	0.9995	0.4995	0.2495	0.4995
-4.	30	1.5	0.9995	-0.5005	0.2505	0.5005
-5.	40	0	0.9995	0.9995	0.999001	0.9995
+1.	0	2	1	-1	1	1
+2.	10	1	1	-4.00608e-07	1.60487e-13	4.00608e-07
+3.	20	0.5	1	0.5	0.25	0.5
+4.	30	1.5	1	-0.5	0.25	0.5
+5.	40	0	1	1	0.999999	1
 Objective Value				2.5
 Root Mean Square				0.707107
 Weight				1
@@ -78,11 +97,11 @@ FIM Eigenvectors corresponding to Eigenvalues:
 
 Fisher Information Matrix (scaled):
   Matrix(1x1)
-	9.99001
+	9.99999
 
 FIM Eigenvalues (scaled):
   Matrix(1x1)
-	9.99001
+	9.99999
 
 FIM Eigenvectors (scaled) corresponding to Eigenvalues:
   Matrix(1x1)

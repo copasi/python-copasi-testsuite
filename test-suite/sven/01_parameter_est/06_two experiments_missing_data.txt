@@ -38,61 +38,61 @@ Method: Current Solution Statistics
     Log Verbosity: 0
 
 [Function Evaluations]	[Best Value]	[Best Parameters]
-1	10	(	1	2	)
+1	7.5	(	1	2	)
 
 Parameter Estimation Result:
 
-Objective Function Value:	10
-Standard Deviation:	0.745356
+Objective Function Value:	7.5
+Standard Deviation:	0.731925
 Function Evaluations:	7
-CPU Time [s]:	0.000
-Evaluations/Second [1/s]:	inf
+CPU Time [s]:	0.001
+Evaluations/Second [1/s]:	7000
 
 	Parameter	Value	Gradient	Standard Deviation
-	Values[X].InitialValue:	1	0.01	0.166667
-	Values[Y].InitialValue:	2	0.02	0.166667
+	Values[X].InitialValue:	1	0.008	0.182981
+	Values[Y].InitialValue:	2	0.016	0.182981
 
-File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data3a.txt
+File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data3_missing.txt
 Experiment:	Experiment_1
 Mean:	0
-Objective Value:	5
-Root Mean Square:	0.707107
+Objective Value:	4.5
+Root Mean Square:	0.75
 Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
 
 1.	0	2	1	-1	3	2	-1	2	1
 2.	10	1	1	0	2	2	0	0	0
-3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
-4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
+3.	20	0.5	1	0.5	nan	2	nan	0.25	0.5
+4.	30	1.5	1	-0.5	nan	2	nan	0.25	0.5
 5.	40	0	1	1	1	2	1	2	1
-Objective Value				2.5			2.5
-Root Mean Square				0.707107			0.707107
+Objective Value				2.5			2
+Root Mean Square				0.707107			0.816497
 Weight				1			1
 
-File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data3a.txt
+File Name:	/Users/sven/copasi_git/python-copasi-testsuite/test-suite/sven/01_parameter_est/data3_missing.txt
 Experiment:	Experiment_2
 Mean:	0
-Objective Value:	5
-Root Mean Square:	0.707107
+Objective Value:	3
+Root Mean Square:	0.612372
 Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
 
-1.	0	2	1	-1	3	2	-1	2	1
+1.	0	nan	1	nan	3	2	-1	1	1
 2.	10	1	1	0	2	2	0	0	0
 3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
 4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
-5.	40	0	1	1	1	2	1	2	1
-Objective Value				2.5			2.5
-Root Mean Square				0.707107			0.707107
+5.	40	nan	1	nan	1	2	1	1	1
+Objective Value				0.5			2.5
+Root Mean Square				0.408248			0.707107
 Weight				1			1
 
 Fisher Information Matrix:
   Matrix(2x2)
-	20	0
-	0	20
+	16	0
+	0	16
 
 FIM Eigenvalues:
   Matrix(2x1)
-	20
-	20
+	16
+	16
 
 FIM Eigenvectors corresponding to Eigenvalues:
   Matrix(2x2)
@@ -101,13 +101,13 @@ FIM Eigenvectors corresponding to Eigenvalues:
 
 Fisher Information Matrix (scaled):
   Matrix(2x2)
-	20	0
-	0	80
+	16	0
+	0	64
 
 FIM Eigenvalues (scaled):
   Matrix(2x1)
-	20
-	80
+	16
+	64
 
 FIM Eigenvectors (scaled) corresponding to Eigenvalues:
   Matrix(2x2)
