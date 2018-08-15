@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import logging
-
+import os
 
 class ProgressHandler(logging.Handler):
     def __init__(self):
@@ -48,6 +48,10 @@ class ProgressHandler(logging.Handler):
 
 
 def setup_logging(progress_only=True, level=logging.INFO):
-    logging.basicConfig(format='%(relativeCreated)-8d %(levelname)-6s - %(message)s', level=level, datefmt='%X')
+    logging.basicConfig(format='%(relativeCreated)-8d %(levelname)-7s - %(message)s', level=level, datefmt='%X')
+
+    if progress_only and os.getenv('COPASI_TEST_PRINT') is not None:
+        progress_only = False
+
     if progress_only:
         logging.getLogger('').handlers[0] = ProgressHandler()
