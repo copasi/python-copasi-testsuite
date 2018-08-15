@@ -2,6 +2,6 @@
 # 
 task: Steady-State           # timecourse
 location: ./../biomodels # a directory
-filter: BIOMD000000000[0-5] # only models 0-5
+filter: BIOMD000000000[0-3] # only models 0-3
 format: sbml                 # allowed are sbml | copasi
-#result: run-only
+
