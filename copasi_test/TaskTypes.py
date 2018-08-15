@@ -26,6 +26,7 @@ from ResultComparerPE import ResultComparerPE
 from ResultComparerLyap import ResultComparerLyap
 from ResultComparerTssa import ResultComparerTssa
 from ResultComparerSensitivities import ResultComparerSensitivities
+from ResultComparerMoieties import ResultComparerMoieties
 
 
 class TaskTypes:
@@ -88,7 +89,7 @@ class TaskTypes:
             TaskTypes.lyap: ResultComparerLyap(),
             TaskTypes.tssa: ResultComparerTssa(),
             TaskTypes.sensitivities: ResultComparerSensitivities(),
-            TaskTypes.moieties: ResultComparer(),
+            TaskTypes.moieties: ResultComparerMoieties(),
             TaskTypes.crossSection: ResultComparer(),
             TaskTypes.lna: ResultComparer(),
             TaskTypes.exportSBML: ResultComparer(),

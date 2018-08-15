@@ -313,6 +313,22 @@ class TestCase:
             assert (isinstance(task, COPASI.CCopasiTask))
             task.setScheduled(True)
 
+            reports = dm.getReportDefinitionList()
+            assert (isinstance(reports, COPASI.CReportDefinitionVector))
+
+            reports.removeByName('Moieties')
+
+            new_report = reports.createReportDefinition('Moieties', 'Link Matrix and Stoichiometry matrix')
+            assert (isinstance(new_report, COPASI.CReportDefinition))
+            new_report.setIsTable(False)
+            new_report.addFooterItem(dm.getModel().getObject(COPASI.CCommonName('Array=Link matrix(ann)')).getCN())
+            new_report.addFooterItem(COPASI.CCommonName('String=\n'))
+            new_report.addFooterItem(dm.getModel().getObject(COPASI.CCommonName('Array=Stoichiometry(ann)')).getCN())
+            #new_report.addFooterItem('<CN=Root,Model={0},Array=Link matrix(ann)>'.format(dm.getModel().getObjectName()))
+            #new_report.addFooterItem('<CN=Root,Model={0},Array=Stoichiometry(ann)>'.format(dm.getModel().getObjectName()))
+            task.getReport().setReportDefinition(new_report)
+
+
         elif self.settings['task'] == TaskTypes.crossSection:
             need_report = True
             task = dm.getTask('Cross Section')

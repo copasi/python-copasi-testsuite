@@ -1,0 +1,36 @@
+Link matrix(ann)
+Link matrix
+Rows:    Species that are controlled by reactions (full system)
+Columns: Species (reduced system)
+	IntermediateACh	ActiveACh	Active	IntermediateACh2	BasalACh	DesensitisedACh	Intermediate	ActiveACh2	DesensitisedACh2	Basal	Desensitised
+IntermediateACh	1	0	0	0	0	0	0	0	0	0	0
+ActiveACh	0	1	0	0	0	0	0	0	0	0	0
+Active	0	0	1	0	0	0	0	0	0	0	0
+IntermediateACh2	0	0	0	1	0	0	0	0	0	0	0
+BasalACh	0	0	0	0	1	0	0	0	0	0	0
+DesensitisedACh	0	0	0	0	0	1	0	0	0	0	0
+Intermediate	0	0	0	0	0	0	1	0	0	0	0
+ActiveACh2	0	0	0	0	0	0	0	1	0	0	0
+DesensitisedACh2	0	0	0	0	0	0	0	0	1	0	0
+Basal	0	0	0	0	0	0	0	0	0	1	0
+Desensitised	0	0	0	0	0	0	0	0	0	0	1
+BasalACh2	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1
+
+Stoichiometry(ann)
+Stoichiometry Matrix
+Rows:    Species that are controlled by reactions
+Columns: Reactions
+	(React0)	(React1)	(React2)	(React3)	(React4)	(React5)	(React6)	(React7)	(React8)	(React9)	(React10)	(React11)	(React12)	(React13)	(React14)	(React15)	(React16)
+IntermediateACh	0	0	0	0	0	0	0	1	-1	0	1	0	0	0	0	-1	0
+ActiveACh	0	0	0	1	-1	0	1	0	0	0	-1	0	0	0	0	0	0
+Active	0	0	0	-1	0	1	0	0	0	-1	0	0	0	0	0	0	0
+IntermediateACh2	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	-1
+BasalACh	1	-1	0	0	0	0	-1	0	0	0	0	0	0	0	0	0	0
+DesensitisedACh	0	0	0	0	0	0	0	0	0	0	0	0	1	-1	0	1	0
+Intermediate	0	0	0	0	0	0	0	-1	0	1	0	0	0	0	-1	0	0
+ActiveACh2	0	0	1	0	1	0	0	0	0	0	0	-1	0	0	0	0	0
+DesensitisedACh2	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1
+Basal	-1	0	0	0	0	-1	0	0	0	0	0	0	0	0	0	0	0
+Desensitised	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	1	0	0
+BasalACh2	0	1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+

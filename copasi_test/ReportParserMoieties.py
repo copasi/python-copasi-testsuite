@@ -7,4 +7,12 @@ class ReportParserMoieties(ReportParser):
 
     def parseLines(self, lines):
         # type: ([str]) -> None
-        raise NotImplementedError()
+        current = self.skip_until(lines, 0, 'Link matrix(ann)')
+        if current == -1:
+            return
+
+        current = self.readAnnotatedMatrix(lines, current)
+        current = self.skip_until(lines, current, 'Stoichiometry(ann)')
+        if current == -1:
+            return
+        current = self.readAnnotatedMatrix(lines, current)

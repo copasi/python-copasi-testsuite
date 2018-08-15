@@ -1,0 +1,22 @@
+Link matrix(ann)
+Link matrix
+Rows:    Species that are controlled by reactions (full system)
+Columns: Species (reduced system)
+	Cyclin	Active CDC-2 Kinase	Active Cyclin Protease
+Cyclin	1	0	0
+Active CDC-2 Kinase	0	1	0
+Active Cyclin Protease	0	0	1
+Inactive CDC-2 Kinase	0	-1	0
+Inactive Cyclin Protease	0	0	-1
+
+Stoichiometry(ann)
+Stoichiometry Matrix
+Rows:    Species that are controlled by reactions
+Columns: Reactions
+	(creation of cyclin)	(default degradation of cyclin)	(cdc2 kinase triggered degration of cyclin)	(activation of cdc2 kinase)	(deactivation of cdc2 kinase)	(activation of cyclin protease)	(deactivation of cyclin protease)
+Cyclin	1	-1	-1	0	0	0	0
+Active CDC-2 Kinase	0	0	0	1	-1	0	0
+Active Cyclin Protease	0	0	0	0	0	1	-1
+Inactive CDC-2 Kinase	0	0	0	-1	1	0	0
+Inactive Cyclin Protease	0	0	0	0	0	-1	1
+
