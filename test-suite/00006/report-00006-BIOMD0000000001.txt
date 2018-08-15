@@ -1,9 +1,0 @@
-
-Lyapunov Exponents Result:
-
-Lyapunov Exponents:
-0 0 0 
-
-Average divergence: 0
-
-
