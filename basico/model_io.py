@@ -25,7 +25,7 @@ def set_current_model(model):
         __model_list.append(model)
 
     if __current_model is not None:
-        logging.info(model_info(__current_model))
+        logging.debug(model_info(__current_model))
     return __current_model
 
 
