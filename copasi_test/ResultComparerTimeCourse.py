@@ -7,7 +7,7 @@ class ResultComparerTimeCourse(ResultComparer):
         ResultComparer.__init__(self, TaskTypes.timecourse)
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
         # compare csv files, ought to be identical
         # diff = self.get_differences(expected.data_frames[0], other.data_frames[0], **kwargs)
         # result.differences.append(diff)

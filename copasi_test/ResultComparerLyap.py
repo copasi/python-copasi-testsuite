@@ -7,11 +7,10 @@ class ResultComparerLyap(ResultComparer):
         ResultComparer.__init__(self, TaskTypes.lyap)
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
 
         if len(other.data_frames) != len(expected.data_frames):
-            result.explicit_fail = True
-            result.messages.append('Different number of results returned')
+            result.fail_with('Different number of results returned')
             return
 
         # compare csv files, ought to be identical

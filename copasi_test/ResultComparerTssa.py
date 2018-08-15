@@ -7,10 +7,9 @@ class ResultComparerTssa(ResultComparer):
         ResultComparer.__init__(self, TaskTypes.tssa)
 
     def compare_ildm(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
         if len(expected.data_frames) != len(other.data_frames):
-            result.explicit_fail = True
-            result.messages.append('dimensions differ')
+            result.fail_with('dimensions differ')
             return result
 
         for i in range(0, len(expected.data_frames), 5):
@@ -29,11 +28,10 @@ class ResultComparerTssa(ResultComparer):
         return result
 
     def compare_modified_ildm(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
 
         if len(expected.data_frames) != len(other.data_frames):
-            result.explicit_fail = True
-            result.messages.append('dimensions differ')
+            result.fail_with('dimensions differ')
             return result
 
         for i in range(0, len(expected.data_frames), 4):
@@ -50,10 +48,9 @@ class ResultComparerTssa(ResultComparer):
         return result
 
     def compare_csp(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
         if len(expected.data_frames) != len(other.data_frames):
-            result.explicit_fail = True
-            result.messages.append('dimensions differ')
+            result.fail_with('dimensions differ')
             return result
 
         for i in range(0, len(expected.data_frames), 3):
@@ -71,9 +68,8 @@ class ResultComparerTssa(ResultComparer):
     def compare(self, expected, other, **kwargs):
 
         if expected.method != other.method:
-            result = CompareResult()
-            result.explicit_fail = True
-            result.messages.append('Different method used: {0} != {1}'.format(expected.method, other.method))
+            result = CompareResult(self)
+            result.fail_with('Different method used: {0} != {1}'.format(expected.method, other.method))
             return result
 
         if expected.method == 'ILDM (LSODA,Modified)':

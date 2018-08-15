@@ -24,7 +24,7 @@ def open_url(url):
         try:
             subprocess.Popen(['xdg-open', url])
         except OSError:
-            print('Please open: ' + url)
+            pass
 
 
 class TestCase:
@@ -332,8 +332,8 @@ class TestCase:
             report.setConfirmOverwrite(False)
             report.setAppend(False)
             report.setTarget(report_name)
-            print('\t Task is:    {0}'.format(task.getObjectName()))
-            print('\t Method is:  {0}'.format(task.getMethod().getObjectName()))
+            logging.debug('\t Task is:    {0}'.format(task.getObjectName()))
+            logging.debug('\t Method is:  {0}'.format(task.getMethod().getObjectName()))
 
         if dm.saveModel(file_name, True):
             basico.remove_datamodel(dm)
@@ -363,6 +363,8 @@ class TestCase:
         if comp is None:
             return RunResult.COMPARE_NOT_IMPLEMENTED
 
+        base_name = os.path.splitext(os.path.basename(expected_file))[0]
+        comp.case_id = self.id + ":" + base_name
         compare_result = comp.compare(expected, other, atol=self.settings['atol'], rtol=self.settings['rtol'])
         run_result = compare_result.get_run_result()
 

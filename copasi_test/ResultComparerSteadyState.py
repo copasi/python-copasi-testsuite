@@ -7,7 +7,12 @@ class ResultComparerSteadyState(ResultComparer):
         ResultComparer.__init__(self, TaskTypes.steadystate)
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
+
+        # compare status
+        if expected.status != other.status:
+            result.fail_with('Status different: {0} != {1}'.format(expected.status, other.status))
+
         # species result: concentration / concentration rate / particle numbers / particle number rate
         # expected_subset = self.get_subset(expected.data_frames[0], [0, 1, 2, 3])
         # other_subset = self.get_subset(other.data_frames[0], [0, 1, 2, 3])
@@ -32,10 +37,5 @@ class ResultComparerSteadyState(ResultComparer):
                                                                                 other.data_frames[3],
                                                                                 desc="Full Eigenvalues",
                                                                                 messages=result.messages, **kwargs)
-
-        # compare status
-        if expected.status != other.status:
-            result.explicit_fail = True
-            result.messages.append('Status different: {0} != {1}'.format(expected.status, other.status))
 
         return result

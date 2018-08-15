@@ -6,18 +6,27 @@ import logging
 
 
 class CompareResult:
-    def __init__(self):
+    def __init__(self, comparer=None):
         self.differences = []
         self.run_result = None
         self.explicit_fail = False
         self.messages = []
         self.changes = []
+        self.comparer = comparer
+        self.case_id = "" if comparer is None else comparer.case_id
+
+    def fail_with(self, msg):
+        self.explicit_fail = True
+        if self.case_id and self.case_id not in msg:
+            self.messages.append(self.case_id + " - " + msg)
+        else:
+            self.messages.append(msg)
 
     def get_run_result(self):
         # type: () -> RunResult
 
         for msg in self.messages:
-            print(msg)
+            logging.error(msg)
 
         if self.explicit_fail:
             return RunResult.FAIL
@@ -25,7 +34,7 @@ class CompareResult:
         for df in self.differences:
             assert (isinstance(df, pandas.DataFrame))
             if df.any().any():
-                print(df.describe())
+                logging.error(df.describe())
                 self.changes.append(df.any())
                 return RunResult.FAIL
 
@@ -37,6 +46,7 @@ class ResultComparer:
         self.task_type = task_type
         self.expected = None
         self.other = None
+        self.case_id = ""
 
     @staticmethod
     def get_differences(df1, df2, expected=None, **kwargs):
@@ -53,6 +63,27 @@ class ResultComparer:
             cols.append(df.columns[i])
         return df[cols]
 
+    def compare_numbers(self, val1, val2, **kwargs):
+        atol = kwargs.get('atol', 0.0001)
+        rtol = kwargs.get('rtol', 0.0001)
+        desc = kwargs.get('desc', '')
+        messages = kwargs.get('messages', None)
+
+        error = abs(val1 - val2)
+
+        if error > (atol + rtol * abs(val1)):
+            msg = "mismatch comparing {0} numbers: {1} != {2}" \
+                .format(desc, val1, val2)
+            if messages is not None:
+                if self.case_id:
+                    messages.append(self.case_id + " - " + msg)
+                else:
+                    messages.append(msg)
+
+            return True
+
+        return False
+
     @staticmethod
     def compare_df_testsuite(df1, df2, expected=None, **kwargs):
         if expected is None:
@@ -67,8 +98,7 @@ class ResultComparer:
             return None
         return expected[have_error]
 
-    @staticmethod
-    def compare_df_unsorted(df1, df2, **kwargs):
+    def compare_df_unsorted(self, df1, df2, **kwargs):
         """
             compares two data frames based on their column and row indices, that way the comparison
             will work even if the indices are in a different order
@@ -102,10 +132,12 @@ class ResultComparer:
                 if error > (atol + rtol*abs(val1)):
                     msg = "mismatch comparing {4} col: {0} row: {1} here {2} != {3}"\
                         .format(col, index, val1, val2, desc)
-                    print(msg)
+
                     if messages is not None:
-                        messages.append(msg)
-                    logging.debug(msg)
+                        if self.case_id:
+                            messages.append(self.case_id + " - " + msg)
+                        else:
+                            messages.append(msg)
                     return True
 
         return False

@@ -7,8 +7,23 @@ class ResultComparerOptimization(ResultComparer):
         ResultComparer.__init__(self, TaskTypes.optimization)
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
-        # compare csv files, ought to be identical
-        diff = self.get_differences(expected.data_frames[0], other.data_frames[0], **kwargs)
-        result.differences.append(diff)
+        result = CompareResult(self)
+
+        try:
+            expected_obj = expected.status[expected.status.find(':') + 1:].strip()
+            expected_obj = float(expected_obj)
+            other_obj = other.status[other.status.find(':') + 1:].strip()
+            other_obj = float(other_obj)
+
+            result.explicit_fail = result.explicit_fail or self.compare_numbers(expected_obj,
+                                                                                other_obj,
+                                                                                desc="Objective Function Value",
+                                                                                messages=result.messages, **kwargs)
+        except:
+            result.fail_with('No objective Value')
+
+        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[0],
+                                                                                other.data_frames[0],
+                                                                                desc="Optimization Result",
+                                                                                messages=result.messages, **kwargs)
         return result

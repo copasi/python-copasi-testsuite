@@ -9,7 +9,7 @@ class ResultComparerMCA(ResultComparerSteadyState):
         self.task_type = TaskTypes.mca
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
         result.explicit_fail = result.explicit_fail or expected.status != other.status
 
         df1 = expected.get_data('Unscaled elasticity matrix')

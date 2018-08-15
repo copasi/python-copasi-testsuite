@@ -37,7 +37,7 @@ class ResultComparerEFM(ResultComparer):
         return data_string
 
     def compare(self, expected, other, **kwargs):
-        result = CompareResult()
+        result = CompareResult(self)
 
         df_exp = expected.data_frames[2]
         df_other = other.data_frames[2]

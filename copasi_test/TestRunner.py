@@ -3,6 +3,13 @@ import logging
 import subprocess
 import time
 import threading
+import traceback
+
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+
 
 from RunResult import RunResult
 
@@ -27,7 +34,7 @@ class TestRunner:
         self.output_dir = output_dir
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
-            logging.info("created output_dir {0}".format(self.output_dir))
+            logging.debug("created output_dir {0}".format(self.output_dir))
 
     def is_valid(self):
         # type: () -> bool
@@ -69,7 +76,7 @@ class TestRunner:
         write_result = kwargs.get('write_result', True)
 
         # generate copasi file
-        case.print_overview()
+        logging.debug(repr(case))
         models = case.get_models()
 
         t0 = time.clock()
@@ -79,8 +86,8 @@ class TestRunner:
         for model_file in models:
 
             model_name = os.path.splitext(os.path.basename(model_file))[0]
-            logging.debug("Starting test for {0}".format(model_name))
-            print ("  model {0}: start for {1}".format(model_name, repr(self)))
+            logging.info("Starting test {0} for {1}".format(case.id,model_name))
+            logging.debug("  model {0}: start for {1}".format(model_name, repr(self)))
             try:
                 input_file = case.generate_model(model_file, self.output_dir)
                 if input_file is None:
@@ -101,31 +108,34 @@ class TestRunner:
                     extra_args += [output_file]
 
                 if not (os.path.isfile(report_file) and use_existing):
-                    print ("  model {0}: execute {1}".format(model_name, repr(self)))
-                    #invoke_result = subprocess.check_call([self.executable] + extra_args)
-                    self.call_copasi(case,[self.executable] + extra_args)
+                    logging.debug("  model {0}: execute {1}".format(model_name, repr(self)))
+                    self.call_copasi(case, [self.executable] + extra_args)
 
-
-                print ("  model {0}: compare result".format(model_name))
+                logging.debug("  model {0}: compare result".format(model_name))
                 result += case.compare_result(model_file, self)
-            except:
+            except Exception as e:
                 if 'ignore_exception' in case.settings and case.settings['ignore_exception'].lower() == 'true':
                     continue
 
-                if isDebug:
-                    import traceback
-                    traceback.print_exc()
-
-                logging.error('Failed to run model {0} of case {1}'.format(model_name, case.id))
+                if isinstance(e, ValueError):
+                    logging.error('Failed to run model {0} of case {1}:\n{2}\n'.format(model_name, case.id, e.message))
+                else:
+                    if isDebug:
+                        err_msg = StringIO()
+                        traceback.print_exc(file=err_msg)
+                        err_msg.seek(0)
+                        logging.error('Failed to run model {0} of case {1}:\n{2}'.format(model_name, case.id, err_msg.read()))
+                    else:
+                        logging.error('Failed to run model {0} of case {1}'.format(model_name, case.id))
                 return RunResult.EXCEPTION
 
-        logging.info("Test took {0} seconds".format(time.clock() - t0))
+        logging.debug("Test took {0} seconds".format(time.clock() - t0))
 
         return result
 
     def call_copasi(self, case, *popenargs, **kwargs):
         t0 = time.clock()
-        p = subprocess.Popen(*popenargs, **kwargs)
+        p = subprocess.Popen(*popenargs, stderr=subprocess.PIPE, stdout=subprocess.PIPE,  **kwargs)
 
         if 'timeout' in case.settings:
             timeout_sec = int(case.settings['timeout'])
@@ -138,14 +148,19 @@ class TestRunner:
         else:
             stdout, stderr = p.communicate()
 
-        print('\tran for {0} seconds'.format(time.clock() - t0))
+        logging.debug('\tran for {0} seconds'.format(time.clock() - t0))
 
         retcode = p.returncode
         if retcode:
             cmd = kwargs.get("args")
             if cmd is None:
                 cmd = popenargs[0]
+            if len(stderr) > 0:
+                raise ValueError(stderr)
             raise subprocess.CalledProcessError(retcode, cmd)
+
+        if len(stderr) > 0:
+            logging.debug(stderr)
 
         return 0
 

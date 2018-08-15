@@ -8,7 +8,10 @@ class ReportParserParameterEstimation(ReportParser):
     def parseLines(self, lines):
         # type: ([str]) -> None
         current = self.skip_until(lines, 0, 'Objective Function Value')
-        self.status = lines[current].strip()
+        if current != -1:
+            self.status = lines[current].strip()
+        else:
+            current = 0
         current = self.skip_until(lines, current, 'Parameter\tValue\tGradient\tStandard Deviation')
         if current == -1:
             return

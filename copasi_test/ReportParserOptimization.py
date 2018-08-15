@@ -9,7 +9,10 @@ class ReportParserOptimization(ReportParser):
     def parseLines(self, lines):
         # type: ([str]) -> None
         current = self.skip_until(lines, 0, 'Objective Function Value')
-        self.status = lines[current].strip()
+        if current != -1:
+            self.status = lines[current].strip()
+        else:
+            current = 0
         current = self.skip_until(lines, current, 'Evaluations/Second')
         if current == -1:
             return
