@@ -1,6 +1,5 @@
 task: Metabolic Control Analysis
 location: ./../biomodels
-filter: BIOMD000000000[0-5]
+filter: BIOMD000000000[0-3]
 format: sbml
-#result: run-only
 
