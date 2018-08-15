@@ -1,6 +1,6 @@
 task: Optimization
 location: ./../biomodels
-filter: BIOMD000000000[0-4]
+filter: BIOMD000000000[2-4]
 format: sbml
-result: run-only
+#result: run-only
 

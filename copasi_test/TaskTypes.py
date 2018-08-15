@@ -25,6 +25,7 @@ from ResultComparerOptimization import ResultComparerOptimization
 from ResultComparerPE import ResultComparerPE
 from ResultComparerLyap import ResultComparerLyap
 from ResultComparerTssa import ResultComparerTssa
+from ResultComparerSensitivities import ResultComparerSensitivities
 
 
 class TaskTypes:
@@ -86,7 +87,7 @@ class TaskTypes:
             TaskTypes.mca: ResultComparerMCA(),
             TaskTypes.lyap: ResultComparerLyap(),
             TaskTypes.tssa: ResultComparerTssa(),
-            TaskTypes.sensitivities: ResultComparer(),
+            TaskTypes.sensitivities: ResultComparerSensitivities(),
             TaskTypes.moieties: ResultComparer(),
             TaskTypes.crossSection: ResultComparer(),
             TaskTypes.lna: ResultComparer(),

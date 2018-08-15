@@ -1,6 +1,6 @@
 task: Sensitivities
 location: ./../biomodels
-filter: BIOMD000000000[0-4]
+filter: BIOMD000000000[0-3]
 format: sbml
 result: run-only
 
