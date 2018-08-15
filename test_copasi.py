@@ -14,6 +14,8 @@ except ImportError:
 from copasi_test import *
 
 if __name__ == "__main__":
+    setup_logging()
+    
     num_args = len(sys.argv)
     if num_args != 4:
         print("usage: test_copasi <Test> <CopasiSE> <OutputDir>")
