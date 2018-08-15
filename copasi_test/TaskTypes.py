@@ -27,6 +27,7 @@ from ResultComparerLyap import ResultComparerLyap
 from ResultComparerTssa import ResultComparerTssa
 from ResultComparerSensitivities import ResultComparerSensitivities
 from ResultComparerMoieties import ResultComparerMoieties
+from ResultComparerLNA import ResultComparerLNA
 
 
 class TaskTypes:
@@ -91,7 +92,7 @@ class TaskTypes:
             TaskTypes.sensitivities: ResultComparerSensitivities(),
             TaskTypes.moieties: ResultComparerMoieties(),
             TaskTypes.crossSection: ResultComparerTimeCourse(),
-            TaskTypes.lna: ResultComparer(),
+            TaskTypes.lna: ResultComparerLNA(),
             TaskTypes.exportSBML: ResultComparer(),
             TaskTypes.asIs: ResultComparer()
         }.get(task_type, None)

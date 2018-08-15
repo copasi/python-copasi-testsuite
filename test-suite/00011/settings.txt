@@ -2,5 +2,7 @@ task: Linear Noise Approximation
 location: ./../biomodels
 filter: BIOMD0000000011
 format: sbml
-result: run-only
+#result: run-only
 
+atol=1e-20
+rtol=1e-20
