@@ -64,7 +64,7 @@ class TaskTypes:
             TaskTypes.tssa: ReportParserTSSA(),
             TaskTypes.sensitivities: ReportParserSensitivities(),
             TaskTypes.moieties: ReportParserMoieties(),
-            TaskTypes.crossSection: ReportParserCrossSection(),
+            TaskTypes.crossSection: ReportParserTimeCourse(),
             TaskTypes.lna: ReportParserLNA(),
             TaskTypes.exportSBML: ReportParserXML(),
             TaskTypes.asIs: ReportParserAsIs()
@@ -90,7 +90,7 @@ class TaskTypes:
             TaskTypes.tssa: ResultComparerTssa(),
             TaskTypes.sensitivities: ResultComparerSensitivities(),
             TaskTypes.moieties: ResultComparerMoieties(),
-            TaskTypes.crossSection: ResultComparer(),
+            TaskTypes.crossSection: ResultComparerTimeCourse(),
             TaskTypes.lna: ResultComparer(),
             TaskTypes.exportSBML: ResultComparer(),
             TaskTypes.asIs: ResultComparer()

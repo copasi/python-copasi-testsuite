@@ -1,6 +1,4 @@
 task: Cross Section
-location: ./../biomodels
-filter: BIOMD000000000[0-4]
-format: sbml
-result: run-only
+location: .
+format: copasi
 

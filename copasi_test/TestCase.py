@@ -324,16 +324,16 @@ class TestCase:
             new_report.addFooterItem(dm.getModel().getObject(COPASI.CCommonName('Array=Link matrix(ann)')).getCN())
             new_report.addFooterItem(COPASI.CCommonName('String=\n'))
             new_report.addFooterItem(dm.getModel().getObject(COPASI.CCommonName('Array=Stoichiometry(ann)')).getCN())
-            #new_report.addFooterItem('<CN=Root,Model={0},Array=Link matrix(ann)>'.format(dm.getModel().getObjectName()))
-            #new_report.addFooterItem('<CN=Root,Model={0},Array=Stoichiometry(ann)>'.format(dm.getModel().getObjectName()))
             task.getReport().setReportDefinition(new_report)
-
 
         elif self.settings['task'] == TaskTypes.crossSection:
             need_report = True
             task = dm.getTask('Cross Section')
             assert (isinstance(task, COPASI.CCopasiTask))
             task.setScheduled(True)
+
+            COPASI.COutputAssistant.getListOfDefaultOutputDescriptions()
+            COPASI.COutputAssistant.createDefaultOutput(1000, task, dm)
 
         elif self.settings['task'] == TaskTypes.lna:
             need_report = True
