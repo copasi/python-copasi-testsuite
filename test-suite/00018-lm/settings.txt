@@ -1,4 +1,5 @@
 task: Parameter Estimation
 method: Levenberg - Marquardt
 location: ./../sven/01_parameter_est
+filter: 0[2|7]_*
 format: copasi

@@ -1,4 +1,5 @@
 task: Parameter Estimation
 method: Differential Evolution
+filter: 0[2|7]_*
 location: ./../sven/01_parameter_est
 format: copasi
