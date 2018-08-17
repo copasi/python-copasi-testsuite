@@ -1,0 +1,172 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 5
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-03 <= Values[Y].InitialValue <= 1e+03; Start Value = 6
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Particle Swarm
+    Log Verbosity: 0
+    Iteration Limit: 2000
+    Swarm Size: 50
+    Std. Deviation: 1e-06
+    Random Number Generator: 1
+    Seed: 0
+    Stop after # Stalled Iterations: 0
+
+Population Information: 
+Population Size: 0
+# Generations / Iterations: 0
+Current Generation / Iteration: 0
+Population Values: 
+   (		)
+
+Population:
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	330	(	5	6	)
+3	52.3812	(	0.491221	0.00519147	)
+4	28.4635	(	0.184541	0.913087	)
+18	15.508	(	0.382801	2.41214	)
+128	15.2904	(	0.814559	1.29668	)
+151	15.2529	(	0.969073	1.27589	)
+164	13.8686	(	0.380037	1.9499	)
+168	13.5029	(	0.484187	1.70978	)
+178	10.5478	(	0.964326	2.23132	)
+237	10.537	(	0.820807	2.14694	)
+307	10.3032	(	0.986743	1.82639	)
+325	10.1715	(	1.10188	1.91771	)
+381	10.1206	(	0.995789	2.10973	)
+425	10.1045	(	1.06685	1.92269	)
+519	10.0295	(	1.053	1.98796	)
+590	10.0011	(	0.99842	2.01013	)
+664	10.0008	(	0.992909	2.00555	)
+889	10.0008	(	1.00834	1.99704	)
+1096	10.0001	(	0.998519	1.99654	)
+1339	10	(	1.00103	2.00057	)
+2465	10	(	1.00005	2.00016	)
+2539	10	(	0.999977	2.00017	)
+2735	10	(	0.999871	2.0001	)
+2751	10	(	0.999861	2.00008	)
+2757	10	(	0.999972	2.00005	)
+3080	10	(	1.00003	2.00002	)
+3089	10	(	1.00001	2.00001	)
+3718	10	(	0.999995	2	)
+3726	10	(	1	2	)
+4112	10	(	1	2	)
+4257	10	(	1	2	)
+4390	10	(	1	2	)
+5646	10	(	1	2	)
+6426	10	(	1	2	)
+7244	10	(	1	2	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	10
+Standard Deviation:	0.745356
+Function Evaluations:	13156
+CPU Time [s]:	0.437
+Evaluations/Second [1/s]:	30105.3
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	1	0.00999994	0.166667
+	Values[Y].InitialValue:	2	0.0199999	0.166667
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_1
+Mean:	-3.036e-09
+Objective Value:	5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1	-1	3	2	-1	2	1
+2.	10	1	1	-2.84401e-09	2	2	-3.22799e-09	1.85083e-17	3.04207e-09
+3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
+4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
+5.	40	0	1	1	1	2	1	2	1
+Objective Value				2.5			2.5
+Root Mean Square				0.707107			0.707107
+Weight				1			1
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_2
+Mean:	-3.036e-09
+Objective Value:	5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1	-1	3	2	-1	2	1
+2.	10	1	1	-2.84401e-09	2	2	-3.22799e-09	1.85083e-17	3.04207e-09
+3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
+4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
+5.	40	0	1	1	1	2	1	2	1
+Objective Value				2.5			2.5
+Root Mean Square				0.707107			0.707107
+Weight				1			1
+
+Fisher Information Matrix:
+  Matrix(2x2)
+	20	0
+	0	20
+
+FIM Eigenvalues:
+  Matrix(2x1)
+	20
+	20
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(2x2)
+	1	0
+	0	1
+
+Fisher Information Matrix (scaled):
+  Matrix(2x2)
+	20	0
+	0	80
+
+FIM Eigenvalues (scaled):
+  Matrix(2x1)
+	20
+	80
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(2x2)
+	1	0
+	0	1
+
+Correlation Matrix:
+  Matrix(2x2)
+	1	-0
+	-0	1
+
+
+

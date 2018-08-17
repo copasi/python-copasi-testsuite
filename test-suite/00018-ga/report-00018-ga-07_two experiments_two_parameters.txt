@@ -1,0 +1,192 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 5
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-03 <= Values[Y].InitialValue <= 1e+03; Start Value = 6
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Genetic Algorithm
+    Log Verbosity: 0
+    Number of Generations: 200
+    Population Size: 20
+    Random Number Generator: 1
+    Seed: 0
+    Mutation Variance: 0.1
+    Stop after # Stalled Generations: 0
+
+Population Information: 
+Population Size: 0
+# Generations / Iterations: 0
+Current Generation / Iteration: 0
+Population Values: 
+   (		)
+
+Population:
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	330	(	5	6	)
+20	20.2151	(	0.00340694	1.83174	)
+40	19.9939	(	0.00323047	2.07646	)
+100	19.947	(	0.00345066	2.03987	)
+140	19.8583	(	0.0331639	1.77403	)
+160	19.6236	(	0.0305529	1.84989	)
+180	19.3677	(	0.0342182	2.06349	)
+280	19.2449	(	0.0390954	2.03389	)
+300	19.1422	(	0.0442097	2.02617	)
+320	19.109	(	0.0457428	2.01725	)
+380	19.0718	(	0.0507132	1.92233	)
+400	19.0463	(	0.0576135	1.8714	)
+440	19.0329	(	0.0497592	2.01823	)
+460	18.8638	(	0.0585925	1.9884	)
+520	18.787	(	0.0643369	2.05689	)
+600	18.6397	(	0.0711721	2.03537	)
+620	18.5877	(	0.0740722	2.0378	)
+640	18.5256	(	0.0839678	1.88407	)
+680	18.5061	(	0.078142	2.02815	)
+700	18.5033	(	0.0849497	2.11409	)
+720	18.3258	(	0.0879631	2.02768	)
+760	18.1618	(	0.0966977	1.98515	)
+800	18.0712	(	0.102923	2.04866	)
+820	18.0527	(	0.102724	2.01299	)
+840	17.9504	(	0.108766	1.97274	)
+860	17.8721	(	0.113049	1.97711	)
+880	17.6767	(	0.134753	2.1379	)
+920	17.5792	(	0.135028	2.09869	)
+940	17.5763	(	0.133811	2.08568	)
+960	17.3594	(	0.159596	1.82778	)
+1000	16.9384	(	0.174163	2.10877	)
+1060	16.4905	(	0.200742	2.10119	)
+1080	16.3527	(	0.215927	2.14316	)
+1100	16.3061	(	0.208784	1.93229	)
+1120	15.8188	(	0.239863	1.93616	)
+1140	15.5297	(	0.256425	2.00807	)
+1160	15.4597	(	0.263719	2.06216	)
+1180	15.145	(	0.288707	1.90744	)
+1200	14.642	(	0.319003	2.02114	)
+1220	14.3063	(	0.344056	2.01904	)
+1260	13.7613	(	0.420084	1.80043	)
+1280	13.5909	(	0.426823	1.82519	)
+1300	12.2976	(	0.524977	2.06417	)
+1340	12.1318	(	0.541668	1.94425	)
+1360	11.658	(	0.595281	1.95527	)
+1380	11.3542	(	0.644238	1.90592	)
+1400	11.0939	(	0.678801	1.9211	)
+1440	10.785	(	0.773476	2.16489	)
+1460	10.4916	(	0.786422	1.94046	)
+1500	10.2766	(	0.925837	2.14886	)
+1520	10.1896	(	0.870399	1.9535	)
+1560	10.0291	(	0.969656	1.95539	)
+1600	10.0053	(	0.983067	1.98442	)
+1640	10.0005	(	1.00556	1.99513	)
+2904	10.0002	(	0.998916	1.99561	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	10.0002
+Standard Deviation:	0.745364
+Function Evaluations:	3842
+CPU Time [s]:	0.125
+Evaluations/Second [1/s]:	30736
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	0.998916	-0.0116944	0.166668
+	Values[Y].InitialValue:	1.99561	-0.0678065	0.166668
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_1
+Mean:	-0.00273615
+Objective Value:	5.0001
+Root Mean Square:	0.707114
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	0.998916	-1.00108	3	1.99561	-1.00439	2.01097	1.00274
+2.	10	1	0.998916	-0.00108418	2	1.99561	-0.00438813	2.04311e-05	0.00319618
+3.	20	0.5	0.998916	0.498916	1.5	1.99561	0.495612	0.494548	0.497267
+4.	30	1.5	0.998916	-0.501084	2.5	1.99561	-0.504388	0.505493	0.502739
+5.	40	0	0.998916	0.998916	1	1.99561	0.995612	1.98908	0.997265
+Objective Value				2.50001			2.5001
+Root Mean Square				0.707108			0.70712
+Weight				1			1
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_2
+Mean:	-0.00273615
+Objective Value:	5.0001
+Root Mean Square:	0.707114
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	0.998916	-1.00108	3	1.99561	-1.00439	2.01097	1.00274
+2.	10	1	0.998916	-0.00108418	2	1.99561	-0.00438813	2.04311e-05	0.00319618
+3.	20	0.5	0.998916	0.498916	1.5	1.99561	0.495612	0.494548	0.497267
+4.	30	1.5	0.998916	-0.501084	2.5	1.99561	-0.504388	0.505493	0.502739
+5.	40	0	0.998916	0.998916	1	1.99561	0.995612	1.98908	0.997265
+Objective Value				2.50001			2.5001
+Root Mean Square				0.707108			0.70712
+Weight				1			1
+
+Fisher Information Matrix:
+  Matrix(2x2)
+	20	0
+	0	20
+
+FIM Eigenvalues:
+  Matrix(2x1)
+	20
+	20
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(2x2)
+	0	1
+	1	0
+
+Fisher Information Matrix (scaled):
+  Matrix(2x2)
+	19.9567	0
+	0	79.6493
+
+FIM Eigenvalues (scaled):
+  Matrix(2x1)
+	19.9567
+	79.6493
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(2x2)
+	1	0
+	0	1
+
+Correlation Matrix:
+  Matrix(2x2)
+	1	-0
+	-0	1
+
+
+

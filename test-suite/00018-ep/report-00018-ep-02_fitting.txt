@@ -1,0 +1,123 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 3
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Evolutionary Programming
+    Log Verbosity: 0
+    Number of Generations: 200
+    Population Size: 20
+    Random Number Generator: 1
+    Seed: 0
+    Stop after # Stalled Generations: 0
+
+Population Information: 
+Population Size: 0
+# Generations / Iterations: 0
+Current Generation / Iteration: 0
+Population Values: 
+   (		)
+
+Population:
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+20	3.11229	(	0.650059	)
+60	2.80911	(	1.24864	)
+80	2.50382	(	1.02764	)
+140	2.50102	(	0.985713	)
+220	2.50042	(	0.990783	)
+240	2.50013	(	1.00512	)
+260	2.50006	(	1.00356	)
+280	2.50001	(	0.998727	)
+300	2.5	(	0.999351	)
+340	2.5	(	1.00041	)
+360	2.5	(	1.00003	)
+480	2.5	(	0.999972	)
+540	2.5	(	0.999991	)
+580	2.5	(	1	)
+940	2.5	(	1	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	2.5
+Standard Deviation:	0.790569
+Function Evaluations:	4005
+CPU Time [s]:	0.078
+Evaluations/Second [1/s]:	51346.2
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	1	0.00500001	0.25
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data2.txt
+Experiment:	Experiment
+Mean:	6.30199e-10
+Objective Value:	2.5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1	-1	1	1
+2.	10	1	1	6.30199e-10	3.9715e-19	6.30199e-10
+3.	20	0.5	1	0.5	0.25	0.5
+4.	30	1.5	1	-0.5	0.25	0.5
+5.	40	0	1	1	1	1
+Objective Value				2.5
+Root Mean Square				0.707107
+Weight				1
+
+Fisher Information Matrix:
+  Matrix(1x1)
+	10
+
+FIM Eigenvalues:
+  Matrix(1x1)
+	10
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Fisher Information Matrix (scaled):
+  Matrix(1x1)
+	10
+
+FIM Eigenvalues (scaled):
+  Matrix(1x1)
+	10
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Correlation Matrix:
+  Matrix(1x1)
+	1
+
+
+

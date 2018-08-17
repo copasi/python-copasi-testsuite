@@ -1,0 +1,100 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 3
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Nelder - Mead
+    Log Verbosity: 0
+    Iteration Limit: 200
+    Tolerance: 1e-05
+    Scale: 10
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	22.5	(	3	)
+11	3.09081	(	0.656252	)
+41	2.50031	(	1.00781	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	2.50031
+Standard Deviation:	0.790618
+Function Evaluations:	53
+CPU Time [s]:	0.000
+Evaluations/Second [1/s]:	inf
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	1.00781	0.083184	0.250015
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data2.txt
+Experiment:	Experiment
+Mean:	0.00781449
+Objective Value:	2.50031
+Root Mean Square:	0.70715
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1.00781	-0.992186	0.984432	0.992186
+2.	10	1	1.00781	0.00781449	6.10663e-05	0.00781449
+3.	20	0.5	1.00781	0.507814	0.257876	0.507814
+4.	30	1.5	1.00781	-0.492186	0.242247	0.492186
+5.	40	0	1.00781	1.00781	1.01569	1.00781
+Objective Value				2.50031
+Root Mean Square				0.70715
+Weight				1
+
+Fisher Information Matrix:
+  Matrix(1x1)
+	10
+
+FIM Eigenvalues:
+  Matrix(1x1)
+	10
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Fisher Information Matrix (scaled):
+  Matrix(1x1)
+	10.1569
+
+FIM Eigenvalues (scaled):
+  Matrix(1x1)
+	10.1569
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Correlation Matrix:
+  Matrix(1x1)
+	1
+
+
+

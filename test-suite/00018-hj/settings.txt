@@ -1,0 +1,4 @@
+task: Parameter Estimation
+method: Hooke & Jeeves
+location: ./../sven/01_parameter_est
+format: copasi

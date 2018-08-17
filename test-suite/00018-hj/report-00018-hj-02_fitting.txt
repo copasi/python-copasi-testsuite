@@ -1,0 +1,109 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 3
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Hooke & Jeeves
+    Log Verbosity: 0
+    Iteration Limit: 50
+    Tolerance: 1e-05
+    Rho: 0.2
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	22.5	(	3	)
+3	12.3	(	2.4	)
+4	2.7	(	1.2	)
+8	2.532	(	1.08	)
+12	2.51568	(	1.056	)
+13	2.50032	(	1.008	)
+17	2.50005	(	1.0032	)
+21	2.50003	(	1.00224	)
+22	2.5	(	1.00032	)
+26	2.5	(	1.00013	)
+30	2.5	(	1.00009	)
+31	2.5	(	1.00001	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	2.5
+Standard Deviation:	0.790569
+Function Evaluations:	38
+CPU Time [s]:	0.000
+Evaluations/Second [1/s]:	inf
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	1.00001	0.00512806	0.25
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data2.txt
+Experiment:	Experiment
+Mean:	1.28e-05
+Objective Value:	2.5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1.00001	-0.999987	0.999974	0.999987
+2.	10	1	1.00001	1.28e-05	1.6384e-10	1.28e-05
+3.	20	0.5	1.00001	0.500013	0.250013	0.500013
+4.	30	1.5	1.00001	-0.499987	0.249987	0.499987
+5.	40	0	1.00001	1.00001	1.00003	1.00001
+Objective Value				2.5
+Root Mean Square				0.707107
+Weight				1
+
+Fisher Information Matrix:
+  Matrix(1x1)
+	10
+
+FIM Eigenvalues:
+  Matrix(1x1)
+	10
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Fisher Information Matrix (scaled):
+  Matrix(1x1)
+	10.0003
+
+FIM Eigenvalues (scaled):
+  Matrix(1x1)
+	10.0003
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Correlation Matrix:
+  Matrix(1x1)
+	1
+
+
+

@@ -1,0 +1,4 @@
+task: Parameter Estimation
+method: Random Search
+location: ./../sven/01_parameter_est
+format: copasi

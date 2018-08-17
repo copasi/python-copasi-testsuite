@@ -1,0 +1,4 @@
+task: Parameter Estimation
+method: Truncated Newton
+location: ./../sven/01_parameter_est
+format: copasi

@@ -1,0 +1,4 @@
+task: Parameter Estimation
+method: Nelder - Mead
+location: ./../sven/01_parameter_est
+format: copasi

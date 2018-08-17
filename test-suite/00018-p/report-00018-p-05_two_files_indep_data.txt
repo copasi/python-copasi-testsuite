@@ -1,0 +1,153 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 1
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Praxis
+    Log Verbosity: 0
+    Tolerance: 1e-05
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	101.25	(	1	)
+3	101.243	(	1.00013	)
+4	101.237	(	1.00026	)
+5	78.45	(	1.6	)
+6	78.4447	(	1.60021	)
+7	78.4393	(	1.60041	)
+8	70.05	(	2.2	)
+9	70.0495	(	2.20027	)
+10	70.0489	(	2.20054	)
+11	70	(	2.25	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	70
+Standard Deviation:	1.33973
+Function Evaluations:	24
+CPU Time [s]:	0.000
+Evaluations/Second [1/s]:	inf
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	2.25	0.045	0.21183
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_1
+Mean:	0.625
+Objective Value:	12.8125
+Root Mean Square:	1.13192
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	2.25	0.25	3	2	-1	1.0625	0.728869
+2.	10	1	2.25	1.25	2	2	0	1.5625	0.883883
+3.	20	0.5	2.25	1.75	1.5	2	0.5	3.3125	1.28695
+4.	30	1.5	2.25	0.75	2.5	2	-0.5	0.8125	0.637377
+5.	40	0	2.25	2.25	1	2	1	6.0625	1.74105
+Objective Value				10.3125			2.5
+Root Mean Square				1.43614			0.707107
+Weight				1			1
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3a.txt
+Experiment:	Experiment_2
+Mean:	1.125
+Objective Value:	17.8125
+Root Mean Square:	1.33463
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	2.25	0.25	3	3	0	0.0625	0.176777
+2.	10	1	2.25	1.25	2	3	1	2.5625	1.13192
+3.	20	0.5	2.25	1.75	1.5	3	1.5	5.3125	1.6298
+4.	30	1.5	2.25	0.75	2.5	3	0.5	0.8125	0.637377
+5.	40	0	2.25	2.25	1	3	2	9.0625	2.12867
+Objective Value				10.3125			7.5
+Root Mean Square				1.43614			1.22474
+Weight				1			1
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3b.txt
+Experiment:	Experiment_3
+Mean:	-0.375
+Objective Value:	13.4375
+Root Mean Square:	1.1592
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	4	2.25	-1.75	6	4	-2	7.0625	1.87916
+2.	10	3	2.25	-0.75	4	4	0	0.5625	0.53033
+3.	20	2.75	2.25	-0.5	3.5	4	0.5	0.5	0.5
+4.	30	3.25	2.25	-1	4.5	4	-0.5	1.25	0.790569
+5.	40	2	2.25	0.25	2	4	2	4.0625	1.42522
+Objective Value				4.9375			8.5
+Root Mean Square				0.99373			1.30384
+Weight				1			1
+
+File Name:	C:/Development/python-copasi-testsuite/out197/data3b.txt
+Experiment:	Experiment_4
+Mean:	-0.875
+Objective Value:	25.9375
+Root Mean Square:	1.61051
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	5	2.25	-2.75	7	5	-2	11.5625	2.40442
+2.	10	4	2.25	-1.75	5	5	0	3.0625	1.23744
+3.	20	3.75	2.25	-1.5	4.5	5	0.5	2.5	1.11803
+4.	30	4.25	2.25	-2	5.5	5	-0.5	4.25	1.45774
+5.	40	3	2.25	-0.75	3	5	2	4.5625	1.51038
+Objective Value				17.4375			8.5
+Root Mean Square				1.86748			1.30384
+Weight				1			1
+
+Fisher Information Matrix:
+  Matrix(1x1)
+	40
+
+FIM Eigenvalues:
+  Matrix(1x1)
+	40
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Fisher Information Matrix (scaled):
+  Matrix(1x1)
+	202.5
+
+FIM Eigenvalues (scaled):
+  Matrix(1x1)
+	202.5
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(1x1)
+	1
+
+Correlation Matrix:
+  Matrix(1x1)
+	1
+
+
+
