@@ -38,10 +38,10 @@ class ProgressHandler(logging.Handler):
         sys.stdout.flush()
 
     def close(self):
+        print()
         num_errors = len(self.errors)
         if num_errors == 0:
             return
-        print()
         if num_errors == 1:
             print ("There was 1 error.")
         else:
@@ -61,7 +61,6 @@ def setup_logging(progress_only=True, level=logging.INFO):
 
     if progress_only and os.getenv('COPASI_TEST_PRINT') is not None:
         progress_only = False
-
 
     if progress_only:
         logging.getLogger('').handlers[0] = ProgressHandler()

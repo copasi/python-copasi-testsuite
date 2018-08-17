@@ -27,5 +27,5 @@ if __name__ == "__main__":
     result = runner.runTests(suite.cases)
     
     if result == 0: 
-        print("all pass")
+        print("\nall pass")
     sys.exit(result)

@@ -13,17 +13,30 @@ class ResultComparerTssa(ResultComparer):
             return result
 
         for i in range(0, len(expected.data_frames), 5):
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i+0],
+                                                                                    other.data_frames[i+0],
+                                                                                    desc="Contribution of species to modes",
+                                                                                    messages=result.messages, **kwargs)
 
-            diff = self.get_differences(expected.data_frames[i+0], other.data_frames[i+0], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+1], other.data_frames[i+1], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+2], other.data_frames[i+2], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+3], other.data_frames[i+3], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+4], other.data_frames[i+4], **kwargs)
-            result.differences.append(diff)
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i+1],
+                                                                                    other.data_frames[i+1],
+                                                                                    desc="Modes distribution for species",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i+2],
+                                                                                    other.data_frames[i+2],
+                                                                                    desc="Slow space",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i+3],
+                                                                                    other.data_frames[i+3],
+                                                                                    desc="Fast space",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i+4],
+                                                                                    other.data_frames[i+4],
+                                                                                    desc="Reactions slow space",
+                                                                                    messages=result.messages, **kwargs)
 
         return result
 
@@ -35,15 +48,25 @@ class ResultComparerTssa(ResultComparer):
             return result
 
         for i in range(0, len(expected.data_frames), 4):
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 0],
+                                                                                    other.data_frames[i + 0],
+                                                                                    desc="Contribution of species to modes",
+                                                                                    messages=result.messages, **kwargs)
 
-            diff = self.get_differences(expected.data_frames[i+0], other.data_frames[i+0], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+1], other.data_frames[i+1], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+2], other.data_frames[i+2], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i+3], other.data_frames[i+3], **kwargs)
-            result.differences.append(diff)
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 1],
+                                                                                    other.data_frames[i + 1],
+                                                                                    desc="Modes distribution for species",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 2],
+                                                                                    other.data_frames[i + 2],
+                                                                                    desc="Slow space",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 3],
+                                                                                    other.data_frames[i + 3],
+                                                                                    desc="Fast space",
+                                                                                    messages=result.messages, **kwargs)
 
         return result
 
@@ -56,12 +79,20 @@ class ResultComparerTssa(ResultComparer):
         for i in range(0, len(expected.data_frames), 3):
             if i + 3 < len(expected.data_frames):
                 break
-            diff = self.get_differences(expected.data_frames[i + 0], other.data_frames[i + 0], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i + 1], other.data_frames[i + 1], **kwargs)
-            result.differences.append(diff)
-            diff = self.get_differences(expected.data_frames[i + 2], other.data_frames[i + 2], **kwargs)
-            result.differences.append(diff)
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 0],
+                                                                                    other.data_frames[i + 0],
+                                                                                    desc="Time scales",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 1],
+                                                                                    other.data_frames[i + 1],
+                                                                                    desc="Radical Pointer",
+                                                                                    messages=result.messages, **kwargs)
+
+            result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[i + 2],
+                                                                                    other.data_frames[i + 2],
+                                                                                    desc="Participation Index",
+                                                                                    messages=result.messages, **kwargs)
 
         return result
 

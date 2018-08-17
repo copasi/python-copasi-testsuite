@@ -5,13 +5,19 @@ import time
 import threading
 import traceback
 
+from RunResult import RunResult
+
+support_parallelism = True
+try:
+    from joblib import Parallel, delayed
+    import multiprocessing
+except ImportError:
+    support_parallelism = False
+
 try:
     from StringIO import StringIO
 except ImportError:
     from io import StringIO
-
-
-from RunResult import RunResult
 
 isDebug = True
 
@@ -112,7 +118,7 @@ class TestRunner:
                     self.call_copasi(case, [self.executable] + extra_args)
 
                 logging.debug("  model {0}: compare result".format(model_name))
-                result += case.compare_result(model_file, self)
+                result += case.compare_result(model_file, self) != RunResult.PASS
             except Exception as e:
                 if 'ignore_exception' in case.settings and case.settings['ignore_exception'].lower() == 'true':
                     continue
@@ -176,4 +182,15 @@ class TestRunner:
             if cancellation_token is not None and cancellation_token(case):
                 break
             result += self.runTest(case, write_result=False)
+        return result
+
+    def runTestsParallel(self, tests, n_jobs=-1, cancellation_token=None):
+        # type: ([TestCase]) -> int
+
+        if not support_parallelism:
+            return self.runTests(tests, cancellation_token)
+
+        result = Parallel(n_jobs=n_jobs, prefer='processes')\
+            (delayed(self.runTest)(case, write_result=False) for case in tests)
+        result = sum(result)
         return result

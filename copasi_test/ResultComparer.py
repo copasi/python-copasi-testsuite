@@ -33,10 +33,18 @@ class CompareResult:
 
         for df in self.differences:
             assert (isinstance(df, pandas.DataFrame))
-            if df.any().any():
-                logging.error(df.describe())
-                self.changes.append(df.any())
-                return RunResult.FAIL
+            print(df)
+            try:
+                if df.any().any():
+                    logging.error(df.describe())
+                    self.changes.append(df.any())
+                    return RunResult.FAIL
+            except:
+                print(df)
+                if df.any():
+                    logging.error(df.describe())
+                    self.changes.append(df.any())
+                    return RunResult.FAIL
 
         return RunResult.PASS
 
@@ -128,6 +136,18 @@ class ResultComparer:
                 val2 = col2[index]
 
                 error = abs(val1-val2)
+
+                if isinstance(error, pandas.Series):
+                    if (error > (atol + rtol*abs(val1))).any():
+                        msg = "mismatch comparing {0} col: {1} row: {2}" \
+                            .format(desc, col, index)
+                        if messages is not None:
+                            if self.case_id:
+                                messages.append(self.case_id + " - " + msg)
+                            else:
+                                messages.append(msg)
+                        return True
+                    return  False
 
                 if error > (atol + rtol*abs(val1)):
                     msg = "mismatch comparing {4} col: {0} row: {1} here {2} != {3}"\
