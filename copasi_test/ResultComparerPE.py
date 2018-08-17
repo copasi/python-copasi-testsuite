@@ -22,9 +22,10 @@ class ResultComparerPE(ResultComparer):
         except:
             result.fail_with('No objective Value')
 
-        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[0],
-                                                                                other.data_frames[0],
-                                                                                desc="Parameter Estimation Result",
-                                                                                messages=result.messages, **kwargs)
+        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(
+            expected.data_frames[0].drop('Gradient', axis=1),
+            other.data_frames[0].drop('Gradient', axis=1),
+            desc="Parameter Estimation Result",
+            messages=result.messages, **kwargs)
 
         return result
