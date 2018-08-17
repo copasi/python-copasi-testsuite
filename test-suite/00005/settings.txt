@@ -1,6 +1,3 @@
-task: Optimization
-location: ./../biomodels
-filter: BIOMD000000000[2-4]
-format: sbml
-#result: run-only
-
+task: Cross Section
+location: ./../sven/03_cross_section/
+format: copasi

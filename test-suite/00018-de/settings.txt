@@ -1,5 +1,4 @@
 task: Parameter Estimation
 method: Differential Evolution
-location: .
+location: ./../sven/01_parameter_est
 format: copasi
-result: run-only

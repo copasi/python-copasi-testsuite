@@ -2,3 +2,4 @@ task: Parameter Estimation
 location: .
 format: copasi
 result: run-only
+ignore_exception: true

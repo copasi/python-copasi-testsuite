@@ -1,6 +1,4 @@
 task: Lyapunov Exponents
-location: ./../biomodels
-filter: BIOMD000000000[2-4]
-format: sbml
-#result: run-only
+location: ./../sven/02_lyap/
+format: copasi
 

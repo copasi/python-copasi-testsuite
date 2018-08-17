@@ -1,5 +1,0 @@
-task: Parameter Estimation
-method: Corana Random Walk
-location: .
-format: copasi
-result: run-only

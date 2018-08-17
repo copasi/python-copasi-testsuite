@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-08-07 11:50:33 UTC -->
+<!-- generated with COPASI 4.23 (Build 184) (http://www.copasi.org) at 2018-08-15 11:44:41 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
-<COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
+<COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="23" versionDevel="184" copasiSourcesModified="0">
   <ListOfFunctions>
     <Function key="Function_13" name="Mass action (irreversible)" type="MassAction" reversible="false">
       <MiriamAnnotation>
@@ -54,12 +54,12 @@ Reaction scheme where the products are created from the reactants and the change
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_0" name="Kinetics of a  Michaelian enzyme measured spectrophotometrically" simulationType="time" timeUnit="s" volumeUnit="ml" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221408570000002e+23">
+  <Model key="Model_1" name="Kinetics of a  Michaelian enzyme measured spectrophotometrically" simulationType="time" timeUnit="s" volumeUnit="ml" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221408570000002e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Model_0">
+  <rdf:Description rdf:about="#Model_1">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2018-08-04T21:39:58Z</dcterms:W3CDTF>
@@ -121,20 +121,20 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_2" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5065" name="k1" value="125.264"/>
-          <Constant key="Parameter_5067" name="k2" value="14.0251"/>
+          <Constant key="Parameter_5015" name="k1" value="125.584"/>
+          <Constant key="Parameter_5014" name="k2" value="14.0251"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_5065"/>
+              <SourceParameter reference="Parameter_5015"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_0"/>
               <SourceParameter reference="Metabolite_1"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_5067"/>
+              <SourceParameter reference="Parameter_5014"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_2"/>
@@ -151,12 +151,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5068" name="k1" value="46.087"/>
+          <Constant key="Parameter_5013" name="k1" value="46.0764"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
-              <SourceParameter reference="Parameter_5068"/>
+              <SourceParameter reference="Parameter_5013"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_2"/>
@@ -165,8 +165,8 @@ Reaction scheme where the products are created from the reactants and the change
         </KineticLaw>
       </Reaction>
     </ListOfReactions>
-    <ListOfModelParameterSets activeSet="ModelParameterSet_0">
-      <ModelParameterSet key="ModelParameterSet_0" name="Initial State">
+    <ListOfModelParameterSets activeSet="ModelParameterSet_1">
+      <ModelParameterSet key="ModelParameterSet_1" name="Initial State">
         <ModelParameterGroup cn="String=Initial Time" type="Group">
           <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically" value="0" type="Model" simulationType="time"/>
         </ModelParameterGroup>
@@ -183,21 +183,21 @@ Reaction scheme where the products are created from the reactants and the change
           <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Values[coeff]" value="0.78000000000000003" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Values[offset]" value="0.027545961817025379" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Values[Abs]" value="0.027545961817025379" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Values[Keq(1)]" value="8.9314158187820407" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Values[Keq(1)]" value="8.9542571955190482" type="ModelValue" simulationType="assignment"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
           <ModelParameterGroup cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R1]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R1],ParameterGroup=Parameters,Parameter=k1" value="125.264" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R1],ParameterGroup=Parameters,Parameter=k1" value="125.58435259287421" type="ReactionParameter" simulationType="fixed"/>
             <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R1],ParameterGroup=Parameters,Parameter=k2" value="14.0251" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R2]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R2],ParameterGroup=Parameters,Parameter=k1" value="46.087000000000003" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R2],ParameterGroup=Parameters,Parameter=k1" value="46.076374881458115" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
     </ListOfModelParameterSets>
     <StateTemplate>
-      <StateTemplateVariable objectReference="Model_0"/>
+      <StateTemplateVariable objectReference="Model_1"/>
       <StateTemplateVariable objectReference="Metabolite_1"/>
       <StateTemplateVariable objectReference="Metabolite_0"/>
       <StateTemplateVariable objectReference="Metabolite_2"/>
@@ -209,12 +209,12 @@ Reaction scheme where the products are created from the reactants and the change
       <StateTemplateVariable objectReference="ModelValue_1"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 6.022141500000001e+18 6.0221415000000011e+21 0 0 0.027545961817025379 8.9314158187820407 1 0.78000000000000003 0.027545961817025379 
+      0 6.022141500000001e+18 6.0221415000000011e+21 0 0 0.027545961817025379 8.9542571955190482 1 0.78000000000000003 0.027545961817025379 
     </InitialState>
   </Model>
   <ListOfTasks>
-    <Task key="Task_12" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
-      <Report reference="Report_8" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_14" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
+      <Report reference="Report_9" target="" append="1" confirmOverwrite="0"/>
       <Problem>
         <Parameter name="JacobianRequested" type="bool" value="0"/>
         <Parameter name="StabilityAnalysisRequested" type="bool" value="0"/>
@@ -231,7 +231,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Maximum duration for backward integration" type="unsignedFloat" value="1000000"/>
       </Method>
     </Task>
-    <Task key="Task_11" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
+    <Task key="Task_15" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
@@ -250,7 +250,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_10" name="Scan" type="scan" scheduled="false" updateModel="false">
+    <Task key="Task_16" name="Scan" type="scan" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="Subtask" type="unsignedInteger" value="1"/>
         <ParameterGroup name="ScanItems">
@@ -261,15 +261,15 @@ Reaction scheme where the products are created from the reactants and the change
       <Method name="Scan Framework" type="ScanFramework">
       </Method>
     </Task>
-    <Task key="Task_9" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
-      <Report reference="Report_7" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_17" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
+      <Report reference="Report_10" target="" append="1" confirmOverwrite="0"/>
       <Problem>
       </Problem>
       <Method name="EFM Algorithm" type="EFMAlgorithm">
       </Method>
     </Task>
-    <Task key="Task_8" name="Optimization" type="optimization" scheduled="false" updateModel="false">
-      <Report reference="Report_6" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_18" name="Optimization" type="optimization" scheduled="false" updateModel="false">
+      <Report reference="Report_11" target="" append="1" confirmOverwrite="0"/>
       <Problem>
         <Parameter name="Subtask" type="cn" value="Vector=TaskList[Steady-State]"/>
         <ParameterText name="ObjectiveExpression" type="expression">
@@ -284,14 +284,14 @@ Reaction scheme where the products are created from the reactants and the change
         </ParameterGroup>
       </Problem>
       <Method name="Random Search" type="RandomSearch">
-        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
         <Parameter name="Number of Iterations" type="unsignedInteger" value="100000"/>
         <Parameter name="Random Number Generator" type="unsignedInteger" value="1"/>
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
+        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_7" name="Parameter Estimation" type="parameterFitting" scheduled="true" updateModel="true">
-      <Report reference="Report_5" target="KinMMfit-report.txt" append="1" confirmOverwrite="0"/>
+    <Task key="Task_19" name="Parameter Estimation" type="parameterFitting" scheduled="true" updateModel="true">
+      <Report reference="Report_12" target="KinMMfit-report.txt" append="0" confirmOverwrite="0"/>
       <Problem>
         <Parameter name="Maximize" type="bool" value="0"/>
         <Parameter name="Randomize Start Values" type="bool" value="0"/>
@@ -301,7 +301,7 @@ Reaction scheme where the products are created from the reactants and the change
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R1],ParameterGroup=Parameters,Parameter=k1,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="1e-6"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
-            <Parameter name="StartValue" type="float" value="0"/>
+            <Parameter name="StartValue" type="float" value="125.5843526"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -311,7 +311,7 @@ Reaction scheme where the products are created from the reactants and the change
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=Kinetics of a  Michaelian enzyme measured spectrophotometrically,Vector=Reactions[R2],ParameterGroup=Parameters,Parameter=k1,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="1e-6"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
-            <Parameter name="StartValue" type="float" value="0"/>
+            <Parameter name="StartValue" type="float" value="46.076374881458115"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -461,17 +461,17 @@ Reaction scheme where the products are created from the reactants and the change
         </ParameterGroup>
       </Problem>
       <Method name="Scatter Search" type="ScatterSearch">
-        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
-        <Parameter name="Number of Iterations" type="unsignedInteger" value="200"/>
+        <Parameter name="Number of Iterations" type="unsignedInteger" value="10"/>
         <Parameter name="Random Number Generator" type="unsignedInteger" value="1"/>
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
         <Parameter name="Stop after # Stalled Generations" type="unsignedInteger" value="0"/>
+        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_6" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
-      <Report reference="Report_4" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_20" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
+      <Report reference="Report_13" target="" append="1" confirmOverwrite="0"/>
       <Problem>
-        <Parameter name="Steady-State" type="key" value="Task_12"/>
+        <Parameter name="Steady-State" type="key" value="Task_14"/>
       </Problem>
       <Method name="MCA Method (Reder)" type="MCAMethod(Reder)">
         <Parameter name="Modulation Factor" type="unsignedFloat" value="1.0000000000000001e-09"/>
@@ -479,8 +479,8 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Use Smallbone" type="bool" value="1"/>
       </Method>
     </Task>
-    <Task key="Task_5" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
-      <Report reference="Report_3" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_21" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
+      <Report reference="Report_14" target="" append="1" confirmOverwrite="0"/>
       <Problem>
         <Parameter name="ExponentNumber" type="unsignedInteger" value="3"/>
         <Parameter name="DivergenceRequested" type="bool" value="1"/>
@@ -494,8 +494,8 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
-    <Task key="Task_4" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
-      <Report reference="Report_2" target="" append="1" confirmOverwrite="0"/>
+    <Task key="Task_22" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
+      <Report reference="Report_15" target="" append="1" confirmOverwrite="0"/>
       <Problem>
         <Parameter name="SubtaskType" type="unsignedInteger" value="0"/>
         <ParameterGroup name="TargetFunctions">
@@ -514,8 +514,8 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Delta minimum" type="unsignedFloat" value="9.9999999999999998e-13"/>
       </Method>
     </Task>
-    <Task key="Task_3" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
-      <Report reference="Report_1" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_23" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
+      <Report reference="Report_16" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
         <Parameter name="StepSize" type="float" value="0.01"/>
@@ -527,13 +527,13 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Deuflhard Tolerance" type="unsignedFloat" value="0.0001"/>
       </Method>
     </Task>
-    <Task key="Task_2" name="Moieties" type="moieties" scheduled="false" updateModel="false">
+    <Task key="Task_24" name="Moieties" type="moieties" scheduled="false" updateModel="false">
       <Problem>
       </Problem>
       <Method name="Householder Reduction" type="Householder">
       </Method>
     </Task>
-    <Task key="Task_1" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
+    <Task key="Task_25" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
@@ -567,8 +567,8 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_13" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
-      <Report reference="Report_0" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_26" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
+      <Report reference="Report_17" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="Steady-State" type="key" value=""/>
       </Problem>
@@ -577,7 +577,7 @@ Reaction scheme where the products are created from the reactants and the change
     </Task>
   </ListOfTasks>
   <ListOfReports>
-    <Report key="Report_8" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
+    <Report key="Report_9" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -587,7 +587,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Steady-State]"/>
       </Footer>
     </Report>
-    <Report key="Report_7" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
+    <Report key="Report_10" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -597,7 +597,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Elementary Flux Modes],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_6" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
+    <Report key="Report_11" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -623,7 +623,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Optimization],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_5" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
+    <Report key="Report_12" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -649,7 +649,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_4" name="Metabolic Control Analysis" taskType="metabolicControlAnalysis" separator="&#x09;" precision="6">
+    <Report key="Report_13" name="Metabolic Control Analysis" taskType="metabolicControlAnalysis" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -663,7 +663,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_3" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
+    <Report key="Report_14" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -677,7 +677,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Lyapunov Exponents],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_2" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
+    <Report key="Report_15" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
       <Comment>
         <body xmlns="http://www.w3.org/1999/xhtml">
           Automatically generated report.
@@ -691,7 +691,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Sensitivities],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_1" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
+    <Report key="Report_16" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -703,7 +703,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Time Scale Separation Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_0" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
+    <Report key="Report_17" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>

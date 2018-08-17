@@ -1,5 +1,0 @@
-task: Parameter Estimation
-method: Scatter Search
-location: .
-format: copasi
-result: run-only

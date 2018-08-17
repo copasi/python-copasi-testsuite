@@ -1,0 +1,155 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Time-Course Task
+
+Problem Description:
+    AutomaticStepSize: 0
+    StepNumber: 100
+    StepSize: 0.01
+    Duration: 1
+    TimeSeriesRequested: 1
+    OutputStartTime: 0
+    Output Event: 0
+    Start in Steady State: 0
+
+Method: Deterministic (LSODA)
+    Integrate Reduced Model: 0
+    Relative Tolerance: 1e-06
+    Absolute Tolerance: 1e-12
+    Max Internal Steps: 10000
+    Max Internal Step Size: 0
+
+
+List of Fitting Items:
+    1e-03 <= Values[X].InitialValue <= 1e+03; Start Value = 1
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-06 <= Values[Y].InitialValue <= 1e+06; Start Value = 2
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+List of Constraint Items:
+
+Method: Current Solution Statistics
+    Log Verbosity: 0
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	161.25	(	1	2	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	161.25
+Standard Deviation:	2.05996
+Function Evaluations:	7
+CPU Time [s]:	0.015
+Evaluations/Second [1/s]:	466.667
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[X].InitialValue:	1	-49.98	0.325708
+	Values[Y].InitialValue:	2	-49.96	0.325708
+
+File Name:	c:/Temp/4.24.197/data3a.txt
+Experiment:	Experiment_1
+Mean:	0
+Objective Value:	5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1	-1	3	2	-1	2	1
+2.	10	1	1	0	2	2	0	0	0
+3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
+4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
+5.	40	0	1	1	1	2	1	2	1
+Objective Value				2.5			2.5
+Root Mean Square				0.707107			0.707107
+Weight				1			1
+
+File Name:	c:/Temp/4.24.197/data3a.txt
+Experiment:	Experiment_2
+Mean:	0
+Objective Value:	5
+Root Mean Square:	0.707107
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	2	1	-1	3	2	-1	2	1
+2.	10	1	1	0	2	2	0	0	0
+3.	20	0.5	1	0.5	1.5	2	0.5	0.5	0.5
+4.	30	1.5	1	-0.5	2.5	2	-0.5	0.5	0.5
+5.	40	0	1	1	1	2	1	2	1
+Objective Value				2.5			2.5
+Root Mean Square				0.707107			0.707107
+Weight				1			1
+
+File Name:	c:/Temp/4.24.197/data3b.txt
+Experiment:	Experiment_3
+Mean:	-2
+Objective Value:	50.625
+Root Mean Square:	2.25
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	4	1	-3	6	2	-4	25	3.53553
+2.	10	3	1	-2	4	2	-2	8	2
+3.	20	2.75	1	-1.75	3.5	2	-1.5	5.3125	1.6298
+4.	30	3.25	1	-2.25	4.5	2	-2.5	11.3125	2.37829
+5.	40	2	1	-1	2	2	0	1	0.707107
+Objective Value				22.125			28.5
+Root Mean Square				2.10357			2.38747
+Weight				1			1
+
+File Name:	c:/Temp/4.24.197/data3b.txt
+Experiment:	Experiment_4
+Mean:	-3
+Objective Value:	100.625
+Root Mean Square:	3.17214
+Row	Time	Values[X](Data)	Values[X](Fit)	Values[X](Weighted Error)	Values[Y](Data)	Values[Y](Fit)	Values[Y](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	5	1	-4	7	2	-5	41	4.52769
+2.	10	4	1	-3	5	2	-3	18	3
+3.	20	3.75	1	-2.75	4.5	2	-2.5	13.8125	2.62797
+4.	30	4.25	1	-3.25	5.5	2	-3.5	22.8125	3.37731
+5.	40	3	1	-2	3	2	-1	5	1.58114
+Objective Value				47.125			53.5
+Root Mean Square				3.07002			3.27109
+Weight				1			1
+
+Fisher Information Matrix:
+  Matrix(2x2)
+	40	0
+	0	40
+
+FIM Eigenvalues:
+  Matrix(2x1)
+	40
+	40
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(2x2)
+	1	0
+	0	1
+
+Fisher Information Matrix (scaled):
+  Matrix(2x2)
+	40	0
+	0	160
+
+FIM Eigenvalues (scaled):
+  Matrix(2x1)
+	40
+	160
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(2x2)
+	1	0
+	0	1
+
+Correlation Matrix:
+  Matrix(2x2)
+	1	-0
+	-0	1
+
+
+

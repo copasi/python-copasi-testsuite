@@ -1,7 +1,0 @@
-task: Parameter Estimation    # task is parameter estimation 
-method: Simulated Annealing   # switch method to simulated annealing
-location: .                   # read the file from the current folder
-format: copasi                # the file is a copasi file 
-result: run-only              # ignore the result of the run
-timeout: 5                    # 10 second timeout
-ignore_exception: true        # ignore any exception that occures while running 
