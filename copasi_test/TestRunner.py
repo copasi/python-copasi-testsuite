@@ -73,6 +73,31 @@ class TestRunner:
             if remove_result and os.path.isfile(result_file):
                 os.remove(result_file)
 
+    def compareTest(self, case, **kwargs):
+        models = case.get_models()
+        result = 0
+        for model_file in models:
+
+            model_name = os.path.splitext(os.path.basename(model_file))[0]
+            logging.info("Comparing test {0} for {1}".format(case.id, model_name))
+            result += case.compare_result(model_file, self, **kwargs) != RunResult.PASS
+
+        return result
+
+    def compareTestAgainstOther(self, case, other, **kwargs):
+        # type: (TestCase, TestRunner, Any) -> int
+        models = case.get_models()
+        result = 0
+        for model_file in models:
+
+            base_name = os.path.splitext(os.path.basename(model_file))[0]
+            this_report_file = os.path.join(self.output_dir, 'report-{0}-{1}.txt'.format(case.id, base_name))
+            other_report_file = os.path.join(other.output_dir, 'report-{0}-{1}.txt'.format(case.id, base_name))
+            logging.info("Comparing test {0} for {1}".format(case.id, base_name))
+            result += case.compare_files(this_report_file, other_report_file, **kwargs) != RunResult.PASS
+
+        return result
+
     def runTest(self, case, **kwargs):
         # type: (TestCase.TestCase,**kwargs) -> int
         if not case.isValid():

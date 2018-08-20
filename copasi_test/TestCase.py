@@ -358,7 +358,7 @@ class TestCase:
         basico.remove_datamodel(dm)
         return None
 
-    def compare_files(self, expected_file, report_file):
+    def compare_files(self, expected_file, report_file, **kwargs):
         # type: (str, str) -> RunResult
         if not os.path.isfile(expected_file):
             return RunResult.EXPECTED_FILE_MISSING
@@ -381,13 +381,15 @@ class TestCase:
 
         base_name = os.path.splitext(os.path.basename(expected_file))[0]
         comp.case_id = self.id + ":" + base_name
-        compare_result = comp.compare(expected, other, atol=self.settings['atol'], rtol=self.settings['rtol'])
+        atol = kwargs.get('atol', self.settings['atol'])
+        rtol = kwargs.get('rtol', self.settings['rtol'])
+        compare_result = comp.compare(expected, other, atol=atol, rtol=rtol)
         run_result = compare_result.get_run_result()
 
         # or return failure
         return run_result
 
-    def compare_result(self, model_file, runner):
+    def compare_result(self, model_file, runner, **kwargs):
         # type: (str, TestRunner) -> RunResult
         output_dir = runner.output_dir
         base_name = os.path.splitext(os.path.basename(model_file))[0]
@@ -397,5 +399,5 @@ class TestCase:
         if ('result' in self.settings) and (self.settings['result'] == 'run-only'):
             return RunResult.PASS
 
-        return self.compare_files(expected_result, report_file)
+        return self.compare_files(expected_result, report_file, **kwargs)
 

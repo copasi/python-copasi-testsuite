@@ -42,6 +42,6 @@ class TestSuite:
     def __repr__(self):
         builder = StringIO()
         builder.write('Test Suite dir:  {0}\n'.format(os.path.basename(self.suite_dir)))
-        builder.write('Number of tests: {0}\n'.format(os.path.basename(len(self.cases))))
+        builder.write('Number of tests: {0}\n'.format(len(self.cases)))
         builder.seek(0)
         return builder.read()
