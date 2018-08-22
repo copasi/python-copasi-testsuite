@@ -28,6 +28,7 @@ from ResultComparerTssa import ResultComparerTssa
 from ResultComparerSensitivities import ResultComparerSensitivities
 from ResultComparerMoieties import ResultComparerMoieties
 from ResultComparerLNA import ResultComparerLNA
+from ResultComparerScan import ResultComparerScan
 
 
 class TaskTypes:
@@ -82,7 +83,7 @@ class TaskTypes:
         parser = {
             TaskTypes.steadystate: ResultComparerSteadyState(),
             TaskTypes.timecourse: ResultComparerTimeCourse(),
-            TaskTypes.scan: ResultComparer(),
+            TaskTypes.scan: ResultComparerScan(),
             TaskTypes.efm: ResultComparerEFM(),
             TaskTypes.optimization: ResultComparerOptimization(),
             TaskTypes.parameterEstimation: ResultComparerPE(),

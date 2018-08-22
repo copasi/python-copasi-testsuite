@@ -23,6 +23,9 @@ class TestReport:
         self.parseReport(filename, task)
         pass
 
+    def num_dataframes(self):
+        return len(self.data_frames)
+
     def parseReport(self, filename, task):
         from TaskTypes import TaskTypes
 
