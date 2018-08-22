@@ -144,12 +144,17 @@ class ReportParser:
         header = kwargs.get('header', 'infer')
         trim = kwargs.get('trim', False)
         replacements = kwargs.get('replacements', None)
+        cols = kwargs.get('cols', None)
         index_col = kwargs.get('index_col', -1)
         end = self.find_empty(lines, current)
         block = self.get_block_as_buffer(lines, current, end, trim=trim, replacements=replacements)
         df = pandas.read_csv(block, sep=sep, header=header)
         if index_col != -1:
             df = df.set_index(df.columns[index_col])
+
+        if cols is not None:
+            df.columns = cols
+
         self.data_frames.append(df)
         self.data_descriptions.append(desc)
         current = end + 1
