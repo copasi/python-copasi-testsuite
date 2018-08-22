@@ -1,0 +1,3 @@
+task: Scan
+location: ./../sven/05_scan_steady_state
+format: copasi
