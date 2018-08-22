@@ -33,7 +33,6 @@ class CompareResult:
 
         for df in self.differences:
             assert (isinstance(df, pandas.DataFrame))
-            print(df)
             try:
                 if df.any().any():
                     logging.error(df.describe())
@@ -147,7 +146,7 @@ class ResultComparer:
                             else:
                                 messages.append(msg)
                         return True
-                    return  False
+                    return False
 
                 if error > (atol + rtol*abs(val1)):
                     msg = "mismatch comparing {4} col: {0} row: {1} here {2} != {3}"\
