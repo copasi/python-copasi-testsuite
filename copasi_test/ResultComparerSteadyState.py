@@ -19,12 +19,17 @@ class ResultComparerSteadyState(ResultComparer):
         # species result: concentration
         expected_subset = self.get_subset(expected.data_frames[0], [0])
         other_subset = self.get_subset(other.data_frames[0], [0])
-        diff = self.get_differences(expected_subset, other_subset, **kwargs)
-        result.differences.append(diff)
-
+        result.explicit_fail = result.explicit_fail or \
+                               self.compare_df_unsorted(expected_subset,
+                                                        other_subset,
+                                                        desc=expected.data_descriptions[0]['desc'],
+                                                        messages=result.messages, **kwargs)
         # compare steady state fluxes
-        diff = self.get_differences(expected.data_frames[1], other.data_frames[1], **kwargs)
-        result.differences.append(diff)
+        result.explicit_fail = result.explicit_fail or \
+                               self.compare_df_unsorted(expected.data_frames[1],
+                                                        other.data_frames[1],
+                                                        desc=expected.data_descriptions[1]['desc'],
+                                                        messages=result.messages, **kwargs)
 
         # compare full jacobian
         result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[2],
