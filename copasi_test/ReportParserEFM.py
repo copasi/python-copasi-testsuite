@@ -5,7 +5,7 @@ except:
     pass
 
 
-from ReportParser import ReportParser
+from .ReportParser import ReportParser
 
 
 class ReportParserEFM(ReportParser):

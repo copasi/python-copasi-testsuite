@@ -1,5 +1,5 @@
-from ReportParser import ReportParser
-from ReportParserSteadyState import ReportParserSteadyState
+from .ReportParser import ReportParser
+from .ReportParserSteadyState import ReportParserSteadyState
 
 
 class ReportParserLNA(ReportParser):

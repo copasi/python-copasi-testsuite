@@ -1,5 +1,5 @@
 import pandas
-from ReportParser import ReportParser
+from .ReportParser import ReportParser
 
 
 class ReportParserOptimization(ReportParser):

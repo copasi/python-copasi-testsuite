@@ -8,10 +8,10 @@ try:
 except ImportError:
     from io import StringIO
 
-from TaskTypes import TaskTypes
-from RunResult import RunResult
-from TestReport import TestReport
-from TestRunner import TestRunner
+from .TaskTypes import TaskTypes
+from .RunResult import RunResult
+from .TestReport import TestReport
+from .TestRunner import TestRunner
 
 
 def open_url(url):
@@ -261,11 +261,13 @@ class TestCase:
                 assert (isinstance(exp, COPASI.CExperiment))
                 filename = exp.getFileNameOnly()
 
+                if not os.path.isfile(filename) and os.path.isfile(os.path.join(os.path.dirname(model_file), filename)):
+                    filename = os.path.join(os.path.dirname(model_file), filename)
+
                 if os.path.isfile(filename):
                     with open(filename, 'r') as data_file:
                         data = data_file.read()
                         new_file = os.path.join(output_dir, os.path.basename(filename))
-
                         with open(new_file, 'w') as new_data_file:
                             new_data_file.write(data)
 

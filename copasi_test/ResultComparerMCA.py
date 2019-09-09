@@ -1,10 +1,10 @@
-from ResultComparer import CompareResult
-from ResultComparerSteadyState import ResultComparerSteadyState
+from .ResultComparer import CompareResult
+from .ResultComparerSteadyState import ResultComparerSteadyState
 
 
 class ResultComparerMCA(ResultComparerSteadyState):
     def __init__(self):
-        from TaskTypes import TaskTypes
+        from .TaskTypes import TaskTypes
         ResultComparerSteadyState.__init__(self)
         self.task_type = TaskTypes.mca
 

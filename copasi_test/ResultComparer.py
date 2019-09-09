@@ -1,5 +1,5 @@
-from TestReport import TestReport
-from RunResult import RunResult
+from .TestReport import TestReport
+from .RunResult import RunResult
 import numpy as np
 import pandas
 import logging

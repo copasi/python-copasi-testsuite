@@ -1,9 +1,9 @@
-from ResultComparer import ResultComparer, CompareResult
+from .ResultComparer import ResultComparer, CompareResult
 
 
 class ResultComparerOptimization(ResultComparer):
     def __init__(self):
-        from TaskTypes import TaskTypes
+        from .TaskTypes import TaskTypes
         ResultComparer.__init__(self, TaskTypes.optimization)
 
     def compare(self, expected, other, **kwargs):

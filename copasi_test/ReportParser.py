@@ -6,7 +6,7 @@ try:
 except ImportError:
     from io import StringIO
 
-from TestReport import TestReport
+from .TestReport import TestReport
 
 
 class ReportParser:

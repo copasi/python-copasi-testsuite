@@ -5,7 +5,7 @@ import time
 import threading
 import traceback
 
-from RunResult import RunResult
+from .RunResult import RunResult
 
 support_parallelism = True
 try:
@@ -144,18 +144,20 @@ class TestRunner:
 
                 logging.debug("  model {0}: compare result".format(model_name))
                 result += case.compare_result(model_file, self) != RunResult.PASS
+
             except Exception as e:
                 if 'ignore_exception' in case.settings and case.settings['ignore_exception'].lower() == 'true':
                     continue
 
                 if isinstance(e, ValueError):
-                    logging.error('Failed to run model {0} of case {1}:\n{2}\n'.format(model_name, case.id, e.message))
+                    logging.error('Failed to run model {0} of case {1}:\n{2}\n'.format(model_name, case.id, str(e)))
                 else:
                     if isDebug:
                         err_msg = StringIO()
                         traceback.print_exc(file=err_msg)
                         err_msg.seek(0)
-                        logging.error('Failed to run model {0} of case {1}:\n{2}'.format(model_name, case.id, err_msg.read()))
+                        logging.error(
+                            'Failed to run model {0} of case {1}:\n{2}'.format(model_name, case.id, err_msg.read()))
                     else:
                         logging.error('Failed to run model {0} of case {1}'.format(model_name, case.id))
                 return RunResult.EXCEPTION
@@ -164,7 +166,8 @@ class TestRunner:
 
         return result
 
-    def call_copasi(self, case, *popenargs, **kwargs):
+    @staticmethod
+    def call_copasi(case, *popenargs, **kwargs):
         t0 = time.clock()
         p = subprocess.Popen(*popenargs, stderr=subprocess.PIPE, stdout=subprocess.PIPE,  **kwargs)
 

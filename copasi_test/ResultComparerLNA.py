@@ -1,9 +1,9 @@
-from ResultComparer import ResultComparer, CompareResult
+from .ResultComparer import ResultComparer, CompareResult
 
 
 class ResultComparerLNA(ResultComparer):
     def __init__(self):
-        from TaskTypes import TaskTypes
+        from .TaskTypes import TaskTypes
         ResultComparer.__init__(self, TaskTypes.timecourse)
 
     def compare(self, expected, other, **kwargs):

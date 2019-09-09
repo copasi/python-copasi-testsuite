@@ -1,4 +1,4 @@
-import model_io
+from . import model_io
 import pandas
 import COPASI
 import collections

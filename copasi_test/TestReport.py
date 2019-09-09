@@ -27,7 +27,7 @@ class TestReport:
         return len(self.data_frames)
 
     def parseReport(self, filename, task):
-        from TaskTypes import TaskTypes
+        from .TaskTypes import TaskTypes
 
         self.filename = filename
         self.task = task
@@ -60,8 +60,8 @@ class TestReport:
         return None
 
     def compare_with(self, other, **kwargs):
-        from TaskTypes import TaskTypes
-        from RunResult import RunResult
+        from .TaskTypes import TaskTypes
+        from .RunResult import RunResult
         if not isinstance(other, TestReport):
             return RunResult.INVLID_OBJECT
         if other.task_name != self.task_name:

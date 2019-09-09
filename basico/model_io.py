@@ -1,12 +1,15 @@
 import COPASI
 import os
-import urllib2
+try: 
+    import urllib2
+except:
+    import urllib
 import traceback
 import logging
 import glob
 import atexit
 import subprocess
-import task_parameterestimation
+from . import task_parameterestimation
 import tempfile
 import shutil
 

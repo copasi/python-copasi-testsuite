@@ -1,6 +1,6 @@
 import logging
 import os
-from TestCase import TestCase
+from .TestCase import TestCase
 
 try:
     from StringIO import StringIO

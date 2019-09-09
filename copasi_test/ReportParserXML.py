@@ -1,4 +1,4 @@
-from ReportParser import ReportParser
+from .ReportParser import ReportParser
 
 
 class ReportParserXML(ReportParser):

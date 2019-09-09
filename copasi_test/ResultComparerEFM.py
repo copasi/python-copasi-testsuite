@@ -1,10 +1,10 @@
-from ResultComparer import ResultComparer, CompareResult
+from .ResultComparer import ResultComparer, CompareResult
 import pandas
 
 
 class ResultComparerEFM(ResultComparer):
     def __init__(self):
-        from TaskTypes import TaskTypes
+        from .TaskTypes import TaskTypes
         ResultComparer.__init__(self, TaskTypes.efm)
 
     @staticmethod
