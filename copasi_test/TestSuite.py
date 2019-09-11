@@ -29,6 +29,7 @@ class TestSuite:
 
         # walk through all directories in the given folder
         for (dir_path, dir_names, file_names) in os.walk(directory):
+            dir_names.sort()
             for dir in dir_names:
                 if os.path.exists(os.path.join(directory, dir, 'settings.txt')):
                     self.addTest(os.path.join(directory, dir))

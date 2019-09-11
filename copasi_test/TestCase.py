@@ -141,6 +141,7 @@ class TestCase:
 
         if os.path.isdir(location):
             for (dir_path, dir_names, file_names) in os.walk(location):
+                file_names.sort()
                 for name in file_names:
                     match = 'match' if reg is None else reg.match(name)
                     if match is None:
