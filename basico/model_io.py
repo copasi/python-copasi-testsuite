@@ -9,7 +9,10 @@ import logging
 import glob
 import atexit
 import subprocess
-from . import task_parameterestimation
+try:
+    from . import task_parameterestimation
+except:
+    import task_parameterestimation
 import tempfile
 import shutil
 

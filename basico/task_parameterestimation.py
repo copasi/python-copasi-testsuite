@@ -1,6 +1,10 @@
-import COPASI
-from . import model_io
 import pandas
+import COPASI
+
+try:
+    from . import model_io
+except:
+    import model_io
 
 
 def num_experiment_files(**kwargs):
