@@ -191,6 +191,16 @@ class TestCase:
             task.setScheduled(True)
             task.setUpdateModel(True)
 
+            method = task.getMethod()
+            if 'Resolution' in self.settings:
+                method.getParameter('Resolution').setDblValue(float(self.settings['Resolution']))
+            if 'Use Newton' in self.settings:
+                method.getParameter('Use Newton').setBoolValue(bool(self.settings['Use Newton']))
+            if 'Use Integration' in self.settings:
+                method.getParameter('Use Integration').setBoolValue(bool(self.settings['Use Integration']))
+            if 'Use Back Integration' in self.settings:
+                method.getParameter('Use Back Integration').setBoolValue(bool(self.settings['Use Back Integration']))
+
         elif self.settings['task'] == TaskTypes.timecourse:
             need_report = True
             task = dm.getTask('Time-Course')
