@@ -200,6 +200,12 @@ class TestCase:
                 method.getParameter('Use Integration').setBoolValue(bool(self.settings['Use Integration']))
             if 'Use Back Integration' in self.settings:
                 method.getParameter('Use Back Integration').setBoolValue(bool(self.settings['Use Back Integration']))
+            if 'Iteration Limit' in self.settings:
+                method.getParameter('Iteration Limit').setUIntValue(int(self.settings['Iteration Limit']))
+            if 'Maximum duration for forward integration' in self.settings:
+                method.getParameter('Maximum duration for forward integration').setUDblValue(float(self.settings['Maximum duration for forward integration']))
+            if 'Maximum duration for backward integration' in self.settings:
+                method.getParameter('Maximum duration for backward integration').setUDblValue(float(self.settings['Maximum duration for backward integration']))
 
         elif self.settings['task'] == TaskTypes.timecourse:
             need_report = True
