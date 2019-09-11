@@ -33,7 +33,10 @@ class TestRunner:
 
         try:
             out = subprocess.check_output([self.executable, '-h'], stderr=subprocess.STDOUT)
-            self.version = out.split('\n')[0].strip()
+            if type(out) is str:
+                self.version = out.split('\n')[0].strip()
+            else:
+                self.version = str(out.split(b'\n')[0].strip())
         except:
             pass
 
