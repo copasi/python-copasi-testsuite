@@ -31,16 +31,16 @@ class ResultComparerSteadyState(ResultComparer):
                                                         desc=expected.data_descriptions[1]['desc'],
                                                         messages=result.messages, **kwargs)
 
-        # compare full jacobian
-        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[2],
-                                                                                other.data_frames[2],
-                                                                                desc="Full Jacobian",
-                                                                                messages=result.messages, **kwargs)
+        # # compare full jacobian
+        # result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[2],
+        #                                                                         other.data_frames[2],
+        #                                                                         desc="Full Jacobian",
+        #                                                                         messages=result.messages, **kwargs)
 
-        # compare full eigenvalues
-        result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[3],
-                                                                                other.data_frames[3],
-                                                                                desc="Full Eigenvalues",
-                                                                                messages=result.messages, **kwargs)
+        # # compare full eigenvalues
+        # result.explicit_fail = result.explicit_fail or self.compare_df_unsorted(expected.data_frames[3],
+        #                                                                         other.data_frames[3],
+        #                                                                         desc="Full Eigenvalues",
+        #                                                                         messages=result.messages, **kwargs)
 
         return result
