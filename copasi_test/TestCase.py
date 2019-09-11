@@ -195,11 +195,11 @@ class TestCase:
             if 'Resolution' in self.settings:
                 method.getParameter('Resolution').setDblValue(float(self.settings['Resolution']))
             if 'Use Newton' in self.settings:
-                method.getParameter('Use Newton').setBoolValue(bool(self.settings['Use Newton']))
+                method.getParameter('Use Newton').setBoolValue(self.settings['Use Newton'].lower() == 'true')
             if 'Use Integration' in self.settings:
-                method.getParameter('Use Integration').setBoolValue(bool(self.settings['Use Integration']))
+                method.getParameter('Use Integration').setBoolValue(self.settings['Use Integration'].lower() == 'true')
             if 'Use Back Integration' in self.settings:
-                method.getParameter('Use Back Integration').setBoolValue(bool(self.settings['Use Back Integration']))
+                method.getParameter('Use Back Integration').setBoolValue(self.settings['Use Back Integration'].lower() == 'true')
             if 'Iteration Limit' in self.settings:
                 method.getParameter('Iteration Limit').setUIntValue(int(self.settings['Iteration Limit']))
             if 'Maximum duration for forward integration' in self.settings:
