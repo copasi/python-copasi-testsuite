@@ -1,0 +1,760 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+MAPK phosphatase	0.237999	-1.61967e-14	1.43326e+23	-9.75385e+09	7.67726
+MEK phosphatase	0.159907	5.69961e-15	9.6298e+22	3.43238e+09	4.4315
+RAF kinase	0.0692687	3.10742e-14	4.17146e+22	1.87133e+10	16.6925
+RAF phosphatase	0.269269	-4.17888e-17	1.62157e+23	-2.51658e+07	14.6034
+MAPK	0.176519	-5.75014e-14	1.06303e+23	-3.46282e+10	2.9959
+MAPK-P	0.0224415	-1.00955e-14	1.35146e+22	-6.07964e+09	0.722862
+MAPK-PP	0.00360945	-1.28871e-14	2.17366e+21	-7.76077e+09	0.84034
+MEK	0.0161244	-4.3705e-14	9.71034e+21	-2.63198e+10	1.14291
+MEK-P	0.012896	-7.71026e-15	7.76614e+21	-4.64323e+09	0.487563
+MEK-PP	0.00966974	-6.18753e-14	5.82326e+21	-3.72622e+10	0.179267
+RAF	0.019427	3.11697e-14	1.16992e+22	1.87709e+10	4.46385
+RAF-P	0.136955	-3.29863e-14	8.2476e+22	-1.98648e+10	4.34025
+MAPK_MEK-PP	0.0487685	6.69596e-14	2.93691e+22	4.0324e+10	1.42857
+MAPK-P_MEK-PP	0.00620011	1.21884e-17	3.73379e+21	7.34003e+06	1.42857
+MEK_RAF-P	0.0140143	4.34018e-14	8.4396e+21	2.61372e+10	1.92308
+MEK-P_RAF-P	0.0116567	-1.7412e-18	7.01982e+21	-1.04858e+06	2
+MAPK-P_MAPKPase	0.0534106	4.52712e-17	3.21646e+22	2.7263e+07	2
+MAPK-PP_MAPKPase	0.00859045	1.61488e-14	5.17329e+21	9.72502e+09	2
+MEK-P_MEKPase	0.0229128	0	1.37984e+22	0	1.11111
+MEK-PP_MEKPase	0.0171806	-5.69612e-15	1.03464e+22	-3.43029e+09	1.11111
+RAF_RAFK	0.00269137	-3.89531e-14	1.62078e+21	-2.34581e+10	2
+RAF-P_RAFPase	0.0307313	4.17888e-17	1.85068e+22	2.51658e+07	1.66667
+Scaffold	0.0019423	-1.63238e-19	1.16968e+21	-98304	0.47154
+Scaffold_RAF	5.08683e-05	0	3.06336e+19	0	0.106914
+Scaffold_RAF-P	0.00669567	2.68471e-15	4.03223e+21	1.61677e+09	0.505961
+Scaffold_MEK	0.000597585	-2.23602e-19	3.59874e+20	-134656	0.406593
+Scaffold_MEK_RAF	1.56868e-05	4.08094e-20	9.44679e+18	24576	0.103177
+Scaffold_MEK_RAF-P	0.00183774	5.16919e-19	1.10671e+21	311296	0.414045
+Scaffold_MEK-P	0.000253301	0	1.52542e+20	0	0.497645
+Scaffold_MEK-P_RAF	6.58327e-06	-1.36031e-20	3.96454e+18	-8192	0.108201
+Scaffold_MEK-P_RAF-P	0.00116135	-2.72063e-19	6.99381e+20	-163840	0.508855
+Scaffold_MEK-PP	0.000242102	0	1.45798e+20	0	0.497645
+Scaffold_MEK-PP_RAF	6.27168e-06	-2.04047e-20	3.77689e+18	-12288	0.108201
+Scaffold_MEK-PP_RAF-P	0.00123001	-7.87756e-15	7.40727e+20	-4.74397e+09	0.536137
+Scaffold_MAPK	0.00680102	-1.45554e-18	4.09567e+21	-876544	1.16889
+Scaffold_MAPK_RAF	0.000178118	0	1.07265e+20	0	0.123638
+Scaffold_MAPK_RAF-P	0.0234374	-2.39415e-18	1.41143e+22	-1.44179e+06	1.40599
+Scaffold_MAPK_MEK	0.00209406	-2.1765e-18	1.26107e+21	-1.31072e+06	0.837331
+Scaffold_MAPK_MEK_RAF	5.49698e-05	0	3.31036e+19	0	0.118668
+Scaffold_MAPK_MEK_RAF-P	0.00643815	-2.6118e-18	3.87715e+21	-1.57286e+06	0.869565
+Scaffold_MAPK_MEK-P	0.000890212	-1.14266e-18	5.36099e+20	-688128	1.3436
+Scaffold_MAPK_MEK-P_RAF	2.31372e-05	2.72063e-20	1.39336e+19	16384	0.125362
+Scaffold_MAPK_MEK-P_RAF-P	0.00407727	-3.37358e-18	2.45539e+21	-2.03162e+06	1.42857
+Scaffold_MAPK_MEK-PP	0.000747164	-7.20966e-19	4.49952e+20	-434176	1.18445
+Scaffold_MAPK_MEK-PP_RAF	1.9342e-05	0	1.1648e+19	0	0.12381
+Scaffold_MAPK_MEK-PP_RAF-P	0.00387558	-3.23755e-18	2.33393e+21	-1.9497e+06	1.42857
+Scaffold_MAPK-P	0.000334417	2.67787e-15	2.01391e+20	1.61265e+09	2.466
+Scaffold_MAPK-P_RAF	8.7485e-06	0	5.26847e+18	0	0.130922
+Scaffold_MAPK-P_RAF-P	0.00120672	-1.39869e-14	7.26702e+20	-8.4231e+09	3.82784
+Scaffold_MAPK-P_MEK	9.44345e-05	1.02024e-19	5.68698e+19	61440	1.3436
+Scaffold_MAPK-P_MEK_RAF	2.47672e-06	-3.40078e-21	1.49151e+18	-2048	0.125362
+Scaffold_MAPK-P_MEK_RAF-P	0.000302474	8.63483e-15	1.82154e+20	5.20001e+09	1.42857
+Scaffold_MAPK-P_MEK-P	2.46306e-05	6.78031e-20	1.48329e+19	40832	3.39824
+Scaffold_MAPK-P_MEK-P_RAF	6.35722e-07	2.55059e-21	3.82841e+17	1536	0.132857
+Scaffold_MAPK-P_MEK-P_RAF-P	0.000138604	3.50281e-19	8.34692e+19	210944	4
+Scaffold_MAPK-P_MEK-PP	0.000449039	-4.48903e-19	2.70418e+20	-270336	2.53633
+Scaffold_MAPK-P_MEK-PP_RAF	1.16915e-05	-1.36031e-20	7.04076e+18	-8192	0.131115
+Scaffold_MAPK-P_MEK-PP_RAF-P	0.00192962	-1.33311e-18	1.16204e+21	-802816	4
+Scaffold_MAPK-PP	0.000360965	9.65823e-19	2.17378e+20	581632	2.466
+Scaffold_MAPK-PP_RAF	9.44793e-06	2.72063e-20	5.68967e+18	16384	0.130922
+Scaffold_MAPK-PP_RAF-P	0.00127547	4.40742e-18	7.68103e+20	2.65421e+06	3.82784
+Scaffold_MAPK-PP_MEK	0.000101499	2.51658e-19	6.1124e+19	151552	1.3436
+Scaffold_MAPK-PP_MEK_RAF	2.6629e-06	1.02024e-20	1.60364e+18	6144	0.125362
+Scaffold_MAPK-PP_MEK_RAF-P	0.000320152	9.89628e-19	1.928e+20	595968	1.42857
+Scaffold_MAPK-PP_MEK-P	2.60702e-05	1.16477e-19	1.56998e+19	70144	3.39824
+Scaffold_MAPK-PP_MEK-P_RAF	6.72877e-07	3.40078e-21	4.05216e+17	2048	0.132857
+Scaffold_MAPK-PP_MEK-P_RAF-P	0.000146705	6.20643e-19	8.83476e+19	373760	4
+Scaffold_MAPK-PP_MEK-PP	0.000516529	-2.04047e-19	3.11061e+20	-122880	3.39824
+Scaffold_MAPK-PP_MEK-PP_RAF	1.34871e-05	1.36031e-20	8.12211e+18	8192	0.132857
+Scaffold_MAPK-PP_MEK-PP_RAF-P	0.00200703	1.76841e-19	1.20866e+21	106496	6.66667
+Scaffold_RAF_2	0.00352358	2.88386e-18	2.12195e+21	1.7367e+06	10
+Scaffold_MEK_RAF_2	0.0010866	-1.08825e-19	6.54367e+20	-65536	10
+Scaffold_MEK-P_RAF_2	0.000456014	-2.24452e-19	2.74618e+20	-135168	10
+Scaffold_MEK-PP_RAF_2	0.000434431	7.87796e-15	2.6162e+20	4.74422e+09	10
+Scaffold_MAPK_RAF_2	0.012338	-1.3059e-18	7.43011e+21	-786432	10
+Scaffold_MAPK_MEK_RAF_2	0.00380769	-3.70005e-18	2.29304e+21	-2.22822e+06	10
+Scaffold_MAPK_MEK-P_RAF_2	0.00160269	-2.25812e-18	9.6516e+20	-1.35987e+06	10
+Scaffold_MAPK_MEK-PP_RAF_2	0.00133979	-9.25013e-19	8.06841e+20	-557056	10
+Scaffold_MAPK-P_RAF_2	0.000605997	1.88403e-18	3.6494e+20	1.13459e+06	10
+Scaffold_MAPK-P_MEK_RAF_2	0.000171559	4.52304e-19	1.03315e+20	272384	10
+Scaffold_MAPK-P_MEK-P_RAF_2	4.40356e-05	2.38055e-19	2.65189e+19	143360	10
+Scaffold_MAPK-P_MEK-PP_RAF_2	0.000809852	-5.71332e-19	4.87704e+20	-344064	10
+Scaffold_MAPK-PP_RAF_2	0.000654445	3.10151e-18	3.94116e+20	1.86778e+06	10
+Scaffold_MAPK-PP_MEK_RAF_2	0.000184456	7.99184e-19	1.11082e+20	481280	10
+Scaffold_MAPK-PP_MEK-P_RAF_2	4.66093e-05	3.15423e-19	2.80688e+19	189952	10
+Scaffold_MAPK-PP_MEK-PP_RAF_2	0.000934232	4.08094e-19	5.62607e+20	245760	10
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+binding of RAF and RAFK	0.00134568	8.1039e+20
+dissociation of RAF_RAFK	0.00107655	6.48312e+20
+phosphorylation of RAF	0.000269137	1.62078e+20
+binding of RAF-P and RAF phosphatase	0.0184388	1.11041e+22
+dissociation of RAF-P_RAFPase	0.0153657	9.25342e+21
+dephosphorylation of RAF-P	0.00307313	1.85068e+21
+binding of MEK and RAF-P	0.00728743	4.38859e+21
+dissociation of MEK_RAF-P	0.005886	3.54463e+21
+phosphorylation of MEK	0.00140143	8.4396e+20
+binding of MEK-P and MEK phosphatase	0.0206215	1.24186e+22
+dissociation of MEK-P_MEKPase	0.0183302	1.10387e+22
+dephosphorylation of MEK-P	0.00229128	1.37984e+21
+binding of MEK-P and RAF-P	0.00582834	3.50991e+21
+dissociation of MEK-P_RAF-P	0.00466267	2.80793e+21
+phosphorylation of MEK-P	0.00116567	7.01982e+20
+binding of MEK-PP and MEK phosphatase	0.0154626	9.31177e+21
+dissociation of MEK-PP_MEKPase	0.0137445	8.27713e+21
+dephosphorylation of MEK-PP	0.00171806	1.03464e+21
+binding of MAPK and MEK-PP	0.034138	2.05584e+22
+dissociation of MAPK_MEK-PP	0.0292611	1.76214e+22
+phosphorylation of MAPK	0.00487685	2.93691e+21
+binding of MAPK-P and MAPK phosphatase	0.0267053	1.60823e+22
+dissociation of MAPK-P_MAPKPase	0.0213642	1.28658e+22
+dephosphorylation of MAPK-P	0.00534106	3.21646e+21
+binding of MAPK-P and MEK-PP	0.00434008	2.61365e+21
+dissociation of MAPK-P_MEK-PP	0.00372006	2.24028e+21
+phosphorylation of MAPK-P	0.000620011	3.73379e+20
+binding of MAPK-PP and MAPK phosphatase	0.00429523	2.58665e+21
+dissociation of MAPK-PP_MAPKPase	0.00343618	2.06932e+21
+dephosphorylation of MAPK-PP	0.000859045	5.17329e+20
+binding of MAPK on scaffold	0.00342854	2.06472e+21
+dissociation of MAPK from scaffold	0.00340051	2.04783e+21
+binding of MAPK on scaffold_2	8.97924e-05	5.40742e+19
+dissociation of MAPK from scaffold_2	8.90589e-05	5.36325e+19
+binding of MAPK on scaffold_3	0.0118192	7.11767e+21
+dissociation of MAPK from scaffold_3	0.0117187	7.05716e+21
+binding of MAPK on scaffold_4	0.00105485	6.35248e+20
+dissociation of MAPK from scaffold_4	0.00104703	6.30535e+20
+binding of MAPK on scaffold_5	2.76902e-05	1.66754e+19
+dissociation of MAPK from scaffold_5	2.74849e-05	1.65518e+19
+binding of MAPK on scaffold_6	0.00324397	1.95357e+21
+dissociation of MAPK from scaffold_6	0.00321908	1.93857e+21
+binding of MAPK on scaffold_7	0.000447126	2.69266e+20
+dissociation of MAPK from scaffold_7	0.000445106	2.68049e+20
+binding of MAPK on scaffold_8	1.16208e-05	6.99818e+18
+dissociation of MAPK from scaffold_8	1.15686e-05	6.96678e+18
+binding of MAPK on scaffold_9	0.00205001	1.23454e+21
+dissociation of MAPK from scaffold_9	0.00203864	1.2277e+21
+binding of MAPK on scaffold_10	0.000427358	2.57361e+20
+dissociation of MAPK from scaffold_10	0.000373582	2.24976e+20
+binding of MAPK on scaffold_11	1.10707e-05	6.66695e+18
+dissociation of MAPK from scaffold_11	9.67098e-06	5.824e+18
+binding of MAPK on scaffold_12	0.0021712	1.30753e+21
+dissociation of MAPK from scaffold_12	0.00193779	1.16697e+21
+binding of MAPK-P on scaffold	0	0
+dissociation of MAPK-P from scaffold	1.67208e-05	1.00695e+19
+binding of MAPK-P on scaffold_2	0	0
+dissociation of MAPK-P from scaffold_2	4.37425e-07	2.63423e+17
+binding of MAPK-P on scaffold_3	0	0
+dissociation of MAPK-P from scaffold_3	6.03359e-05	3.63351e+19
+binding of MAPK-P on scaffold_4	0	0
+dissociation of MAPK-P from scaffold_4	4.72172e-06	2.84349e+18
+binding of MAPK-P on scaffold_5	0	0
+dissociation of MAPK-P from scaffold_5	1.23836e-07	7.45757e+16
+binding of MAPK-P on scaffold_6	0	0
+dissociation of MAPK-P from scaffold_6	1.51237e-05	9.1077e+18
+binding of MAPK-P on scaffold_7	0	0
+dissociation of MAPK-P from scaffold_7	1.23153e-06	7.41645e+17
+binding of MAPK-P on scaffold_8	0	0
+dissociation of MAPK-P from scaffold_8	3.17861e-08	1.9142e+16
+binding of MAPK-P on scaffold_9	0	0
+dissociation of MAPK-P from scaffold_9	6.93019e-06	4.17346e+18
+binding of MAPK-P on scaffold_10	0	0
+dissociation of MAPK-P from scaffold_10	2.2452e-05	1.35209e+19
+binding of MAPK-P on scaffold_11	0	0
+dissociation of MAPK-P from scaffold_11	5.84573e-07	3.52038e+17
+binding of MAPK-P on scaffold_12	0	0
+dissociation of MAPK-P from scaffold_12	9.64808e-05	5.81021e+19
+binding of MAPK-PP on scaffold	0	0
+dissociation of MAPK-PP from scaffold	1.80483e-05	1.08689e+19
+binding of MAPK-PP on scaffold_2	0	0
+dissociation of MAPK-PP from scaffold_2	4.72396e-07	2.84484e+17
+binding of MAPK-PP on scaffold_3	0	0
+dissociation of MAPK-PP from scaffold_3	6.37733e-05	3.84052e+19
+binding of MAPK-PP on scaffold_4	0	0
+dissociation of MAPK-PP from scaffold_4	5.07494e-06	3.0562e+18
+binding of MAPK-PP on scaffold_5	0	0
+dissociation of MAPK-PP from scaffold_5	1.33145e-07	8.01819e+16
+binding of MAPK-PP on scaffold_6	0	0
+dissociation of MAPK-PP from scaffold_6	1.60076e-05	9.64002e+18
+binding of MAPK-PP on scaffold_7	0	0
+dissociation of MAPK-PP from scaffold_7	1.30351e-06	7.84991e+17
+binding of MAPK-PP on scaffold_8	0	0
+dissociation of MAPK-PP from scaffold_8	3.36439e-08	2.02608e+16
+binding of MAPK-PP on scaffold_9	0	0
+dissociation of MAPK-PP from scaffold_9	7.33524e-06	4.41738e+18
+binding of MAPK-PP on scaffold_10	0	0
+dissociation of MAPK-PP from scaffold_10	2.58265e-05	1.55531e+19
+binding of MAPK-PP on scaffold_11	0	0
+dissociation of MAPK-PP from scaffold_11	6.74354e-07	4.06105e+17
+binding of MAPK-PP on scaffold_12	0	0
+dissociation of MAPK-PP from scaffold_12	0.000100352	6.04332e+19
+binding of MEK on scaffold	0.000313185	1.88604e+20
+dissociation of MEK from scaffold	0.000298793	1.79937e+20
+binding of MEK on scaffold_2	8.2022e-06	4.93948e+18
+dissociation of MEK from scaffold_2	7.84339e-06	4.7234e+18
+binding of MEK on scaffold_3	0.00107964	6.50173e+20
+dissociation of MEK from scaffold_3	0.000918871	5.53357e+20
+binding of MEK-P on scaffold	0	0
+dissociation of MEK-P from scaffold	1.26651e-05	7.62709e+18
+binding of MEK-P on scaffold_2	0	0
+dissociation of MEK-P from scaffold_2	3.29164e-07	1.98227e+17
+binding of MEK-P on scaffold_3	0	0
+dissociation of MEK-P from scaffold_3	5.80675e-05	3.49691e+19
+binding of MEK-PP on scaffold	0	0
+dissociation of MEK-PP from scaffold	1.21051e-05	7.28988e+18
+binding of MEK-PP on scaffold_2	0	0
+dissociation of MEK-PP from scaffold_2	3.13584e-07	1.88845e+17
+binding of MEK-PP on scaffold_3	0	0
+dissociation of MEK-PP from scaffold_3	6.15003e-05	3.70364e+19
+binding of MEK on scaffold_4	0.00109662	6.60402e+20
+dissociation of MEK from scaffold_4	0.00104703	6.30535e+20
+binding of MEK on scaffold_5	2.87204e-05	1.72958e+19
+dissociation of MEK from scaffold_5	2.74849e-05	1.65518e+19
+binding of MEK on scaffold_6	0.00377913	2.27585e+21
+dissociation of MEK from scaffold_6	0.00321908	1.93857e+21
+binding of MEK-P on scaffold_4	0	0
+dissociation of MEK-P from scaffold_4	4.45106e-05	2.68049e+19
+binding of MEK-P on scaffold_5	0	0
+dissociation of MEK-P from scaffold_5	1.15686e-06	6.96678e+17
+binding of MEK-P on scaffold_6	0	0
+dissociation of MEK-P from scaffold_6	0.000203864	1.2277e+20
+binding of MEK-PP on scaffold_4	0	0
+dissociation of MEK-PP from scaffold_4	3.73582e-05	2.24976e+19
+binding of MEK-PP on scaffold_5	0	0
+dissociation of MEK-PP from scaffold_5	9.67098e-07	5.824e+17
+binding of MEK-PP on scaffold_6	0	0
+dissociation of MEK-PP from scaffold_6	0.000193779	1.16697e+20
+binding of MEK on scaffold_7	5.39227e-05	3.2473e+19
+dissociation of MEK from scaffold_7	4.72172e-05	2.84349e+19
+binding of MEK on scaffold_8	1.41064e-06	8.49509e+17
+dissociation of MEK from scaffold_8	1.23836e-06	7.45757e+17
+binding of MEK on scaffold_9	0.000194576	1.17176e+20
+dissociation of MEK from scaffold_9	0.000151237	9.1077e+19
+binding of MEK-P on scaffold_7	0	0
+dissociation of MEK-P from scaffold_7	1.23153e-06	7.41645e+17
+binding of MEK-P on scaffold_8	0	0
+dissociation of MEK-P from scaffold_8	3.17861e-08	1.9142e+16
+binding of MEK-P on scaffold_9	0	0
+dissociation of MEK-P from scaffold_9	6.93019e-06	4.17346e+18
+binding of MEK-PP on scaffold_7	0	0
+dissociation of MEK-PP from scaffold_7	2.2452e-05	1.35209e+19
+binding of MEK-PP on scaffold_8	0	0
+dissociation of MEK-PP from scaffold_8	5.84573e-07	3.52038e+17
+binding of MEK-PP on scaffold_9	0	0
+dissociation of MEK-PP from scaffold_9	9.64808e-05	5.81021e+19
+binding of MEK on scaffold_10	5.82035e-05	3.5051e+19
+dissociation of MEK from scaffold_10	5.07494e-05	3.0562e+19
+binding of MEK on scaffold_11	1.52342e-06	9.17426e+17
+dissociation of MEK from scaffold_11	1.33145e-06	8.01819e+17
+binding of MEK on scaffold_12	0.000205661	1.23852e+20
+dissociation of MEK from scaffold_12	0.000160076	9.64002e+19
+binding of MEK-P on scaffold_10	0	0
+dissociation of MEK-P from scaffold_10	1.30351e-06	7.84991e+17
+binding of MEK-P on scaffold_11	0	0
+dissociation of MEK-P from scaffold_11	3.36439e-08	2.02608e+16
+binding of MEK-P on scaffold_12	0	0
+dissociation of MEK-P from scaffold_12	7.33524e-06	4.41738e+18
+binding of MEK-PP on scaffold_10	0	0
+dissociation of MEK-PP from scaffold_10	2.58265e-05	1.55531e+19
+binding of MEK-PP on scaffold_11	0	0
+dissociation of MEK-PP from scaffold_11	6.74354e-07	4.06105e+17
+binding of MEK-PP on scaffold_12	0	0
+dissociation of MEK-PP from scaffold_12	0.000100352	6.04332e+19
+binding of RAF on scaffold	0.000377332	2.27234e+20
+dissociation of RAF from scaffold	2.54341e-05	1.53168e+19
+binding of RAF-P on scaffold	0	0
+dissociation of RAF-P from scaffold	0.000334784	2.01611e+20
+binding of RAF on scaffold_2	0.000116093	6.99129e+19
+dissociation of RAF from scaffold_2	7.84339e-06	4.7234e+18
+binding of RAF-P on scaffold_2	0	0
+dissociation of RAF-P from scaffold_2	9.18871e-05	5.53357e+19
+binding of RAF on scaffold_3	4.92089e-05	2.96343e+19
+dissociation of RAF from scaffold_3	3.29164e-06	1.98227e+18
+binding of RAF-P on scaffold_3	0	0
+dissociation of RAF-P from scaffold_3	5.80675e-05	3.49691e+19
+binding of RAF on scaffold_4	4.70333e-05	2.83241e+19
+dissociation of RAF from scaffold_4	3.13584e-06	1.88845e+18
+binding of RAF-P on scaffold_4	0	0
+dissociation of RAF-P from scaffold_4	6.15003e-05	3.70364e+19
+binding of RAF on scaffold_5	0.00132124	7.95667e+20
+dissociation of RAF from scaffold_5	8.90589e-05	5.36325e+19
+binding of RAF-P on scaffold_5	0	0
+dissociation of RAF-P from scaffold_5	0.00117187	7.05716e+20
+binding of RAF on scaffold_6	0.000406813	2.44988e+20
+dissociation of RAF from scaffold_6	2.74849e-05	1.65518e+19
+binding of RAF-P on scaffold_6	0	0
+dissociation of RAF from scaffold_7	0.000321908	1.93857e+20
+binding of RAF on scaffold_7	0.000172942	1.04148e+20
+dissociation of RAF from scaffold_8	1.15686e-05	6.96678e+18
+binding of RAF-P on scaffold_7	0	0
+dissociation of RAF-P from scaffold_6	0.000203864	1.2277e+20
+binding of RAF on scaffold_8	0.000145152	8.74124e+19
+dissociation of RAF from scaffold_9	9.67098e-06	5.824e+18
+binding of RAF-P on scaffold_8	0	0
+dissociation of RAF-P from scaffold_7	0.000193779	1.16697e+20
+binding of RAF on scaffold_9	6.49673e-05	3.91242e+19
+dissociation of RAF from scaffold_10	4.37425e-06	2.63423e+18
+binding of RAF-P on scaffold_9	0	0
+dissociation of RAF-P from scaffold_8	6.03359e-05	3.63351e+19
+binding of RAF on scaffold_10	1.83458e-05	1.10481e+19
+dissociation of RAF from scaffold_11	1.23836e-06	7.45757e+17
+binding of RAF-P on scaffold_10	0	0
+dissociation of RAF-P from scaffold_9	1.51237e-05	9.1077e+18
+binding of RAF on scaffold_11	4.78499e-06	2.88159e+18
+dissociation of RAF from scaffold_12	3.17861e-07	1.9142e+17
+binding of RAF-P on scaffold_11	0	0
+dissociation of RAF-P from scaffold_10	6.93019e-06	4.17346e+18
+binding of RAF on scaffold_12	8.7235e-05	5.25341e+19
+dissociation of RAF from scaffold_13	5.84573e-06	3.52038e+18
+binding of RAF-P on scaffold_12	0	0
+dissociation of RAF-P from scaffold_11	9.64808e-05	5.81021e+19
+binding of RAF on scaffold_13	7.01249e-05	4.22302e+19
+dissociation of RAF from scaffold_14	4.72396e-06	2.84484e+18
+binding of RAF-P on scaffold_13	0	0
+dissociation of RAF-P from scaffold_12	6.37733e-05	3.84052e+19
+binding of RAF on scaffold_14	1.97182e-05	1.18746e+19
+dissociation of RAF from scaffold_15	1.33145e-06	8.01819e+17
+binding of RAF-P on scaffold_14	0	0
+dissociation of RAF-P from scaffold_13	1.60076e-05	9.64002e+18
+binding of RAF on scaffold_15	5.06466e-06	3.05001e+18
+dissociation of RAF from scaffold_16	3.36439e-07	2.02608e+17
+binding of RAF-P on scaffold_15	0	0
+dissociation of RAF-P from scaffold_14	7.33524e-06	4.41738e+18
+binding of RAF on scaffold_16	0.000100346	6.04299e+19
+dissociation of RAF from scaffold_17	6.74354e-06	4.06105e+18
+binding of RAF-P on scaffold_16	0	0
+dissociation of RAF-P from scaffold_15	0.000100352	6.04332e+19
+phosphorylation of MAPK on scaffold	7.47164e-05	4.49952e+19
+phosphorylation of MAPK on scaffold_2	1.9342e-06	1.1648e+18
+phosphorylation of MAPK on scaffold_3	0.000387558	2.33393e+20
+phosphorylation of MAPK-P on scaffold	4.49039e-05	2.70418e+19
+phosphorylation of MAPK-P on scaffold_2	1.16915e-06	7.04076e+17
+phosphorylation of MAPK-P on scaffold_3	0.000192962	1.16204e+20
+phosphorylation of MEK on scaffold	0.000183774	1.10671e+20
+phosphorylation of MEK-P on scaffold	0.000116135	6.99381e+19
+phosphorylation of MEK on scaffold_2	0.000643815	3.87715e+20
+phosphorylation of MEK-P on scaffold_2	0.000407727	2.45539e+20
+phosphorylation of MEK on scaffold_3	3.02474e-05	1.82154e+19
+phosphorylation of MEK-P on scaffold_3	1.38604e-05	8.34692e+18
+phosphorylation of MEK on scaffold_4	3.20152e-05	1.928e+19
+phosphorylation of MEK-P on scaffold_4	1.46705e-05	8.83476e+18
+binding of RAF and RAFK_2	0.000352358	2.12195e+20
+dissociation of RAF_RAFK_2	0	0
+phosphorylation of RAF on scaffold	0.000352358	2.12195e+20
+binding of RAF and RAFK_3	0.00010866	6.54367e+19
+dissociation of RAF_RAFK_3	0	0
+phosphorylation of RAF on scaffold_2	0.00010866	6.54367e+19
+binding of RAF and RAFK_4	4.56014e-05	2.74618e+19
+dissociation of RAF_RAFK_4	0	0
+phosphorylation of RAF on scaffold_3	4.56014e-05	2.74618e+19
+binding of RAF and RAFK_5	4.34431e-05	2.6162e+19
+dissociation of RAF_RAFK_5	0	0
+phosphorylation of RAF on scaffold_4	4.34431e-05	2.6162e+19
+binding of RAF and RAFK_6	0.0012338	7.43011e+20
+dissociation of RAF_RAFK_6	0	0
+phosphorylation of RAF on scaffold_5	0.0012338	7.43011e+20
+binding of RAF and RAFK_7	0.000380769	2.29304e+20
+dissociation of RAF_RAFK_7	0	0
+phosphorylation of RAF on scaffold_6	0.000380769	2.29304e+20
+binding of RAF and RAFK_8	0.000160269	9.6516e+19
+dissociation of RAF_RAFK_8	0	0
+phosphorylation of RAF on scaffold_7	0.000160269	9.6516e+19
+binding of RAF and RAFK_9	0.000133979	8.06841e+19
+dissociation of RAF_RAFK_9	0	0
+phosphorylation of RAF on scaffold_8	0.000133979	8.06841e+19
+binding of RAF and RAFK_10	6.05997e-05	3.6494e+19
+dissociation of RAF_RAFK_10	0	0
+phosphorylation of RAF on scaffold_9	6.05997e-05	3.6494e+19
+binding of RAF and RAFK_11	1.71559e-05	1.03315e+19
+dissociation of RAF_RAFK_11	0	0
+phosphorylation of RAF on scaffold_10	1.71559e-05	1.03315e+19
+binding of RAF and RAFK_12	4.40356e-06	2.65189e+18
+dissociation of RAF_RAFK_12	0	0
+phosphorylation of RAF on scaffold_11	4.40356e-06	2.65189e+18
+binding of RAF and RAFK_13	8.09852e-05	4.87704e+19
+dissociation of RAF_RAFK_13	0	0
+phosphorylation of RAF on scaffold_12	8.09852e-05	4.87704e+19
+binding of RAF and RAFK_14	6.54445e-05	3.94116e+19
+dissociation of RAF_RAFK_14	0	0
+phosphorylation of RAF on scaffold_13	6.54445e-05	3.94116e+19
+binding of RAF and RAFK_15	1.84456e-05	1.11082e+19
+dissociation of RAF_RAFK_15	0	0
+phosphorylation of RAF on scaffold_14	1.84456e-05	1.11082e+19
+binding of RAF and RAFK_16	4.66093e-06	2.80688e+18
+dissociation of RAF_RAFK_16	0	0
+phosphorylation of RAF on scaffold_15	4.66093e-06	2.80688e+18
+binding of RAF and RAFK_17	9.34232e-05	5.62607e+19
+dissociation of RAF_RAFK_17	0	0
+phosphorylation of RAF on scaffold_16	9.34232e-05	5.62607e+19
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	RAF kinase	RAF-P	RAF	MEK-PP	MEK-P	MAPK-P	MAPK-PP	MEK	MAPK	Scaffold	Scaffold_RAF	Scaffold_RAF-P	Scaffold_MEK-P_RAF-P	Scaffold_MAPK-PP	Scaffold_MAPK_RAF	Scaffold_MEK_RAF	Scaffold_MAPK-P	Scaffold_MEK-PP	Scaffold_MEK-P_RAF	Scaffold_MEK_RAF-P	Scaffold_MAPK-PP_RAF	Scaffold_MAPK	Scaffold_MAPK-P_MEK-PP_RAF-P	Scaffold_MAPK-P_RAF	Scaffold_MEK-PP_RAF	Scaffold_MEK-P	Scaffold_MAPK-P_MEK-PP_RAF	Scaffold_MAPK-PP_RAF-P	Scaffold_MAPK_MEK-PP_RAF-P	Scaffold_MAPK-P_MEK-P_RAF-P	Scaffold_MAPK_MEK-P_RAF-P	Scaffold_MAPK-PP_MEK-PP_RAF-P	Scaffold_MEK	Scaffold_MAPK-P_MEK-PP	Scaffold_MAPK-PP_MEK-P_RAF-P	Scaffold_MAPK_MEK-PP_RAF	Scaffold_MAPK-P_MEK_RAF-P	Scaffold_MAPK_RAF-P	Scaffold_MAPK-PP_MEK-PP_RAF	Scaffold_MAPK-PP_MEK	Scaffold_MAPK-P_MEK_RAF	Scaffold_MAPK-PP_MEK-P_RAF	Scaffold_MAPK_MEK	Scaffold_MAPK_MEK-P_RAF	Scaffold_MAPK-P_MEK-P	Scaffold_MAPK_MEK-PP	Scaffold_MAPK-PP_MEK_RAF-P	Scaffold_MEK-PP_RAF-P	Scaffold_MAPK_MEK_RAF	MEK phosphatase	Scaffold_MAPK-PP_MEK-PP	Scaffold_MAPK_MEK_RAF-P	Scaffold_MAPK-P_MEK-P_RAF	MAPK phosphatase	Scaffold_MAPK-PP_MEK-P	Scaffold_MAPK-P_MEK	Scaffold_MAPK-PP_MEK_RAF	Scaffold_MAPK_MEK-P	Scaffold_RAF_2	Scaffold_MAPK-P_MEK-PP_RAF_2	Scaffold_MAPK-P_RAF_2	RAF-P_RAFPase	Scaffold_MAPK_MEK-PP_RAF_2	Scaffold_MAPK-PP_MEK-PP_RAF_2	Scaffold_MEK-P_RAF_2	Scaffold_MAPK-PP_RAF_2	Scaffold_MAPK-P_MEK-P_RAF_2	Scaffold_MAPK_MEK_RAF_2	MAPK-P_MEK-PP	MEK-P_RAF-P	Scaffold_MAPK_MEK-P_RAF_2	Scaffold_MAPK-PP_MEK_RAF_2	MEK-P_MEKPase	Scaffold_MEK_RAF_2	MAPK-P_MAPKPase	Scaffold_MAPK_RAF_2	Scaffold_MAPK-PP_MEK-P_RAF_2	Scaffold_MAPK-P_MEK_RAF_2	MAPK_MEK-PP	Scaffold_MAPK-P_RAF-P	Scaffold_MEK-PP_RAF_2	MEK_RAF-P	RAF_RAFK	MEK-PP_MEKPase	MAPK-PP_MAPKPase	RAF phosphatase
+RAF kinase	-0.059907	-0	-0.0692687	-0	-0	-0	-0	-0	-0	-0	-6.92687	-0	-0	-0	-6.92687	-6.92687	-0	-0	-6.92686	-0	-6.92687	-0	-0	-6.92687	-6.92687	-0	-6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-6.92687	-0	-0	-6.92687	-0	-6.92686	-6.92687	-0	-6.92687	-0	-0	-0	-0	-6.92687	-0	-0	-0	-6.92687	-0	-0	-0	-6.92687	-0	0.1	0.1	0.1	-0	0.1	0.1	0.0999999	0.1	0.1	0.1	-0	-0	0.1	0.1	-0	0.0999999	-0	0.1	0.1	0.1	-0	-0	0.1	-0	0.5	-0	-0	-0
+RAF-P	-0	-0.230402	-0	-0	-0.45195	-0	-0	-0.45195	-0	-0	-0	0.05	0.0499999	-0	-0	-0	-0	-0	-0	0.0500002	-0	-0	0.05	-0	-0	-0	-0	0.05	0.05	0.0500016	0.0500001	0.05	-0	-0	0.05	-0	0.0499998	0.05	-0	-0	-0	-0	-0	-0	-0	-0	0.0500003	0.0499998	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499998	-0	0.52	0.1	-0	-0	-0.0684773
+RAF	-0.019427	-0	-0.224022	-0	-0	-0	-0	-0	-0	-0.19427	0.500001	-0	-0	-0.19427	0.499999	0.500005	-0.19427	-0.19427	0.500016	-0	0.5	-0.19427	-0	0.499997	0.499976	-0.19427	0.499999	-0	-0	-0	-0	-0	-0.19427	-0.19427	-0	0.499999	-0	-0	0.5	-0.19427	0.500006	0.499991	-0.19427	0.499999	-0.19427	-0.19427	-0	-0	0.499999	-0	-0.19427	-0	0.500006	-0	-0.19427	-0.19427	0.500001	-0.19427	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.4	-0	-0	-0
+MEK-PP	-0	-0	-0	-5.57829	-0	-0.193395	-0	-0	-0.193395	-0	-0	-0	-0	-0	-0	-0	-0	0.0499988	-0	-0	-0	-0	0.0500014	-0	0.0499733	-0	0.0500403	-0	0.0500007	-0	-0	0.0500003	-0	0.049998	-0	0.0500522	-0	-0	0.0500914	-0	-0	-0	-0	-0	-0	0.0500014	-0	0.0499991	-0	-0.0966974	0.0499981	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.7	0.1	-0	-0	-0	-0	-0	-0	-0	-0	0.7	-0	-0	-0	-0	0.8	-0	-0
+MEK-P	-0	-0.0425567	-0	-0	-2.05102	-0	-0	-0	-0	-0	-0	-0	0.0499999	-0	-0	-0	-0	-0	0.0499884	-0	-0	-0	-0	-0	-0	0.0499982	-0	-0	-0	0.0499985	0.0500001	-0	-0	-0	0.0499971	-0	-0	-0	-0	-0	-0	0.0504601	-0	0.0500072	0.0499797	-0	-0	-0	-0	-0.12896	-0	-0	0.0493009	-0	0.050025	-0	-0	0.0499997	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.4	-0	-0	0.8	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	0.1	-0	-0
+MAPK-P	-0	-0	-0	-0.44883	-0	-1.38339	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499945	-0	-0	-0	-0	-0	0.0499996	0.0497571	-0	-0	0.0500403	-0	-0	0.0499985	-0	-0	-0	0.049998	-0	-0	0.0500012	-0	-0	-0	0.0492119	-0	-0	-0	0.049909	-0	-0	-0	-0	-0	-0	-0	0.0493009	-0.112208	-0	0.0500044	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.6	-0	-0	-0	-0	-0	0.4	-0	-0	-0	0.1	0.0500002	-0	-0	-0	-0	0.1	-0
+MAPK-PP	-0	-0	-0	-0	-0	-0	-1.18999	-0	-0	-0	-0	-0	-0	0.0499992	-0	-0	-0	-0	-0	-0	0.0499899	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.0500001	-0	-0	0.0500001	-0	-0	-0	0.0499946	0.0500022	-0	0.0498131	-0	-0	-0	-0	0.0500003	-0	-0	-0	0.0499998	-0	-0	-0.0180472	0.0500083	-0	0.0500213	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.4	-0
+MEK	-0	-0.0532105	-0	-0	-0	-0	-0	-0.874961	-0	-0.161244	-0.161247	-0.161244	-0	-0.161244	-0.161244	0.499991	-0.161244	-0	-0	0.5	-0.161258	-0.161244	-0	-0.161263	-0	-0	-0	-0.161244	-0	-0	-0	-0	0.5	-0	-0	-0	0.499999	-0.161244	-0	0.500001	0.500028	-0	0.5	-0	-0	-0	0.499999	-0	0.499999	-0	-0	0.5	-0	-0	-0	0.500002	0.500049	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0.161244	-0	0.42	-0	-0	-0	-0
+MAPK	-0	-0	-0	-3.53039	-0	-0	-0	-0	-0.33379	-1.76519	-1.76522	-1.76519	-1.7652	-0	0.5	-1.76509	-0	-1.76519	-1.7652	-1.76519	-0	0.5	-0	-0	-1.76517	-1.7652	-0	-0	0.500001	-0	0.5	-0	-1.7652	-0	-0	0.499982	-0	0.5	-0	-0	-0	-0	0.500001	0.499997	-0	0.5	-0	-1.76519	0.500031	-0	-0	0.5	-0	-0	-0	-0	-0	0.499997	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	0.6	-0	-0	-0	-0	-0	-0	-0
+Scaffold	-0	-0	-0.019423	-0	-0	-0	-0	-0.019423	-0.019423	-2.12071	0.500001	0.05	-0	0.0500004	-0	-0	0.05	0.05	-0	-0	-0	0.5	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF	-0.00508683	-0	0.019423	-0	-0	-0	-0	-0.000508683	-0.000508683	0.19427	-9.35331	-0	-0	-0	0.5	0.499999	-0	-0	0.0500008	-0	0.0500014	-0	-0	0.0499997	0.0499993	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.0669567	-0.0669567	-0	-0	-1.97644	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0.0116135	-0	-0	-0	-1.96519	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	0.5	-0	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP	-0	-0	-0.00360965	-0	-0	-0	-0	-0.00360965	-0	-0	-0	-0	-0	-0.405514	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.0500002	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_RAF	-0.0178118	-0	0.0680102	-0	-0	-0	-0	-0.00178117	0.000508683	-0	1.7652	-0	-0	-0	-8.08811	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.049996	-0	-0	-0	-0	-0	-0	-0	0.0499978	-0	-0	-0	-0	0.500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF	-0.00156868	-0	0.00597585	-0	-0	-0	-0	0.000508683	-0.000156868	-0	0.161244	-0	-0	-0	-0	-9.69206	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	0.0500009	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P	-0	-0	-0.00334417	-0	-0	-0	-0	-0.00334417	-0	-0	-0	-0	-0	-0	-0	-0	-0.405514	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP	-0	-0	-0.00242102	-0	-0	-0	-0	-0	-0.00242102	-0	-0	-0	-0	-0	-0	-0	-0	-2.00947	-0	-0	-0	-0	-0	-0	0.499997	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	0.05	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P_RAF	-0.000658327	-0	0.00253301	-0	-0	-0	-0	-0	-6.58327e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-9.24206	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	0.0499963	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.0669567	-0.0183774	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-2.41519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499998	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500003	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF	-0.000944793	-0	0.00360965	-0	-0	-0	-0	-9.44793e-05	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-7.63811	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	-0	0.0499951	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK	-0	-0	-0.0680102	-0	-0	-0	-0	-0.0680102	0.019423	1.76519	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0.855514	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	0.5	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	0.1	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_RAF	-0.00087485	-0	0.00334417	-0	-0	-0	-0	-8.74849e-05	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-7.63811	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499963	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP_RAF	-0.000627168	-0	0.00242102	-0	-0	-0	-0	-0	-6.27168e-05	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-9.24206	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P	-0	-0	-0.00253302	-0	-0	-0	-0	-0	-0.00253301	-0	-0	-0	0.05	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-2.00946	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499996	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF	-0.00116915	-0	0.00449039	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.62687	-0	-0	-0	-0	-0	-0	0.19427	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.0127547	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.261244	-0	-0	-0	0.05	-0	-0	0.0499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	0.0123001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	0.0116135	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0.15	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK	-0	-0	-0.00597585	-0	-0	-0	-0	0.019423	-0.00597585	0.161244	-0	-0	-0	-0	-0	0.499998	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-2.45946	-0	-0	-0	-0	-0	-0	0.049999	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP	-0	-0	-0.00449039	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0.39427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP_RAF	-0.0019342	-0	0.00747164	-0	-0	-0	-0	-0	6.27167e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-8.07687	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.0120672	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	0.161244	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.234374	0.0669567	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	0.05	-0	-0	-0	-0	-0	-0	-0.711244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF	-0.00134871	-0	0.00516529	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0999997	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK	-0	-0	-0.00101499	-0	-0	-0	-0	0.00360965	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK_RAF	-0.000247672	-0	0.000944345	-0	-0	-0	-0	8.74849e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF	-6.72877e-05	-0	0.000260702	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK	-0	-0	-0.0209406	-0	-0	-0	-0	0.0680102	0.00597585	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.19427	-0	-0	-0	-0	-0	0.500001	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF	-0.00231372	-0	0.00890212	-0	-0	-0	-0	-0	6.58327e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P	-0	-0	-0.000246306	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP	-0	-0	-0.00747164	-0	-0	-0	-0	-0	0.00242102	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.84427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.0127547	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0.0123001	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499999	-0	-0	-0	-0	-0	0.5	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.86519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK_RAF	-0.00549698	-0	0.0209406	-0	-0	-0	-0	0.00178118	0.000156868	-0	-0	-0	-0	-0	0.161244	1.7652	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-8.42687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK phosphatase	-0	-0	-0	-1.59907	-1.59907	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.225657	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.9	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.9	-0	-0
+Scaffold_MAPK-PP_MEK-PP	-0	-0	-0.00516529	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	0.1	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.234374	0.0183774	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.15	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF	-6.35722e-05	-0	0.000246306	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK phosphatase	-0	-0	-0	-0	-0	-1.18999	-1.18999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.130255	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0
+Scaffold_MAPK-PP_MEK-P	-0	-0	-0.000260702	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK	-0	-0	-0.000944345	-0	-0	-0	-0	0.00334417	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF	-0.00026629	-0	0.00101499	-0	-0	-0	-0	9.44793e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P	-0	-0	-0.00890212	-0	-0	-0	-0	-0	0.00253301	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF_2	0.00508683	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF_2	0.00116915	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_RAF_2	0.00087485	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+RAF-P_RAFPase	-0	0.134634	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.6	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0684773
+Scaffold_MAPK_MEK-PP_RAF_2	0.0019342	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF_2	0.00134871	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P_RAF_2	0.000658327	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF_2	0.000944793	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF_2	6.35722e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK_RAF_2	0.00549698	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK-P_MEK-PP	-0	-0	-0	0.448831	-0	0.193395	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK-P_RAF-P	-0	0.0425567	-0	-0	0.45195	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF_2	0.00231372	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF_2	0.00026629	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK-P_MEKPase	-0	-0	-0	-0	1.59907	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.12896	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.9	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF_2	0.00156868	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK-P_MAPKPase	-0	-0	-0	-0	-0	1.18999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.112208	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_RAF_2	0.0178118	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF_2	6.72877e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK_RAF_2	0.000247672	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK_MEK-PP	-0	-0	-0	3.53039	-0	-0	-0	-0	0.193395	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.0120672	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.261244	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP_RAF_2	0.000627168	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0
+MEK_RAF-P	-0	0.0532105	-0	-0	-0	-0	-0	0.45195	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.52	-0	-0	-0	-0
+RAF_RAFK	0.019427	-0	0.0692687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0
+MEK-PP_MEKPase	-0	-0	-0	1.59907	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0966974	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.9	-0	-0
+MAPK-PP_MAPKPase	-0	-0	-0	-0	-0	-0	1.18999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0180472	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0
+RAF phosphatase	-0	-0.134634	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.6	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.0684773
+
+Eigenvalues	real	imaginary
+	4.17058e-08	0
+	6.81418e-09	0
+	0	0
+	0	-1.18201e-08
+	0	1.18201e-08
+	0	0
+	-1.55124e-08	-1.27041e-08
+	-1.55124e-08	1.27041e-08
+	-0.0309186	0
+	-0.0366098	0
+	-0.0371296	-0.0158097
+	-0.0371296	0.0158097
+	-0.0378562	0
+	-0.0528858	0
+	-0.0683321	0
+	-0.0776364	-0.00395539
+	-0.0776364	0.00395539
+	-0.0785197	0
+	-0.0823877	0
+	-0.0944899	0
+	-0.0985711	-4.96338e-09
+	-0.0985711	4.96338e-09
+	-0.0998762	-1.07598e-06
+	-0.0998762	1.07598e-06
+	-0.0999262	0
+	-0.100957	0
+	-0.109362	0
+	-0.13654	0
+	-0.145784	0
+	-0.200893	-0.0632433
+	-0.200893	0.0632433
+	-0.201247	-0.0629605
+	-0.201247	0.0629605
+	-0.206995	-0.0651338
+	-0.206995	0.0651338
+	-0.233825	-0.0742
+	-0.233825	0.0742
+	-0.2755	0
+	-0.283504	0.0753443
+	-0.283504	-0.0753443
+	-0.285395	-0.0743443
+	-0.285395	0.0743443
+	-0.304706	0
+	-0.306408	-0.0074373
+	-0.306408	0.0074373
+	-0.342537	0
+	-0.604873	0
+	-0.617853	0
+	-0.635894	0
+	-0.706769	0
+	-0.846776	-0.00814094
+	-0.846776	0.00814094
+	-0.865665	-0.0215412
+	-0.865665	0.0215412
+	-0.865671	-0.0215486
+	-0.865671	0.0215486
+	-0.947809	0
+	-1.49147	0
+	-1.61555	0
+	-1.92667	0
+	-2.41544	0
+	-2.44989	0.0402197
+	-2.44989	-0.0402197
+	-2.4801	-0.0143864
+	-2.4801	0.0143864
+	-2.51422	0
+	-2.92664	0
+	-3.05948	0
+	-3.10089	0
+	-6.48625	0
+	-7.48927	0
+	-7.49007	0
+	-7.49029	0
+	-7.49029	0
+	-7.49048	0
+	-7.54029	0
+	-7.54029	0
+	-7.61922	0
+	-7.64029	0
+	-8.10153	0
+	-8.15153	0
+	-8.15153	0
+	-9.70548	0
+	-9.75548	0
+	-9.77654	0
+	-10.3667	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	RAF kinase	RAF-P	RAF	MEK-PP	MEK-P	MAPK-P	MAPK-PP	MEK	MAPK	Scaffold	Scaffold_RAF	Scaffold_RAF-P	Scaffold_MEK-P_RAF-P	Scaffold_MAPK-PP	Scaffold_MAPK_RAF	Scaffold_MEK_RAF	Scaffold_MAPK-P	Scaffold_MEK-PP	Scaffold_MEK-P_RAF	Scaffold_MEK_RAF-P	Scaffold_MAPK-PP_RAF	Scaffold_MAPK	Scaffold_MAPK-P_MEK-PP_RAF-P	Scaffold_MAPK-P_RAF	Scaffold_MEK-PP_RAF	Scaffold_MEK-P	Scaffold_MAPK-P_MEK-PP_RAF	Scaffold_MAPK-PP_RAF-P	Scaffold_MAPK_MEK-PP_RAF-P	Scaffold_MAPK-P_MEK-P_RAF-P	Scaffold_MAPK_MEK-P_RAF-P	Scaffold_MAPK-PP_MEK-PP_RAF-P	Scaffold_MEK	Scaffold_MAPK-P_MEK-PP	Scaffold_MAPK-PP_MEK-P_RAF-P	Scaffold_MAPK_MEK-PP_RAF	Scaffold_MAPK-P_MEK_RAF-P	Scaffold_MAPK_RAF-P	Scaffold_MAPK-PP_MEK-PP_RAF	Scaffold_MAPK-PP_MEK	Scaffold_MAPK-P_MEK_RAF	Scaffold_MAPK-PP_MEK-P_RAF	Scaffold_MAPK_MEK	Scaffold_MAPK_MEK-P_RAF	Scaffold_MAPK-P_MEK-P	Scaffold_MAPK_MEK-PP	Scaffold_MAPK-PP_MEK_RAF-P	Scaffold_MEK-PP_RAF-P	Scaffold_MAPK_MEK_RAF	MEK phosphatase	Scaffold_MAPK-PP_MEK-PP	Scaffold_MAPK_MEK_RAF-P	Scaffold_MAPK-P_MEK-P_RAF	MAPK phosphatase	Scaffold_MAPK-PP_MEK-P	Scaffold_MAPK-P_MEK	Scaffold_MAPK-PP_MEK_RAF	Scaffold_MAPK_MEK-P	Scaffold_RAF_2	Scaffold_MAPK-P_MEK-PP_RAF_2	Scaffold_MAPK-P_RAF_2	RAF-P_RAFPase	Scaffold_MAPK_MEK-PP_RAF_2	Scaffold_MAPK-PP_MEK-PP_RAF_2	Scaffold_MEK-P_RAF_2	Scaffold_MAPK-PP_RAF_2	Scaffold_MAPK-P_MEK-P_RAF_2	Scaffold_MAPK_MEK_RAF_2	MAPK-P_MEK-PP	MEK-P_RAF-P	Scaffold_MAPK_MEK-P_RAF_2	Scaffold_MAPK-PP_MEK_RAF_2	MEK-P_MEKPase	Scaffold_MEK_RAF_2	MAPK-P_MAPKPase	Scaffold_MAPK_RAF_2	Scaffold_MAPK-PP_MEK-P_RAF_2	Scaffold_MAPK-P_MEK_RAF_2
+RAF kinase	-0.426574	-0.133333	-0.202602	0.133333	0.133333	-0.133333	-0.133333	0.133333	-0.133333	0.266667	-6.79356	0.133334	0.266666	0.133336	-6.92687	-6.66022	0.133335	0.400005	-6.66024	0.266666	-6.92687	0.133333	0.133333	-6.92687	-6.66007	0.400005	-6.79359	-0	0.133333	0.133339	0.133334	0.133333	0.4	0.266664	0.133325	-6.79358	0.133336	-0	-6.79351	0.266673	-6.79351	-6.79441	0.266666	-6.79351	0.266635	0.266667	0.133336	0.266667	-6.79353	-0.133333	0.266668	0.133333	-6.79266	0.133333	0.26668	0.266668	-6.79372	0.266667	-0.133333	-0.133333	-0.266666	-0.133333	-0.133333	-0.133334	-2.38644e-07	-0.266667	-0.13333	-0.133333	-0	-0	-0.133333	-0.133334	-0	-0	-0	-0.266667	-0.133334	-0.133333
+RAF-P	0.296667	-0.627068	-0.396667	-0.123334	-0.575283	0.123333	0.123333	-0.575283	0.123333	0.223333	-0.173279	-0.123333	-0.246664	0.346661	-0.0499995	-0.296753	0.346666	0.0999976	-0.296624	-0.246666	-0.0499899	0.346667	-0.123334	-0.0500059	-0.296508	0.100003	-0.173465	-0	-0.123334	-0.123338	-0.123334	-0.123334	0.0999992	0.223324	-0.123361	-0.173405	-0.123329	-3.71458e-08	-0.173545	0.223339	-0.172417	-0.172082	0.223333	-0.173276	0.22323	0.223328	-0.12333	-0.246663	-0.173289	0.123333	0.223327	-0.123333	-0.171868	-0.123333	0.223393	0.223333	-0.173603	0.223334	0.123333	0.123333	0.246665	0.171811	0.123333	0.123333	-0	0.246668	0.123328	0.123333	-0	-0.02	0.123333	0.123336	-0	-0	-0	0.246667	0.123326	0.123337
+RAF	-0.286094	-0.133333	-0.357355	0.133333	0.133333	-0.133333	-0.133333	0.133333	-0.133333	0.0723964	0.633333	0.133333	0.266666	-0.0609351	0.499999	0.766678	-0.0609377	0.205731	0.766687	0.266666	0.5	-0.0609368	0.133334	0.499997	0.766708	0.205733	0.633291	-0	0.133333	0.133331	0.133333	0.133333	0.205729	0.0723952	0.133328	0.633299	0.133336	-0	0.63333	0.072398	0.63323	0.632611	0.0723961	0.633352	0.0723826	0.0723962	0.133334	0.266667	0.633337	-0.133333	0.0723974	0.133333	0.633529	0.133333	0.0724017	0.0723967	0.633228	0.0723966	-0.133333	-0.133334	-0.266666	-0.0333333	-0.133333	-0.133334	-0	-0.266667	-0.133331	-0.133333	-0	-0	-0.133333	-0.133333	-0	-0	-0	-0.266667	-0.133338	-0.133334
+MEK-PP	-0.233333	0.233333	0.233333	-5.81162	-0.233334	-0.660061	-0.466667	-0.233333	-0.660061	0.233333	0.46655	0.466667	0.233335	-0.233343	-0	0.233762	-0.233353	0.0499988	0.232221	0.233335	-0	-0.233333	-0.183337	-0	0.283182	-0	-0.182587	-0	-0.183334	-0.233385	-0.233334	-0.183334	-0	-0.416673	-0.233292	-0.183465	-0.233324	-0	-0.183582	-0.466682	-0.236217	-0.232893	-0.466663	-0.232991	-0.466713	-0.416664	-0.23333	0.283336	-0.233322	-0.663364	-0.416671	-0.233334	-0.230071	0.466667	-0.466722	-0.466708	-0.234087	-0.466667	0.233334	-0.466672	-0.233339	0.233333	-0.466668	-0.466668	-0	-0.233332	-0.46666	-0.466666	5.61668e-07	0.1	-0.466669	-0.466678	-0.8	-0	-0	-0.233333	-0.466743	-0.466664
+MEK-P	0.0666667	-0.109223	-0.0666667	-0.0333333	-2.08435	0.0333333	0.0333334	-0.0333334	0.0333333	0.0333336	-0.0333225	-0.0333333	-0.0166661	0.066664	-0	-0.0666543	0.0666663	-0	-0.0166628	-0.0666667	-0	0.0666668	-0.0333331	-0	-0.066631	0.0499982	-0.0333602	-0	-0.0333335	0.0166641	0.0166665	-0.0333334	-0	0.033332	0.0166637	-0.0333531	-0.0333332	-0	-0.0333727	0.0333405	-0.0333938	0.0181139	0.033333	0.0166691	0.0833113	0.0333331	-0.0333308	-0.0666657	-0.0333227	-0.195626	0.0333321	-0.0333334	0.0164336	-0.0333333	0.0833861	0.033327	-0.0333475	0.0833328	0.0333334	0.033334	0.0666674	-0.0666667	0.0333329	0.0333328	-0	0.0666674	0.0333131	0.0333334	-0	0.3	0.0333332	0.0333362	0.7	-0	-0	0.0666667	0.0333414	0.0333353
+MAPK-P	-0.0166667	0.0166667	0.0166667	-0.465497	-0.0166666	-1.46672	-0.0833328	-0.0166667	-0.0833333	0.016667	0.0333396	0.0333333	0.0166661	-0.0666736	-0.0499922	0.0167607	-0.0166718	-0	0.0166628	0.0166669	-0.0501281	-0.0666663	-0.0166665	-0	0.0166578	-0	-0.0165312	-0.05	-0.0666661	-0.0166703	-0.0666673	-0.0666677	-0	-0.033332	-0.0666549	-0.0667063	-0.0166652	-0.0499999	-0.0668746	-0.0833384	-0.0168727	-0.0672801	-0.0833334	-0.066601	-0.0333669	-0.0833333	-0.0666671	0.0166673	-0.0666454	0.0166667	-0.0833336	-0.0666666	-0.0136947	-0.128874	-0.0832859	-0.0333547	-0.0666951	-0.0833347	0.0166669	-0.0833328	-0.0666659	0.0166667	-0.083332	-0.0833333	-0	-0.0666687	-0.0833124	-0.083333	0.5	-0	-0.0833334	-0.0833334	-0	-0	0.3	-0.0666667	-0.0833816	-0.0833358
+MAPK-PP	-0	-0	-0	-0	-0	-0	-1.18999	-0	-0	-0	-0	-0	-0	0.0499992	-0	-0	-0	-0	-0	-0	0.0499899	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.0500001	-0	-0	0.0500001	-0	-0	-0	0.0499946	0.0500022	-0	0.0498131	-0	-0	-0	-0	0.0500003	-0	-0	-0	0.0499998	-0	-0	-0.418047	0.0500083	-0	0.0500213	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0.4	-0	-0	-0
+MEK	0.226252	-0.279463	-0.226252	-0.193748	-0.193748	0.193748	0.193748	-1.06871	0.193748	0.0325042	-0.193714	-0.193748	-0.226251	0.226246	1.22195e-06	0.273666	0.22625	-0	-0.226138	0.273749	-0	0.226252	-0.0325042	-4.97571e-05	-0.226129	-0	-0.0326155	-3.41287e-07	-0.0325046	-0.0325179	-0.0325048	-0.032504	0.5	0.193743	-0.0325204	-0.0325429	0.467498	-0	-0.0326304	0.693752	0.468216	-0.0316993	0.693748	-0.0324727	0.193627	0.193744	0.467497	-0.226249	0.467539	0.193748	0.193742	0.467496	-0.030813	-0.193748	0.193805	0.693737	0.467519	0.193748	0.193748	0.193748	0.387495	-0.226252	0.193748	0.193748	-0	0.387497	0.19374	0.193748	-0	-0.42	0.193748	0.193747	0.1	-0	-0	0.387496	0.193735	0.19375
+MAPK	-0.2	0.2	0.2	-3.73039	-0.200001	-0.4	-0.4	-0.2	-0.73379	-1.56519	-1.36528	-1.36519	-1.56519	-0.200002	0.5	-1.56485	-0.200009	-1.76519	-1.5663	-1.56519	-0	0.300001	-0.200002	-0	-1.56527	-1.7652	-0.199267	-0	0.3	-0.200044	0.299999	-0.2	-1.7652	-0.400007	-0.199965	0.299953	-0.199993	0.5	-0.200107	-0.400018	-0.202472	-0.196665	0.100004	0.300269	-0.40012	0.0999981	-0.200001	-1.56519	0.300031	0.2	-0.400005	0.299999	-0.197203	0.4	-0.400066	-0.400035	-0.200085	0.0999993	0.2	-0.400004	-0.200004	0.2	-0.400001	-0.4	-0	-0.200001	-0.399994	-0.4	-0.6	-0	-0.400001	-0.400015	-0	-0	0.1	-0.2	-0.400023	-0.400004
+Scaffold	-0	-0	-0.019423	-0	-0	-0	-0	-0.019423	-0.019423	-2.12071	0.500001	0.05	-0	0.0500004	-0	-0	0.05	0.05	-0	-0	-0	0.5	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF	-0.00508683	-0	0.019423	-0	-0	-0	-0	-0.000508683	-0.000508683	0.19427	-9.35331	-0	-0	-0	0.5	0.499999	-0	-0	0.0500008	-0	0.0500014	-0	-0	0.0499997	0.0499993	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF-P	0.0166667	-0.0166667	-0.0166667	0.0166667	0.0166667	-0.0166667	-0.0166667	-0.0502901	-0.0836234	-0.0166667	-0.0333327	-2.00977	0.0333334	-0.0333329	-0.05	-0.0166601	-0.0333331	-0	-0.0166628	0.483333	-0.0499985	-0.0333333	-0.0333333	-0.0499966	-0.0166578	-0	-0.0333299	-0	-0.0333334	-0.0333332	-0.0333333	-0.0333333	-0	-0.0166668	-0.0333334	-0.0333363	-0.0333332	0.45	-0.0333344	-0.016666	-0.0333279	-0.0333974	-0.0166666	-0.0333311	-0.0166614	-0.0166667	-0.0333331	0.0333334	-0.0333321	-0.0166667	-0.0166667	-0.0333333	-0.0333808	0.0166667	-0.0166701	-0.0166664	-0.0333475	-0.0166666	0.0833333	-0.0166667	-0.0333332	-0.0166667	-0.0166667	-0.0166667	-0	-0.0333334	-0.0166664	-0.0166667	-0	-0	-0.0166667	-0.0166668	-0	-0	-0	-0.0333333	-0.0166666	-0.0166666
+Scaffold_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0.0116135	-0	-0	-0	-1.96519	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	0.5	-0	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP	-0	-0	-0.00360965	-0	-0	-0	-0	-0.00360965	-0	-0	-0	-0	-0	-0.405514	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.0500002	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_RAF	-0.0178118	-0	0.0680102	-0	-0	-0	-0	-0.00178117	0.000508683	-0	1.7652	-0	-0	-0	-8.08811	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.049996	-0	-0	-0	-0	-0	-0	-0	0.0499978	-0	-0	-0	-0	0.500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF	-0.00156868	-0	0.00597585	-0	-0	-0	-0	0.000508683	-0.000156868	-0	0.161244	-0	-0	-0	-0	-9.69206	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	0.0500009	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P	0.0166667	-0.0166667	-0.0200108	0.0166667	0.0166667	-0.0166667	-0.0166667	0.0133225	-0.0166667	-0.0166667	-0.0333328	-0.0333334	-0.0166666	-0.033333	-0.05	-0.0166605	-0.438847	-0	-0.0166623	-0.0166667	-0.0499989	-0.0333333	-0.0333333	0.450004	-0.0166583	-0	-0.0333302	-0.05	-0.0333334	-0.0333332	-0.0333333	-0.0333333	-0	0.0333332	-0.0333334	-0.0333354	-0.0333332	-0.05	-0.0333342	-0.0166659	-0.0333238	-0.0333772	-0.0166666	-0.0333305	0.0333379	-0.0166667	-0.033333	-0.0166666	-0.0333322	-0.0166667	-0.0166667	-0.0333333	-0.0334182	0.0166667	-0.0166705	0.483334	-0.0333488	-0.0166666	-0.0166667	-0.0166667	-0.0333333	-0.0166667	-0.0166667	-0.0166667	-0	-0.0333334	-0.0166664	-0.0166667	-0	-0	-0.0166667	-0.0166667	-0	-0	-0	-0.0333333	-0.0166667	-0.0166666
+Scaffold_MEK-PP	-0	-0	-0.00242102	-0	-0	-0	-0	-0	-0.00242102	-0	-0	-0	-0	-0	-0	-0	-0	-2.00947	-0	-0	-0	-0	-0	-0	0.499997	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	0.05	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P_RAF	-0.000658327	-0	0.00253301	-0	-0	-0	-0	-0	-6.58327e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-9.24206	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	0.0499963	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.0669567	-0.0183774	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-2.41519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499998	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500003	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF	-0.000944793	-0	0.00360965	-0	-0	-0	-0	-9.44793e-05	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-7.63811	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0500001	-0	-0	0.0499951	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK	-0	-0	-0.0680102	-0	-0	-0	-0	-0.0680102	0.019423	1.76519	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0.855514	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	0.5	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	0.1	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_RAF	-0.00087485	-0	0.00334417	-0	-0	-0	-0	-8.74849e-05	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-7.63811	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499963	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP_RAF	-0.000627168	-0	0.00242102	-0	-0	-0	-0	-0	-6.27168e-05	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-9.24206	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	0.0500001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P	-0	-0	-0.00253302	-0	-0	-0	-0	-0	-0.00253301	-0	-0	-0	0.05	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-2.00946	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0499996	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF	-0.00116915	-0	0.00449039	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.62687	-0	-0	-0	-0	-0	-0	0.19427	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.0127547	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.261244	-0	-0	-0	0.05	-0	-0	0.0499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	0.0123001	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	0.0116135	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0.15	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK	-0	-0	-0.00597585	-0	-0	-0	-0	0.019423	-0.00597585	0.161244	-0	-0	-0	-0	-0	0.499998	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-2.45946	-0	-0	-0	-0	-0	-0	0.049999	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP	-0	-0	-0.00449039	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0.39427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.25	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0
+Scaffold_MAPK_MEK-PP_RAF	-0.0019342	-0	0.00747164	-0	-0	-0	-0	-0	6.27167e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-8.07687	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK_RAF-P	0.053748	-0.053748	-0.053748	0.053748	0.053748	-0.053748	-0.0537479	0.0658151	-0.053748	-0.053748	-0.107494	-0.107496	-0.0537477	-0.107495	-0.161244	-0.0537274	-0.107495	-0	-0.0537346	-0.0537482	-0.161242	-0.107496	-0.107496	-0.16123	-0.0537191	-0	-0.107486	-0.161244	-0.107496	-0.107495	-0.107496	-0.107496	-0	-0.0537483	-0.107496	-0.107502	-0.807496	-0.161244	-0.107499	-0.0537456	-0.10747	-0.107652	-0.0537478	-0.107487	-0.053733	-0.053748	-0.107495	-0.0537478	-0.107492	-0.053748	-0.0537482	-0.107496	-0.107781	0.053748	-0.05376	-0.0537468	-0.107537	-0.0537476	-0.053748	-0.053748	-0.107496	-0.053748	-0.053748	-0.053748	-0	-0.107496	-0.0537473	-0.053748	-0	-0	-0.053748	-0.053748	-0	-0	-0	-0.107496	-0.0537482	0.0462521
+Scaffold_MAPK_RAF-P	-0	-0	-0	-0	-0	-0	-0	-0.234374	0.0669567	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	0.05	-0	-0	-0	-0	-0	-0	-0.711244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF	-0.00134871	-0	0.00516529	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0999997	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK	-0	-0	-0.00101499	-0	-0	-0	-0	0.00360965	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK_RAF	-0.000247672	-0	0.000944345	-0	-0	-0	-0	8.74849e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF	-6.72877e-05	-0	0.000260702	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK	-0	-0	-0.0209406	-0	-0	-0	-0	0.0680102	0.00597585	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.19427	-0	-0	-0	-0	-0	0.500001	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF	-0.00231372	-0	0.00890212	-0	-0	-0	-0	-0	6.58327e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P	-0	-0	-0.000246306	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP	-0	-0	-0.00747164	-0	-0	-0	-0	-0	0.00242102	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.84427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.0127547	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-PP_RAF-P	-0.0333333	0.0333333	0.0333334	-0.0333334	-0.0333334	0.0333333	0.0333335	-0.0333333	0.0210333	-0.0666667	-0.0333534	-0.0333332	0.0333331	-0.0333339	-0	-0.0666877	-0.0333311	-0.0999976	-0.0666512	-0.0666669	-0	-0.0333335	0.0166661	-0	-0.066631	-0.0999979	-0.0333602	-0	0.466667	-0.0333256	-0.0333332	0.0166667	-0.0999992	-0.066667	-0.0333369	-0.0333442	-0.0333326	-0	-0.0333084	-0.0666639	-0.0331837	-0.0331245	-0.0666668	-0.033323	-0.0666772	-0.0666666	-0.0333325	-1.93186	-0.0333353	0.0333333	-0.0666669	-0.0333333	-0.0328672	-0.0333333	-0.0666654	-0.0666661	-0.0333143	-0.0666667	-0.0666667	-0.0666666	-0.0333334	0.0333333	-0.0666667	-0.0666667	-0.1	-0.0333333	-0.0666657	-0.0666667	-0	-0	-0.0666667	-0.0666667	-0	-0.1	-0	-0.0333333	-0.0666667	-0.0666667
+Scaffold_MAPK_MEK_RAF	-0.00549698	-0	0.0209406	-0	-0	-0	-0	0.00178118	0.000156868	-0	-0	-0	-0	-0	0.161244	1.7652	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-8.42687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK phosphatase	-0	-0	-0	-1.59907	-1.59907	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.12566	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP	-0	-0	-0.00516529	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	0.1	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK_RAF-P	-0	-0	-0	-0	-0	-0	-0	0.234374	0.0183774	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.15	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF	-6.35722e-05	-0	0.000246306	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-7.52687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK phosphatase	-0	-0	-0	-0	-0	-1.18999	-1.18999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.630255	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-P	-0	-0	-0.000260702	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.29427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK	-0	-0	-0.000944345	-0	-0	-0	-0	0.00334417	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.05	-0	-0	-0	0.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF	-0.00026629	-0	0.00101499	-0	-0	-0	-0	9.44793e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.161244	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.19427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-7.97687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P	-0	-0	-0.00890212	-0	-0	-0	-0	-0	0.00253301	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	1.76519	-0	-0	-0	-0	0.05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.499999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.74427	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_RAF_2	0.00508683	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-PP_RAF_2	0.00116915	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_RAF_2	0.00087485	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+RAF-P_RAFPase	-0	0.134634	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.668477	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-PP_RAF_2	0.0019342	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK-PP_RAF_2	0.00134871	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MEK-P_RAF_2	0.000658327	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_RAF_2	0.000944793	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-P_MEK-P_RAF_2	6.35722e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK_RAF_2	0.00549698	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK-P_MEK-PP	-0	-0	-0	0.448831	-0	0.193395	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK-P_RAF-P	-0	0.0425567	-0	-0	0.45195	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK_MEK-P_RAF_2	0.00231372	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0	-0
+Scaffold_MAPK-PP_MEK_RAF_2	0.00026629	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0	-0	-0
+MEK-P_MEKPase	-0	-0	-0	-0	1.59907	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.12896	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.9	-0	-0	-0	-0	-0
+Scaffold_MEK_RAF_2	0.00156868	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0	-0	-0
+MAPK-P_MAPKPase	-0	-0	-0	-0	-0	1.18999	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.112208	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0
+Scaffold_MAPK_RAF_2	0.0178118	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0	-0
+Scaffold_MAPK-PP_MEK-P_RAF_2	6.72877e-05	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1	-0
+Scaffold_MAPK-P_MEK_RAF_2	0.000247672	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	6.92687	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.1
+
+Eigenvalues	real	imaginary
+	-0.0309187	0
+	-0.0366109	0
+	-0.0371293	0.0158096
+	-0.0371293	-0.0158096
+	-0.037856	0
+	-0.0528857	0
+	-0.0683331	0
+	-0.0776362	-0.00395612
+	-0.0776362	0.00395612
+	-0.0785149	0
+	-0.0823917	0
+	-0.0944899	0
+	-0.0985711	2.0384e-09
+	-0.0985711	-2.0384e-09
+	-0.0998763	-1.3129e-06
+	-0.0998763	1.3129e-06
+	-0.0999262	0
+	-0.100957	0
+	-0.109362	0
+	-0.13654	0
+	-0.145784	0
+	-0.200882	-0.0632575
+	-0.200882	0.0632575
+	-0.201256	-0.0629438
+	-0.201256	0.0629438
+	-0.206997	-0.0651374
+	-0.206997	0.0651374
+	-0.233826	-0.0741995
+	-0.233826	0.0741995
+	-0.275501	0
+	-0.283503	-0.0753489
+	-0.283503	0.0753489
+	-0.285396	-0.0743403
+	-0.285396	0.0743403
+	-0.304695	0
+	-0.306409	-0.0074643
+	-0.306409	0.0074643
+	-0.342547	0
+	-0.604873	0
+	-0.617853	0
+	-0.635894	0
+	-0.706769	0
+	-0.846777	-0.00814022
+	-0.846777	0.00814022
+	-0.86566	-0.0215462
+	-0.86566	0.0215462
+	-0.865676	-0.0215415
+	-0.865676	0.0215415
+	-0.947809	0
+	-1.49147	0
+	-1.61555	0
+	-1.92667	0
+	-2.41544	0
+	-2.44989	-0.0402197
+	-2.44989	0.0402197
+	-2.4801	-0.0143863
+	-2.4801	0.0143863
+	-2.51422	0
+	-2.92664	0
+	-3.05948	0
+	-3.10089	0
+	-6.48625	0
+	-7.48941	0
+	-7.48981	0
+	-7.49029	0
+	-7.49029	0
+	-7.49061	0
+	-7.54029	0
+	-7.54029	0
+	-7.61922	0
+	-7.64029	0
+	-8.10153	0
+	-8.15153	0
+	-8.15153	0
+	-9.70548	0
+	-9.75548	0
+	-9.77654	0
+	-10.3667	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.0309187
+ Largest absolute imaginary part:  0.0753489
+ The complex eigenvalues with the largest real part are:  -0.0371293 +|- 0.0158096i
+ 46 are purely real
+ 0 are purely imaginary
+ 32 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 78 have negative real part
+ stiffness = 335.289
+ time hierarchy = 0.0672283
+
+

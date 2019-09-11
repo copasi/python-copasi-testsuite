@@ -1,0 +1,69 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+Cyclin	0.581294	-0.00271234	3.50064e+23	-1.63341e+21	20.976
+CDC-2 Kinase	0.572158	0.107138	3.44562e+23	6.452e+22	0.358913
+Cyclin Protease	0.0906115	0.0951772	5.45675e+22	5.73171e+22	0.159239
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+creation of cyclin	0.025	1.50554e+22
+default degradation of cyclin	0.00581294	3.50064e+21
+cdc2 kinase triggered degration of cyclin	0.0218994	1.31881e+22
+activation of cdc2 kinase	1.59414	9.60016e+23
+deactivation of cdc2 kinase	1.48701	8.95496e+23
+activation of cyclin protease	0.56903	3.42678e+23
+deactivation of cyclin protease	0.473853	2.85361e+23
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Cyclin	CDC-2 Kinase	Cyclin Protease
+Cyclin	-0.0112531	-0	-0.241685
+CDC-2 Kinase	1.26811	-0.0655562	-0
+Cyclin Protease	-0	0.994532	-0.276899
+
+Eigenvalues	real	imaginary
+	0.223791	-0.57495
+	0.223791	0.57495
+	-0.801291	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Cyclin	CDC-2 Kinase	Cyclin Protease
+Cyclin	-0.0112531	-0	-0.241685
+CDC-2 Kinase	1.26811	-0.0655562	-0
+Cyclin Protease	-0	0.994532	-0.276899
+
+Eigenvalues	real	imaginary
+	0.223791	-0.57495
+	0.223791	0.57495
+	-0.801291	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.223791
+ Largest absolute imaginary part:  0.57495
+ The complex eigenvalues with the largest real part are:  0.223791 +|- 0.57495i
+ 1 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 1 have negative real part
+ stiffness = 3.58053
+ time hierarchy = 0.281684
+
+

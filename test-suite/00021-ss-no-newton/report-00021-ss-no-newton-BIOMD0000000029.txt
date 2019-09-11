@@ -1,0 +1,71 @@
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+ERK	188.557	-1.06108e-12	1.13552e+17	-639	36.8013
+ERK-PY	354.218	1.45712e-12	2.13315e+17	877.5	79.632
+ERK-PT	106.701	-8.34421e-14	6.42571e+16	-50.25	40.0531
+ERK-PP	150.523	-3.11766e-13	9.06471e+16	-187.75	75.6955
+MEK	180	0	1.08399e+17	0	nan
+MKP3	100	0	6.02214e+16	0	nan
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+phosphorylation of ERK on Tyr	4.44819	2.67876e+15
+phosphorylation of ERK-PY on Thr	0.555149	3.34319e+14
+phosphorylation of ERK on Thr	0.675466	4.06775e+14
+phosphorylation of ERK-PT on Tyr	1.43338	8.63203e+14
+dephosphorylation of ERK-PP on Tyr	1.98853	1.19752e+15
+dephosphorylation of ERK-PT	1.23062	7.41094e+14
+dephosphorylation of ERK-PY	3.89304	2.34444e+15
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	ERK	ERK-PT	ERK-PP	ERK-PY
+ERK	-0.018237	0.00253426	-0.00805806	0.0121495
+ERK-PT	0.00490414	-0.026298	0.0120188	0.000171449
+ERK-PP	-0.00346811	0.0169262	-0.0100834	0.00111743
+ERK-PY	0.016801	0.00683759	0.00612265	-0.0134384
+
+Eigenvalues	real	imaginary
+	1.53855e-09	0
+	-0.00223082	0
+	-0.0280746	0
+	-0.0377515	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	ERK	ERK-PT	ERK-PP
+ERK	-0.0303866	-0.00961528	-0.0202076
+ERK-PT	0.00473269	-0.0264695	0.0118474
+ERK-PP	-0.00458554	0.0158087	-0.0112008
+
+Eigenvalues	real	imaginary
+	-0.00223082	0
+	-0.0280746	0
+	-0.0377515	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.00223082
+ Largest absolute imaginary part:  0
+ 3 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 3 have negative real part
+ stiffness = 16.9227
+ time hierarchy = 0.817462
+
+

@@ -1,0 +1,75 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+Cyclin	0.20922	-0.0663613	1.25995e+23	-3.99637e+22	2.29003
+Active CDC-2 Kinase	0.0186009	-0.301701	1.12017e+22	-1.81688e+23	0.0157339
+Active Cyclin Protease	0.39121	-0.475241	2.35592e+23	-2.86197e+23	0.792421
+Inactive CDC-2 Kinase	0.981399	0.301701	5.91012e+23	1.81688e+23	0.830136
+Inactive Cyclin Protease	0.60879	0.475241	3.66622e+23	2.86197e+23	1.23314
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+creation of cyclin	0.025	1.50554e+22
+default degradation of cyclin	0.0020922	1.25995e+21
+cdc2 kinase triggered degration of cyclin	0.0892691	5.37591e+22
+activation of cdc2 kinase	0.880514	5.30258e+23
+deactivation of cdc2 kinase	1.18222	7.11947e+23
+activation of cyclin protease	0.0184493	1.11105e+22
+deactivation of cyclin protease	0.49369	2.97307e+23
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Cyclin	Active CDC-2 Kinase	Active Cyclin Protease	Inactive CDC-2 Kinase	Inactive Cyclin Protease
+Cyclin	-0.0472285	-0	-0.228187	-0	-0
+Active CDC-2 Kinase	2.96703	-13.465	-0	0.00454786	-0
+Active Cyclin Protease	-0	0.991854	-0.0159253	-0	0.000246884
+Inactive CDC-2 Kinase	-2.96703	13.465	-0	-0.00454786	-0
+Inactive Cyclin Protease	-0	-0.991854	0.0159253	-0	-0.000246884
+
+Eigenvalues	real	imaginary
+	0	0
+	0	0
+	-0.029842	-0.222967
+	-0.029842	0.222967
+	-13.4732	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Cyclin	Active CDC-2 Kinase	Active Cyclin Protease
+Cyclin	-0.0472285	-0	-0.228187
+Active CDC-2 Kinase	2.96703	-13.4695	-0
+Active Cyclin Protease	-0	0.991854	-0.0161722
+
+Eigenvalues	real	imaginary
+	-0.029842	-0.222967
+	-0.029842	0.222967
+	-13.4732	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.029842
+ Largest absolute imaginary part:  0.222967
+ The complex eigenvalues with the largest real part are:  -0.029842 +|- 0.222967i
+ 1 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 3 have negative real part
+ stiffness = 451.486
+ time hierarchy = 0.249170
+
+

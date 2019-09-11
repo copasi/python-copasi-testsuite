@@ -1,0 +1,105 @@
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+M	323.761	-1.08695e-11	1.94974e+17	-6545.78	750.441
+Mp	9.49621	3.68432e-12	5.71875e+15	2218.75	4.04346
+Mpp	37.1013	-2.0017e-11	2.23429e+16	-12054.5	19.3528
+MAPKK	6.72938	5.52598e-11	4.05253e+15	33278.2	2.86535
+MKP	13.6295	-8.2462e-11	8.20787e+15	-49659.8	5.8034
+M_MAPKK	43.1428	-3.90227e-14	2.59812e+16	-23.5	100
+Mp_MAPKK	0.127807	-5.52208e-11	7.69672e+13	-33254.8	0.0666667
+Mpp_MKP	20.8381	7.39629e-11	1.2549e+16	44541.5	10.8696
+Mp_MKP	3.21139	8.55178e-14	1.93394e+15	51.5	1.67512
+Mp_MKP*	0.862856	1.41665e-14	5.19624e+14	8.53125	2
+M_MKP	61.4581	8.39932e-12	3.7011e+16	5058.19	142.453
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+binding MAPK and PP-MAPKK	0.431428	2.59812e+14
+phosphorylation of MAPK	0.431428	2.59812e+14
+binding PP-MAPKK and P-MAPK	1.91711	1.15451e+15
+phosphorylation of P-MAPK	1.91711	1.15451e+15
+binding MKP and PP-MAPK	1.91711	1.15451e+15
+dephosphorylation of PP-MAPK	1.91711	1.15451e+15
+dissociation of MKP from P-MAPK	1.91711	1.15451e+15
+binding MKP and P-MAPK	0.431428	2.59812e+14
+dephosphorylation of P-MAPK	0.431428	2.59812e+14
+dissociation of MKP from MAPK	0.431428	2.59812e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Mp	MAPKK	MKP	Mpp_MKP	Mp_MKP*	M_MAPKK	Mp_MKP	M	M_MKP	Mpp	Mp_MAPKK
+Mp	-0.48793	-0.303879	-0.189924	-0	1	0.01	1	-0	-0	-0	1
+MAPKK	-0.21534	-6.77911	-0	-0	-0	1.01	-0	-0.134588	-0	-0	16
+MKP	-0.27259	-0	-2.21562	1	1	-0	1	-0.0149924	0.086	-0.613327	-0
+Mpp_MKP	-0	-0	1.66956	-1.092	-0	-0	-0	-0	-0	0.613327	-0
+Mp_MKP*	0.136295	-0	0.0949621	-0	-1.5	-0	-0	-0	-0	-0	-0
+M_MAPKK	-0	6.47523	-0	-0	-0	-1.01	-0	0.134588	-0	-0	-0
+Mp_MKP	0.136295	-0	0.0949621	0.092	-0	-0	-1	-0	-0	-0	-0
+M	-0	-6.47523	-0.356137	-0	-0	1	-0	-0.14958	0.086	-0	-0
+M_MKP	-0	-0	0.356137	-0	0.5	-0	-0	0.0149924	-0.086	-0	-0
+Mpp	-0	-0	-1.66956	1	-0	-0	-0	-0	-0	-0.613327	15
+Mp_MAPKK	0.21534	0.303879	-0	-0	-0	-0	-0	-0	-0	-0	-16
+
+Eigenvalues	real	imaginary
+	4.12287e-09	0
+	0	0
+	0	0
+	-0.00306401	0
+	-0.239134	-0.061649
+	-0.239134	0.061649
+	-1.1916	0
+	-1.6662	0
+	-3.65643	0
+	-7.39296	0
+	-16.545	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Mp	MAPKK	MKP	Mpp_MKP	Mp_MKP*	M_MAPKK	Mp_MKP	M
+Mp	-0.48793	-1.30388	-0.189924	-0	1	-0.99	1	-0
+MAPKK	-0.21534	-22.7791	-0	-0	-0	-14.99	-0	-0.134588
+MKP	0.340738	-0.613328	-2.91495	0.914	0.914	-0	0.914	0.598335
+Mpp_MKP	-0.613327	0.613328	2.28288	-1.092	-0	-0	-0	-0.613327
+Mp_MKP*	0.136295	-0	0.0949621	-0	-1.5	-0	-0	-0
+M_MAPKK	-0	6.47523	-0	-0	-0	-1.01	-0	0.134588
+Mp_MKP	0.136295	-0	0.0949621	0.092	-0	-0	-1	-0
+M	-0	-6.47523	-0.442137	-0.086	-0.0859999	1	-0.086	-0.14958
+
+Eigenvalues	real	imaginary
+	-0.00306401	0
+	-0.239134	-0.061649
+	-0.239134	0.061649
+	-1.1916	0
+	-1.6662	0
+	-3.65643	0
+	-7.39296	0
+	-16.545	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.00306401
+ Largest absolute imaginary part:  0.061649
+ The complex eigenvalues with the largest real part are:  -0.239134 +|- 0.061649i
+ 6 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 8 have negative real part
+ stiffness = 5399.80
+ time hierarchy = 0.965128
+
+

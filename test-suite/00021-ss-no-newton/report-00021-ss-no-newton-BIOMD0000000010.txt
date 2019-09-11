@@ -1,0 +1,89 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+Mos	95.7595	-0.00932319	5.76677e+16	-5.61456e+12	998.215
+Mos-P	4.24047	0.00932319	2.55367e+15	5.61456e+12	44.2034
+Mek1	288.283	0.209508	1.73608e+17	1.26169e+14	929.117
+Mek1-P	10.5843	-0.200718	6.374e+15	-1.20875e+14	29.8878
+Mek1-PP	1.13245	-0.00879023	6.81974e+14	-5.2936e+12	21.5099
+Erk2	56.308	0.342082	3.39094e+16	2.06007e+14	154.506
+Erk2-P	40.3251	0.102937	2.42843e+16	6.19901e+13	82.6317
+Erk2-PP	203.367	-0.445019	1.2247e+17	-2.67997e+14	436.734
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+MAPKKK activation	0.0959308	5.77709e+13
+MAPKKK inactivation	0.0866076	5.21563e+13
+phosphorylation of MAPKK	0.100769	6.06843e+13
+phosphorylation of MAPKK-P	0.0438573	2.64115e+13
+dephosphorylation of MAPKK-PP	0.0526476	3.17051e+13
+dephosphorylation of MAPKK-P	0.310277	1.86853e+14
+phosphorylation of MAPK	0.0223557	1.34629e+13
+phosphorylation of MAPK-P	0.0206353	1.24269e+13
+dephosphorylation of MAPK-PP	0.465654	2.80423e+14
+dephosphorylation of MAPK-P	0.364438	2.19469e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Mek1-P	Erk2-P	Mos	Mek1	Erk2	Mek1-PP	Mos-P	Erk2-PP
+Mek1-P	-0.0196166	-0	-0	1.72882e-05	-0	0.0432267	0.013421	-0
+Erk2-P	-0	-0.00258903	-0	-0	8.35166e-05	0.00151923	-0	0.000157285
+Mos	-0	-0	-9.47232e-05	-0	-0	-0	0.0133485	0.000451722
+Mek1	0.0171872	-0	-0	-1.72882e-05	-0	-0	-0.0237635	-0
+Erk2	-0	0.00245029	-0	-0	-8.35166e-05	-0.0197411	-0	-0
+Mek1-PP	0.0024294	-0	-0	-0	-0	-0.0432267	0.0103426	-0
+Mos-P	-0	-0	9.47232e-05	-0	-0	-0	-0.0133485	-0.000451722
+Erk2-PP	-0	0.000138741	-0	-0	-0	0.0182219	-0	-0.000157285
+
+Eigenvalues	real	imaginary
+	0	0
+	0	0
+	0	0
+	-0.000356113	0
+	-0.0026757	0
+	-0.0127918	0
+	-0.0162133	0
+	-0.0470968	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Mek1-P	Erk2-P	Mos	Mek1	Erk2
+Mek1-P	-0.0628434	-0	-0.013421	-0.0432094	-0
+Erk2-P	-0.00151924	-0.00274631	-0	-0.00151924	-7.37686e-05
+Mos	-0	-0.000451722	-0.0134433	-0	-0.000451722
+Mek1	0.0171872	-0	0.0237635	-1.72882e-05	-0
+Erk2	0.0197411	0.00245029	-0	0.0197411	-8.35166e-05
+
+Eigenvalues	real	imaginary
+	-0.000356113	0
+	-0.0026757	0
+	-0.0127918	0
+	-0.0162133	0
+	-0.0470968	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.000356113
+ Largest absolute imaginary part:  0
+ 5 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 5 have negative real part
+ stiffness = 132.252
+ time hierarchy = 0.800017
+
+

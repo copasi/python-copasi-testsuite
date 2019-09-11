@@ -1,0 +1,62 @@
+An equilibrium steady state (zero fluxes) was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(ms*l))	Particle Number	Particle Number Rate (1/ms)	Transition Time (ms)
+
+Reaction	Flux (mol/ms)	Particle Flux (#/ms)
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Values[V]	Values[m]	Values[h]	Values[n]
+Values[V]	-0.677602	-69.1901	-2.04922	55.4446
+Values[m]	-0.0263706	-4.22281	-0	-0
+Values[h]	0.00410747	-0	-0.11743	-0
+Values[n]	-0.00280762	-0	-0	-0.183204
+
+Eigenvalues	real	imaginary
+	-0.120665	0
+	-0.202635	-0.383222
+	-0.202635	0.383222
+	-4.67511	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Values[V]	Values[m]	Values[h]	Values[n]
+Values[V]	-0.677602	-69.1901	-2.04922	55.4446
+Values[m]	-0.0263706	-4.22281	-0	-0
+Values[h]	0.00410747	-0	-0.11743	-0
+Values[n]	-0.00280762	-0	-0	-0.183204
+
+Eigenvalues	real	imaginary
+	-0.120665	0
+	-0.202635	-0.383222
+	-0.202635	0.383222
+	-4.67511	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.120665
+ Largest absolute imaginary part:  0.383222
+ The complex eigenvalues with the largest real part are:  -0.202635 +|- 0.383222i
+ 2 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 4 have negative real part
+ stiffness = 38.7445
+ time hierarchy = 0.268142
+
+

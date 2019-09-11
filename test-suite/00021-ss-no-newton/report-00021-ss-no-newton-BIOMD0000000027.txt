@@ -1,0 +1,63 @@
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+M	437.73	-1.25578e-14	2.63607e+17	-7.5625	978.03
+Mp	12.8525	2.82707e-13	7.73995e+15	170.25	5.31371
+Mpp	49.4175	-2.70253e-13	2.97599e+16	-162.75	25.0701
+MAPKK	50	0	3.01107e+16	0	nan
+MKP3	100	0	6.02214e+16	0	nan
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+phosphorylation of MAPK	0.447563	2.69529e+14
+phosphorylation of P-MAPK	1.97118	1.18707e+15
+dephosphorylation of PP-MAPK	1.97118	1.18707e+15
+dephosphorylation of P-MAPK	0.447563	2.69529e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Mp	M	Mpp
+Mp	-0.196724	0.00209749	0.0326532
+M	0.032317	-0.000706673	-0.0021253
+Mpp	0.164407	-0.00139082	-0.0305279
+
+Eigenvalues	real	imaginary
+	0	0
+	-0.00323513	0
+	-0.224723	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Mp	M
+Mp	-0.229377	-0.0305557
+M	0.0344423	0.00141862
+
+Eigenvalues	real	imaginary
+	-0.00323513	0
+	-0.224723	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.00323513
+ Largest absolute imaginary part:  0
+ 2 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 2 have negative real part
+ stiffness = 69.4634
+ time hierarchy = 0.971616
+
+

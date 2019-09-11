@@ -1,0 +1,84 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (µmol/l)	Concentration Rate (µmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+EmptySet	0	0	0	0	nan
+PER mRNA	2.4981	-0.250765	1504.39	-151.014	4.61247
+unphosphorylated PER	1.80064	-0.0352109	1084.37	-21.2045	1.1877
+monophosphorylated PER	1.01407	0.0354214	610.686	21.3313	0.450851
+biphosphorylated PER	0.829905	0.0718222	499.781	43.2524	0.263687
+nuclear PER	1.12699	0.11173	678.691	67.2852	0.714725
+total PER	4.77161	nan	2873.53	nan	nan
+
+Reaction	Flux (µmol/h)	Particle Flux (#/h)
+transcription of PER	2.90833e-16	175.144
+translation of PER	9.49279e-16	571.669
+first phosphorylation of PER	1.51607e-15	913.001
+removal of the first PER phosphate	5.31583e-16	320.127
+second phosphorylation of PER	1.68223e-15	1013.06
+removal of the second PER phosphate	7.33156e-16	441.517
+translocation of PER to the nucleus	1.57682e-15	949.583
+translocation of PER to the cytoplasm	1.46509e-15	882.298
+degradation of PER mRNA	5.41598e-16	326.158
+degradation of PER	7.65517e-16	461.005
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	biphosphorylated PER	monophosphorylated PER	PER mRNA	unphosphorylated PER	nuclear PER
+biphosphorylated PER	-2.70347	1.10076	-0	-0	1.3
+monophosphorylated PER	0.624347	-1.4486	-0	0.443064	-0
+PER mRNA	-0	-0	-0.0361568	-0	-0.63723
+unphosphorylated PER	-0	0.347841	0.38	-0.443064	-0
+nuclear PER	1.9	-0	-0	-0	-1.3
+
+Eigenvalues	real	imaginary
+	0.0515526	-0.246626
+	0.0515526	0.246626
+	-0.61403	0
+	-1.49227	0
+	-3.92811	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	biphosphorylated PER	monophosphorylated PER	PER mRNA	unphosphorylated PER	nuclear PER
+biphosphorylated PER	-2.70347	1.10076	-0	-0	1.3
+monophosphorylated PER	0.624347	-1.4486	-0	0.443064	-0
+PER mRNA	-0	-0	-0.0361568	-0	-0.63723
+unphosphorylated PER	-0	0.347841	0.38	-0.443064	-0
+nuclear PER	1.9	-0	-0	-0	-1.3
+
+Eigenvalues	real	imaginary
+	0.0515526	-0.246626
+	0.0515526	0.246626
+	-0.61403	0
+	-1.49227	0
+	-3.92811	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.0515526
+ Largest absolute imaginary part:  0.246626
+ The complex eigenvalues with the largest real part are:  0.0515526 +|- 0.246626i
+ 3 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 3 have negative real part
+ stiffness = 76.1961
+ time hierarchy = 0.633682
+
+

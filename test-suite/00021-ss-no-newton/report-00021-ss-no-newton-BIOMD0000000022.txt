@@ -1,0 +1,132 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+EmptySet	0	0	0	0	nan
+Clk-Cyc_cyt	0.0649153	-0.0092482	3.90929e+13	-5.56939e+12	0.262146
+Clk-Cyc_nuc	1.69294	-0.475757	1.01951e+15	-2.86508e+14	3.21241
+Clk_cyt	0.0351096	0.00496962	2.11435e+13	2.99278e+12	0.369611
+Clk_mRNA	0.0987396	0.119747	5.94624e+13	7.21135e+13	0.278899
+Per_cyt	1.87005	-0.103163	1.12617e+15	-6.21262e+13	1.44649
+Per_mRNA	2.47845	-0.759548	1.49256e+15	-4.57411e+14	2.85455
+Per-Tim_cyt	2.89509	-0.186399	1.74347e+15	-1.12252e+14	1.97015
+Per-Tim_nuc	2.64801	0.311569	1.59467e+15	1.87631e+14	2.58804
+Tim_cyt	1.87005	-0.103163	1.12617e+15	-6.21262e+13	1.44649
+Tim_mRNA	2.47845	-0.759548	1.49256e+15	-4.57411e+14	2.85455
+Cyc_cyt	1	0	6.02214e+14	0	nan
+Dbt_cyt	1	0	6.02214e+14	0	nan
+
+Reaction	Flux (nmol/h)	Particle Flux (#/h)
+Per transcription	0.108698	6.54595e+13
+non-specific Per mRNA degradation	0.0297414	1.79107e+13
+Tim transcription	0.108698	6.54595e+13
+non-specific Tim mRNA degradation	0.0297414	1.79107e+13
+Clk transcription	0.354033	2.13204e+14
+non-specific Clk mRNA degradation	0.00118488	7.13549e+11
+Clk-Cyc nuclear import	0.0512427	3.08591e+13
+Clk-Cyc nuclear export	0.238382	1.43557e+14
+Per-Tim nuclear export	0.41019	2.47022e+14
+Per-Tim nuclear import	1.02317	6.16167e+14
+Clk Cyc equilibrium	-0.0485832	-2.92575e+13
+Per Tim equilibrium	0.87289	5.25667e+14
+Tim translation	1.18966	7.16428e+14
+Clk translation	0.0464076	2.79473e+13
+Per translation	1.18966	7.16428e+14
+non-specific Per_cyt degradation	0.0224406	1.3514e+13
+non-specific Per-Tim_cyt degradation	0.0347411	2.09216e+13
+non-specific Per-Tim_nuc degradation	0.0317761	1.9136e+13
+non-specific Clk-Cyc_cyt degradation	0.000778983	4.69115e+11
+non-specific Clk_cyt degradation	0.000421316	2.53722e+11
+non-specific Clk-Cyc_nuc degradation	0.0203153	1.22342e+13
+non-specific Tim_cyt degradation	0.0224406	1.3514e+13
+Per mRNA degradation	0.838505	5.04959e+14
+Dbt regulated Per_cyt degradation	0.397489	2.39373e+14
+Tim mRNA degradation	0.838505	5.04959e+14
+Tim_cyt degradation	0.397489	2.39373e+14
+Per-Tim_cyt degradation	0.411568	2.47852e+14
+Per-Tim_nuc degradation	0.269635	1.62378e+14
+Clk mRNA degradation	0.233101	1.40377e+14
+Clk_cyt degradation	0.0895998	5.39583e+13
+Clk-Cyc_cyt degradation	0.147025	8.85405e+13
+Reaction37	0.268303	1.61576e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Clk-Cyc_cyt	Per-Tim_cyt	Per_cyt	Clk_cyt	Tim_cyt	Clk-Cyc_nuc	Per-Tim_nuc	Tim_mRNA	Clk_mRNA	Per_mRNA
+Clk-Cyc_cyt	-4.11645	-0	-0	1.63	-0	0.0762586	-0	-0	-0	-0
+Per-Tim_cyt	-0	-1.61558	2.71157	-0	2.71157	-0	0.0666544	-0	-0	-0
+Per_cyt	-0	1.45	-2.74411	-0	-2.71157	-0	-0	-0	-0	0.48
+Clk_cyt	1.63	-0	-0	-3.8129	-0	-0	-0	-0	0.47	-0
+Tim_cyt	-0	1.45	-2.71157	-0	-2.74411	-0	-0	0.48	-0	-0
+Clk-Cyc_nuc	0.764562	-0	-0	-0	-0	-0.105003	-0	-0	-0	-0
+Per-Tim_nuc	-0	0.144396	-0	-0	-0	-0	-0.085805	-0	-0	-0
+Tim_mRNA	-0	-0	-0	-0	-0	0.0593934	-0.148615	-0.0485295	-0	-0
+Clk_mRNA	-0	-0	-0	-0	-0	-0.608341	0.0885988	-0	-1.3537	-0
+Per_mRNA	-0	-0	-0	-0	-0	0.0593934	-0.148615	-0	-0	-0.0485295
+
+Eigenvalues	real	imaginary
+	0.0199112	-0.161474
+	0.0199112	0.161474
+	-0.0325362	0
+	-0.0485295	0
+	-0.109498	0
+	-0.312451	0
+	-1.28832	0
+	-2.38603	0
+	-5.60287	0
+	-6.93431	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Clk-Cyc_cyt	Per-Tim_cyt	Per_cyt	Clk_cyt	Tim_cyt	Clk-Cyc_nuc	Per-Tim_nuc	Tim_mRNA	Clk_mRNA	Per_mRNA
+Clk-Cyc_cyt	-4.11645	-0	-0	1.63	-0	0.0762586	-0	-0	-0	-0
+Per-Tim_cyt	-0	-1.61558	2.71157	-0	2.71157	-0	0.0666544	-0	-0	-0
+Per_cyt	-0	1.45	-2.74411	-0	-2.71157	-0	-0	-0	-0	0.48
+Clk_cyt	1.63	-0	-0	-3.8129	-0	-0	-0	-0	0.47	-0
+Tim_cyt	-0	1.45	-2.71157	-0	-2.74411	-0	-0	0.48	-0	-0
+Clk-Cyc_nuc	0.764562	-0	-0	-0	-0	-0.105003	-0	-0	-0	-0
+Per-Tim_nuc	-0	0.144396	-0	-0	-0	-0	-0.085805	-0	-0	-0
+Tim_mRNA	-0	-0	-0	-0	-0	0.0593934	-0.148615	-0.0485295	-0	-0
+Clk_mRNA	-0	-0	-0	-0	-0	-0.608341	0.0885988	-0	-1.3537	-0
+Per_mRNA	-0	-0	-0	-0	-0	0.0593934	-0.148615	-0	-0	-0.0485295
+
+Eigenvalues	real	imaginary
+	0.0199112	-0.161474
+	0.0199112	0.161474
+	-0.0325362	0
+	-0.0485295	0
+	-0.109498	0
+	-0.312451	0
+	-1.28832	0
+	-2.38603	0
+	-5.60287	0
+	-6.93431	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.0199112
+ Largest absolute imaginary part:  0.161474
+ The complex eigenvalues with the largest real part are:  0.0199112 +|- 0.161474i
+ 8 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 8 have negative real part
+ stiffness = 348.262
+ time hierarchy = 0.324040
+
+

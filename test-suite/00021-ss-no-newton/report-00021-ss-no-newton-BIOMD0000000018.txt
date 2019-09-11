@@ -1,0 +1,205 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (µmol/l)	Concentration Rate (µmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+dihydrofolate free	0.00399176	1.50096e-07	2.40389e+15	9.03901e+10	0.000236304
+dihydrofolate bound	0.00788518	nan	4.74856e+15	nan	nan
+dihydrofolate reductase free	0.632116	-4.20857e-08	3.80669e+17	-2.53446e+10	32.9226
+dihydrofolate reductase total	0.640001	nan	3.85418e+17	nan	nan
+tetrahydrofolate	4.48607	0.000293172	2.70157e+18	1.76552e+14	0.000909235
+5,10-methylene-tetrahydrofolate	1.0951	-0.000147759	6.59483e+17	-8.89823e+13	0.000222681
+5-methyl-tetrahydrofolate	6.9271	5.32707e-05	4.1716e+18	3.20803e+13	1.69869
+10-formyl-tetrahydrofolate	6.38338	3.77151e-05	3.84416e+18	2.27126e+13	0.00147178
+10-formyl-dihydrofolate	0.00113666	6.1839e-09	6.84512e+14	3.72403e+09	0.00438079
+HCHO	0.00315661	-2.11535e-08	1.90095e+15	-1.27389e+10	0.00960829
+FGAR	89.4967	0.000945229	5.38962e+19	5.6923e+14	0.0412671
+AICAR	3.50841	-7.71312e-06	2.11281e+18	-4.64495e+12	0.00161773
+MTX1	-4.38423e-25	-3.65415e-28	-2.64024e-07	-2.20058e-10	6.84619e-05
+MTX2	-1.09447e-23	-2.03912e-26	-6.59107e-06	-1.22799e-08	3.57101e-05
+MTX3	-1.50441e-24	1.72473e-23	-9.0598e-07	1.03866e-05	1.85896e-05
+MTX4	8.07385e-24	2.14012e-22	4.86219e-06	0.000128881	9.70292e-06
+MTX5	7.27867e-25	-2.98199e-27	4.38332e-07	-1.79579e-09	5.03817e-06
+MTX1b	-1.42261e-20	-3.86366e-26	-0.00856717	-2.32675e-08	2.22221
+MTX2b	-6.81086e-19	6.09906e-24	-0.41016	3.67294e-06	2.22222
+MTX3b	-1.79792e-19	-2.07257e-23	-0.108273	-1.24813e-05	2.22165
+MTX4b	1.84912e-18	-2.16304e-22	1.11357	-0.000130261	2.22222
+MTX5b	3.21042e-19	1.31177e-24	0.193336	7.89964e-07	2.2222
+EMTX	0	0	0	0	nan
+dUMP	20.76	0	1.2502e+19	0	nan
+GAR	689.6	0	4.15287e+20	0	nan
+serine	123.3	0	7.4253e+19	0	nan
+formate	500	0	3.01107e+20	0	nan
+ATP	2980	0	1.7946e+21	0	nan
+glutamine	7170	0	4.31787e+21	0	nan
+glycine	1600	0	9.63543e+20	0	nan
+NADP	6.73	0	4.0529e+18	0	nan
+NADPH	294	0	1.77051e+20	0	nan
+homocysteine	10	0	6.02214e+18	0	nan
+
+Reaction	Flux (µmol/h)	Particle Flux (#/h)
+SHMT	4917.47	2.96137e+21
+SHMTr	575.673	3.46679e+20
+HCHOtoCH2FH4	0.328529	1.97845e+17
+CH2FH4toHCHO	0.328529	1.97845e+17
+MTHFR	4.07792	2.45578e+18
+MTR	4.07786	2.45575e+18
+HCOOHtoCHOFH4	16.0959	9.69321e+18
+GARFT	2168.72	1.30603e+21
+ATIC7	2168.46	1.30588e+21
+MTHFD	4321.08	2.60222e+21
+TYMS	16.6328	1.00165e+19
+DHFReductase	16.633	1.00166e+19
+FFH2syn	0.259464	1.56253e+17
+ATIC12	0.259464	1.56253e+17
+AICARsyn	2168.72	1.30603e+21
+FPGS12	-5.65565e-26	-3.40591e-08
+FPGS23	-4.03861e-24	-2.43211e-06
+FPGS34	-1.77521e-25	-1.06906e-07
+FPGS45	1.49366e-24	8.99504e-07
+GGH21	-2.13422e-24	-1.28526e-06
+GGH32	-3.76104e-26	-2.26495e-08
+GGH43	2.50289e-25	1.50728e-07
+GGH54	1.39023e-25	8.37214e-08
+RFC	0	0
+MTX1export	-2.03867e-24	-1.22771e-06
+MTX2export	-0	-0
+MTX3export	-9.47781e-26	-5.70767e-08
+MTX4export	5.08652e-25	3.06318e-07
+MTX5export	4.58556e-26	2.76149e-08
+MTX1on	-6.4018e-21	-0.00385525
+MTX2on	-3.06483e-19	-0.184568
+MTX3on	-8.09271e-20	-0.0487355
+MTX4on	8.31888e-19	0.500975
+MTX5on	1.4447e-19	0.0870021
+MTX1off	-5.97497e-21	-0.00359821
+MTX2off	-2.86056e-19	-0.172267
+MTX3off	-7.55126e-20	-0.0454748
+MTX4off	7.76631e-19	0.467698
+MTX5off	1.34838e-19	0.0812012
+DHFRfsyn	0.0192	1.15625e+16
+DHFRdeg	0.0192	1.15625e+16
+FH2bdeg	0.000236555	1.42457e+14
+MTX1deg	-4.26784e-22	-0.000257015
+MTX2deg	-2.04326e-20	-0.0123048
+MTX3deg	-5.39376e-21	-0.0032482
+MTX4deg	5.54737e-20	0.033407
+MTX5deg	9.63127e-21	0.00580009
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	dihydrofolate reductase free	tetrahydrofolate	MTX2	MTX4	MTX3	MTX1	5,10-methylene-tetrahydrofolate	MTX5	dihydrofolate free	AICAR	10-formyl-tetrahydrofolate	MTX3b	MTX2b	FGAR	MTX4b	MTX1b	HCHO	MTX5b	10-formyl-dihydrofolate	5-methyl-tetrahydrofolate
+dihydrofolate reductase free	-0.0303742	-0	0	-0	0	0	-0	-0	-0.0592609	-0	-0	0	0	-0	-0	0	-0	-0	-0	-0
+tetrahydrofolate	26.3129	-304.831	0	-0	0	0	525.802	-0	3631.47	539.246	305.062	0	0	-0	-0	0	-103.978	-0	-1130.13	0.55777
+MTX2	4.84852e-19	-0	-28003.3	-0	0.025	0.105125	-0	-0	-0	-0	-0	0	0.45	-0	-0	0	-0	-0	-0	-0
+MTX4	-1.31604e-18	-0	0	-103035	0.117996	0	-0	0.191014	-0	-0	-0	0	0	-0	0.45	0	-0	-0	-0	-0
+MTX3	1.28026e-19	-0	0.369	0.031	-53793.3	0	-0	-0	-0	-0	-0	0.45	0	-0	-0	0	-0	-0	-0	-0
+MTX1	1.01276e-20	-0	0.195	-0	0	-14606.7	-0	-0	-0	-0	-0	0	0	-0	-0	0.45	-0	-0	-0	-0
+5,10-methylene-tetrahydrofolate	-0	301.311	0	-0	0	0	-3430.93	-0	15.376	-0	-0	0	0	-0	-0	0	104.116	-0	6.89336	-0
+MTX5	-2.2855e-19	-0	0	0.185	0	0	-0	-198485	-0	-0	-0	0	0	-0	-0	0	-0	0.45	-0	-0
+dihydrofolate free	-26.3128	-0	0	-0	0	0	10.827	-0	-4237.4	0.0645228	-0	0	0	-0	-0	0	-0	-0	221.358	-0
+AICAR	-0	-0	0	-0	0	0	-0	-0	347.105	-539.311	-157.36	0	0	12.7878	-0	0	-0	-0	-39.0624	-0
+10-formyl-tetrahydrofolate	-0	3.51942	0	-0	0	0	2890.66	-0	535.325	-539.246	-305.062	0	0	-0	-0	0	-0	-0	1130.13	-0
+MTX3b	-1.28026e-19	-0	0	-0	53793.1	0	-0	-0	-0	-0	-0	-0.45	0	-0	-0	0	-0	-0	-0	-0
+MTX2b	-4.84852e-19	-0	28002.7	-0	0	0	-0	-0	-0	-0	-0	0	-0.45	-0	-0	0	-0	-0	-0	-0
+FGAR	-0	-0	0	-0	0	0	-0	-0	-188.22	-0	147.701	0	0	-12.7878	-0	0	-0	-0	-941.136	-0
+MTX4b	1.31604e-18	-0	0	103035	0	0	-0	-0	-0	-0	-0	0	0	-0	-0.45	0	-0	-0	-0	-0
+MTX1b	-1.01276e-20	-0	0	-0	0	14601.9	-0	-0	-0	-0	-0	0	0	-0	-0	-0.45	-0	-0	-0	-0
+HCHO	-0	-0.0732333	0	-0	0	0	0.3	-0	-0	-0	-0	0	0	-0	-0	0	-104.077	-0	-0	-0
+MTX5b	2.2855e-19	-0	0	-0	0	0	-0	198485	-0	-0	-0	0	0	-0	-0	0	-0	-0.45	-0	-0
+10-formyl-dihydrofolate	-0	-0	0	-0	0	0	-0	-0	65.0896	-0.0645228	-0	0	0	-0	-0	0	-0	-0	-228.173	-0
+5-methyl-tetrahydrofolate	-0	-0	0	-0	0	0	3.64475	-0	-9.87976	-0	-0	0	0	-0	-0	0	-0	-0	-0	-0.557773
+
+Eigenvalues	real	imaginary
+	1.28268e-05	0
+	-1.97418e-07	0
+	-1.26879e-06	0
+	-1.88428e-06	0
+	-9.15678e-06	0
+	-0.000147323	0
+	-0.0300002	0
+	-0.721873	0
+	-18.126	0
+	-104.05	0
+	-224.285	0
+	-250.612	0
+	-871.814	0
+	-3456.06	0
+	-4237.46	0
+	-14607.1	0
+	-28003.8	0
+	-53793.7	0
+	-103036	0
+	-198485	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	dihydrofolate reductase free	tetrahydrofolate	MTX2	MTX4	MTX3	MTX1	5,10-methylene-tetrahydrofolate	MTX5	dihydrofolate free	AICAR	10-formyl-tetrahydrofolate	MTX3b	MTX2b	FGAR	MTX4b	MTX1b	HCHO	MTX5b	10-formyl-dihydrofolate	5-methyl-tetrahydrofolate
+dihydrofolate reductase free	-0.0303742	-0	0	-0	0	0	-0	-0	-0.0592609	-0	-0	0	0	-0	-0	0	-0	-0	-0	-0
+tetrahydrofolate	26.3129	-304.831	0	-0	0	0	525.802	-0	3631.47	539.246	305.062	0	0	-0	-0	0	-103.978	-0	-1130.13	0.55777
+MTX2	4.84852e-19	-0	-28003.3	-0	0.025	0.105125	-0	-0	-0	-0	-0	0	0.45	-0	-0	0	-0	-0	-0	-0
+MTX4	-1.31604e-18	-0	0	-103035	0.117996	0	-0	0.191014	-0	-0	-0	0	0	-0	0.45	0	-0	-0	-0	-0
+MTX3	1.28026e-19	-0	0.369	0.031	-53793.3	0	-0	-0	-0	-0	-0	0.45	0	-0	-0	0	-0	-0	-0	-0
+MTX1	1.01276e-20	-0	0.195	-0	0	-14606.7	-0	-0	-0	-0	-0	0	0	-0	-0	0.45	-0	-0	-0	-0
+5,10-methylene-tetrahydrofolate	-0	301.311	0	-0	0	0	-3430.93	-0	15.376	-0	-0	0	0	-0	-0	0	104.116	-0	6.89336	-0
+MTX5	-2.2855e-19	-0	0	0.185	0	0	-0	-198485	-0	-0	-0	0	0	-0	-0	0	-0	0.45	-0	-0
+dihydrofolate free	-26.3128	-0	0	-0	0	0	10.827	-0	-4237.4	0.0645228	-0	0	0	-0	-0	0	-0	-0	221.358	-0
+AICAR	-0	-0	0	-0	0	0	-0	-0	347.105	-539.311	-157.36	0	0	12.7878	-0	0	-0	-0	-39.0624	-0
+10-formyl-tetrahydrofolate	-0	3.51942	0	-0	0	0	2890.66	-0	535.325	-539.246	-305.062	0	0	-0	-0	0	-0	-0	1130.13	-0
+MTX3b	-1.28026e-19	-0	0	-0	53793.1	0	-0	-0	-0	-0	-0	-0.45	0	-0	-0	0	-0	-0	-0	-0
+MTX2b	-4.84852e-19	-0	28002.7	-0	0	0	-0	-0	-0	-0	-0	0	-0.45	-0	-0	0	-0	-0	-0	-0
+FGAR	-0	-0	0	-0	0	0	-0	-0	-188.22	-0	147.701	0	0	-12.7878	-0	0	-0	-0	-941.136	-0
+MTX4b	1.31604e-18	-0	0	103035	0	0	-0	-0	-0	-0	-0	0	0	-0	-0.45	0	-0	-0	-0	-0
+MTX1b	-1.01276e-20	-0	0	-0	0	14601.9	-0	-0	-0	-0	-0	0	0	-0	-0	-0.45	-0	-0	-0	-0
+HCHO	-0	-0.0732333	0	-0	0	0	0.3	-0	-0	-0	-0	0	0	-0	-0	0	-104.077	-0	-0	-0
+MTX5b	2.2855e-19	-0	0	-0	0	0	-0	198485	-0	-0	-0	0	0	-0	-0	0	-0	-0.45	-0	-0
+10-formyl-dihydrofolate	-0	-0	0	-0	0	0	-0	-0	65.0896	-0.0645228	-0	0	0	-0	-0	0	-0	-0	-228.173	-0
+5-methyl-tetrahydrofolate	-0	-0	0	-0	0	0	3.64475	-0	-9.87976	-0	-0	0	0	-0	-0	0	-0	-0	-0	-0.557773
+
+Eigenvalues	real	imaginary
+	1.28268e-05	0
+	-1.97418e-07	0
+	-1.26879e-06	0
+	-1.88428e-06	0
+	-9.15678e-06	0
+	-0.000147323	0
+	-0.0300002	0
+	-0.721873	0
+	-18.126	0
+	-104.05	0
+	-224.285	0
+	-250.612	0
+	-871.814	0
+	-3456.06	0
+	-4237.46	0
+	-14607.1	0
+	-28003.8	0
+	-53793.7	0
+	-103036	0
+	-198485	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable.
+
+Eigenvalue statistics:
+ Largest real part: 1.28268e-05
+ Largest absolute imaginary part:  0
+ 20 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 1 have positive real part
+ 19 have negative real part
+ stiffness = 1.00541e+12
+ time hierarchy = 0.726626
+
+

@@ -1,0 +1,7 @@
+# second testcase, run steady state over 5 biomodels
+# 
+task: Steady-State           # timecourse
+location: ./../biomodels # a directory
+filter: BIOMD00000000[0-2]\d # only models 0-3
+format: sbml                 # allowed are sbml | copasi
+ignore_exception: True # continue after failure

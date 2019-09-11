@@ -1,0 +1,89 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (#/fl)	Concentration Rate (#/(min*fl))	Particle Number	Particle Number Rate (1/min)	Transition Time (min)
+LacI protein	50.5987	0.67253	50.5987	0.67253	12.1056
+TetR protein	1881.98	95.7617	1881.98	95.7617	8.31959
+cI protein	438.352	-29.3132	438.352	-29.3132	14.427
+LacI mRNA	0.603013	0.0685021	0.603013	0.0685021	2.17309
+TetR mRNA	32.6353	0.245764	32.6353	0.245764	2.82403
+cI mRNA	0.15453	-0.0100234	0.15453	-0.0100234	2.88539
+
+Reaction	Flux (#/min)	Particle Flux (#/min)
+degradation of LacI transcripts	0.208988	0.208988
+degradation of TetR transcripts	11.3105	11.3105
+degradation of CI transcripts	0.0535561	0.0535561
+translation of LacI	4.17977	4.17977
+translation of TetR	226.21	226.21
+translation of CI	1.07112	1.07112
+degradation of LacI	3.50724	3.50724
+degradation of TetR	130.449	130.449
+degradation of CI	30.3843	30.3843
+transcription of LacI	0.27749	0.27749
+transcription of TetR	11.5563	11.5563
+transcription of CI	0.0435326	0.0435326
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	LacI protein	TetR protein	cI protein	LacI mRNA	TetR mRNA	cI mRNA
+LacI protein	-0.0693147	-0	-0	6.93147	-0	-0
+TetR protein	-0	-0.0693147	-0	-0	6.93147	-0
+cI protein	-0	-0	-0.0693147	-0	-0	6.93148
+LacI mRNA	-0	-0	-0.00111986	-0.346574	-0	-0
+TetR mRNA	-0.280376	-0	-0	-0	-0.346574	-0
+cI mRNA	-0	-1.43748e-05	-0	-0	-0	-0.346574
+
+Eigenvalues	real	imaginary
+	-0.0470227	-0.0308235
+	-0.0470227	0.0308235
+	-0.119835	0
+	-0.296053	0
+	-0.368866	-0.0308235
+	-0.368866	0.0308235
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	LacI protein	TetR protein	cI protein	LacI mRNA	TetR mRNA	cI mRNA
+LacI protein	-0.0693147	-0	-0	6.93147	-0	-0
+TetR protein	-0	-0.0693147	-0	-0	6.93147	-0
+cI protein	-0	-0	-0.0693147	-0	-0	6.93148
+LacI mRNA	-0	-0	-0.00111986	-0.346574	-0	-0
+TetR mRNA	-0.280376	-0	-0	-0	-0.346574	-0
+cI mRNA	-0	-1.43748e-05	-0	-0	-0	-0.346574
+
+Eigenvalues	real	imaginary
+	-0.0470227	-0.0308235
+	-0.0470227	0.0308235
+	-0.119835	0
+	-0.296053	0
+	-0.368866	-0.0308235
+	-0.368866	0.0308235
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.0470227
+ Largest absolute imaginary part:  0.0308235
+ The complex eigenvalues with the largest real part are:  -0.0470227 +|- 0.0308235i
+ 2 are purely real
+ 0 are purely imaginary
+ 4 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 6 have negative real part
+ stiffness = 7.84441
+ time hierarchy = 0.227627
+
+
