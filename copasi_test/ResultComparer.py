@@ -106,6 +106,7 @@ class ResultComparer:
         return expected[have_error]
 
     def compare_df_unsorted(self, df1, df2, **kwargs):
+        # type: (pandas.DataFrame, pandas.DataFrame)->pandas.DataFrame
         """
             compares two data frames based on their column and row indices, that way the comparison
             will work even if the indices are in a different order
@@ -115,7 +116,6 @@ class ResultComparer:
         :param kwargs: optional parameters
         :return: boolean indicating whether the datasets match
         """
-        # type: (pandas.DataFrame, pandas.DataFrame) -> pandas.DataFrame
 
         atol = kwargs.get('atol', 0.0001)
         rtol = kwargs.get('rtol', 0.0001)
