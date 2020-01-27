@@ -1,0 +1,135 @@
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+ERK	125.877	-1.22465e-14	7.58047e+16	-7.375	25.3047
+ERK-PY	235.194	-2.40778e-14	1.41637e+17	-14.5	54.5073
+ERK-PT	71.6604	-2.07567e-15	4.31549e+16	-1.25	26.865
+ERK-PP	105.493	-1.2454e-15	6.35294e+16	-0.75	52.5394
+MEK	13.2037	-4.89859e-14	7.95145e+15	-29.5	1.89102
+MKP3	5.02039	1.01708e-14	3.02335e+15	6.125	0.719013
+ERK-PY_MEK	77.096	3.66356e-14	4.64283e+16	22.0625	142.857
+ERK-PT_MEK	3.2627	-2.07567e-16	1.96484e+15	-0.125	2.22222
+ERK_MEK_Y	3.99528	2.49081e-15	2.40602e+15	1.5	0.925926
+ERK_MEK_T	82.4423	1.06897e-14	4.96479e+16	6.4375	125
+ERK-PP_MKP3	21.8248	1.2454e-15	1.31432e+16	0.75	10.8696
+ERK-PY_MKP3	8.03241	-1.99265e-14	4.83723e+15	-12	2.12766
+ERK-PT_MKP3_Y	5.60552	1.66054e-15	3.37572e+15	1	2.79175
+ERK-PT_MKP3_T	2.39842	6.22702e-16	1.44436e+15	0.375	2
+ERK_MKP3_T	22.0274	0	1.32652e+16	0	18.3682
+ERK_MKP3_Y	35.091	6.64216e-15	2.11323e+16	4	9.29506
+
+Reaction	Flux (nmol/s)	Particle Flux (#/s)
+binding ERK and MEK	4.31491	2.5985e+15
+tyr phosphorylation of ERK	4.31491	2.5985e+15
+binding ERK-PY and MEK	0.539672	3.24998e+14
+thr phosphorylation of ERK	0.539672	3.24998e+14
+binding ERK and MEK_2	0.659539	3.97184e+14
+thr phosphorylation of ERK_2	0.659539	3.97184e+14
+binding ERK-PT and MEK	1.46821	8.84179e+14
+tyr phosphorylation of ERK_2	1.46821	8.84179e+14
+binding ERK-PP and MKP3	2.00789	1.20918e+15
+dephosphorylation of tyr on ERK-PP	2.00789	1.20918e+15
+dissociation ERK-PT and MKP3	2.00789	1.20918e+15
+dephosphorylation of ERK-PT	1.19921	7.22182e+14
+binding ERK-PT and MKP3	1.19921	7.22182e+14
+dephosphorylation of ERK-PY	3.77523	2.2735e+15
+dissociation ERK and MKP3	1.19921	7.22182e+14
+binding ERK-PY and MKP3	3.77523	2.2735e+15
+Dissociation ERK and MKP3	3.77523	2.2735e+15
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	MEK	MKP3	ERK-PT	ERK	ERK-PP_MKP3	ERK-PT_MKP3_T	ERK_MKP3_Y	ERK-PT_MEK	ERK_MEK_Y	ERK-PP	ERK_MKP3_T	ERK_MEK_T	ERK-PT_MKP3_Y	ERK-PY_MKP3	ERK-PY_MEK	ERK-PY
+MEK	-13.1614	-0	-0.0660185	-0.726203	-0	-0	-0	1.45	2.08	-0	-0	1.008	-0	-0	1.007	-0.330092
+MKP3	-0	-8.89738	-0.100408	-0.0145591	1	1	0.14	-0	-0	-0.225917	0.086	-0	1	1	-0	-0.0502039
+ERK-PT	-0.358302	-1.43321	-0.166426	-0	-0	1	-0	1	-0	-0	-0	0.008	1	-0	-0	-0
+ERK	-6.92322	-0.365043	-0	-0.740762	-0	-0	0.14	-0	1	-0	0.086	1	-0	-0	-0	-0
+ERK-PP_MKP3	-0	4.74719	-0	-0	-1.092	-0	-0	-0	-0	0.225917	-0	-0	-0	-0	-0	-0
+ERK-PT_MKP3_T	-0	0.716604	0.0502039	-0	-0	-1.5	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+ERK_MKP3_Y	-0	0.226578	-0	0.0090367	-0	-0	-0.14	-0	-0	-0	-0	-0	-0	0.47	-0	-0
+ERK-PT_MEK	0.358302	-0	0.0660185	-0	-0	-0	-0	-1.45	-0	-0	-0	-0	-0	-0	-0	-0
+ERK_MEK_Y	0.629384	-0	-0	0.0660185	-0	-0	-0	-0	-2.08	-0	-0	-0	-0	-0	-0	-0
+ERK-PP	-0	-4.74719	-0	-0	1	-0	-0	0.45	-0	-0.225917	-0	-0	-0	-0	0.007	-0
+ERK_MKP3_T	-0	0.138464	-0	0.00552243	-0	0.5	-0	-0	-0	-0	-0.086	-0	-0	-0	-0	-0
+ERK_MEK_T	6.29384	-0	-0	0.660185	-0	-0	-0	-0	-0	-0	-0	-1.008	-0	-0	-0	-0
+ERK-PT_MKP3_Y	-0	0.716604	0.0502039	-0	0.092	-0	-0	-0	-0	-0	-0	-0	-1	-0	-0	-0
+ERK-PY_MKP3	-0	2.35194	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.47	-0	0.0502039
+ERK-PY_MEK	5.87985	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.007	0.330092
+ERK-PY	-5.87985	-2.35194	-0	-0	-0	-0	-0	-0	1.08	-0	-0	-0	-0	1	1	-0.380296
+
+Eigenvalues	real	imaginary
+	2.13755e-08	0
+	1.06293e-09	0
+	-1.8371e-09	0
+	-0.00277234	0
+	-0.029214	0
+	-0.0496122	0
+	-0.09443	0
+	-0.292957	0
+	-1.13132	0
+	-1.39613	0
+	-1.46558	0
+	-1.54906	0
+	-1.5704	0
+	-2.0208	0
+	-10.0313	0
+	-14.7716	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	MEK	MKP3	ERK-PT	ERK	ERK-PP_MKP3	ERK-PT_MKP3_T	ERK_MKP3_Y	ERK-PT_MEK	ERK_MEK_Y	ERK-PP	ERK_MKP3_T	ERK_MEK_T	ERK-PT_MKP3_Y
+MEK	-14.4985	-0.330092	0.264074	-0.396111	-0	-0	-0	0.443002	1.073	0.330092	-0	0.000999996	-0
+MKP3	-0.0502037	-9.94758	-0.0502039	0.0356448	3.61403e-07	-5.62532e-07	-0.86	-0	-0	-0.175714	-0.914	-0	-0
+ERK-PT	-0.358302	-1.43321	-0.166426	-0	-0	1	-0	1	-0	-0	-0	0.008	1
+ERK	-6.92322	-0.365043	-0	-0.740762	-0	-0	0.14	-0	1	-0	0.086	1	-0
+ERK-PP_MKP3	-0	4.74719	-0	-0	-1.092	-0	-0	-0	-0	0.225917	-0	-0	-0
+ERK-PT_MKP3_T	-0	0.716604	0.0502039	-0	-0	-1.5	-0	-0	-0	-0	-0	-0	-0
+ERK_MKP3_Y	-0	-0.243422	-0	0.0090367	-0.47	-0.47	-0.61	-0	-0	-0	-0.47	-0	-0.47
+ERK-PT_MEK	0.358302	-0	0.0660185	-0	-0	-0	-0	-1.45	-0	-0	-0	-0	-0
+ERK_MEK_Y	0.629384	-0	-0	0.0660185	-0	-0	-0	-0	-2.08	-0	-0	-0	-0
+ERK-PP	-0.007	-4.74719	-0	-0	1	-0	-0	0.443	-0.00699995	-0.225917	-0	-0.007	-0
+ERK_MKP3_T	-0	0.138464	-0	0.00552243	-0	0.5	-0	-0	-0	-0	-0.086	-0	-0
+ERK_MEK_T	6.29384	-0	-0	0.660185	-0	-0	-0	-0	-0	-0	-0	-1.008	-0
+ERK-PT_MKP3_Y	-0	0.716604	0.0502039	-0	0.092	-0	-0	-0	-0	-0	-0	-0	-1
+
+Eigenvalues	real	imaginary
+	-0.00277234	0
+	-0.029214	0
+	-0.0496122	0
+	-0.09443	0
+	-0.292957	0
+	-1.13132	0
+	-1.39613	0
+	-1.46558	0
+	-1.54906	0
+	-1.5704	0
+	-2.0208	0
+	-10.0313	0
+	-14.7716	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.00277234
+ Largest absolute imaginary part:  0
+ 13 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 13 have negative real part
+ stiffness = 5328.21
+ time hierarchy = 0.818453
+
+

@@ -1,0 +1,84 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+cyclin	0.118442	1.39296e-17	7.13275e+22	8.38861e+06	0.965911
+protease	0.226311	0	1.36288e+23	0	3.26311
+cdc2k	0.290942	0	1.75209e+23	0	1.56377
+cyclin inhibitor	3.95887	0	2.38409e+24	0	17.882
+complex inhibitor-cyclin	0.411313	3.37358e-18	2.47698e+23	2.03162e+06	17.5439
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+creation of cyclin	0.1	6.02214e+22
+cdc2 kinase triggered degration of cyclin	0.0968085	5.82995e+22
+default degradation of cyclin	0.00236884	1.42655e+21
+activation of cdc2 kinase	0.186052	1.12043e+23
+deactivation of cdc2 kinase	0.186052	1.12043e+23
+activation of cyclin protease	0.0693544	4.17662e+22
+deactivation of cyclin protease	0.0693544	4.17662e+22
+reaction8	0.0234448	1.41188e+22
+reaction9	0.0205656	1.23849e+22
+desinhibition of cyclin	0.00205656	1.23849e+21
+degradation of inhibited cyclin	0.000822626	4.95397e+20
+creation of cyclin inhibitor	0.2	1.20443e+23
+degradation of cyclin inhibitor	0.197943	1.19204e+23
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	cyclin	cyclin inhibitor	cdc2k	protease	complex inhibitor-cyclin
+cyclin	-0.336022	-0.00592211	-0	-0.427768	0.055
+cyclin inhibitor	-0.197943	-0.0559221	-0	-0	0.052
+cdc2k	1.1262	-0	-0.196006	-0	-0
+protease	-0	-0	0.238379	-0.112328	-0
+complex inhibitor-cyclin	0.197943	0.00592211	-0	-0	-0.057
+
+Eigenvalues	real	imaginary
+	0.0364635	-0.40615
+	0.0364635	0.40615
+	-0.0386719	0
+	-0.073621	0
+	-0.717912	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	cyclin	cyclin inhibitor	cdc2k	protease	complex inhibitor-cyclin
+cyclin	-0.336022	-0.00592211	-0	-0.427768	0.055
+cyclin inhibitor	-0.197943	-0.0559221	-0	-0	0.052
+cdc2k	1.1262	-0	-0.196006	-0	-0
+protease	-0	-0	0.238379	-0.112328	-0
+complex inhibitor-cyclin	0.197943	0.00592211	-0	-0	-0.057
+
+Eigenvalues	real	imaginary
+	0.0364635	-0.40615
+	0.0364635	0.40615
+	-0.0386719	0
+	-0.073621	0
+	-0.717912	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.0364635
+ Largest absolute imaginary part:  0.40615
+ The complex eigenvalues with the largest real part are:  0.0364635 +|- 0.40615i
+ 3 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 3 have negative real part
+ stiffness = 19.6885
+ time hierarchy = 0.151772
+
+

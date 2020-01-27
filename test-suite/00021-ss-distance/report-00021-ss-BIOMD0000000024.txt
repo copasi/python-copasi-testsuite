@@ -1,0 +1,56 @@
+No steady state with given resolution was found!
+(below are the last unsuccessful trial values)
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+EmptySet	0	0	0	0	nan
+mRNA	nan	nan	nan	nan	nan
+protein	nan	nan	nan	nan	nan
+
+Reaction	Flux (mol/h)	Particle Flux (#/h)
+mRNA production	nan	nan
+protein production	nan	nan
+messenger degradation	nan	nan
+protein degradation	nan	nan
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	mRNA	protein
+mRNA	1.04975e-311	1.04975e-311
+protein	1.04975e-311	1.04974e-311
+
+Eigenvalues	real	imaginary
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	mRNA	protein
+mRNA	-0.21	-0.5
+protein	nan	nan
+
+Eigenvalues	real	imaginary
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state 's stability is undetermined.
+
+Eigenvalue statistics:
+ Largest real part: 0
+ Largest absolute imaginary part:  0
+ 0 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 0 have negative real part
+ stiffness = 0.000000
+ time hierarchy = 0.000000
+
+

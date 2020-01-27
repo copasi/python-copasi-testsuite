@@ -1,0 +1,172 @@
+A steady state with given resolution was found.
+
+Species	Concentration (µmol/l)	Concentration Rate (µmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+MAPK	0.258606	-3.32108e-17	1.55736e+17	-20	6.85255
+MAPK_MEK-PP	0.0539124	4.48346e-17	3.24668e+16	27	1.42857
+MAPK-P	0.0223302	4.98162e-18	1.34476e+16	3	0.739048
+MAPK phosphatase	0.241432	1.66054e-17	1.45394e+17	10	8.24456
+MAPK-P_MAPKPase	0.0539124	-1.66054e-17	3.24668e+16	-10	2
+MAPK-P_MEK-PP	0.00465525	-4.67027e-19	2.80346e+15	-0.28125	1.42857
+MAPK-PP	0.00192818	2.59459e-19	1.16118e+15	0.15625	0.828389
+MAPK-PP_MAPKPase	0.00465525	0	2.80346e+15	0	2
+MEK	0.0361604	-1.66054e-17	2.17763e+16	-10	2.47162
+MEK-P	0.0159279	5.81189e-18	9.59201e+15	3.5	0.501415
+MEK phosphatase	0.158976	8.3027e-18	9.57377e+16	5	4.30581
+MEK-P_MEKPase	0.0281351	-1.66054e-18	1.69434e+16	-1	1.11111
+MEK-PP	0.00729655	-3.85556e-17	4.39409e+15	-23.2188	0.138725
+MEK-PP_MEKPase	0.0128887	-6.01945e-18	7.76173e+15	-3.625	1.11111
+MEK-P_RAF-P	0.0128887	-8.3027e-19	7.76173e+15	-0.5	2
+MEK_RAF-P	0.0281351	1.32843e-17	1.69434e+16	8	1.92308
+RAF	0.0807528	2.07567e-18	4.86305e+16	1.25	5.80753
+RAFK	0.17219	2.49081e-18	1.03695e+17	1.5	12.3835
+RAF-P	0.122604	-1.32843e-17	7.38339e+16	-8	3.2469
+RAF phosphatase	0.27219	-3.32108e-18	1.63917e+17	-2	16.3127
+RAF-P_RAFPase	0.0278097	3.32108e-18	1.67474e+16	2	1.66667
+RAF_RAFK	0.0278097	-2.49081e-18	1.67474e+16	-1.5	2
+
+Reaction	Flux (µmol/s)	Particle Flux (#/s)
+binding of RAF and RAFK	0.0139048	8.3737e+15
+dissociation of RAF_RAFK	0.0111239	6.69896e+15
+phosphorylation of RAF	0.00278097	1.67474e+15
+binding of RAF-P and RAF phosphatase	0.0166858	1.00484e+16
+dissociation of RAF-P_RAFPase	0.0139048	8.3737e+15
+dephosphorylation of RAF-P	0.00278097	1.67474e+15
+binding of MEK and RAF-P	0.0146303	8.81054e+15
+dissociation of MEK_RAF-P	0.0118167	7.11621e+15
+phosphorylation of MEK	0.00281351	1.69434e+15
+binding of MEK-P and MEK phosphatase	0.0253216	1.5249e+16
+dissociation of MEK-P_MEKPase	0.0225081	1.35547e+16
+dephosphorylation of MEK-P	0.00281351	1.69434e+15
+binding of MEK-P and RAF-P	0.00644433	3.88086e+15
+dissociation of MEK-P_RAF-P	0.00515546	3.10469e+15
+phosphorylation of MEK-P	0.00128887	7.76173e+14
+binding of MEK-PP and MEK phosphatase	0.0115998	6.98555e+15
+dissociation of MEK-PP_MEKPase	0.0103109	6.20938e+15
+dephosphorylation of MEK-PP	0.00128887	7.76173e+14
+binding of MAPK and MEK-PP	0.0377387	2.27268e+16
+dissociation of MAPK_MEK-PP	0.0323474	1.94801e+16
+phosphorylation of MAPK	0.00539124	3.24668e+15
+binding of MAPK-P and MAPK phosphatase	0.0269562	1.62334e+16
+dissociation of MAPK-P_MAPKPase	0.021565	1.29867e+16
+dephosphorylation of MAPK-P	0.00539124	3.24668e+15
+binding of MAPK-P and MEK-PP	0.00325867	1.96242e+15
+dissociation of MAPK-P_MEK-PP	0.00279315	1.68207e+15
+phosphorylation of MAPK-P	0.000465525	2.80346e+14
+binding of MAPK-PP and MAPK phosphatase	0.00232762	1.40173e+15
+dissociation of MAPK-PP_MAPKPase	0.0018621	1.12138e+15
+dephosphorylation of MAPK-PP	0.000465525	2.80346e+14
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	MEK-PP	RAF-P	MAPK phosphatase	MEK phosphatase	MAPK-P	MEK-P	RAF	RAF phosphatase	MAPK	MEK_RAF-P	MAPK-P_MEK-PP	MEK-P_MEKPase	MAPK-PP_MAPKPase	MEK-P_RAF-P	MAPK-PP	MEK	RAFK	MAPK_MEK-PP	MAPK-P_MAPKPase	RAF-P_RAFPase	MEK-PP_MEKPase	RAF_RAFK
+MEK-PP	-7.20849	-0	-0	-0.0729655	-0.145931	-0	-0	-0	-0.145931	-0	0.7	-0	-0	0.0999999	-0	-0	-0	0.7	-0	-0	0.8	-0
+RAF-P	-0	-0.307987	-0	-0	-0	-0.404593	-0	-0.061302	-0	0.52	-0	-0	-0	0.5	-0	-0.404593	-0	-0	-0	0.5	-0	0.1
+MAPK phosphatase	-0	-0	-0.121292	-0	-1.20716	-0	-0	-0	-0	-0	-0	-0	0.5	-0	-1.20716	-0	-0	-0	0.5	-0	-0	-0
+MEK phosphatase	-1.58976	-0	-0	-0.232245	-0	-1.58976	-0	-0	-0	-0	-0	0.9	-0	-0	-0	-0	-0	-0	-0	-0	0.9	-0
+MAPK-P	-0.446605	-0	-0.111651	-0	-1.35309	-0	-0	-0	-0	-0	0.6	-0	0.1	-0	-0	-0	-0	0.1	0.4	-0	-0	-0
+MEK-P	-0	-0.0525621	-0	-0.159279	-0	-1.99436	-0	-0	-0	0.1	-0	0.8	-0	0.4	-0	-0	-0	-0	-0	-0	0.0999999	-0
+RAF	-0	-0	-0	-0	-0	-0	-0.17219	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.0807528	-0	-0	0.1	-0	0.4
+RAF phosphatase	-0	-0.136095	-0	-0	-0	-0	-0	-0.061302	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.6	-0	-0
+MAPK	-5.17213	-0	-0	-0	-0	-0	-0	-0	-0.145931	-0	-0	-0	-0	-0	-0	-0	-0	0.6	0.1	-0	-0	-0
+MEK_RAF-P	-0	0.119329	-0	-0	-0	-0	-0	-0	-0	-0.52	-0	-0	-0	-0	-0	0.404593	-0	-0	-0	-0	-0	-0
+MAPK-P_MEK-PP	0.446605	-0	-0	-0	0.145931	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MEK-P_MEKPase	-0	-0	-0	0.159279	-0	1.58976	-0	-0	-0	-0	-0	-0.9	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK-PP_MAPKPase	-0	-0	0.0096409	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	1.20716	-0	-0	-0	-0	-0	-0	-0
+MEK-P_RAF-P	-0	0.0525621	-0	-0	-0	0.404593	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0	-0	-0	-0	-0	-0
+MAPK-PP	-0	-0	-0.0096409	-0	-0	-0	-0	-0	-0	-0	0.1	-0	0.4	-0	-1.20716	-0	-0	-0	-0	-0	-0	-0
+MEK	-0	-0.119329	-0	-0	-0	-0	-0	-0	-0	0.42	-0	0.1	-0	-0	-0	-0.404593	-0	-0	-0	-0	-0	-0
+RAFK	-0	-0	-0	-0	-0	-0	-0.17219	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.0807528	-0	-0	-0	-0	0.5
+MAPK_MEK-PP	5.17213	-0	-0	-0	-0	-0	-0	-0	0.145931	-0	-0	-0	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0
+MAPK-P_MAPKPase	-0	-0	0.111651	-0	1.20716	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	-0	-0
+RAF-P_RAFPase	-0	0.136095	-0	-0	-0	-0	-0	0.061302	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.6	-0	-0
+MEK-PP_MEKPase	1.58976	-0	-0	0.0729655	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.9	-0
+RAF_RAFK	-0	-0	-0	-0	-0	-0	0.17219	-0	-0	-0	-0	-0	-0	-0	-0	-0	0.0807528	-0	-0	-0	-0	-0.5
+
+Eigenvalues	real	imaginary
+	4.93691e-09	0
+	4.93691e-09	0
+	0	0
+	0	0
+	-7.2655e-09	-1.99327e-09
+	-7.2655e-09	1.99327e-09
+	-2.21958e-08	0
+	-0.0316492	-0.00303024
+	-0.0316492	0.00303024
+	-0.050299	0
+	-0.103543	0
+	-0.114337	0
+	-0.604174	0
+	-0.703386	0
+	-0.716756	0
+	-0.746237	0
+	-0.932034	0
+	-1.07511	0
+	-1.62872	0
+	-1.89841	0
+	-2.90778	0
+	-8.06531	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	MEK-PP	RAF-P	MAPK phosphatase	MEK phosphatase	MAPK-P	MEK-P	RAF	RAF phosphatase	MAPK	MEK_RAF-P	MAPK-P_MEK-PP	MEK-P_MEKPase	MAPK-PP_MAPKPase	MEK-P_RAF-P	MAPK-PP
+MEK-PP	-7.20849	-0	0.7	-0.872966	-0.845931	-0	-0	-0	-0.845931	-0	-1.67204e-08	-0.8	-0	0.0999999	-0.7
+RAF-P	0.404593	-0.407987	0.404593	-0.404593	-0.404593	-1.04253e-07	-0.1	-0.461302	-0.404593	0.824593	-0	-0	-0	0.804593	-0.404595
+MAPK phosphatase	-0	-0	-0.621292	-0	-1.20716	-0	-0	-0	-0	-0	-0	-0	-0	-0	-1.20716
+MEK phosphatase	-1.58976	-0	-0	-1.13224	-0	-1.58976	-0	-0	-0	-0	-0	1.4755e-07	-0	-0	-0
+MAPK-P	-0.446605	-0	-0.411651	-0	-1.45309	-0	-0	-0	-0.1	-0	0.5	-0	-0.3	-0	-0.0999994
+MEK-P	-0	-0.0525621	-0	-0.259279	-0	-1.99436	-0	-0	-0	0.1	-0	0.7	-0	0.4	-0
+RAF	-0	-0.480753	-0	-0	-0	-0	-0.652943	0.380753	-0	-0.480753	-0	-0	-0	-0.480753	-0
+RAF phosphatase	-0	-0.136095	-0	-0	-0	-0	-0	-0.661302	-0	-0	-0	-0	-0	-0	-0
+MAPK	-5.17213	-0	0.5	-0	-0.6	-0	-0	-0	-0.745931	-0	-0.6	-0	-0.1	-0	-0.6
+MEK_RAF-P	-0.404593	0.119329	-0.404593	0.404593	0.404593	-0.404593	-0	-0	0.404593	-0.924593	-0	-0	-0	-0.404593	0.404595
+MAPK-P_MEK-PP	0.446605	-0	-0	-0	0.145931	-0	-0	-0	-0	-0	-0.7	-0	-0	-0	-0
+MEK-P_MEKPase	-0	-0	-0	0.159279	-0	1.58976	-0	-0	-0	-0	-0	-0.9	-0	-0	-0
+MAPK-PP_MAPKPase	-0	-0	0.0096409	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0.5	-0	1.20716
+MEK-P_RAF-P	-0	0.0525621	-0	-0	-0	0.404593	-0	-0	-0	-0	-0	-0	-0	-0.5	-0
+MAPK-PP	-0	-0	-0.0096409	-0	-0	-0	-0	-0	-0	-0	0.1	-0	0.4	-0	-1.20716
+
+Eigenvalues	real	imaginary
+	-0.0316493	-0.0030303
+	-0.0316493	0.0030303
+	-0.050299	0
+	-0.103543	0
+	-0.114337	0
+	-0.604174	0
+	-0.703386	0
+	-0.716756	0
+	-0.746237	0
+	-0.932034	0
+	-1.07511	0
+	-1.62872	0
+	-1.89841	0
+	-2.90778	0
+	-8.06531	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: -0.0316493
+ Largest absolute imaginary part:  0.0030303
+ The complex eigenvalues with the largest real part are:  -0.0316493 +|- 0.0030303i
+ 13 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 15 have negative real part
+ stiffness = 254.834
+ time hierarchy = 0.233826
+
+

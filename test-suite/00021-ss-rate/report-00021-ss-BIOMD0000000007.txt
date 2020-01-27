@@ -1,0 +1,145 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(min*l))	Particle Number	Particle Number Rate (1/min)	Transition Time (min)
+ubiquitinProtease1	0.100867	-0.0909786	6.07434e+22	-5.47886e+22	1.10869
+ubiquitinProtease2	2.13991e-05	0.000226573	1.28868e+19	1.36445e+20	0.0944467
+Wee1	0.0227002	0.226725	1.36704e+22	1.36537e+23	0.100122
+Cdc25	2.33669e-05	0.000280376	1.40718e+19	1.68847e+20	0.0833411
+Cdc13_Cdc2	0.000372641	0.000364699	2.2441e+20	2.19627e+20	0.0244993
+FreeRum1	0.400657	0	2.41281e+23	0	4.26949
+Cig2_Cdc2	0.000144219	0.00117551	8.6851e+19	7.07909e+20	0.0821428
+IntermediaryEnzyme	7.70263e-06	7.06205e-05	4.63864e+18	4.25286e+19	0.109071
+Cdc13_P-Cdc2	3.51615e-07	1.81776e-06	2.11748e+17	1.09468e+18	0.0221969
+Cig2_Cdc2_Rum1	3.04915e-05	0.000569059	1.83624e+19	3.42695e+20	0.0530493
+Cdc13_Cdc2_Rum1	0.00112148	0.0145158	6.75371e+20	8.7416e+21	0.0756838
+Cdc13_P-Cdc2_Rum1	7.59918e-07	1.38069e-05	4.57633e+17	8.31474e+18	0.0542345
+S-phasePromotingFactor	0.000408713	nan	2.46133e+20	nan	nan
+M-phasePromotingFactor	0.000372659	nan	2.2442e+20	nan	nan
+BoundIntermediaryEnzyme	0.999992	nan	6.02209e+23	nan	nan
+BoundUbiquitinProtease1	0.899133	nan	5.41471e+23	nan	nan
+BoundUbiquitinProtease2	0.999979	nan	6.02201e+23	nan	nan
+BoundWee1	0.9773	nan	5.88544e+23	nan	nan
+BoundCdc25	0.999977	nan	6.022e+23	nan	nan
+TotalRum1	0.40181	nan	2.41975e+23	nan	nan
+TotalCdc13	0.00149523	nan	9.0045e+20	nan	nan
+TotalCig2	0.000174711	nan	1.05213e+20	nan	nan
+
+Reaction	Flux (mol/min)	Particle Flux (#/min)
+Cdc13_Cdc2 creation	0.015	9.03321e+21
+Cig2_Cdc2 creation	0.00175	1.05387e+21
+Cdc2 phosphorylation	1.56982e-05	9.4537e+18
+binding of Rum1 with Cdc13_Cdc2	0.014818	8.92359e+21
+binding of Rum1 with Cdc13_P-Cdc2	1.40117e-05	8.43805e+18
+Rum1 degradation in Rum1_Cdc13_Cdc2	0.000210278	1.26632e+20
+Rum1 degradation in solution	0.0751232	4.52402e+22
+Rum1 degradation in Rum1_Cdc13_P-Cdc2	1.42485e-07	8.58063e+16
+Rum1 degradation in Rum1_Cig2_Cdc2	5.71715e-06	3.44295e+18
+Cdc13 degradation in Cdc13_Cdc2	1.19097e-05	7.17218e+18
+Cdc13 degradation in Cdc13_P-Cdc2	1.12377e-08	6.7675e+15
+Cig2 degradation in Cig2_Cdc2	5.43126e-06	3.27078e+18
+Cdc13 degradation in Rum1_Cdc13_P-Cdc2	3.79959e-08	2.28817e+16
+Cdc13 degradation in Rum1_Cdc13_Cdc2	5.6074e-05	3.37686e+19
+Cig2 degradation in Rum1_Cig2_Cdc2	0	0
+Binding of Rum1 to Cig2_Cdc2	0.000574776	3.46138e+20
+UbE mediated degradation of Cdc13_Cdc2 in Rum1_Cdc13_Cdc2	3.58427e-05	2.1585e+19
+UbE mediated degradation of Cdc13_Cdc2 in Rum1_Cdc13_P-Cdc2	2.42871e-08	1.46261e+16
+Rum1 creation	0.09375	5.64576e+22
+Rum1 degradation by SPF	0.00331205	1.99456e+21
+IE production & degradation	7.06205e-05	4.25286e+19
+UbE production & degradation	-0.0909786	-5.47886e+22
+UbE2 production & degradation	0.000226573	1.36445e+20
+Wee1 production & degradation	0.226725	1.36537e+23
+Cdc25 production & degradation	0.000280376	1.68847e+20
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	Values[Mass]	FreeRum1	Cdc13_Cdc2	Cig2_Cdc2	Cdc13_P-Cdc2	Cdc13_Cdc2_Rum1	Cdc13_P-Cdc2_Rum1	Cig2_Cdc2_Rum1	IntermediaryEnzyme	Cdc25	Wee1	ubiquitinProtease2	ubiquitinProtease1
+Values[Mass]	0.00495	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+FreeRum1	-7.97941e+20	-0.226262	-48.1693	-6.03249	-40.4752	0.181958	0.187887	0.100047	-0	-0	-0	-0	0.000272176
+Cdc13_Cdc2	-0	-0.0372641	-40.1398	-0	0.02476	0.2875	-0	-0	-0	-0	-0.000117396	-0	-9.03599e-05
+Cig2_Cdc2	-0	-0.00144219	-0	-4.04423	-0	-0	-0	0.2875	-0	-0	-0	-0.00107813	-0
+Cdc13_P-Cdc2	-0	-3.51615e-05	0.0421506	-0	-40.1227	-0	0.287502	-0	-0	-1.45539e-07	0.000117382	-0	-8.52667e-08
+Cdc13_Cdc2_Rum1	-0	0.0372641	40.0657	-0	-0	-0.36946	-0	-0	-0	-0	-0	-0	-0.000271951
+Cdc13_P-Cdc2_Rum1	-0	3.51615e-05	-0	-0	40.0657	-0	-0.369462	-0	-0	-0	-0	-0	-1.84272e-07
+Cig2_Cdc2_Rum1	-0	0.00144219	-0	4.00657	-0	-0	-0	-0.2875	-0	-0	-0	-0	-0
+IntermediaryEnzyme	-0	-0	0.39604	-0	0.0198661	-0	-0	-0	-9.98461	-0	-0	-0	-0
+Cdc25	-0	-0	0.909089	-0	0.0454966	-0	-0	-0	-0	-2.49886	-0	-0	-0
+Wee1	-0	-0	-0.185035	-0	-0	-0	-0	-0	-0	-0	-0.0240164	-0	-0
+ubiquitinProtease2	-0	-0	0.95238	-0	0.0476244	-0	-0	-0	-0	-0	-0	-5.99488	-0
+ubiquitinProtease1	-0	-0	-0	-0	-0	-0	-0	-0	0.197118	-0	-0	-0	-0.0813574
+
+Eigenvalues	real	imaginary
+	0.00495	0
+	-0.00252302	0
+	-0.024013	0
+	-0.081461	-6.72189e-05
+	-0.081461	6.72189e-05
+	-0.0820715	0
+	-0.17932	0
+	-2.49886	0
+	-4.33136	0
+	-5.99488	0
+	-9.98461	0
+	-40.4211	0
+	-40.4614	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	Values[Mass]	FreeRum1	Cdc13_Cdc2	Cig2_Cdc2	Cdc13_P-Cdc2	Cdc13_Cdc2_Rum1	Cdc13_P-Cdc2_Rum1	Cig2_Cdc2_Rum1	IntermediaryEnzyme	Cdc25	Wee1	ubiquitinProtease2	ubiquitinProtease1
+Values[Mass]	0.00495	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
+FreeRum1	-7.97941e+20	-0.226262	-48.1693	-6.03249	-40.4752	0.181958	0.187887	0.100047	-0	-0	-0	-0	0.000272176
+Cdc13_Cdc2	-0	-0.0372641	-40.1398	-0	0.02476	0.2875	-0	-0	-0	-0	-0.000117396	-0	-9.03599e-05
+Cig2_Cdc2	-0	-0.00144219	-0	-4.04423	-0	-0	-0	0.2875	-0	-0	-0	-0.00107813	-0
+Cdc13_P-Cdc2	-0	-3.51615e-05	0.0421506	-0	-40.1227	-0	0.287502	-0	-0	-1.45539e-07	0.000117382	-0	-8.52667e-08
+Cdc13_Cdc2_Rum1	-0	0.0372641	40.0657	-0	-0	-0.36946	-0	-0	-0	-0	-0	-0	-0.000271951
+Cdc13_P-Cdc2_Rum1	-0	3.51615e-05	-0	-0	40.0657	-0	-0.369462	-0	-0	-0	-0	-0	-1.84272e-07
+Cig2_Cdc2_Rum1	-0	0.00144219	-0	4.00657	-0	-0	-0	-0.2875	-0	-0	-0	-0	-0
+IntermediaryEnzyme	-0	-0	0.39604	-0	0.0198661	-0	-0	-0	-9.98461	-0	-0	-0	-0
+Cdc25	-0	-0	0.909089	-0	0.0454966	-0	-0	-0	-0	-2.49886	-0	-0	-0
+Wee1	-0	-0	-0.185035	-0	-0	-0	-0	-0	-0	-0	-0.0240164	-0	-0
+ubiquitinProtease2	-0	-0	0.95238	-0	0.0476244	-0	-0	-0	-0	-0	-0	-5.99488	-0
+ubiquitinProtease1	-0	-0	-0	-0	-0	-0	-0	-0	0.197118	-0	-0	-0	-0.0813574
+
+Eigenvalues	real	imaginary
+	0.00495	0
+	-0.00252302	0
+	-0.024013	0
+	-0.081461	-6.72189e-05
+	-0.081461	6.72189e-05
+	-0.0820715	0
+	-0.17932	0
+	-2.49886	0
+	-4.33136	0
+	-5.99488	0
+	-9.98461	0
+	-40.4211	0
+	-40.4614	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is unstable,
+transient states in its vicinity have oscillatory components.
+
+Eigenvalue statistics:
+ Largest real part: 0.00495
+ Largest absolute imaginary part:  6.72189e-05
+ The complex eigenvalues with the largest real part are:  -0.081461 +|- 6.72189e-05i
+ 11 are purely real
+ 0 are purely imaginary
+ 2 are complex
+ 0 are equal to zero
+ 1 have positive real part
+ 12 have negative real part
+ stiffness = 16036.9
+ time hierarchy = 0.740244
+
+

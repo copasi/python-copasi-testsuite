@@ -1,0 +1,118 @@
+A steady state with given resolution was found.
+
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+PER Protein (unphosphorylated)	0	0	0	0	-nan(ind)
+TIM Protein (unphosphorylated)	0	0	0	0	-nan(ind)
+PER Protein (mono-phosphorylated)	0	0	0	0	-nan(ind)
+TIM Protein (mono-phosphorylated)	0	0	0	0	-nan(ind)
+PER Protein (bi-phosphorylated)	0	0	0	0	-nan(ind)
+TIM Protein (bi-phosphorylated)	0	0	0	0	-nan(ind)
+Cytosolic PER-TIM Complex	0	0	0	0	-nan(ind)
+Nuclear PER-TIM Complex	0	0	0	0	-nan(ind)
+PER mRNA	0	1	0	6.02214e+14	0
+TIM mRNA	0	1	0	6.02214e+14	0
+
+Reaction	Flux (nmol/h)	Particle Flux (#/h)
+First Phosphorylation of PER	0	0
+First Phosphorylation of TIM	0	0
+Dephosphorylation of PER (1st P)	0	0
+Dephosphorylation of TIM (1st P)	0	0
+Second Phosphorylation of PER	0	0
+Second Phosphorylation of TIM	0	0
+Dephosphorylation of PER (2nd P)	0	0
+Dephosphorylation of TIM (2nd P)	0	0
+PER degradation	0	0
+TIM degradation	0	0
+PER-1 degradation	0	0
+TIM-1 degradation	0	0
+PER-2 degradation	0	0
+TIM-2 degradation	0	0
+PER-TIM complex formation	0	0
+PER-TIM complex nucleation	0	0
+PER-TIM complex degradation (cytosol)	0	0
+PER-TIM complex degradation (nuclear)	0	0
+PER mRNA production	1	6.02214e+14
+TIM mRNA production	1	6.02214e+14
+PER production	0	0
+TIM production	0	0
+PER mRNA degradation	0	0
+TIM mRNA degradation	0	0
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	PER Protein (mono-phosphorylated)	TIM Protein (mono-phosphorylated)	PER Protein (unphosphorylated)	TIM Protein (unphosphorylated)	PER Protein (bi-phosphorylated)	TIM Protein (bi-phosphorylated)	Cytosolic PER-TIM Complex	PER mRNA	TIM mRNA	Nuclear PER-TIM Complex
+PER Protein (mono-phosphorylated)	-4.51	0	4	0	0.5	0	0	0	0	0
+TIM Protein (mono-phosphorylated)	0	-4.51	0	4	0	0.5	0	0	0	0
+PER Protein (unphosphorylated)	0.5	0	-4.01	0	0	0	0	0.9	0	0
+TIM Protein (unphosphorylated)	0	0.5	0	-4.01	0	0	0	0	0.9	0
+PER Protein (bi-phosphorylated)	4	0	0	0	-10.51	0	0.6	0	0	0
+TIM Protein (bi-phosphorylated)	0	4	0	0	0	-10.51	0.6	0	0	0
+Cytosolic PER-TIM Complex	0	0	0	0	0	0	-1.21	0	0	0.2
+PER mRNA	0	0	0	0	0	0	0	0	0	0
+TIM mRNA	0	0	0	0	0	0	0	0	0	0
+Nuclear PER-TIM Complex	0	0	0	0	0	0	0.6	0	0	-0.21
+
+Eigenvalues	real	imaginary
+	0	0
+	0	0
+	-0.101724	0
+	-1.31828	0
+	-2.71231	0
+	-2.71231	0
+	-5.47648	0
+	-5.47648	0
+	-10.8412	0
+	-10.8412	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	PER Protein (mono-phosphorylated)	TIM Protein (mono-phosphorylated)	PER Protein (unphosphorylated)	TIM Protein (unphosphorylated)	PER Protein (bi-phosphorylated)	TIM Protein (bi-phosphorylated)	Cytosolic PER-TIM Complex	PER mRNA	TIM mRNA	Nuclear PER-TIM Complex
+PER Protein (mono-phosphorylated)	-4.51	0	4	0	0.5	0	0	0	0	0
+TIM Protein (mono-phosphorylated)	0	-4.51	0	4	0	0.5	0	0	0	0
+PER Protein (unphosphorylated)	0.5	0	-4.01	0	0	0	0	0.9	0	0
+TIM Protein (unphosphorylated)	0	0.5	0	-4.01	0	0	0	0	0.9	0
+PER Protein (bi-phosphorylated)	4	0	0	0	-10.51	0	0.6	0	0	0
+TIM Protein (bi-phosphorylated)	0	4	0	0	0	-10.51	0.6	0	0	0
+Cytosolic PER-TIM Complex	0	0	0	0	0	0	-1.21	0	0	0.2
+PER mRNA	0	0	0	0	0	0	0	0	0	0
+TIM mRNA	0	0	0	0	0	0	0	0	0	0
+Nuclear PER-TIM Complex	0	0	0	0	0	0	0.6	0	0	-0.21
+
+Eigenvalues	real	imaginary
+	0	0
+	0	0
+	-0.101724	0
+	-1.31828	0
+	-2.71231	0
+	-2.71231	0
+	-5.47648	0
+	-5.47648	0
+	-10.8412	0
+	-10.8412	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state 's stability is undetermined.
+
+Eigenvalue statistics:
+ Largest real part: 0
+ Largest absolute imaginary part:  0
+ 8 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 2 are equal to zero
+ 0 have positive real part
+ 8 have negative real part
+ stiffness = inf
+ time hierarchy = -nan(ind)
+
+
