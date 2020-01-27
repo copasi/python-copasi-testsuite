@@ -235,9 +235,9 @@ class TestCase:
             if 'StepNumber' in self.settings:
                 problem.getParameter('StepNumber').setUIntValue(int(self.settings['StepNumber']))
             if 'StepSize' in self.settings:
-                problem.getParameter('StepSize').setDblValue(float(self.settings['StepNumber']))
+                problem.getParameter('StepSize').setDblValue(float(self.settings['StepSize']))
             if 'Duration' in self.settings:
-                problem.getParameter('Duration').setDblValue(float(self.settings['StepNumber']))
+                problem.getParameter('Duration').setDblValue(float(self.settings['Duration']))
 
             COPASI.COutputAssistant.getListOfDefaultOutputDescriptions()
             COPASI.COutputAssistant.createDefaultOutput(1000, task, dm)
@@ -322,9 +322,9 @@ class TestCase:
             if 'StepNumber' in self.settings:
                 problem.getParameter('StepNumber').setUIntValue(int(self.settings['StepNumber']))
             if 'StepSize' in self.settings:
-                problem.getParameter('StepSize').setDblValue(float(self.settings['StepNumber']))
+                problem.getParameter('StepSize').setDblValue(float(self.settings['StepSize']))
             if 'Duration' in self.settings:
-                problem.getParameter('Duration').setDblValue(float(self.settings['StepNumber']))
+                problem.getParameter('Duration').setDblValue(float(self.settings['Duration']))
 
         elif self.settings['task'] == TaskTypes.sensitivities:
             need_report = True
