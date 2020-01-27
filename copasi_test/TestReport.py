@@ -63,9 +63,9 @@ class TestReport:
         from .TaskTypes import TaskTypes
         from .RunResult import RunResult
         if not isinstance(other, TestReport):
-            return RunResult.INVLID_OBJECT
+            return RunResult.INVALID_OBJECT
         if other.task_name != self.task_name:
-            return RunResult.INVLID_OBJECT
+            return RunResult.INVALID_OBJECT
 
         comp = TaskTypes.getComparer(self.task_name)
         return comp.compare(self, other, **kwargs).get_run_result()
