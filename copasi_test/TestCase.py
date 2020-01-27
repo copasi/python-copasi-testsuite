@@ -207,6 +207,12 @@ class TestCase:
                 method.getParameter('Maximum duration for forward integration').setUDblValue(float(self.settings['Maximum duration for forward integration']))
             if 'Maximum duration for backward integration' in self.settings:
                 method.getParameter('Maximum duration for backward integration').setUDblValue(float(self.settings['Maximum duration for backward integration']))
+            if 'Target Criterion' in self.settings:
+                p = method.getParameter('Target Criterion')
+                if p is None:
+                    method.addParameter('Target Criterion', COPASI.CCopasiParameter.Type_STRING)
+                    p = method.getParameter('Target Criterion')
+                p.setStringValue(self.settings['Target Criterion'])
 
         elif self.settings['task'] == TaskTypes.timecourse:
             need_report = True
