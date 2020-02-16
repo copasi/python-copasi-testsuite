@@ -1,4 +1,4 @@
-task: Steady State
+task: Steady-State
 location: .
 format: copasi
 result: run-only
