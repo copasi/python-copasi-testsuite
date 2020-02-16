@@ -1,5 +1,5 @@
 task: Steady-State
 location: .
 format: copasi
-result: run-only
+result: report
 ignore_exception: true
