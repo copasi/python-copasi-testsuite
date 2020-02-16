@@ -1,0 +1,5 @@
+task: Steady State
+location: .
+format: copasi
+result: run-only
+ignore_exception: true
