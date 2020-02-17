@@ -37,13 +37,18 @@ The following special keywords are recognized by the runner:
 
 
 	* `report`: the output should be the default report of the task
+	* `copmpare`: perform comparison even if an exception occurred before (and is ignored)
 	* `run-only`: to be chosen if the result of the task run is not to be evaluated, just whether a task succeeds or not
 	* `xml equivalence`: xml comparison disregarding xml comments, time stamps, keys and the like
-	* 
+
+	
+* `result_file`: by default, the expected files are assumed to be in the form: `report-{test id}-{model name}.txt`, so for example `report-00007-BIOMD0000000002.txt`. If this naming scheme does not seem convenient, the `result_file` option allows to overwrite what the filename would be.
 
 * `method`: if specified a particular method will be applied to the task.
 
 * `description`: an optional string describing the test
+
+* `ignore_exception`: if present, any exception that occurs while running the test case will be ignored. Can be used in conjunction with `result:compare` to perform comparison of the test results. 
 
 The settings file may contain additional parameters, that when specified will be passed along to the task / problem / method.
 
