@@ -103,12 +103,18 @@ class ReportParser:
 
     def readAnnotatedMatrix(self, lines, current, **kwargs):
         # type: ([str], int) -> int
+        max_lines = len(lines)
+        if current == max_lines:
+            return current
+
         sep = kwargs.get('sep', '\t')
         header = kwargs.get('header', 'infer')
         trim = kwargs.get('trim', False)
         replacements = kwargs.get('replacements', None)
         name = lines[current].strip()
         current = current + 1
+        if current >= max_lines:
+            return current
         description = lines[current].strip()
         current = current + 1
         if description == '':
@@ -140,6 +146,9 @@ class ReportParser:
 
     def readDataFrameWithDescription(self, lines, current, desc, **kwargs):
         # type: ([str], int, {}) -> int
+        max_lines = len(lines)
+        if current == max_lines:
+            return current
         sep = kwargs.get('sep', '\t')
         header = kwargs.get('header', 'infer')
         trim = kwargs.get('trim', False)
