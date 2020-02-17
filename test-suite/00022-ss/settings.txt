@@ -1,5 +1,6 @@
 task: Steady-State
 location: .
 format: copasi
-result: report
+result: compare
+report_file: 00022-ss.txt
 ignore_exception: true
