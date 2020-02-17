@@ -112,6 +112,7 @@ class TestRunner:
         # generate copasi file
         logging.debug(repr(case))
         models = case.get_models()
+        logging.debug('  found models: {0}'.format(list(models)))
 
         t0 = time.clock()
 
@@ -142,7 +143,8 @@ class TestRunner:
                     extra_args += [output_file]
 
                 if not (os.path.isfile(report_file) and use_existing):
-                    logging.debug("  model {0}: execute {1}".format(model_name, repr(self)))
+                    logging.debug("  model {0}: execute {1}"
+                                  .format(model_name, repr(self)))
                     self.call_copasi(case, [self.executable] + extra_args)
 
                 logging.debug("  model {0}: compare result".format(model_name))
@@ -150,6 +152,18 @@ class TestRunner:
 
             except Exception as e:
                 if 'ignore_exception' in case.settings and case.settings['ignore_exception'].lower() == 'true':
+                    err_msg = StringIO()
+                    traceback.print_exc(file=err_msg)
+                    err_msg.seek(0)
+                    logging.debug(
+                        'ignore exception for model {0} of case {1}:\n{2}'.format(
+                            model_name, case.id, err_msg.read()))
+                    if 'result' in case.settings and case.settings[
+                            'result'].lower() == 'compare':
+                        logging.debug(
+                            'comparing result after ignoring excxeption')
+                        result += case.compare_result(model_file,
+                                                      self) != RunResult.PASS
                     continue
 
                 if isinstance(e, ValueError):
@@ -185,9 +199,10 @@ class TestRunner:
         else:
             stdout, stderr = p.communicate()
 
-        logging.debug('\tran for {0} seconds'.format(time.clock() - t0))
-
         retcode = p.returncode
+        logging.debug('\tran for {0} seconds with return code {1}'
+                      .format(time.clock() - t0, p.returncode))
+
         if retcode:
             cmd = kwargs.get("args")
             if cmd is None:
