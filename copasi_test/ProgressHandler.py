@@ -54,8 +54,12 @@ class ProgressHandler(logging.Handler):
 
 
 def setup_logging(progress_only=True, level=logging.INFO):
-    if os.getenv('COPASI_TEST_LEVEL') is not None:
-        level = logging.getLevelName(os.getenv('COPASI_TEST_LEVEL'))
+    if os.getenv('COPASI_TEST_PRINT') is not None:
+        level = logging.getLevelName(os.getenv('COPASI_TEST_PRINT'))
+        try:
+            level = int(level)
+        except ValueError:
+            level = logging.INFO
 
     logging.basicConfig(format='%(relativeCreated)-8d %(levelname)-7s - %(message)s', level=level, datefmt='%X')
 
