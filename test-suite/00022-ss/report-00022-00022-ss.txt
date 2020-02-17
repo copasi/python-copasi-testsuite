@@ -1,0 +1,20 @@
+A steady state with given resolution was found.
+
+Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+LPP	0.00131861	-4.5278e-20	7.94083e+20	-27267.1	3.99924e+06
+Autophagy	8.14465e-05	1.48002e-17	4.90482e+19	8.9129e+06	0.0186299
+FT	9.89968e-08	7.97059e-23	5.96173e+16	48	1.63943
+Fe	1.64857e-10	-2.75675e-26	9.92794e+13	-0.0166016	11.7826
+FeFT	0.000107445	2.75675e-26	6.4705e+19	0.0166016	7.67927e+06
+
+Reaction	Flux (mol/s)	Particle Flux (#/s)
+reaction	3.29715e-10	1.98559e+14
+reaction_1	3.29715e-10	1.98559e+14
+reaction_2	0.00437183	2.63278e+21
+reaction_3	0.00437183	2.63278e+21
+reaction_4	6.03847e-08	3.63645e+16
+reaction_5	1.39916e-11	8.42593e+12
+reaction_6	6.03707e-08	3.63561e+16
+reaction_7	1.39916e-11	8.42593e+12
+
+
