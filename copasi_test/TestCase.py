@@ -386,22 +386,32 @@ class TestCase:
     def compare_files(self, expected_file, report_file, **kwargs):
         # type: (str, str) -> RunResult
         if not os.path.isfile(expected_file):
+            logging.debug('expected result missing for test {0} looked for {1}'
+                          .format(self.id, expected_file))
             return RunResult.EXPECTED_FILE_MISSING
 
         if not os.path.isfile(report_file):
+            logging.debug('report result missing for test {0} looked for {1}'
+                          .format(self.id, report_file))
             return RunResult.RESULT_FILE_MISSING
 
         expected = TestReport(expected_file, self.task_type)
         if not expected.is_valid():
+            logging.debug('expected result invalid for test {0}'
+                          .format(self.id))
             return RunResult.EXPECTED_FILE_INVALID
 
         other = TestReport(report_file, self.task_type)
         if not other.is_valid():
+            logging.debug('report result invalid for test {0}'
+                          .format(self.id))
             return RunResult.RESULT_FILE_INVALID
 
         # do actual comparison here
         comp = TaskTypes.getComparer(self.task_type)
         if comp is None:
+            logging.debug('cannot compare result for test {0}'
+                          .format(self.id))
             return RunResult.COMPARE_NOT_IMPLEMENTED
 
         base_name = os.path.splitext(os.path.basename(expected_file))[0]
@@ -420,8 +430,11 @@ class TestCase:
         base_name = os.path.splitext(os.path.basename(model_file))[0]
         report_file = os.path.join(output_dir, 'report-{0}-{1}.txt'.format(self.id, base_name))
         expected_result = os.path.join(self.case_dir, 'report-{0}-{1}.txt'.format(self.id, base_name))
+        if not os.path.exists(expected_result) and 'report_file' in self.settings:
+            expected_result = os.path.join(self.case_dir, self.settings['report_file'])
 
         if ('result' in self.settings) and (self.settings['result'] == 'run-only'):
+            logging.debug('returning pass result, because of "run-only"')
             return RunResult.PASS
 
         return self.compare_files(expected_result, report_file, **kwargs)
