@@ -1,0 +1,6 @@
+task: Steady-State
+location: .
+format: copasi
+result: compare
+report_file: report-00023-ss-Translationv3.5_75.txt
+ignore_exception: true
