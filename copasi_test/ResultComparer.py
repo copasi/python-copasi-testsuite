@@ -129,10 +129,18 @@ class ResultComparer:
             col2 = df2[col]
 
             for index in df1.index:
+                if pandas.isna(index):
+                    continue
                 val1 = col1[index]
+                if type(val1) is str and 'nan' in val1: 
+                    val1 = np.nan
+                val1 = float(val1)
                 if index not in col2.index:
                     continue
                 val2 = col2[index]
+                if type(val2) is str and 'nan' in val2: 
+                    val2 = np.nan
+                val2 = float(val2)
 
                 error = abs(val1-val2)
 

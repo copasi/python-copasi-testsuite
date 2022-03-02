@@ -128,7 +128,12 @@ class ReportParser:
         cols = cols[cols.find(':') + 1:].strip()
         end = self.find_empty(lines, current)
         block = self.get_block_as_buffer(lines, current + 2, end, trim=trim, replacements=replacements)
+        
+        if len(block.getvalue()) == 0:
+            return current
+
         df = pandas.read_csv(block, sep=sep,  header=header)
+        
         types = df.dtypes
 
         if types[types.index[0]] == numpy.object:
@@ -157,6 +162,11 @@ class ReportParser:
         index_col = kwargs.get('index_col', -1)
         end = self.find_empty(lines, current)
         block = self.get_block_as_buffer(lines, current, end, trim=trim, replacements=replacements)
+
+        if len(block.getvalue()) == 0:
+            return current
+
+
         df = pandas.read_csv(block, sep=sep, header=header)
         if index_col != -1:
             df = df.set_index(df.columns[index_col])

@@ -10,6 +10,9 @@ class ReportParserSteadyState(ReportParser):
 
         current = 0
 
+        if not lines:
+            return
+
         # read status
         self.status = lines[current].strip()
 

@@ -15,10 +15,18 @@ class ResultComparerSteadyState(ResultComparer):
             logging.debug('Status different: {0} != {1}'.format(expected.status, other.status))
             result.fail_with('  Status different: {0} != {1}'.format(expected.status, other.status))
 
+        if 'No steady state with given resolution was found!' in expected.status:
+            return result
+
         # species result: concentration / concentration rate / particle numbers / particle number rate
         # expected_subset = self.get_subset(expected.data_frames[0], [0, 1, 2, 3])
         # other_subset = self.get_subset(other.data_frames[0], [0, 1, 2, 3])
         # species result: concentration
+        # print(self.case_id)
+
+        if len(expected.data_frames) < 1:
+            return result
+
         expected_subset = self.get_subset(expected.data_frames[0], [0])
         other_subset = self.get_subset(other.data_frames[0], [0])
         result.explicit_fail = result.explicit_fail or \
@@ -26,6 +34,9 @@ class ResultComparerSteadyState(ResultComparer):
                                                         other_subset,
                                                         desc=expected.data_descriptions[0]['desc'],
                                                         messages=result.messages, **kwargs)
+
+        if len(expected.data_frames) < 2:
+            return result
 
         # compare steady state fluxes
         result.explicit_fail = result.explicit_fail or \
