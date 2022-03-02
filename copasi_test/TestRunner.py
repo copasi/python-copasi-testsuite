@@ -1,7 +1,6 @@
 import os
 import logging
 import subprocess
-import time
 import threading
 import traceback
 
@@ -18,6 +17,12 @@ try:
     from StringIO import StringIO
 except ImportError:
     from io import StringIO
+
+try: 
+    from time import clock
+except ImportError:
+    from time import process_time as clock
+
 
 isDebug = True
 
@@ -114,7 +119,7 @@ class TestRunner:
         models = case.get_models()
         logging.debug('  found models: {0}'.format(list(models)))
 
-        t0 = time.clock()
+        t0 = clock()
 
         result = 0
 
@@ -179,13 +184,13 @@ class TestRunner:
                         logging.error('Failed to run model {0} of case {1}'.format(model_name, case.id))
                 return RunResult.EXCEPTION
 
-        logging.debug("Test took {0} seconds".format(time.clock() - t0))
+        logging.debug("Test took {0} seconds".format(clock() - t0))
 
         return result
 
     @staticmethod
     def call_copasi(case, *popenargs, **kwargs):
-        t0 = time.clock()
+        t0 = clock()
         p = subprocess.Popen(*popenargs, stderr=subprocess.PIPE, stdout=subprocess.PIPE,  **kwargs)
 
         if 'timeout' in case.settings:
@@ -201,7 +206,7 @@ class TestRunner:
 
         retcode = p.returncode
         logging.debug('\tran for {0} seconds with return code {1}'
-                      .format(time.clock() - t0, p.returncode))
+                      .format(clock() - t0, p.returncode))
 
         if retcode:
             cmd = kwargs.get("args")
