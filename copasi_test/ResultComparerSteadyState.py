@@ -38,8 +38,9 @@ class ResultComparerSteadyState(ResultComparer):
         if len(expected.data_frames) < 2:
             return result
 
-        # compare steady state fluxes
-        result.explicit_fail = result.explicit_fail or \
+        # compare steady state fluxes (will not be done when equilibrium was detected)
+        if 'An equilibrium steady state (zero fluxes) was found.' not in expected.status:
+            result.explicit_fail = result.explicit_fail or \
                                self.compare_df_unsorted(expected.data_frames[1],
                                                         other.data_frames[1],
                                                         desc=expected.data_descriptions[1]['desc'],
