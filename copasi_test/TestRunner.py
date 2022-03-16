@@ -41,7 +41,7 @@ class TestRunner:
             if type(out) is str:
                 self.version = out.split('\n')[0].strip()
             else:
-                self.version = str(out.split(b'\n')[0].strip())
+                self.version = out.split(b'\n')[0].strip().decode('utf-8', 'replace')
         except:
             pass
 
