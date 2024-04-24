@@ -134,15 +134,16 @@ class ReportParser:
 
         df = pandas.read_csv(block, sep=sep,  header=header)
         
+        type_indices = df.dtypes.index.to_list()
         types = df.dtypes
 
-        if types[types.index[0]] == numpy.object:
-            df = df.set_index(types.index[0])
+        if types[type_indices[0]] == object:
+            df = df.set_index(type_indices[0])
 
         for i in range(len(types)):
-            current_type = types[types.index[i]]
+            current_type = types[type_indices[i]]
             if current_type == numpy.int64:
-                df[types.index[i]] = df[types.index[i]].astype(numpy.float64)
+                df[type_indices[i]] = df[type_indices[i]].astype(numpy.float64)
 
         self.data_frames.append(df)
         self.data_descriptions.append({'desc': description, 'name': name, 'rows': rows, 'cols': cols})

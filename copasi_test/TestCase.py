@@ -224,7 +224,7 @@ class TestCase:
             assert (isinstance(problem, COPASI.CTrajectoryProblem))
 
             if 'method' in self.settings:
-                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+                task.setMethodType(COPASI.CCopasiMethod.TypeNameToEnum(self.settings['method']))
 
             if 'duration' in self.settings:
                 problem.setDuration(float(self.settings['duration']))
@@ -261,7 +261,7 @@ class TestCase:
             task.setScheduled(True)
 
             if 'method' in self.settings:
-                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+                task.setMethodType(COPASI.CCopasiMethod.TypeNameToEnum(self.settings['method']))
 
         elif self.settings['task'] == TaskTypes.parameterEstimation:
             need_report = True
@@ -270,7 +270,7 @@ class TestCase:
             task.setScheduled(True)
 
             if 'method' in self.settings:
-                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+                task.setMethodType(COPASI.CCopasiMethod.TypeNameToEnum(self.settings['method']))
 
             problem = task.getProblem()
             assert (isinstance(problem, COPASI.CFitProblem))
@@ -316,7 +316,7 @@ class TestCase:
             task.setScheduled(True)
 
             if 'method' in self.settings:
-                task.setMethodType(COPASI.CCopasiMethod_TypeNameToEnum(self.settings['method']))
+                task.setMethodType(COPASI.CCopasiMethod.TypeNameToEnum(self.settings['method']))
 
             problem = task.getProblem()
             if 'StepNumber' in self.settings:

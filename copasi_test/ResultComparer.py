@@ -134,13 +134,22 @@ class ResultComparer:
                 val1 = col1[index]
                 if type(val1) is str and 'nan' in val1: 
                     val1 = np.nan
-                val1 = float(val1)
+                if isinstance(val1, pandas.Series):
+                    if val1.dtype != np.float64:
+                        val1 = val1.astype(np.float64)
+                else: 
+                    val1 = float(val1)
                 if index not in col2.index:
                     continue
                 val2 = col2[index]
                 if type(val2) is str and 'nan' in val2: 
                     val2 = np.nan
-                val2 = float(val2)
+
+                if isinstance(val2, pandas.Series):
+                    if val2.dtype != np.float64:
+                        val2 = val2.astype(np.float64)
+                else: 
+                    val2 = float(val2)
 
                 error = abs(val1-val2)
 

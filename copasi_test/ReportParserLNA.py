@@ -17,7 +17,11 @@ class ReportParserLNA(ReportParser):
         current = self.skip_until(lines, current, 'Results of the steady state subtask')
         if current == -1:
             return
-
-        steadyState = ReportParserSteadyState()
-        steadyState.parseLines(lines[current + 1:])
-        self.appendResults(steadyState)
+        try: 
+            # as it turns out, the results from the steady state subtask 
+            # were broken in some releases
+            steadyState = ReportParserSteadyState()
+            steadyState.parseLines(lines[current + 1:])
+            self.appendResults(steadyState)
+        except IndexError:
+            return
