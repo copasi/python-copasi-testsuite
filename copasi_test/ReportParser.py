@@ -42,7 +42,7 @@ class ReportParser:
 
     def parserFile(self, file_name):
         self.filename = file_name
-        with open(self.filename, 'r') as report_file:
+        with open(self.filename, 'r', encoding='utf-8') as report_file:
             lines = report_file.readlines()
         self.parseLines(lines)
 
