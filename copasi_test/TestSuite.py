@@ -3,9 +3,9 @@ import os
 from .TestCase import TestCase
 
 try:
-    from StringIO import StringIO
-except ImportError:
     from io import StringIO
+except ImportError:
+    from StringIO import StringIO
 
 
 class TestSuite:

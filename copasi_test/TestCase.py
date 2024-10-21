@@ -4,9 +4,9 @@ import sys
 import logging
 
 try:
-    from StringIO import StringIO
-except ImportError:
     from io import StringIO
+except ImportError:
+    from StringIO import StringIO
 
 from .TaskTypes import TaskTypes
 from .RunResult import RunResult
