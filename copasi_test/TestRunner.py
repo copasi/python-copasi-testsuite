@@ -14,14 +14,14 @@ except ImportError:
     support_parallelism = False
 
 try:
-    from StringIO import StringIO
-except ImportError:
     from io import StringIO
+except ImportError:
+    from StringIO import StringIO
 
 try: 
-    from time import clock
-except ImportError:
     from time import process_time as clock
+except ImportError:
+    from time import clock
 
 
 isDebug = True
@@ -213,7 +213,7 @@ class TestRunner:
             if cmd is None:
                 cmd = popenargs[0]
             if len(stderr) > 0:
-                raise ValueError(stderr)
+                raise ValueError('Non-zero return code with message: ' + stderr.decode('utf-8', 'replace'))
             raise subprocess.CalledProcessError(retcode, cmd)
 
         if len(stderr) > 0:
