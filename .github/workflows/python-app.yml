@@ -36,7 +36,7 @@ jobs:
       run: |
         cmake --version
         curl -L https://github.com/copasi/copasi-dependencies/releases/latest/download/ubuntu-latest.zip -o ubuntu-latest.zip
-        unzip -n -qq ${{ matrix.platform }}.zip -d dependencies
+        unzip -n -qq ubuntu-latest.zip -d dependencies
         sed -i 's|/home/runner/work/copasi-dependencies/copasi-dependencies/install/|${_IMPORT_PREFIX}/|g'  dependencies/lib/cmake/*.cmake
         git clone -b release/Version-4.45 https://github.com/copasi/COPASI
         cd COPASI && ./gitTools/UpdateCopasiVersion --force && cd ..
