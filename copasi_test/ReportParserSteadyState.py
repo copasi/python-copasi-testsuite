@@ -19,6 +19,9 @@ class ReportParserSteadyState(ReportParser):
         # read steady state species
         current = self.skip_until(lines, 0, 'Species	Concentration')
         current = self.readDataFrameWithDescription(lines, current, {'desc': 'steady state species information'})
+        if not self.data_frames:
+            self.status = 'Invalid steady state report'
+            return
         self.data_frames[-1] = self.data_frames[-1].set_index('Species')
 
         # read steady state fluxes
