@@ -1,0 +1,48 @@
+
+name: Test COPASI
+
+on:
+  workflow_dispatch:
+  #push:
+  #  branches: [ "master" ]
+  #pull_request:
+  #  branches: [ "master" ]
+  
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest cmake
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - uses: actions/checkout@v4
+    - uses: seanmiddleditch/gha-setup-ninja@master
+
+    - name: Build CopasiSE
+      run: |
+        cmake --version
+        curl -L https://github.com/copasi/copasi-dependencies/releases/latest/download/ubuntu-latest.zip -o ubuntu-latest.zip
+        unzip -n -qq ${{ matrix.platform }}.zip -d dependencies
+        sed -i 's|/home/runner/work/copasi-dependencies/copasi-dependencies/install/|${_IMPORT_PREFIX}/|g'  dependencies/lib/cmake/*.cmake
+        git clone -b release/Version-4.45 https://github.com/copasi/COPASI
+        cd COPASI && ./gitTools/UpdateCopasiVersion --force && cd ..
+        cmake -G Ninja -B build -S COPASI -DCOPASI_DEPENDENCY_DIR=./dependencies -DCMAKE_INSTALL_PREFIX=./install/
+        
+    - name: run tests
+      run: |
+        COPASI_TEST_PRINT=1 python test_copasi.py test-suite ./build/copasi/CopasiSE/CopasiSE ./out
+
