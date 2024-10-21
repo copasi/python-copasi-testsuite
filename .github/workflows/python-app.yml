@@ -41,6 +41,7 @@ jobs:
         git clone -b release/Version-4.45 https://github.com/copasi/COPASI
         cd COPASI && ./gitTools/UpdateCopasiVersion --force && cd ..
         cmake -G Ninja -B build -S COPASI -DCOPASI_DEPENDENCY_DIR=./dependencies -DBUILD_GUI=OFF  -DCMAKE_INSTALL_PREFIX=./install/
+        cmake --build build --target CopasiSE
         
     - name: run tests
       run: |
