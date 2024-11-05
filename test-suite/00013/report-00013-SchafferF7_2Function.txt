@@ -13,6 +13,8 @@ Problem Description:
     OutputStartTime: 0
     Output Event: 0
     Start in Steady State: 0
+    Use Values: 0
+    Values: 
     Continue on Simultaneous Events: 0
 
 Method: Deterministic (LSODA)
@@ -38,28 +40,26 @@ Method: Truncated Newton
 [Function Evaluations]	[Best Value]	[Best Parameters]
 5	28.8395	(	-12.4156	-11.8229	)
 8	0.727985	(	-11.5895	-11.0364	)
-11	0.727984	(	-11.5895	-11.0364	)
-14	0.123589	(	-11.4293	-10.8846	)
-20	0.00512586	(	-11.0286	-10.5053	)
-23	0.00512586	(	-11.0286	-10.5053	)
-26	0.0010532	(	-11.069	-10.5436	)
-32	2.21733e-06	(	-11.1699	-10.6394	)
-35	2.21733e-06	(	-11.1699	-10.6394	)
-38	3.0567e-07	(	-11.1629	-10.6328	)
-44	4.05334e-08	(	-11.1455	-10.6163	)
-47	4.05334e-08	(	-11.1455	-10.6163	)
-50	1.27721e-08	(	-11.1471	-10.6179	)
-53	2.62567e-09	(	-11.1553	-10.6257	)
-56	9.07736e-12	(	-11.1512	-10.6218	)
+11	0.0615718	(	-7.45879	-7.10353	)
+14	0.0615715	(	-7.45879	-7.10353	)
+17	0.0120371	(	-7.52171	-7.16355	)
+23	6.28031e-05	(	-7.67901	-7.31359	)
+26	6.2803e-05	(	-7.67901	-7.31359	)
+29	1.09585e-05	(	-7.66718	-7.30237	)
+35	2.04694e-07	(	-7.63762	-7.27431	)
+38	2.04694e-07	(	-7.63762	-7.27431	)
+41	5.82596e-08	(	-7.63977	-7.27635	)
+44	2.97113e-08	(	-7.65051	-7.28656	)
+47	2.08798e-12	(	-7.64514	-7.28146	)
 
 Optimization Result:
 
-    Objective Function Value:	9.07736e-12
-    Function Evaluations:	159
-    CPU Time [s]:	0.000
-    Evaluations/Second [1/s]:	inf
+    Objective Function Value:	2.08798e-12
+    Function Evaluations:	122
+    CPU Time [s]:	0.102
+    Evaluations/Second [1/s]:	1196.08
 
-    Values[x1].InitialValue: -11.1512
-    Values[x2].InitialValue: -10.6218
+    Values[x1].InitialValue: -7.64514
+    Values[x2].InitialValue: -7.28146
 
 
