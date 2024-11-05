@@ -1,5 +1,7 @@
 task: Parameter Estimation
 method: Genetic Algorithm SR
+atol: 1e-2
+rtol: 1e-2
 location: ./../sven/01_parameter_est
 filter: 0[2|7]_*
 format: copasi
