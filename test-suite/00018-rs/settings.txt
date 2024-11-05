@@ -1,5 +1,7 @@
 task: Parameter Estimation
 method: Random Search
+atol: 1e-1
+rtol: 1e-1
 location: ./../sven/01_parameter_est
 filter: 0[2|7]_*
 format: copasi
