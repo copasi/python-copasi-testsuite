@@ -41,7 +41,16 @@ The following special keywords are recognized by the runner:
 	* `run-only`: to be chosen if the result of the task run is not to be evaluated, just whether a task succeeds or not
 	* `xml equivalence`: xml comparison disregarding xml comments, time stamps, keys and the like
 
-	
+For numerical comparison by default a relative and absolute tolerance of `0.001` can be used. To override that in a setting file, you could specify `atol` and `rtol`, for example: 
+
+```
+...
+atol: 1e-5
+rtol: 1e-5
+
+```
+
+
 * `result_file`: by default, the expected files are assumed to be in the form: `report-{test id}-{model name}.txt`, so for example `report-00007-BIOMD0000000002.txt`. If this naming scheme does not seem convenient, the `result_file` option allows to overwrite what the filename would be.
 
 * `method`: if specified a particular method will be applied to the task.
