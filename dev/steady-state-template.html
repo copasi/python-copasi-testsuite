@@ -1,0 +1,109 @@
+<html>
+
+<head>
+  <title>Steady State</title>
+</head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    .steady  {border-collapse:collapse;border-spacing:0;}
+    .steady td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .steady th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .steady .steady-c4ww{background-color:#cbcefb;border-color:inherit;text-align:center;vertical-align:top}
+    .steady .steady-ikmv{background-color:#cbcefb;text-align:left;vertical-align:top}
+    .steady .steady-sh07{background-color:#cbcefb;text-align:center;vertical-align:top}
+    .steady .steady-red{background-color:#e05d5d;text-align:center;vertical-align:top}
+    .steady .steady-yellow{background-color:#e0cd5d;text-align:center;vertical-align:top}
+    .steady .steady-green{background-color:#5de05d;text-align:center;vertical-align:top}
+    .steady .steady-0lax{text-align:left;vertical-align:top}
+    .steady .steady-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    </style>
+
+
+
+    <body>
+
+    <div class="container-fluid bg-primary text-white text-center">
+
+    <h1>Steady State</h1>
+    <p> Generated on: <!--TIMESTAMP--></p>
+
+    </div>
+
+    <div class="container-fluid bg-light text-center">
+
+    <table class="table table-striped table-bordered text-center"><thead>
+      <tr>
+        <th class="steady-ikmv"></th>
+        <th class="steady-c4ww" colspan="3">Distance</th>
+        <th class="steady-c4ww" colspan="3">Rate</th>
+        <th class="steady-sh07" colspan="3">Both</th>
+      </tr>
+      <tr>
+        <th class="steady-ikmv">Filename</th>
+        <th class="steady-c4ww">Fwd</th>
+        <th class="steady-c4ww">Nwt</th>
+        <th class="steady-c4ww">Both</th>
+        <th class="steady-c4ww">Fwd</th>
+        <th class="steady-c4ww">Nwt</th>
+        <th class="steady-sh07">Both</th>
+        <th class="steady-sh07">Fwd</th>
+        <th class="steady-sh07">Nwt</th>
+        <th class="steady-sh07">Both</th>
+      </tr>
+    </thead>
+    <tbody>
+<!-- 
+      <tr>
+        <td class="steady-0lax">File1</td>
+        <td class="steady-green"><a onclick="javascript:openCopasi('./out/00022-ss.cps_Rate_False_True.cps')">n</a></td>
+        <td class="steady-red">s</td>
+        <td class="steady-yellow">e</td>
+        <td class="steady-0pky"></td>
+        <td class="steady-0pky"></td>
+        <td class="steady-0lax"></td>
+        <td class="steady-0lax"></td>
+        <td class="steady-0lax"></td>
+        <td class="steady-0lax"></td>
+      </tr> -->
+ 
+      <!--ROWS-->
+
+    </tbody></table>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function openCopasi(url) {        
+        // append the base url to the download url
+        var fullUrl = window.location.href;
+        fullUrl = fullUrl.substring(0, fullUrl.lastIndexOf("/")) + "/" + url;
+
+        var copasiUrl = "copasi://process?runTask=Steady-State&downloadUrl=" + fullUrl;
+        
+        // navigate to the COPASI URL in new tab
+        window.open(copasiUrl, '_blank');        
+    }
+
+    function showPopup(url)
+    {
+        var fullUrl = window.location.href;
+        fullUrl = fullUrl.substring(0, fullUrl.lastIndexOf("/")) + "/" + url;
+
+        var logUrl = fullUrl.replace(".cps", ".txt");
+
+        // display a pop up showing a choice of "COPASI" and "LOG" buttons
+        var popup = window.open("", "popup", "width=400,height=200");
+        popup.document.write("<html><head><title>Choose an action</title></head><body>");
+        popup.document.write("<h1>Choose an action</h1>");
+        popup.document.write("<button onclick=\"window.open('" + copasiUrl + "', '_blank')\">COPASI</button>");
+        popup.document.write("<button onclick=\"window.open('" + logUrl + "', '_blank')\">LOG</button>");
+        popup.document.write("</body></html>");
+
+    }
+
+</script>
+
+</html>
