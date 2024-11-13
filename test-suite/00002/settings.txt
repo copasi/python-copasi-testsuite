@@ -5,3 +5,4 @@ location: ./../biomodels # a directory
 filter: BIOMD000000000[0-3] # only models 0-3
 format: sbml                 # allowed are sbml | copasi
 
+ignore_exit_code: True
