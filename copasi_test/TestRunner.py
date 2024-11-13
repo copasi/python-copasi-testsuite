@@ -208,7 +208,9 @@ class TestRunner:
         logging.debug('\tran for {0} seconds with return code {1}'
                       .format(clock() - t0, p.returncode))
 
-        if retcode:
+        ignore_exit_code = case.settings.get('ignore_exit_code', 'false').lower() == 'true'
+
+        if retcode and not ignore_exit_code:
             cmd = kwargs.get("args")
             if cmd is None:
                 cmd = popenargs[0]

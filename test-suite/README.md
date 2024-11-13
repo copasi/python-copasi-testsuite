@@ -59,6 +59,8 @@ rtol: 1e-5
 
 * `ignore_exception`: if present, any exception that occurs while running the test case will be ignored. Can be used in conjunction with `result:compare` to perform comparison of the test results. 
 
+* `ignore_exit_code`: by default if CopasiSE returns a non-zero exit code, the test will be deemed as a failure. Adding this flag to the settings file will ignore exit codes.
+
 The settings file may contain additional parameters, that when specified will be passed along to the task / problem / method.
 
 

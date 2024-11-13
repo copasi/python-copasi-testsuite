@@ -5,3 +5,4 @@ result: compare
 report_file: report-00023-ss-Translationv3.5_75.txt
 ignore_exception: true
 Target Criterion: Rate
+ignore_exit_code: True

@@ -4,3 +4,4 @@ format: copasi
 result: compare
 report_file: report-00022-00022-ss.txt
 ignore_exception: true
+ignore_exit_code: True

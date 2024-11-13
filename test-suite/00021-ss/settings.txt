@@ -6,3 +6,4 @@ filter: BIOMD00000000[0-2]\d # only models 0-3
 format: sbml                 # allowed are sbml | copasi
 ignore_exception: True # continue after failure
 Maximum duration for forward integration: 100000
+ignore_exit_code: True

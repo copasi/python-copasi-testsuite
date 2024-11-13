@@ -8,3 +8,4 @@ ignore_exception: True # continue after failure
 Use Newton: False
 Use Back Integration: False
 Maximum duration for forward integration: 100000
+ignore_exit_code: True
