@@ -16,10 +16,10 @@ class ResultComparerMoieties(ResultComparer):
         #                                                                        desc="Link matrix(ann)",
         #                                                                        messages=result.messages, **kwargs)
         
-        import numpy.linalg as la
+        import numpy as np
         
-        trace_exp = la.trace(expected.data_frames[0].to_numpy())
-        trace_other = la.trace(other.data_frames[0].to_numpy())
+        trace_exp = np.trace(expected.data_frames[0].to_numpy())
+        trace_other = np.trace(other.data_frames[0].to_numpy())
         if abs(trace_exp - trace_other) > 1e-6:
             result.explicit_fail = True
             result.messages.append(f"Trace of link matrix differs: {trace_exp} != {trace_other}")
