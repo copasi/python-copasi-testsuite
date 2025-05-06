@@ -5,11 +5,19 @@
 from __future__ import print_function
 import sys
 import os
+import matplotlib
 
 try:
     from StringIO import StringIO
 except ImportError:
     from io import StringIO
+
+# Configure matplotlib to suppress font warnings
+matplotlib.use('Agg')  # Use non-interactive backend
+matplotlib.rcParams['font.family'] = 'sans-serif'
+matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans']
+matplotlib.rcParams['font.size'] = 10
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 from copasi_test import *
 
@@ -34,6 +42,6 @@ if __name__ == "__main__":
 
     result = runner.runTests(cases)
     
-    if result == 0: 
+    if result == 0:
         print("\nall pass")
     sys.exit(result)
