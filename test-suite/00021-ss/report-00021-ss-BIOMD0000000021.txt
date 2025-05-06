@@ -1,98 +1,98 @@
 A steady state with given resolution was found.
 
-Species	Concentration (nmol/l)	Concentration Rate (nmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
-PER Protein (unphosphorylated)	0	0	0	0	-nan(ind)
-TIM Protein (unphosphorylated)	0	0	0	0	-nan(ind)
-PER Protein (mono-phosphorylated)	0	0	0	0	-nan(ind)
-TIM Protein (mono-phosphorylated)	0	0	0	0	-nan(ind)
-PER Protein (bi-phosphorylated)	0	0	0	0	-nan(ind)
-TIM Protein (bi-phosphorylated)	0	0	0	0	-nan(ind)
-Cytosolic PER-TIM Complex	0	0	0	0	-nan(ind)
-Nuclear PER-TIM Complex	0	0	0	0	-nan(ind)
-PER mRNA	0	1	0	6.02214e+14	0
-TIM mRNA	0	1	0	6.02214e+14	0
+Species	Concentration (nmol/l)	Concentration Rate (nmol/(h*l))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+PER Protein (unphosphorylated)	0.479555	-8.59459e-17	2.88795e+14	-0.0517578	0.308987
+TIM Protein (unphosphorylated)	0.479555	-2.67567e-17	2.88795e+14	-0.0161133	0.308987
+PER Protein (mono-phosphorylated)	0.469225	6.92432e-16	2.82574e+14	0.416992	0.273608
+TIM Protein (mono-phosphorylated)	0.469225	-2.83784e-17	2.82574e+14	-0.0170898	0.273608
+PER Protein (bi-phosphorylated)	0.403049	-1.55676e-16	2.42722e+14	-0.09375	0.265123
+TIM Protein (bi-phosphorylated)	0.403049	-3.63243e-16	2.42722e+14	-0.21875	0.265123
+Cytosolic PER-TIM Complex	0.305272	-4.86486e-17	1.83839e+14	-0.0292969	25.9259
+Nuclear PER-TIM Complex	0.872205	1.13513e-17	5.25254e+14	0.00683594	100
+PER mRNA	1.51333	0	9.11348e+14	0	2.38914
+TIM mRNA	1.51333	0	9.11348e+14	0	2.38914
 
-Reaction	Flux (nmol/h)	Particle Flux (#/h)
-First Phosphorylation of PER	0	0
-First Phosphorylation of TIM	0	0
-Dephosphorylation of PER (1st P)	0	0
-Dephosphorylation of TIM (1st P)	0	0
-Second Phosphorylation of PER	0	0
-Second Phosphorylation of TIM	0	0
-Dephosphorylation of PER (2nd P)	0	0
-Dephosphorylation of TIM (2nd P)	0	0
-PER degradation	0	0
-TIM degradation	0	0
-PER-1 degradation	0	0
-TIM-1 degradation	0	0
-PER-2 degradation	0	0
-TIM-2 degradation	0	0
-PER-TIM complex formation	0	0
-PER-TIM complex nucleation	0	0
-PER-TIM complex degradation (cytosol)	0	0
-PER-TIM complex degradation (nuclear)	0	0
-PER mRNA production	1	6.02214e+14
-TIM mRNA production	1	6.02214e+14
-PER production	0	0
-TIM production	0	0
-PER mRNA degradation	0	0
-TIM mRNA degradation	0	0
+Reaction	Flux (extensive) (nmol/h)	Flux (intensive) (nmol/(h*l))	Particle Flux (#/h)
+First Phosphorylation of PER	1.54723	1.54723	9.31764e+14
+First Phosphorylation of TIM	1.54723	1.54723	9.31764e+14
+Dephosphorylation of PER (1st P)	0.190029	0.190029	1.14438e+14
+Dephosphorylation of TIM (1st P)	0.190029	0.190029	1.14438e+14
+Second Phosphorylation of PER	1.52023	1.52023	9.15506e+14
+Second Phosphorylation of TIM	1.52023	1.52023	9.15506e+14
+Dephosphorylation of PER (2nd P)	0.167724	0.167724	1.01006e+14
+Dephosphorylation of TIM (2nd P)	0.167724	0.167724	1.01006e+14
+PER degradation	0.00479555	0.00479555	2.88795e+12
+TIM degradation	0.00479555	0.00479555	2.88795e+12
+PER-1 degradation	0.00469225	0.00469225	2.82574e+12
+TIM-1 degradation	0.00469225	0.00469225	2.82574e+12
+PER-2 degradation	1.34073	1.34073	8.07409e+14
+TIM-2 degradation	1.34073	1.34073	8.07409e+14
+PER-TIM complex formation	0.0117748	0.0117748	7.09093e+12
+PER-TIM complex nucleation	0.00872205	nan	5.25254e+12
+PER-TIM complex degradation (cytosol)	0.00305272	0.00305272	1.83839e+12
+PER-TIM complex degradation (nuclear)	0.00872205	0.00872205	5.25254e+12
+PER mRNA production	0.633421	nan	3.81455e+14
+TIM mRNA production	0.633421	nan	3.81455e+14
+PER production	1.362	1.362	8.20214e+14
+TIM production	1.362	1.362	8.20214e+14
+PER mRNA degradation	0.633421	0.633421	3.81455e+14
+TIM mRNA degradation	0.633421	0.633421	3.81455e+14
 
 Jacobian (complete system)
 
 Rows:    Variables of the system, including dependent species
 Columns: Variables of the system, including dependent species
 	PER Protein (mono-phosphorylated)	TIM Protein (mono-phosphorylated)	PER Protein (unphosphorylated)	TIM Protein (unphosphorylated)	PER Protein (bi-phosphorylated)	TIM Protein (bi-phosphorylated)	Cytosolic PER-TIM Complex	PER mRNA	TIM mRNA	Nuclear PER-TIM Complex
-PER Protein (mono-phosphorylated)	-4.51	0	4	0	0.5	0	0	0	0	0
-TIM Protein (mono-phosphorylated)	0	-4.51	0	4	0	0.5	0	0	0	0
-PER Protein (unphosphorylated)	0.5	0	-4.01	0	0	0	0	0.9	0	0
-TIM Protein (unphosphorylated)	0	0.5	0	-4.01	0	0	0	0	0.9	0
-PER Protein (bi-phosphorylated)	4	0	0	0	-10.51	0	0.6	0	0	0
-TIM Protein (bi-phosphorylated)	0	4	0	0	0	-10.51	0.6	0	0	0
-Cytosolic PER-TIM Complex	0	0	0	0	0	0	-1.21	0	0	0.2
-PER mRNA	0	0	0	0	0	0	0	0	0	0
-TIM mRNA	0	0	0	0	0	0	0	0	0	0
-Nuclear PER-TIM Complex	0	0	0	0	0	0	0.6	0	0	-0.21
+PER Protein (mono-phosphorylated)	-2.96224	-0	2.60239	-0	0.346342	-0	-0	-0	-0	-0
+TIM Protein (mono-phosphorylated)	-0	-2.96224	-0	2.60239	-0	0.346342	-0	-0	-0	-0
+PER Protein (unphosphorylated)	0.328026	-0	-2.61239	-0	-0	-0	-0	0.9	-0	-0
+TIM Protein (unphosphorylated)	-0	0.328026	-0	-2.61239	-0	-0	-0	-0	0.9	-0
+PER Protein (bi-phosphorylated)	2.62421	-0	-0	-0	-1.93991	-0.483658	0.6	-0	-0	-0
+TIM Protein (bi-phosphorylated)	-0	2.62421	-0	-0	-0.483658	-1.93991	0.6	-0	-0	-0
+Cytosolic PER-TIM Complex	-0	-0	-0	-0	0.483658	0.483658	-1.21	-0	-0	0.2
+PER mRNA	-0	-0	-0	-0	-0	-0	-0	-0.0576921	-0	-1.06488
+TIM mRNA	-0	-0	-0	-0	-0	-0	-0	-0	-0.0576921	-1.06488
+Nuclear PER-TIM Complex	-0	-0	-0	-0	-0	-0	0.6	-0	-0	-0.21
 
 Eigenvalues	real	imaginary
-	0	0
-	0	0
-	-0.101724	0
-	-1.31828	0
-	-2.71231	0
-	-2.71231	0
-	-5.47648	0
-	-5.47648	0
-	-10.8412	0
-	-10.8412	0
+	0.101673	-0.379907
+	0.101673	0.379907
+	-0.0576921	0
+	-0.883035	0
+	-1.34967	-0.54258
+	-1.34967	0.54258
+	-2.18865	0
+	-2.87165	0
+	-3.95919	0
+	-4.10824	0
 
 Jacobian (reduced system)
 
 Rows:    Independent variables of the system
 Columns: Independent variables of the system
 	PER Protein (mono-phosphorylated)	TIM Protein (mono-phosphorylated)	PER Protein (unphosphorylated)	TIM Protein (unphosphorylated)	PER Protein (bi-phosphorylated)	TIM Protein (bi-phosphorylated)	Cytosolic PER-TIM Complex	PER mRNA	TIM mRNA	Nuclear PER-TIM Complex
-PER Protein (mono-phosphorylated)	-4.51	0	4	0	0.5	0	0	0	0	0
-TIM Protein (mono-phosphorylated)	0	-4.51	0	4	0	0.5	0	0	0	0
-PER Protein (unphosphorylated)	0.5	0	-4.01	0	0	0	0	0.9	0	0
-TIM Protein (unphosphorylated)	0	0.5	0	-4.01	0	0	0	0	0.9	0
-PER Protein (bi-phosphorylated)	4	0	0	0	-10.51	0	0.6	0	0	0
-TIM Protein (bi-phosphorylated)	0	4	0	0	0	-10.51	0.6	0	0	0
-Cytosolic PER-TIM Complex	0	0	0	0	0	0	-1.21	0	0	0.2
-PER mRNA	0	0	0	0	0	0	0	0	0	0
-TIM mRNA	0	0	0	0	0	0	0	0	0	0
-Nuclear PER-TIM Complex	0	0	0	0	0	0	0.6	0	0	-0.21
+PER Protein (mono-phosphorylated)	-2.96224	-0	2.60239	-0	0.346342	-0	-0	-0	-0	-0
+TIM Protein (mono-phosphorylated)	-0	-2.96224	-0	2.60239	-0	0.346342	-0	-0	-0	-0
+PER Protein (unphosphorylated)	0.328026	-0	-2.61239	-0	-0	-0	-0	0.9	-0	-0
+TIM Protein (unphosphorylated)	-0	0.328026	-0	-2.61239	-0	-0	-0	-0	0.9	-0
+PER Protein (bi-phosphorylated)	2.62421	-0	-0	-0	-1.93991	-0.483658	0.6	-0	-0	-0
+TIM Protein (bi-phosphorylated)	-0	2.62421	-0	-0	-0.483658	-1.93991	0.6	-0	-0	-0
+Cytosolic PER-TIM Complex	-0	-0	-0	-0	0.483658	0.483658	-1.21	-0	-0	0.2
+PER mRNA	-0	-0	-0	-0	-0	-0	-0	-0.0576921	-0	-1.06488
+TIM mRNA	-0	-0	-0	-0	-0	-0	-0	-0	-0.0576921	-1.06488
+Nuclear PER-TIM Complex	-0	-0	-0	-0	-0	-0	0.6	-0	-0	-0.21
 
 Eigenvalues	real	imaginary
-	0	0
-	0	0
-	-0.101724	0
-	-1.31828	0
-	-2.71231	0
-	-2.71231	0
-	-5.47648	0
-	-5.47648	0
-	-10.8412	0
-	-10.8412	0
+	0.101673	-0.379907
+	0.101673	0.379907
+	-0.0576921	0
+	-0.883035	0
+	-1.34967	-0.54258
+	-1.34967	0.54258
+	-2.18865	0
+	-2.87165	0
+	-3.95919	0
+	-4.10824	0
 
 Stability Analysis of the Reduced System
 
@@ -101,18 +101,25 @@ The linear stability analysis based on the eigenvalues
 of the Jacobian matrix is only valid for steady states.
 
 Summary:
-This state 's stability is undetermined.
+This state is unstable,
+transient states in its vicinity have oscillatory components.
 
 Eigenvalue statistics:
- Largest real part: 0
- Largest absolute imaginary part:  0
- 8 are purely real
+ Largest real part: 0.101673
+ Largest absolute imaginary part:  0.54258
+ The complex eigenvalues with the largest real part are:  0.101673 +|- 0.379907i
+ 6 are purely real
  0 are purely imaginary
- 0 are complex
- 2 are equal to zero
- 0 have positive real part
+ 4 are complex
+ 0 are equal to zero
+ 2 have positive real part
  8 have negative real part
- stiffness = inf
- time hierarchy = -nan(ind)
+ stiffness = 71.2098
+ time hierarchy = 0.446516
+
+Fold bifurcation test functions (standard, bifurcation discovery tool): 1.70442, 1.70442
+Hopf bifurcation test functions (standard, bifurcation discovery tool): -13.1433, 2.27292e+12
+
+Oscillation indicator: 0.0990658
 
 

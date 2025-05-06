@@ -1,39 +1,39 @@
-A steady state with given resolution was found.
+An equilibrium steady state (zero fluxes) was found.
 
 Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
 EmptySet	1	0	6.02214e+23	0	nan
-u	0	0	0	0	nan
-z	0	nan	0	nan	nan
-v	0	0.015	0	9.03321e+21	0
+u	0.015	1.73472e-18	9.03321e+21	1.04467e+06	8.64691e+15
+z	0.25641	nan	1.54414e+23	nan	nan
+v	0.27141	0	1.63447e+23	0	inf
 
-Reaction	Flux (mol/s)	Particle Flux (#/s)
-Reaction1	0.015	9.03321e+21
-Reaction2	0	0
-Reaction3	0	0
+Reaction	Flux (extensive) (mol/s)	Flux (intensive) (mol/(l*s))	Particle Flux (#/s)
+Reaction1	0.015	0.015	9.03321e+21
+Reaction2	0.015	0.015	9.03321e+21
+Reaction3	0.015	0.015	9.03321e+21
 
 Jacobian (complete system)
 
 Rows:    Variables of the system, including dependent species
 Columns: Variables of the system, including dependent species
 	u	v
-u	-1.018	0.018
-v	0	0
+u	0.326115	0.0585
+v	-1	-0
 
 Eigenvalues	real	imaginary
-	0	0
-	-1.018	0
+	0.163058	-0.17864
+	0.163058	0.17864
 
 Jacobian (reduced system)
 
 Rows:    Independent variables of the system
 Columns: Independent variables of the system
 	u	v
-u	-1.018	0.018
-v	0	0
+u	0.326115	0.0585
+v	-1	-0
 
 Eigenvalues	real	imaginary
-	0	0
-	-1.018	0
+	0.163058	-0.17864
+	0.163058	0.17864
 
 Stability Analysis of the Reduced System
 
@@ -42,18 +42,25 @@ The linear stability analysis based on the eigenvalues
 of the Jacobian matrix is only valid for steady states.
 
 Summary:
-This state 's stability is undetermined.
+This state is unstable,
+transient states in its vicinity have oscillatory components.
 
 Eigenvalue statistics:
- Largest real part: 0
- Largest absolute imaginary part:  0
- 1 are purely real
+ Largest real part: 0.163058
+ Largest absolute imaginary part:  0.17864
+ The complex eigenvalues with the largest real part are:  0.163058 +|- 0.17864i
+ 0 are purely real
  0 are purely imaginary
- 0 are complex
- 1 are equal to zero
- 0 have positive real part
- 1 have negative real part
- stiffness = inf
- time hierarchy = -nan(ind)
+ 2 are complex
+ 0 are equal to zero
+ 2 have positive real part
+ 0 have negative real part
+ stiffness = 1.00000
+ time hierarchy = 0.000000
+
+Fold bifurcation test functions (standard, bifurcation discovery tool): 0.0585000, 0.262695
+Hopf bifurcation test functions (standard, bifurcation discovery tool): 0.326115, -0.841994
+
+Oscillation indicator: 0.154414
 
 

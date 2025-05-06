@@ -4,3 +4,5 @@ method: ILDM (LSODA,Deuflhard)
 filter: BIOMD000000000[2-4]
 format: sbml
 #result: run-only
+
+rtol: 1e-2

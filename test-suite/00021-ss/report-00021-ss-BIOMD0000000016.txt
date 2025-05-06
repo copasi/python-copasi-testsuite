@@ -1,25 +1,25 @@
-An equilibrium steady state (zero fluxes) was found.
+A steady state with given resolution was found.
 
-Species	Concentration (µmol/l)	Concentration Rate (µmol/(l*h))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
+Species	Concentration (µmol/l)	Concentration Rate (µmol/(h*l))	Particle Number	Particle Number Rate (1/h)	Transition Time (h)
 EmptySet	0	0	0	0	nan
-PER mRNA	1.85148	1.88781e-16	1114.99	1.13687e-13	3.61766
-unphosphorylated PER	1.04956	4.71954e-17	632.058	2.84217e-14	0.952987
-monophosphorylated PER	0.672924	-2.35977e-16	405.244	-1.42109e-13	0.406219
-biphosphorylated PER	0.570982	-2.83172e-16	343.853	-1.7053e-13	0.24363
+PER mRNA	1.85148	-9.43907e-17	1114.99	-5.68434e-14	3.61766
+unphosphorylated PER	1.04956	9.43907e-17	632.058	5.68434e-14	0.952987
+monophosphorylated PER	0.672924	-3.77563e-16	405.244	-2.27374e-13	0.406219
+biphosphorylated PER	0.570982	2.83172e-16	343.853	1.7053e-13	0.24363
 nuclear PER	0.834512	0	502.555	0	0.769231
 total PER	3.12798	nan	1883.71	nan	nan
 
-Reaction	Flux (µmol/h)	Particle Flux (#/h)
-transcription of PER	5.11789e-16	308.207
-translation of PER	7.03561e-16	423.694
-first phosphorylation of PER	1.10134e-15	663.239
-removal of the first PER phosphate	3.97774e-16	239.545
-second phosphorylation of PER	1.25878e-15	758.054
-removal of the second PER phosphate	5.55218e-16	334.36
-translocation of PER to the nucleus	1.08487e-15	653.321
-translocation of PER to the cytoplasm	1.08487e-15	653.321
-degradation of PER mRNA	5.11789e-16	308.207
-degradation of PER	7.03561e-16	423.694
+Reaction	Flux (extensive) (µmol/h)	Flux (intensive) (µmol/(h*l))	Particle Flux (#/h)
+transcription of PER	5.11789e-16	nan	308.207
+translation of PER	7.03561e-16	nan	423.694
+first phosphorylation of PER	1.10134e-15	1.10134	663.239
+removal of the first PER phosphate	3.97774e-16	0.397774	239.545
+second phosphorylation of PER	1.25878e-15	1.25878	758.054
+removal of the second PER phosphate	5.55218e-16	0.555218	334.36
+translocation of PER to the nucleus	1.08487e-15	nan	653.321
+translocation of PER to the cytoplasm	1.08487e-15	nan	653.321
+degradation of PER mRNA	5.11789e-16	nan	308.207
+degradation of PER	7.03561e-16	nan	423.694
 
 Jacobian (complete system)
 
@@ -28,13 +28,13 @@ Columns: Variables of the system, including dependent species
 	biphosphorylated PER	monophosphorylated PER	PER mRNA	unphosphorylated PER	nuclear PER
 biphosphorylated PER	-2.97608	1.39967	-0	-0	1.3
 monophosphorylated PER	0.756436	-1.84197	-0	0.688187	-0
-PER mRNA	-0	-0	-0.0587763	-0	-0.801172
+PER mRNA	-0	-0	-0.0587763	-0	-0.801171
 unphosphorylated PER	-0	0.442297	0.38	-0.688187	-0
 nuclear PER	1.9	-0	-0	-0	-1.3
 
 Eigenvalues	real	imaginary
-	0.032824	-0.297276
-	0.032824	0.297276
+	0.0328239	-0.297276
+	0.0328239	0.297276
 	-0.829294	0
 	-1.83479	0
 	-4.26657	0
@@ -46,13 +46,13 @@ Columns: Independent variables of the system
 	biphosphorylated PER	monophosphorylated PER	PER mRNA	unphosphorylated PER	nuclear PER
 biphosphorylated PER	-2.97608	1.39967	-0	-0	1.3
 monophosphorylated PER	0.756436	-1.84197	-0	0.688187	-0
-PER mRNA	-0	-0	-0.0587763	-0	-0.801172
+PER mRNA	-0	-0	-0.0587763	-0	-0.801171
 unphosphorylated PER	-0	0.442297	0.38	-0.688187	-0
 nuclear PER	1.9	-0	-0	-0	-1.3
 
 Eigenvalues	real	imaginary
-	0.032824	-0.297276
-	0.032824	0.297276
+	0.0328239	-0.297276
+	0.0328239	0.297276
 	-0.829294	0
 	-1.83479	0
 	-4.26657	0
@@ -68,16 +68,21 @@ This state is unstable,
 transient states in its vicinity have oscillatory components.
 
 Eigenvalue statistics:
- Largest real part: 0.032824
+ Largest real part: 0.0328239
  Largest absolute imaginary part:  0.297276
- The complex eigenvalues with the largest real part are:  0.032824 +|- 0.297276i
+ The complex eigenvalues with the largest real part are:  0.0328239 +|- 0.297276i
  3 are purely real
  0 are purely imaginary
  2 are complex
  0 are equal to zero
  2 have positive real part
  3 have negative real part
- stiffness = 129.983
+ stiffness = 129.984
  time hierarchy = 0.688823
+
+Fold bifurcation test functions (standard, bifurcation discovery tool): 0.580706, 0.676842
+Hopf bifurcation test functions (standard, bifurcation discovery tool): -0.849894, 79450.7
+
+Oscillation indicator: 0.0317556
 
 

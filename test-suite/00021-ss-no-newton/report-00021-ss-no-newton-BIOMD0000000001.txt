@@ -1,100 +1,99 @@
-No steady state with given resolution was found!
-(below are the last unsuccessful trial values)
+A steady state with given resolution was found.
 
 Species	Concentration (mol/l)	Concentration Rate (mol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
-BasalACh2	-6.19439e-21	2.84942e-16	-3.73035e-13	1.71596e-08	2.17391e-05
-IntermediateACh	0	0	0	0	-nan(ind)
-ActiveACh	0	0	0	0	-nan(ind)
-Active	8.21022e-10	2.73929e-20	0.0494431	1.64964e-12	8.87792e+07
-BasalACh	0	-9.91103e-17	0	-5.96856e-09	0
-Basal	1.64204e-05	-9.24791e-18	988.862	-5.56922e-10	1.77558e+12
-DesensitisedACh2	0	0	0	0	-nan(ind)
-Desensitised	1.80193e-07	9.21998e-18	10.8515	5.5524e-10	1.95438e+10
-IntermediateACh2	0	0	0	0	-nan(ind)
-DesensitisedACh	0	0	0	0	-nan(ind)
-Intermediate	4.32463e-09	5.35393e-22	0.260436	3.22421e-14	4.69023e+08
-ActiveACh2	0	-1.85832e-16	0	-1.1191e-08	0
+BasalACh2	3.64972e-10	-1.69424e-21	0.0219791	-1.02029e-13	0.086831
+IntermediateACh	2.06094e-09	7.46903e-22	0.124113	4.49795e-14	43.7127
+ActiveACh	1.83032e-10	-2.1201e-23	0.0110224	-1.27676e-15	0.043341
+Active	5.20533e-13	-1.72474e-24	3.13472e-05	-1.03867e-16	0.0262651
+BasalACh	3.89023e-09	-8.78829e-21	0.234275	-5.29243e-13	0.921187
+Basal	1.0374e-08	9.81036e-21	0.624735	5.90794e-13	523.45
+DesensitisedACh2	1.61008e-05	2.39287e-20	969.616	1.44102e-12	1.02937e+10
+Desensitised	1.14495e-10	-4.65197e-23	0.00689505	-2.80148e-15	6.71473e+07
+IntermediateACh2	3.8642e-07	-5.18808e-21	23.2708	-3.12434e-13	8199.96
+DesensitisedACh	8.58712e-08	-1.91157e-20	5.17128	-1.15117e-12	5.48995e+07
+Intermediate	2.74791e-12	-1.38569e-24	0.000165483	-8.34483e-17	121.112
+ActiveACh2	1.56477e-08	3.71479e-22	0.942325	2.2371e-14	3.72276
 
-Reaction	Flux (mol/s)	Particle Flux (#/s)
-React0	0	0
-React1	9.91103e-33	5.96856e-09
-React2	-1.85832e-32	-1.1191e-08
-React3	0	0
-React4	0	0
-React5	9.24791e-34	5.56922e-10
-React6	0	0
-React7	0	0
-React8	0	0
-React9	9.22051e-34	5.55272e-10
-React10	0	0
-React11	0	0
-React12	0	0
-React13	0	0
-React14	9.21998e-34	5.5524e-10
-React15	0	0
-React16	0	0
+Reaction	Flux (extensive) (mol/s)	Flux (intensive) (mol/(l*s))	Particle Flux (#/s)
+React0	1.98184e-27	1.98184e-11	0.00119349
+React1	-4.20325e-25	-4.20325e-09	-0.253125
+React2	-4.20325e-25	-4.20325e-09	-0.253125
+React3	-1.97957e-27	-1.97957e-11	-0.00119213
+React4	4.15612e-25	4.15612e-09	0.250288
+React5	-1.98184e-27	-1.98184e-11	-0.00119349
+React6	4.22307e-25	4.22307e-09	0.254319
+React7	-2.26891e-30	-2.26891e-14	-1.36637e-06
+React8	4.71231e-27	4.71231e-11	0.00283782
+React9	-2.26874e-30	-2.26874e-14	-1.36627e-06
+React10	4.71474e-27	4.71474e-11	0.00283928
+React11	-4.71247e-27	-4.71247e-11	-0.00283791
+React12	1.70513e-34	1.70513e-18	1.02685e-10
+React13	1.56415e-31	1.56415e-15	9.41954e-08
+React14	1.70508e-34	1.70508e-18	1.02683e-10
+React15	1.56243e-31	1.56243e-15	9.40916e-08
+React16	-1.56413e-31	-1.56413e-15	-9.4194e-08
 
 Jacobian (complete system)
 
 Rows:    Variables of the system, including dependent species
 Columns: Variables of the system, including dependent species
 	IntermediateACh	ActiveACh	Active	IntermediateACh2	BasalACh	DesensitisedACh	Intermediate	ActiveACh2	DesensitisedACh2	Basal	Desensitised	BasalACh2
-IntermediateACh	-5.79	19.85	-0	8	0	0.0012	-0	0	0	-0	-0	-0
-ActiveACh	1.74	-2768.49	-0	0	130	0	-0	17.28	0	-0	-0	-0
-Active	0	8.64	-10819.7	0	0	0	3.74	0	0	0.54	-0	-0
-IntermediateACh2	0	0	-0	-8.86	0	0	-0	20	0.0012	-0	-0	-0
-BasalACh	0	2740	-0	0	-8130	0	-0	0	0	-0	-0	16000
-DesensitisedACh	0.05	0	-0	0	0	-4.0012	-0	0	8	-0	-0	-0
-Intermediate	4	0	19.7	0	0	0	-3.79	0	0	-0	0.0012	-0
-ActiveACh2	0	0	-0	0.81	0	0	-0	-737.28	0	-0	-0	30000
-DesensitisedACh2	0	0	-0	0.05	0	0	-0	0	-8.0012	-0	-0	-0
-Basal	0	0	10800	0	8000	0	-0	0	0	-0.54	-0	-0
-Desensitised	0	0	-0	0	0	4	0.05	0	0	-0	-0.0012	-0
-BasalACh2	0	0	-0	0	0	0	-0	700	0	-0	-0	-46000
+IntermediateACh	-1505.79	19.85	0	8	-0	0.0012	3000	-0	-0	-0	-0	-0
+ActiveACh	1.74	-4268.49	3000	-0	130	-0	0	17.28	-0	-0	-0	-0
+Active	-0	8.64	-13819.7	-0	-0	-0	3.74	-0	-0	0.54	-0	-0
+IntermediateACh2	1500	-0	0	-8.86	-0	-0	0	20	0.0012	-0	-0	-0
+BasalACh	-0	2740	0	-0	-9630	-0	0	-0	-0	3000	-0	16000
+DesensitisedACh	0.05	-0	0	-0	-0	-1504	0	-0	8	-0	3000	-0
+Intermediate	4	-0	19.7	-0	-0	-0	-3003.79	-0	-0	-0	0.0012	-0
+ActiveACh2	-0	1500	0	0.81	-0	-0	0	-737.28	-0	-0	-0	30000
+DesensitisedACh2	-0	-0	0	0.05	-0	1500	0	-0	-8.0012	-0	-0	-0
+Basal	-0	-0	10800	-0	8000	-0	0	-0	-0	-3000.54	-0	-0
+Desensitised	-0	-0	0	-0	-0	4	0.05	-0	-0	-0	-3000	-0
+BasalACh2	-0	-0	0	-0	1500	-0	0	700	-0	-0	-0	-46000
 
 Eigenvalues	real	imaginary
 	0	0
-	-0.00119713	0
-	-3.78417	0
-	-4.00117	0
-	-5.77733	0
-	-8.00112	0
-	-8.80049	0
-	-278.042	0
-	-2702.87	0
-	-8195.63	0
-	-10820.2	0
-	-46459.3	0
+	-0.0475488	0
+	-11.0024	0
+	-507.513	0
+	-1504	0
+	-1505.78	0
+	-3008	0
+	-3011.77	0
+	-4258.65	0
+	-11753	0
+	-13823.7	0
+	-47103	0
 
 Jacobian (reduced system)
 
 Rows:    Independent variables of the system
 Columns: Independent variables of the system
 	IntermediateACh	ActiveACh	Active	IntermediateACh2	BasalACh	DesensitisedACh	Intermediate	ActiveACh2	DesensitisedACh2	Basal	Desensitised
-IntermediateACh	-5.79	19.85	-0	8	0	0.0012	-0	0	0	-0	-0
-ActiveACh	1.74	-2768.49	-0	0	130	0	-0	17.28	0	-0	-0
-Active	0	8.64	-10819.7	0	0	0	3.74	0	0	0.54	-0
-IntermediateACh2	0	0	-0	-8.86	0	0	-0	20	0.0012	-0	-0
-BasalACh	-15999.8	-13259.8	-16003.5	-15999.8	-24129.8	-15999.8	-16001.3	-15999.8	-15999.8	-16000	-16000
-DesensitisedACh	0.05	0	-0	0	0	-4.0012	-0	0	8	-0	-0
-Intermediate	4	0	19.7	0	0	0	-3.79	0	0	-0	0.0012
-ActiveACh2	-29999.7	-29999.7	-30006.5	-29998.9	-29999.7	-29999.7	-30002.4	-30737	-29999.7	-30000	-30000
-DesensitisedACh2	0	0	-0	0.05	0	0	-0	0	-8.0012	-0	-0
-Basal	0	0	10800	0	8000	0	-0	0	0	-0.54	-0
-Desensitised	0	0	-0	0	0	4	0.05	0	0	-0	-0.0012
+IntermediateACh	-1505.79	19.85	0	8	-0	0.0012	3000	-0	-0	-0	-0
+ActiveACh	1.74	-4268.49	3000	-0	130	-0	0	17.28	-0	-0	-0
+Active	-0	8.64	-13819.7	-0	-0	-0	3.74	-0	-0	0.54	-0
+IntermediateACh2	1500	-0	0	-8.86	-0	-0	0	20	0.0012	-0	-0
+BasalACh	-16000	-13260	-16000	-16000	-25630	-16000	-16000	-16000	-16000	-13000	-16000
+DesensitisedACh	0.05	-0	0	-0	-0	-1504	0	-0	8	-0	3000
+Intermediate	4	-0	19.7	-0	-0	-0	-3003.79	-0	-0	-0	0.0012
+ActiveACh2	-30000	-28500	-30000	-29999.2	-30000	-30000	-30000	-30737.3	-30000	-30000	-30000
+DesensitisedACh2	-0	-0	0	0.05	-0	1500	0	-0	-8.0012	-0	-0
+Basal	-0	-0	10800	-0	8000	-0	0	-0	-0	-3000.54	-0
+Desensitised	-0	-0	0	-0	-0	4	0.05	-0	-0	-0	-3000
 
 Eigenvalues	real	imaginary
-	-0.00119713	0
-	-3.78413	0
-	-4.00117	0
-	-5.77746	0
-	-8.00112	0
-	-8.80041	0
-	-278.044	0
-	-2702.87	0
-	-8195.67	0
-	-10820.2	0
-	-46458.8	0
+	-0.0475488	0
+	-11.0024	0
+	-507.513	0
+	-1504	0
+	-1505.78	0
+	-3008	0
+	-3011.77	0
+	-4258.65	0
+	-11753	0
+	-13823.7	0
+	-47103	0
 
 Stability Analysis of the Reduced System
 
@@ -106,7 +105,7 @@ Summary:
 This state is asymptotically stable.
 
 Eigenvalue statistics:
- Largest real part: -0.00119713
+ Largest real part: -0.0475488
  Largest absolute imaginary part:  0
  11 are purely real
  0 are purely imaginary
@@ -114,7 +113,12 @@ Eigenvalue statistics:
  0 are equal to zero
  0 have positive real part
  11 have negative real part
- stiffness = 3.88083e+07
- time hierarchy = 0.998777
+ stiffness = 990624.
+ time hierarchy = 0.995040
+
+Fold bifurcation test functions (standard, bifurcation discovery tool): 1.77532e+32, 1.77532e+32
+Hopf bifurcation test functions (standard, bifurcation discovery tool): 1.70981e+35, -1.77532e+54
+
+Oscillation indicator: -22.0048
 
 

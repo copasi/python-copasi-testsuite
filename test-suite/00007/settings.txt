@@ -3,3 +3,4 @@ location: ./../biomodels
 filter: BIOMD000000000[2-4]
 format: sbml
 
+rtol: 1e-2

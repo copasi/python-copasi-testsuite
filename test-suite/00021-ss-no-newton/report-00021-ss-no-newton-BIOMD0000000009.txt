@@ -1,101 +1,101 @@
-An equilibrium steady state (zero fluxes) was found.
+A steady state with given resolution was found.
 
 Species	Concentration (µmol/l)	Concentration Rate (µmol/(l*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
-MAPKKK activator (Ras)	2.97504e-05	-3.31085e-12	71.6645	-7.97535e-06	0.794752
-MAPKKK inactivator	0.00029975	4.12074e-17	722.056	9.92628e-11	8.00752
-Mos	0.00251651	-1.66952e-12	6061.91	-4.02163e-06	67.2259
-Mos-P	0.000249765	-1.64168e-12	601.649	-3.95457e-06	0.00713179
-Mek1	0.0590941	1.84727e-12	142349	4.4498e-06	8.00752
-Mek1-P	0.221041	1.93032e-12	532456	4.64986e-06	6.31834
-Mek1-PP	0.826802	-3.42105e-10	1.99165e+06	-0.000824082	0.0594088
-Erk2	0.00107784	-4.45538e-10	2596.35	-0.00107324	0.00241896
-Erk2-P	0.0325205	6.4666e-11	78337.1	0.000155771	0.00234136
-Erk2-PP	0.981208	5.62415e-11	2.36359e+06	0.000135478	0.0729849
-MAPK-Pase	0.0274029	1.6734e-11	66009.7	4.03097e-05	0.00197292
-MAPKK-Pase	6.67734e-05	3.03757e-12	160.847	7.31708e-06	0.00190868
-E1_Mos	2.49558e-07	3.31085e-12	0.601148	7.97535e-06	0.00666667
-E2_Mos-P	2.49558e-07	-4.12074e-17	0.601148	-9.92628e-11	0.00666667
-P-Mos_Mek1	4.91988e-05	2.15966e-16	118.513	5.20231e-10	0.00666667
-P-Mos_P-Mek1	0.000184028	1.75189e-16	443.297	4.22006e-10	0.00666667
-PP-Mek1_Erk2	0.00297052	4.53906e-10	7155.56	0.00109339	0.00666667
-PP-Mek1_P-Erk2	0.0896265	-1.12542e-10	215897	-0.000271097	0.00666667
-MAPKK-Pase_PP-Mek1	0.000184028	-1.32902e-16	443.297	-3.20142e-10	0.00666667
-MAPKK-Pase_P-Mek1	4.91988e-05	-3.03744e-12	118.513	-7.31676e-06	0.00666667
-MAPK-Pase_PP-Erk2	0.0896265	-9.27898e-15	215897	-2.23517e-08	0.00666667
-MAPK-Pase_P-Erk2	0.00297052	-1.67247e-11	7155.56	-4.02874e-05	0.00666667
+MAPKKK activator (Ras)	2.97504e-05	8.25919e-20	71.6645	1.98952e-13	0.794752
+MAPKKK inactivator	0.00029975	-1.82882e-19	722.056	-4.40536e-13	8.00752
+Mos	0.00251651	-3.88972e-16	6061.91	-9.36978e-10	67.2259
+Mos-P	0.000249765	1.71396e-16	601.649	4.12868e-10	0.00713179
+Mek1	0.0590941	5.45004e-14	142349	1.31284e-07	8.00752
+Mek1-P	0.221041	1.6063e-14	532456	3.86935e-08	6.31834
+Mek1-PP	0.826802	-6.64994e-14	1.99165e+06	-1.60187e-07	0.0594088
+Erk2	0.00107784	6.76593e-16	2596.35	1.62981e-09	0.00241896
+Erk2-P	0.0325205	4.63949e-15	78337.1	1.11759e-08	0.00234136
+Erk2-PP	0.981208	0	2.36359e+06	0	0.0729849
+MAPK-Pase	0.0274029	0	66009.7	0	0.00197292
+MAPKK-Pase	6.67734e-05	6.04101e-18	160.847	1.45519e-11	0.00190868
+E1_Mos	2.49558e-07	-8.25919e-20	0.601148	-1.98952e-13	0.00666667
+E2_Mos-P	2.49558e-07	1.82882e-19	0.601148	4.40536e-13	0.00666667
+P-Mos_Mek1	4.91988e-05	7.85331e-17	118.513	1.89175e-10	0.00666667
+P-Mos_P-Mek1	0.000184028	1.38943e-16	443.297	3.34694e-10	0.00666667
+PP-Mek1_Erk2	0.00297052	-9.66561e-17	7155.55	-2.32831e-10	0.00666667
+PP-Mek1_P-Erk2	0.0896265	-4.63949e-15	215897	-1.11759e-08	0.00666667
+MAPKK-Pase_PP-Mek1	0.000184028	-1.8123e-17	443.297	-4.36557e-11	0.00666667
+MAPKK-Pase_P-Mek1	4.91988e-05	1.05718e-17	118.513	2.54659e-11	0.00666667
+MAPK-Pase_PP-Erk2	0.0896265	0	215897	0	0.00666667
+MAPK-Pase_P-Erk2	0.00297052	0	7155.55	0	0.00666667
 K_PP_norm	0.892362	nan	2.14957e+06	nan	nan
 KK_PP_norm	0.766319	nan	1.84595e+06	nan	nan
 KKK_P_norm	0.161024	nan	387884	nan	nan
 relative maximal K_PP	0.991459	nan	2.38828e+06	nan	nan
 
-Reaction	Flux (µmol/s)	Particle Flux (#/s)
-binding of MAPKKK activator	1.49735e-16	90.1722
-MAPKKK activation	1.49735e-16	90.1722
-binding of MAPKKK inactivator	1.49735e-16	90.1722
-MAPKKK inactivation	1.49735e-16	90.1722
-binding P-MAPKKK and MAPKK	2.95193e-14	17776.9
-phosphorylation of MAPKK	2.95193e-14	17776.9
-binding MAPKK-Pase and P-MAPKK	2.95193e-14	17776.9
-dephosphorylation of P-MAPKK	2.95193e-14	17776.9
-binding P-MAPKKK and P-MAPKK	1.10417e-13	66494.5
-phosphorylation of P-MAPKK	1.10417e-13	66494.5
-binding MAPKK-Pase and PP-MAPKK	1.10417e-13	66494.5
-dephosphorylation of PP-MAPKK	1.10417e-13	66494.5
-binding MAPK and PP-MAPKK	1.78231e-12	1.07333e+06
-phosphorylation of MAPK	1.78231e-12	1.07333e+06
-binding MAPK-Pase and P-MAPK	1.78231e-12	1.07333e+06
-dephosphorylation of P-MAPK	1.78231e-12	1.07333e+06
-binding PP-MAPKK and P-MAPK	5.37759e-11	3.23846e+07
-phosphorylation of P-MAPK	5.37759e-11	3.23846e+07
-binding MAPK-Pase and PP-MAPK	5.37759e-11	3.23846e+07
-dephosphorylation of PP-MAPK	5.37759e-11	3.23846e+07
+Reaction	Flux (extensive) (µmol/s)	Flux (intensive) (µmol/(l*s))	Particle Flux (#/s)
+binding of MAPKKK activator	1.49735e-16	3.74336e-05	90.1722
+MAPKKK activation	1.49735e-16	3.74336e-05	90.1722
+binding of MAPKKK inactivator	1.49735e-16	3.74336e-05	90.1722
+MAPKKK inactivation	1.49735e-16	3.74336e-05	90.1722
+binding P-MAPKKK and MAPKK	2.95193e-14	0.00737982	17776.9
+phosphorylation of MAPKK	2.95193e-14	0.00737982	17776.9
+binding MAPKK-Pase and P-MAPKK	2.95193e-14	0.00737982	17776.9
+dephosphorylation of P-MAPKK	2.95193e-14	0.00737982	17776.9
+binding P-MAPKKK and P-MAPKK	1.10417e-13	0.0276042	66494.5
+phosphorylation of P-MAPKK	1.10417e-13	0.0276042	66494.5
+binding MAPKK-Pase and PP-MAPKK	1.10417e-13	0.0276042	66494.5
+dephosphorylation of PP-MAPKK	1.10417e-13	0.0276042	66494.5
+binding MAPK and PP-MAPKK	1.78231e-12	0.445578	1.07333e+06
+phosphorylation of MAPK	1.78231e-12	0.445578	1.07333e+06
+binding MAPK-Pase and P-MAPK	1.78231e-12	0.445578	1.07333e+06
+dephosphorylation of P-MAPK	1.78231e-12	0.445578	1.07333e+06
+binding PP-MAPKK and P-MAPK	5.37759e-11	13.444	3.23846e+07
+phosphorylation of P-MAPK	5.37759e-11	13.444	3.23846e+07
+binding MAPK-Pase and PP-MAPK	5.37759e-11	13.444	3.23846e+07
+dephosphorylation of PP-MAPK	5.37759e-11	13.444	3.23846e+07
 
 Jacobian (complete system)
 
 Rows:    Variables of the system, including dependent species
 Columns: Variables of the system, including dependent species
-	Mos-P	Mek1-PP	MAPK-Pase	MAPKK-Pase	Erk2-P	Mek1-P	Mos	P-Mos_Mek1	Erk2-PP	MAPKKK inactivator	PP-Mek1_Erk2	MAPKK-Pase_PP-Mek1	MAPK-Pase_PP-Erk2	P-Mos_P-Mek1	Mek1	MAPKKK activator (Ras)	Erk2	MAPKK-Pase_P-Mek1	MAPK-Pase_P-Erk2	PP-Mek1_P-Erk2	E1_Mos	E2_Mos-P
-Mos-P	-280.435	-0	-0	-0	-0	-0.249765	-0	300	-0	-0.249762	-0	-0	-0	300	-0.249765	-0	-0	-0	-0	-0	149.998	149.998
-Mek1-PP	-0	-33.6651	-0	-826.803	-826.801	-0	-0	-0	-0	-0	300	150	-0	150	-0	-0	-826.801	-0	-0	300	-0	-0
-MAPK-Pase	-0	-0	-1013.73	-0	-27.4029	-0	-0	-0	-27.4029	-0	-0	-0	300	-0	-0	-0	-0	-0	300	-0	-0	-0
-MAPKK-Pase	-0	-0.0667734	-0	-1047.84	-0	-0.0667734	-0	-0	-0	-0	-0	300	-0	-0	-0	-0	-0	300	-0	-0	-0	-0
-Erk2-P	-0	-32.5205	-32.5204	-0	-854.204	-0	-0	-0	-0	-0	150	-0	150	-0	-0	-0	-0	-0	150	150	-0	-0
-Mek1-P	-221.041	-0	-0	-221.041	-0	-0.316539	-0	150	-0	-0	-0	150	-0	150	-0	-0	-0	150	-0	-0	-0	-0
-Mos	-0	-0	-0	-0	-0	-0	-0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	-2.51651	-0	-0	-0	-0	150	150
+	Mos-P	Mek1-PP	MAPK-Pase	MAPKK-Pase	Erk2-P	Mek1-P	Mos	P-Mos_Mek1	Erk2-PP	MAPKKK inactivator	PP-Mek1_Erk2	MAPKK-Pase_PP-Mek1	MAPK-Pase_PP-Erk2	P-Mos_P-Mek1	Mek1	PP-Mek1_P-Erk2	MAPKKK activator (Ras)	Erk2	MAPKK-Pase_P-Mek1	MAPK-Pase_P-Erk2	E1_Mos	E2_Mos-P
+Mos-P	-280.435	-0	-0	-0	-0	-0.249765	-0	300	-0	-0.249765	-0	-0	-0	300	-0.249765	-0	-0	-0	-0	-0	150	150
+Mek1-PP	-0	-33.6651	-0	-826.802	-826.802	-0	-0	-0	-0	-0	300	150	-0	150	-0	300	-0	-826.802	-0	-0	-0	-0
+MAPK-Pase	-0	-0	-1013.73	-0	-27.4029	-0	-0	-0	-27.4029	-0	-0	-0	300	-0	-0	-0	-0	-0	-0	300	-0	-0
+MAPKK-Pase	-0	-0.0667734	-0	-1047.84	-0	-0.0667734	-0	-0	-0	-0	-0	300	-0	-0	-0	-0	-0	-0	300	-0	-0	-0
+Erk2-P	-0	-32.5205	-32.5205	-0	-854.204	-0	-0	-0	-0	-0	150	-0	150	-0	-0	150	-0	-0	-0	150	-0	-0
+Mek1-P	-221.041	-0	-0	-221.041	-0	-0.316539	-0	150	-0	-0	-0	150	-0	150	-0	-0	-0	-0	150	-0	-0	-0
+Mos	-0	-0	-0	-0	-0	-0	-0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	-0	-2.51651	-0	-0	-0	150	150
 P-Mos_Mek1	59.0941	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	0.249765	-0	-0	-0	-0	-0	-0	-0
-Erk2-PP	-0	-0	-981.208	-0	-0	-0	-0	-0	-27.4029	-0	-0	-0	150	-0	-0	-0	-0	-0	-0	150	-0	-0
+Erk2-PP	-0	-0	-981.208	-0	-0	-0	-0	-0	-27.4029	-0	-0	-0	150	-0	-0	150	-0	-0	-0	-0	-0	-0
 MAPKKK inactivator	-0.29975	-0	-0	-0	-0	-0	-0	-0	-0	-0.249765	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	300
-PP-Mek1_Erk2	-0	1.07784	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	826.801	-0	-0	-0	-0	-0
+PP-Mek1_Erk2	-0	1.07784	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	826.802	-0	-0	-0	-0
 MAPKK-Pase_PP-Mek1	-0	0.0667734	-0	826.802	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0
 MAPK-Pase_PP-Erk2	-0	-0	981.208	-0	-0	-0	-0	-0	27.4029	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	-0	-0	-0
 P-Mos_P-Mek1	221.041	-0	-0	-0	-0	0.249765	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	-0	-0
-Mek1	-59.0941	-0	-0	-0	-0	-0	-0	150	-0	-0	-0	-0	-0	-0	-0.249765	-0	-0	150	-0	-0	-0	-0
-MAPKKK activator (Ras)	-0	-0	-0	-0	-0	-0	-0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	-2.51651	-0	-0	-0	-0	300	-0
-Erk2	-0	-1.07784	-0	-0	-0	-0	-0	-0	-0	-0	150	-0	-0	-0	-0	-0	-826.801	-0	150	-0	-0	-0
-MAPKK-Pase_P-Mek1	-0	-0	-0	221.041	-0	0.0667734	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0
-MAPK-Pase_P-Erk2	-0	-0	32.5205	-0	27.4029	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0
-PP-Mek1_P-Erk2	-0	32.5205	-0	-0	826.801	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0
-E1_Mos	-0	-0	-0	-0	-0	-0	0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	2.51651	-0	-0	-0	-0	-300	-0
+Mek1	-59.0941	-0	-0	-0	-0	-0	-0	150	-0	-0	-0	-0	-0	-0	-0.249765	-0	-0	-0	150	-0	-0	-0
+PP-Mek1_P-Erk2	-0	32.5205	-0	-0	826.802	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0
+MAPKKK activator (Ras)	-0	-0	-0	-0	-0	-0	-0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	-0	-2.51651	-0	-0	-0	300	-0
+Erk2	-0	-1.07784	-0	-0	-0	-0	-0	-0	-0	-0	150	-0	-0	-0	-0	-0	-0	-826.802	-0	150	-0	-0
+MAPKK-Pase_P-Mek1	-0	-0	-0	221.041	-0	0.0667734	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0
+MAPK-Pase_P-Erk2	-0	-0	32.5205	-0	27.4029	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0
+E1_Mos	-0	-0	-0	-0	-0	-0	0.0297504	-0	-0	-0	-0	-0	-0	-0	-0	-0	2.51651	-0	-0	-0	-300	-0
 E2_Mos-P	0.29975	-0	-0	-0	-0	-0	-0	-0	-0	0.249765	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-0	-300
 
 Eigenvalues	real	imaginary
-	3.65165e-09	-1.86287e-09
-	3.65165e-09	1.86287e-09
 	0	0
 	0	0
 	0	0
-	-5.14891e-07	0
-	-1.09395e-05	0
-	-0.0716131	-0.0511974
-	-0.0716131	0.0511974
-	-0.212393	0
+	0	0
+	0	0
+	0	0
+	0	0
+	-0.0716142	-0.0511975
+	-0.0716142	0.0511975
+	-0.212392	0
 	-98.0317	0
 	-156.431	0
 	-300	0
 	-300	0
 	-300.105	0
 	-300.25	0
-	-302.531	0
+	-302.532	0
 	-580.556	0
 	-988.406	0
 	-1060.08	0
@@ -107,35 +107,35 @@ Jacobian (reduced system)
 Rows:    Independent variables of the system
 Columns: Independent variables of the system
 	Mos-P	Mek1-PP	MAPK-Pase	MAPKK-Pase	Erk2-P	Mek1-P	Mos	P-Mos_Mek1	Erk2-PP	MAPKKK inactivator	PP-Mek1_Erk2	MAPKK-Pase_PP-Mek1	MAPK-Pase_PP-Erk2	P-Mos_P-Mek1	Mek1
-Mos-P	-430.435	-0	-0	-0	-0	-0.249765	-150	150	-0	-0.249762	-0	-0	-0	150	-0.249765
-Mek1-PP	-0	-1160.47	-826.8	300.251	0.00166738	-1126.8	-0	-1126.79	826.802	-0	-1.62692e-05	150	-0	-976.816	-1126.8
-MAPK-Pase	-0	-0	-1313.73	-0	-27.4029	-0	-0	-0	-27.4029	-0	-0	-0	-7.54902e-06	-0	-0
-MAPKK-Pase	-0	-0.0667734	-0	-1347.84	-0	-0.0667734	-0	-0	-0	-0	-0	-3.28266e-05	-0	-0	-0
-Erk2-P	-0	-182.52	-182.52	150.021	-854.204	-150	-0	-150.001	-0	-0	0.000113885	-0	-0	-150.009	-150
-Mek1-P	-221.041	-0	-0	-371.041	-0	-0.316539	-0	150	-0	-0	-0	1.64133e-05	-0	150	-0
-Mos	-152.517	-0	-0	-0	-0	-0	-152.546	-152.516	-0	2.51651	-0	-0	-0	-152.517	-0
+Mos-P	-430.435	-0	-0	-0	-0	-0.249765	-150	150	-0	-0.249765	-0	-0	-0	150	-0.249765
+Mek1-PP	-0	-1160.47	-826.802	300	-1.85463e-09	-1126.8	-0	-1126.8	826.802	-0	2.60308e-10	150	-0	-976.802	-1126.8
+MAPK-Pase	-0	-0	-1313.73	-0	-27.4029	-0	-0	-0	-27.4029	-0	-0	-0	1.72549e-11	-0	-0
+MAPKK-Pase	-0	-0.0667734	-0	-1347.84	-0	-0.0667734	-0	-0	-0	-0	-0	-0	-0	-0	-0
+Erk2-P	-0	-182.52	-182.52	150	-854.204	-150	-0	-150	-0	-0	2.60308e-10	-0	8.62745e-12	-150	-150
+Mek1-P	-221.041	-0	-0	-371.041	-0	-0.316539	-0	150	-0	-0	-0	-0	-0	150	-0
+Mos	-152.517	-0	-0	-0	-0	-0	-152.546	-152.517	-0	2.51651	-0	-0	-0	-152.517	-0
 P-Mos_Mek1	59.0941	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0	-0	-0	-0	0.249765
-Erk2-PP	-0	-150	-981.208	150.033	-0	-150	-0	-150.001	-27.4029	-0	-150	-0	150	-150.009	-150
+Erk2-PP	-0	-150	-981.208	150	-0	-150	-0	-150	-27.4029	-0	-150	-0	150	-150	-150
 MAPKKK inactivator	-0.29975	-0	-0	-0	-0	-0	-0	-0	-0	-300.25	-0	-0	-0	-0	-0
-PP-Mek1_Erk2	-0	827.879	826.8	-827	-826.803	826.802	-0	826.787	-826.802	-0	-300	-0	-0	826.799	826.802
+PP-Mek1_Erk2	-0	827.879	826.802	-826.802	-826.802	826.802	-0	826.802	-826.802	-0	-300	-0	-0	826.802	826.802
 MAPKK-Pase_PP-Mek1	-0	0.0667734	-0	826.802	-0	-0	-0	-0	-0	-0	-0	-300	-0	-0	-0
 MAPK-Pase_PP-Erk2	-0	-0	981.208	-0	-0	-0	-0	-0	27.4029	-0	-0	-0	-300	-0	-0
 P-Mos_P-Mek1	221.041	-0	-0	-0	-0	0.249765	-0	-0	-0	-0	-0	-0	-0	-300	-0
 Mek1	-59.0941	-0	-0	-150	-0	-0	-0	150	-0	-0	-0	-150	-0	-0	-0.249765
 
 Eigenvalues	real	imaginary
-	-0.0716126	-0.0511992
-	-0.0716126	0.0511992
-	-0.212393	0
-	-98.0316	0
+	-0.0716142	-0.0511975
+	-0.0716142	0.0511975
+	-0.212392	0
+	-98.0317	0
 	-156.431	0
 	-300	0
 	-300	0
 	-300.105	0
 	-300.25	0
-	-302.531	0
+	-302.532	0
 	-580.556	0
-	-988.41	0
+	-988.406	0
 	-1060.08	0
 	-1347.9	0
 	-1352.8	0
@@ -151,16 +151,21 @@ This state is asymptotically stable,
 transient states in its vicinity have oscillatory components.
 
 Eigenvalue statistics:
- Largest real part: -0.0716126
- Largest absolute imaginary part:  0.0511992
- The complex eigenvalues with the largest real part are:  -0.0716126 +|- 0.0511992i
+ Largest real part: -0.0716142
+ Largest absolute imaginary part:  0.0511975
+ The complex eigenvalues with the largest real part are:  -0.0716142 +|- 0.0511975i
  13 are purely real
  0 are purely imaginary
  2 are complex
  0 are equal to zero
  0 have positive real part
  15 have negative real part
- stiffness = 18890.5
- time hierarchy = 0.386463
+ stiffness = 18890.0
+ time hierarchy = 0.386461
+
+Fold bifurcation test functions (standard, bifurcation discovery tool): 6.86901e+28, 6.86901e+28
+Hopf bifurcation test functions (standard, bifurcation discovery tool): 1.11632e+33, 1.82154e+57
+
+Oscillation indicator: -0.0833164
 
 
