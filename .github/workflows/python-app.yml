@@ -44,7 +44,7 @@ jobs:
         curl -L https://github.com/copasi/copasi-dependencies/releases/latest/download/ubuntu-latest.zip -o ubuntu-latest.zip
         unzip -n -qq ubuntu-latest.zip -d dependencies
         sed -i 's|/home/runner/work/copasi-dependencies/copasi-dependencies/install/|${_IMPORT_PREFIX}/|g'  dependencies/lib/cmake/*.cmake
-        git clone -b release/Version-4.45 https://github.com/copasi/COPASI
+        git clone -b release/Version-4.46 https://github.com/copasi/COPASI
         cd COPASI && ./gitTools/UpdateCopasiVersion --force && cd ..
         cmake -G Ninja -B build -S COPASI -DCOPASI_DEPENDENCY_DIR=./dependencies -DBUILD_GUI=OFF  -DCMAKE_INSTALL_PREFIX=./install/
         cmake --build build --target CopasiSE
